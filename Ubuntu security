@@ -1,0 +1,17 @@
+#!/bin/sh
+
+sudo apt-get update
+sudo apt dist-upgrade
+ 
+#unnatended upgrades
+sudo apt install unattended-upgrades
+systemctl status unattended-upgrades
+
+#firewall
+sudo ss -tupln #ports in use
+sudo apt install ufw #ufw
+sudo ufw status
+sudo ufw allow 717 #example to allow conexion
+sudo ufw enable
+sudo ufw status
+sudo ufw reload #restart it
