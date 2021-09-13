@@ -1,5 +1,22 @@
 #!/bin/sh
 
+sudo apt-get update
+sudo apt dist-upgrade
+ 
+#unnatended upgrades
+sudo apt install unattended-upgrades
+systemctl status unattended-upgrades
+
+
+
+#firewall
+sudo ss -tupln #ports in use
+sudo apt install ufw #ufw
+sudo ufw status
+sudo ufw allow 717 #example to allow conexion
+sudo ufw enable
+sudo ufw status
+sudo ufw reload #restart it
 
 #Install Docker
 sudo apt-get install \
@@ -25,3 +42,12 @@ snap install spotify && snap install vlc
 #Design
 sudo snap install blender --classic && snap install freecad && snap install openscad && snap install cura-slicer 
 sudo snap install shotcut -- classic && snap install gimp && snap install photoscape  && snap install inkscape
+
+
+
+wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] http://download.virtualbox.org/virtualbox/debian $(lsb_release -cs) contrib"
+sudo apt update && sudo apt install virtualbox-6.0-y
+sudo modprobe vboxdrv
+#sudo apt remove virtualbox-dkms #if error on previous command
+sudo apt install virtualbox-dkms
