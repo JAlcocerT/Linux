@@ -26,6 +26,18 @@ snap install spotify && snap install vlc
 sudo snap install blender --classic && snap install freecad && snap install openscad && snap install cura-slicer 
 sudo snap install shotcut -- classic && snap install gimp && snap install photoscape  && snap install inkscape
 
+#Games
+sudo apt install steam -y
+sudo snap install discord
+sudo apt install anbox -y
+
+
+#Storage:
+sudo apt-get install nautilus-dropbox
+wget https://mega.nz/linux/MEGAsync/xUbuntu_20.04/amd64/megasync-xUbuntu_20.04_amd64.deb
+cd ~/Downloads
+sudo apt install ./megasync-xUbuntu_20.04_amd64.deb
+
 
 
 wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
