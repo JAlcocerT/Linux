@@ -1,0 +1,13 @@
+
+
+apt-get update && apt-get upgrade
+Reboot if there are update that require it
+
+Optional: customize the shell settings
+git clone https://github.com/lawrencesystems/dotfiles.git
+cd /root/dotfiles/
+Run the install.sh
+
+Edit the file /etc/sysctl.conf and change and uncomment to the line that says net.ipv4.ip_forward=1
+
+sysctl -p to activate the changes.
