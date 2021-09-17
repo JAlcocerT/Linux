@@ -15,3 +15,7 @@ sudo ufw allow 717 #example to allow conexion
 sudo ufw enable
 sudo ufw status
 sudo ufw reload #restart it
+
+#ssh
+sudo apt-get install openshh-server
+enable ssh
