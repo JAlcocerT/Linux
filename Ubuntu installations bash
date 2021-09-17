@@ -1,5 +1,8 @@
 #!/bin/sh
  
+#Ubuntu tweaks
+sudo apt-get install synaptic
+ 
 #Media
 snap install spotify && snap install vlc
 
