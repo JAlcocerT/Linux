@@ -49,4 +49,14 @@ sudo systemctl restart sshd #to changes to be applied
 sudo ss -tulpn | grep ssh #to check that the new port is running
 sudo netstat -tulpn | grep ssh #to check that the new port is running (needs: sudo apt install net-tools)
 
+#fail2ban
+sudo apt-get install -y \
+apt-transport-https \
+ca-certificates \
+curl \
+gnupg2 \
+vim \
+fail2ban \
+ntfs-3g
 
+sudo nano /etc/fail2ban/jail.conf
