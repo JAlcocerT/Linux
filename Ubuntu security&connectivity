@@ -71,3 +71,6 @@ maxretry = 3
 
 sudo service fail2ban restart
 sudo nano /var/log/fail2ban.log
+
+
+#Guacamole:
