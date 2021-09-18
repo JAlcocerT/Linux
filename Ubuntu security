@@ -60,3 +60,4 @@ fail2ban \
 ntfs-3g
 
 sudo nano /etc/fail2ban/jail.conf
+sudo nano /var/log/fail2ban.log
