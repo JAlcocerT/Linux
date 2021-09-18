@@ -17,7 +17,7 @@ sudo ufw status
 sudo ufw reload #restart it
 
 #ssh
-sudo apt-get install openshh-server #verify that it is installed on the server
+sudo apt-get install openssh-server #verify that it is installed on the server
 sudo enable ssh #enable it
 
 sudo ssh root@192.168.1.31 #connecting to server from the client
