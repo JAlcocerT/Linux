@@ -13,9 +13,29 @@ sudo add-apt-repository ppa:kicad/kicad-5.1-releases && sudo apt update && sudo 
 
 
 #Games
-sudo apt install steam -y
+
 sudo snap install discord
 sudo apt install anbox -y
+
+
+#(AMD drivers to be installed here):
+#https://github.com/lutris/docs/blob/master/InstallingDrivers.md
+sudo add-apt-repository ppa:kisak/kisak-mesa
+sudo dpkg --add-architecture i386 
+sudo apt update && sudo apt upgrade
+sudo apt install libgl1-mesa-dri:i386
+sudo apt install mesa-vulkan-drivers mesa-vulkan-drivers:i386
+
+
+#Install Steam using the following Terminal command:
+sudo apt install steam -y
+#Once installed, run Steam, install any updates, and sign into your Steam account. 
+#Enable Proton to work with all your Steam library by navigating to Steam / Steam Play / Advanced, and ticking the Enable Steam Play for all other titles.
+#Reboot Steam once done
+#STEP 4 - INSTALL WINE AND LUTRIS
+https://wine.htmlvalidator.com/install-wine-on-ubuntu-20.04.html
+https://linuxconfig.org/install-lutris-on-ubuntu-20-04-focal-fossa-linux
+
 
 #Storage:
 sudo apt-get install nautilus-dropbox
