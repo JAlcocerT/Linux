@@ -16,15 +16,30 @@ sudo ufw enable
 sudo ufw status
 sudo ufw reload #restart it
 
-#ssh
-sudo apt-get install openssh-server #verify that it is installed on the server
+#ssh to rpi
+sudo apt-get install openssh-server -y #verify that it is installed on the server
 sudo systemctl enable ssh #enable it
+sudo service ssh status
+sudo service ssh start
+#sudo service ssh restart
+#sudo netstat -ltnp | grep sshd #check the server listering port (22 is the default)
+#ssh -p [port_number] [username]@[ip_address] #if its other port this one should be used, example: ssh -p [2244] [username]@[ip_address]
+#sudo ufw allow 2244/tcp #and firewall should allow traffic in that port
+# sudo ufw reload
+#sudo ufw status
 
-sudo ssh root@192.168.1.31 #connecting to server from the client
-sudo ssh-keygen #generating the keys, the public one has to be copied on the server
-cat .ssh/id_rsa.pub
-sudo nano .ssh/authorized_keys #and include it on the server
-logout #logout from server and next time should not ask for any pass
+sudo ssh pi@192.168.1.31 #connecting to server from the client just to check that it works
+nano ~/.ssh/authorized_keys #this is were the authorized keys will be stored (IN THE RPi)
+exit
+sudo ssh-keygen #generating the keys on the client, the public one has to be copied on the server
+sudo ssh-copy-id -i ~/.ssh/id_rsa pi@192.168.1.31
+sudo ssh pi@192.168.1.31 #connecting again to check if the certificate worked
 
+#cat .ssh/id_rsa.pub
+#sudo nano .ssh/authorized_keys #and include it on the server
+#logout #logout from server and next time should not ask for any pass
 
-sudo ssh root@192.168.1.31 #connecting again to check if the certificate worked
+#if desired, password login can be disabled on the server (RPi here)
+sudo ssh pi@192.168.1.31
+sudo nano /etc/ssh/sshd_config
+PasswordAuthentication no #to be changed
