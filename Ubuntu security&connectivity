@@ -73,4 +73,18 @@ sudo service fail2ban restart
 sudo nano /var/log/fail2ban.log
 
 
+#vnc
+sudo apt-get install tightvncserver
+tightvncserver
+vncserver :0 -geometry 1920x1080 -depth 24
+
+Now, on your computer, install and run the VNC client:
+On a Linux machine install the package xtightvncviewer:
+sudo apt-get install remmina
+an easy to use client, that can also be used to log into a windows system or another linux box.
+
 #Guacamole:
+
+
+
+
