@@ -78,6 +78,8 @@ sudo apt-get install tightvncserver
 tightvncserver
 vncserver :0 -geometry 1920x1080 -depth 24
 
+sudo apt-get install realvnc-vnc-viewer
+
 Now, on your computer, install and run the VNC client:
 On a Linux machine install the package xtightvncviewer:
 sudo apt-get install remmina
