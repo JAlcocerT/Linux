@@ -1,5 +1,6 @@
 #!/bin/sh
 
+#wget  -cO - https://raw.githubusercontent.com/reisikei/docker/main/Web/Wordpress%20Docker%20Compose.yml > docker-install-bash.sh
 
 #Install Docker
 sudo apt-get install \
