@@ -94,11 +94,16 @@ curl -fsSL https://pkgs.tailscale.com/stable/raspbian/buster.gpg | sudo apt-key 
 curl -fsSL https://pkgs.tailscale.com/stable/raspbian/buster.list | sudo tee /etc/apt/sources.list.d/tailscale.list
 sudo apt-get update
 sudo apt-get install tailscale
+sudo tailscale up
+tailscale ip -4 #get the ip
+
 
 #zerotier
 #https://ugeek.github.io/blog/post/2020-04-09-zerotier-funcionamiento-e-instalacion-por-docker-o-repositorios.html
-
-
+#https://www.zerotier.com/download/#downloadLinux
+curl -s 'https://raw.githubusercontent.com/zerotier/ZeroTierOne/master/doc/contact%40zerotier.com.gpg' | gpg --import && \
+if z=$(curl -s 'https://install.zerotier.com/' | gpg); then echo "$z" | sudo bash; fi
+sudo zerotier-cli status
 
 #Guacamole:
 
