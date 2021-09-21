@@ -85,6 +85,21 @@ On a Linux machine install the package xtightvncviewer:
 sudo apt-get install remmina
 an easy to use client, that can also be used to log into a windows system or another linux box.
 
+
+###VPN:
+#tailscale
+#https://geekland.eu/tailscale-conecta-equipos-a-una-red-privada-virtual-vpn-facilmente/
+sudo apt-get install apt-transport-https
+curl -fsSL https://pkgs.tailscale.com/stable/raspbian/buster.gpg | sudo apt-key add -
+curl -fsSL https://pkgs.tailscale.com/stable/raspbian/buster.list | sudo tee /etc/apt/sources.list.d/tailscale.list
+sudo apt-get update
+sudo apt-get install tailscale
+
+#zerotier
+#https://ugeek.github.io/blog/post/2020-04-09-zerotier-funcionamiento-e-instalacion-por-docker-o-repositorios.html
+
+
+
 #Guacamole:
 
 
