@@ -16,7 +16,7 @@ sudo ufw enable
 sudo ufw status
 sudo ufw reload #restart it
 
-#ssh to rpi
+###ssh to rpi
 sudo apt-get install openssh-server -y #verify that it is installed on the server
 sudo systemctl enable ssh #enable it
 sudo service ssh status
@@ -73,7 +73,8 @@ sudo service fail2ban restart
 sudo nano /var/log/fail2ban.log
 
 
-#vnc
+###vnc
+#https://sites.google.com/site/installationubuntu/raspberry-pi/remote-control-the-raspberry-pi
 sudo apt-get install tightvncserver
 tightvncserver
 vncserver :0 -geometry 1920x1080 -depth 24
