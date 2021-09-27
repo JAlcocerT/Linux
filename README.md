@@ -11,6 +11,8 @@ head -n 5 seasonal/summer.csv | tail -n 3
 
 cut -d , -f 2 seasonal/summer.csv | grep -v Tooth
 
+#change Cherno to Cherno City in the given file
+cat soccer_scores.csv | sed 's/Cherno/Cherno City/g' | sed 's/Arda/Arda United/g' > soccer_scores_edited.csv
 
 
 grep '[pc]' fruits.txt
