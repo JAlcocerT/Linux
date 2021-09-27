@@ -1,3 +1,5 @@
+# SHELL ---
+
 ## Useful Shell commands
 
 
@@ -8,6 +10,14 @@ The pipe symbol tells the shell to use the output of the command on the left as 
 head -n 5 seasonal/summer.csv | tail -n 3
 
 cut -d , -f 2 seasonal/summer.csv | grep -v Tooth
+
+
+
+grep '[pc]' fruits.txt
+grep '[pc]' ^ fruits.txt #not contains p or c
+
+
+cat two_cities.txt | egrep 'Sydney Carton|Charles Darnay' | wc -l #from the file specified, count the lines where those appeared
 
 The command wc (short for "word count") prints the number of characters, words, and lines in a file. 
 You can make it print only one of these using -c, -w, or -l respectively.
@@ -126,3 +136,20 @@ do
     head -n 2 $filename | tail -n 1
     tail -n 1 $filename
 done
+
+
+
+## Bash ---
+
+Bash is a concise, superfast, and robust scripting language for data and file manipulation. It’s a vital skill for building analytics pipelines in the cloud, favored by Linux users to work with data stored across multiple files. In this course, we’ll guide you through the basics of Bash scripting. We begin with an introduction to Bash script structures, including inputting arguments and outputting results. You’ll then work through data structures, such as variables and arrays, and control statements, including loops and conditionals. You’ll then put what you’ve learned into practice, by creating your own Bash functions and scheduling automated scripts to run like clockwork with cron.
+
+
+it normally starts by #!/usr/bash so that the interpreter knows that should go to /usr/bash
+it could be a different path (check with: which bash)
+
+if the she-bang is included, it can be run with: ./script_name.sh
+if its not, with: bash script_name.sh
+
+each line of the bash script can be a shell command -> pipes can be included in bash too
+
+
