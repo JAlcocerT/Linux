@@ -155,3 +155,7 @@ if its not, with: bash script_name.sh
 each line of the bash script can be a shell command -> pipes can be included in bash too
 
 
+ARGV is the array of arguments given to the program
+each argument can be accessed by $1...
+$@ and $* give all the arguments in ARGV
+$# gives the number of ARGVs
