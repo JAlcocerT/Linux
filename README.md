@@ -159,3 +159,129 @@ ARGV is the array of arguments given to the program
 each argument can be accessed by $1...
 $@ and $* give all the arguments in ARGV
 $# gives the number of ARGVs
+
+
+
+# shell within a shell
+
+model1=87.65
+model2=89.20
+echo "total score is $(echo "$model1 + $model2" | bc)"
+echo "average score is $(echo "($model1 + $model2) /2" | bc)"
+
+
+#Get first ARGV into variable
+temp_f=$1
+
+#Subtract 32
+temp_f2=$(echo "scale=2; $temp_f - 32" | bc)
+
+#Multiply by 5/9 and print
+temp_c=$(echo "scale=2; $temp_f2 * 5 / 9" | bc)
+
+#Print the celsius temp
+echo $temp_c
+
+
+
+
+# creating an array in bash
+
+declare -a my_first_array
+
+create and add elements
+my_first_array=(1 2 3)
+echo ${my_first_array[@]} #return all the elements
+echo ${#my_first_array[@]} count all the elements
+echo ${my_first_array[0]}
+
+my_first_array[0]=999 #change the first element value
+echo ${my_first_array[@]:1:2} #return 2 elements from the 1st index
+
+
+#append a value to the end an array
+my_array+=(10)
+
+
+
+
+
+# associative arrays:
+like a normal array but with key-value pairs
+similar to python's dictionaries or R's lists
+available from bash 4
+bash --version
+
+declare -A city_details
+city_details=([city_name]="New York" [population]=14000000)
+echo $(city_details[city_name]}
+
+#access the keys with !
+echo $(!city_details[@}}
+
+
+Associative arrays are powerful constructs to use in your Bash scripting. They are very similar to 'normal' arrays, however they have a few important differences in their creation, manipulation and key properties.
+
+Associative arrays allow you to index using words rather than numbers, which can be important for ease of inputting and accessing properties. For example, rather than accessing 'index 4' of an array about a city's information, you can access the city_population property, which is a lot clearer!
+
+
+#Create variables from the temperature data files
+temp_b="$(cat temps/region_B)"
+temp_c="$(cat temps/region_C)"
+
+#Create an array with these variables as elements
+region_temps=($temp_b $temp_c)
+
+#Call an external program to get average temperature
+average_temp=$(echo "scale=2; (${region_temps[0]} + ${region_temps[1]}) / 2" | bc)
+
+#Append average temp to the array
+region_temps+=($average_temp)
+
+#Print out the whole array
+echo ${region_temps[@]}
+
+
+# conditions checking
+if [ condition  ]; then
+ #code
+else
+ #code
+fi
+
+x="Queen"
+if [ $x =="King" ]; then
+ echo "$x is a king!"
+else
+ echo "$x is not a king!"
+fi
+
+x=10
+if [ $x > 5 ]; then
+ echo "$x is more than 5"
+fi
+
+
+x=10
+if [ $x -gt 5 ]; then
+ echo "$x is more than 5"
+fi
+
+https://www.gnu.org/software/bash/manual/html_node/Bash-Conditional-Expressions.html
+
+x=10
+if [ $x -gt 5 ] && [ $x -lt 11 ]; then
+ echo "$x is more than 5 and less than 11!"
+fi
+
+x=10
+if [[ $x -gt 5  &&  $x -lt 11 ]]; then
+ echo "$x is more than 5 and less than 11!"
+fi
+
+#q is quiet
+if grep -q Hello words.txt; then
+	echo "Hello is inside"
+fi
+
+
