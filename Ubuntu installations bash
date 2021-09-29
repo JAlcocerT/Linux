@@ -5,6 +5,7 @@ sudo apt-get install synaptic
  
 #Media
 snap install spotify && snap install vlc
+sudo snap install brave
 
 #Design
 sudo snap install blender --classic && snap install freecad && snap install openscad && snap install cura-slicer 
@@ -52,11 +53,21 @@ sudo apt install lutris -y
 #origin
 
 
-#Storage:
+#Storage and backup:
 sudo apt-get install nautilus-dropbox
+
 wget https://mega.nz/linux/MEGAsync/xUbuntu_20.04/amd64/megasync-xUbuntu_20.04_amd64.deb
 cd ~/Downloads
 sudo apt install ./megasync-xUbuntu_20.04_amd64.deb
+
+sudo add-apt-repository ppa:teejee2008/ppa
+sudo apt-get update
+sudo apt-get install timeshift
+
+
+
+
+
 
 #VBox
 wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
