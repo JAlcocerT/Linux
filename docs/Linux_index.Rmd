@@ -265,10 +265,15 @@ wget  -cO - https://raw.githubusercontent.com/reisikei/Linux/main/Ubuntu%20docke
 
 ## RPi projects
 
-<https://reisikei.github.io/RPi/>
+
+The Raspberry Pi is a tiny and affordable computer (ARM based) that you can use to learn programming through fun, practical projects. 
+
+It can run Linux distros like: Debian, OpenMediaVault or most commonly Raspbian OS.
+
+Check out some recommended setups and projects on [my repo](https://reisikei.github.io/RPi/)
 
 
 # Arch based distros:
 
-(Tested with RebornOS)
+(To be tested with RebornOS)
 
