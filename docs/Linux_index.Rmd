@@ -58,8 +58,9 @@ wget  -cO - https://raw.githubusercontent.com/reisikei/Linux/main/Ubuntu%20insta
 knitr::asis_output("Last time tested on Sept 2021 \U2714")
 ```
 
+## Secure your distro
 
-## Schedule Crontab tasks
+### Schedule Crontab tasks
 
 Open crontab:
 
@@ -86,7 +87,7 @@ crontab -l
 
 
 
-## Setup fail2ban
+### Setup fail2ban
  
  ```
  #fail2ban
@@ -100,7 +101,8 @@ fail2ban \
 ntfs-3g
 ```
 
-#sudo nano /etc/fail2ban/jail.conf
+sudo nano /etc/fail2ban/jail.conf
+
 ```
 sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local && #copying it to edit
 sudo nano /etc/fail2ban/jail.local
@@ -123,10 +125,8 @@ sudo nano /var/log/fail2ban.log
  
  
  
- 
- 
- 
-## Firewall setup (ufw)
+
+### Firewall setup (ufw)
  
 sudo ss -tupln #ports in use
 
@@ -210,6 +210,10 @@ With this final command, the RPi will be an exit node:
 sudo tailscale up --advertise-exit-node
 sudo tailscale up --exit-node=<exit-node-ip>
 ```
+
+### Wireguard
+
+### OpenVPN
 
 
 ## Install Docker

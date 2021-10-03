@@ -266,8 +266,10 @@ div.tocify {
 <pre><code>wget  -cO - https://raw.githubusercontent.com/reisikei/Linux/main/Ubuntu%20installations%20bash &gt; apps-install-bash.sh</code></pre>
 <p>Last time tested on Sept 2021 ✔</p>
 </div>
-<div id="schedule-crontab-tasks" class="section level2">
-<h2>Schedule Crontab tasks</h2>
+<div id="secure-your-distro" class="section level2">
+<h2>Secure your distro</h2>
+<div id="schedule-crontab-tasks" class="section level3">
+<h3>Schedule Crontab tasks</h3>
 <p>Open crontab:</p>
 <pre><code>crontab -e</code></pre>
 <p>Update it every midnight and every restart:</p>
@@ -277,8 +279,8 @@ div.tocify {
 <p>If you’d wish to view your scheduled tasks without editing you can use the command:</p>
 <pre><code>crontab -l </code></pre>
 </div>
-<div id="setup-fail2ban" class="section level2">
-<h2>Setup fail2ban</h2>
+<div id="setup-fail2ban" class="section level3">
+<h3>Setup fail2ban</h3>
 <pre><code>#fail2ban
 sudo apt-get install -y \
 apt-transport-https \
@@ -288,7 +290,7 @@ gnupg2 \
 vim \
 fail2ban \
 ntfs-3g</code></pre>
-<p>#sudo nano /etc/fail2ban/jail.conf</p>
+<p>sudo nano /etc/fail2ban/jail.conf</p>
 <pre><code>sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local &amp;&amp; #copying it to edit
 sudo nano /etc/fail2ban/jail.local</code></pre>
 <p>Add this to the file to ban for 24h if retry +3 times:</p>
@@ -300,8 +302,8 @@ maxretry = 3</code></pre>
 <pre><code>sudo service fail2ban restart &amp;&amp;
 sudo nano /var/log/fail2ban.log</code></pre>
 </div>
-<div id="firewall-setup-ufw" class="section level2">
-<h2>Firewall setup (ufw)</h2>
+<div id="firewall-setup-ufw" class="section level3">
+<h3>Firewall setup (ufw)</h3>
 <p>sudo ss -tupln #ports in use</p>
 <pre><code>sudo apt install ufw &amp;&amp; #ufw
 sudo ufw status &amp;&amp;
@@ -311,6 +313,7 @@ sudo ufw status &amp;&amp;
 sudo ufw reload #restart it</code></pre>
 <p>sudo ufw allow 717 #example to allow conexion</p>
 <p>Typical ports that are used: 22 for ssh, 443 for https, 80 for http</p>
+</div>
 </div>
 <div id="create-custom-aliases" class="section level2">
 <h2>Create custom aliases</h2>
@@ -352,6 +355,12 @@ sudo tailscale down</code></pre>
 <p>With this final command, the RPi will be an exit node:</p>
 <pre><code>sudo tailscale up --advertise-exit-node
 sudo tailscale up --exit-node=&lt;exit-node-ip&gt;</code></pre>
+</div>
+<div id="wireguard" class="section level3">
+<h3>Wireguard</h3>
+</div>
+<div id="openvpn" class="section level3">
+<h3>OpenVPN</h3>
 </div>
 </div>
 <div id="install-docker" class="section level2">
