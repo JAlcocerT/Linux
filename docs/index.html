@@ -260,10 +260,13 @@ div.tocify {
 <p>The list includes, among others: VLC, blender, photoscape, octave, discord, steam and virtualbox - ALL WITH A SINGLE COMMAND.</p>
 <p>Option 1:</p>
 <p>If you would like to install all the programs listed there:</p>
-<pre><code>wget  -cO - https://raw.githubusercontent.com/reisikei/Linux/main/Ubuntu%20installations%20bash &gt; apps-install-bash.sh &amp;&amp; chmod 775 docker-install-bash.sh &amp;&amp; sudo ./docker-install-bash.sh</code></pre>
+<pre><code>wget  -cO - https://raw.githubusercontent.com/reisikei/Linux/main/Ubuntu%20installations%20bash &gt; apps-install-bash.sh &amp;&amp; chmod 775 apps-install-bash.sh &amp;&amp; sudo ./apps-install-bash.sh</code></pre>
 <p>Option 2:</p>
 <p>If you are interested only in a partial installation of all the apps contained in the mentioned script, you can download it and delete the undesired parts before executing it with the following commands:</p>
 <pre><code>wget  -cO - https://raw.githubusercontent.com/reisikei/Linux/main/Ubuntu%20installations%20bash &gt; apps-install-bash.sh</code></pre>
+<p>edit the file, if desired through the command line with:</p>
+<pre><code>sudo nano apps-install-bash.sh
+</code></pre>
 <p>Last time tested on Sept 2021 ✔</p>
 </div>
 <div id="secure-your-distro" class="section level2">
@@ -322,6 +325,11 @@ useradd pruebecita
 useradd -g users -G sudo -s /bin/bash -m -c &quot;Your name&quot; user_desired_name
 #without sudo rights:
 useradd -g user -s /bin/bash -m -c &quot;Your name&quot; user_desired_name</code></pre>
+<p>To make the home folders only visible but the specific users, just do:</p>
+<pre><code>chmod -R go-rwx /home/user_name_1
+chmod -R go-rwx /home/user_name_2
+chmod -R go-rwx /home/user_name_3</code></pre>
+<p>Last time tested on Oct 2021 ✔</p>
 </div>
 </div>
 <div id="create-custom-aliases" class="section level2">

@@ -40,7 +40,7 @@ Option 1:
 If you would like to install all the programs listed there:
 
 ```
-wget  -cO - https://raw.githubusercontent.com/reisikei/Linux/main/Ubuntu%20installations%20bash > apps-install-bash.sh && chmod 775 docker-install-bash.sh && sudo ./docker-install-bash.sh
+wget  -cO - https://raw.githubusercontent.com/reisikei/Linux/main/Ubuntu%20installations%20bash > apps-install-bash.sh && chmod 775 apps-install-bash.sh && sudo ./apps-install-bash.sh
 ```
 
 
@@ -52,6 +52,13 @@ If you are interested only in a partial installation of all the apps contained i
 ```
 wget  -cO - https://raw.githubusercontent.com/reisikei/Linux/main/Ubuntu%20installations%20bash > apps-install-bash.sh
 ```
+
+edit the file, if desired through the command line with:
+```
+sudo nano apps-install-bash.sh
+
+```
+
 
 
 ```{r, echo=FALSE} 
@@ -153,6 +160,19 @@ useradd -g users -G sudo -s /bin/bash -m -c "Your name" user_desired_name
 #without sudo rights:
 useradd -g user -s /bin/bash -m -c "Your name" user_desired_name
 ```
+
+To make the home folders only visible but the specific users, just do:
+
+```
+chmod -R go-rwx /home/user_name_1
+chmod -R go-rwx /home/user_name_2
+chmod -R go-rwx /home/user_name_3
+```
+
+```{r, echo=FALSE} 
+knitr::asis_output("Last time tested on Oct 2021 \U2714")
+```
+
 
 ## Create custom aliases 
  
