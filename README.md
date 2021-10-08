@@ -6,7 +6,8 @@ curl https://raw.githubusercontent.com/reisikei/Linux/main/Ubuntu%20installation
 
 curl https://raw.githubusercontent.com/reisikei/Linux/main/Ubuntu%20security > install-security.sh && chmod 775 install-security.sh && sudo ./install-security.sh
 
-curl https://raw.githubusercontent.com/reisikei/Linux/main/Ubuntu%20docker%20only > docker-only.sh && chmod 775 docker-only.sh && sudo ./docker-only.sh
+wget -cO - https://raw.githubusercontent.com/reisikei/docker/main/1%20Docker%20%26%20%20Docker%20compose%20%26%20Portainer > docker_install.sh && chmod 775 docker_install.sh && sudo ./docker_install.sh
+
 
 #Create a wireguard server:
 curl PARA WIREGUARD SERVER
