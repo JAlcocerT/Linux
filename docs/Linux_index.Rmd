@@ -167,6 +167,7 @@ To make the home folders only visible but the specific users, just do:
 chmod -R go-rwx /home/user_name_1
 chmod -R go-rwx /home/user_name_2
 chmod -R go-rwx /home/user_name_3
+
 ```
 
 ```{r, echo=FALSE} 
