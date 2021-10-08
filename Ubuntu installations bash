@@ -1,7 +1,12 @@
 #!/bin/sh
  
-#Ubuntu tweaks
-sudo apt-get install synaptic
+#Ubuntu tweaks & security
+sudo apt-get install synaptic -y
+sudo apt install unattended-upgrades -y
+sudo dpkg-reconfigure -plow unattended-upgrades
+
+
+ 
  
 #Media
 snap install spotify && snap install vlc
@@ -17,7 +22,7 @@ sudo add-apt-repository ppa:kicad/kicad-5.1-releases && sudo apt update && sudo 
 #octave
 sudo apt-get install flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-flatpak install flathub org.octave.Octave
+flatpak install flathub org.octave.Octave -y
 
 
 #Games
