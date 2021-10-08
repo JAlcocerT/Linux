@@ -218,35 +218,40 @@ sudo tailscale up --exit-node=<exit-node-ip>
 
 ## Install Docker
 
-To install docker, simply copy the following code chunks in your terminal:
+To install docker, docker compose and portainer, simply copy the following code chunks in your terminal:
 
 
 Option 1:
 
 ```
-sudo apt-get install \
-    apt-transport-https \
-    ca-certificates \
-    curl \
-    gnupg \
-    lsb-release -y \
- curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-keyring.gpg \
- echo "deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
- $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null \
- sudo apt-get update && sudo apt-get install docker-ce docker-ce-cli containerd.io -y && sudo docker run hello-world
-```
+### INSTALL DOCKER ### 
 
-To install docker-compose and a test container, run the following:
+sudo apt update
+sudo apt install apt-transport-https ca-certificates curl software-properties-common -y
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
 
-```
-sudo curl -L "https://github.com/docker/compose/releases/download/1.26.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-sudo chmod +x /usr/local/bin/docker-compose
-sudo usermod -aG docker $USER
+sudo apt update -y
+
+apt-cache policy docker-ce
+sudo apt install docker-ce
+
+sudo systemctl status docker
+
+## INSTALL DOCKER COMPOSE ##
+
+sudo apt install docker-compose -y
+
+## #INSTALL PORTAINER
+docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
+
+#Test that docker works with this image:
+#docker run hello-world
 ```
 
 Option 2:
 
-On [this github repository](https://github.com/reisikei/Linux/blob/main/Ubuntu%20docker%20only), there is the possibility to download and install directly a bash program with all the previous commands by typing only this on the terminal:
+On [this github repository](https://github.com/reisikei/docker/blob/main/1%20Docker%20%26%20%20Docker%20compose%20%26%20Portainer), there is the possibility to download and install directly a bash program with all the previous commands by typing only this on the terminal:
 
 ```
 wget  -cO - https://raw.githubusercontent.com/reisikei/Linux/main/Ubuntu%20docker%20only > docker-install-bash.sh && chmod 775 docker-install-bash.sh && sudo ./docker-install-bash.sh
