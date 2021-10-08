@@ -35,9 +35,9 @@ sudo apt install anbox -y
 #https://github.com/lutris/docs/blob/master/InstallingDrivers.md
 sudo add-apt-repository ppa:kisak/kisak-mesa
 sudo dpkg --add-architecture i386 
-sudo apt update && sudo apt upgrade
+sudo apt update && sudo apt upgrade -y
 sudo apt install libgl1-mesa-dri:i386
-sudo apt install mesa-vulkan-drivers mesa-vulkan-drivers:i386
+sudo apt install mesa-vulkan-drivers mesa-vulkan-drivers:i386 -y
 
 
 #Install Steam using the following Terminal command:
@@ -67,7 +67,7 @@ sudo apt install lutris -y
 
 
 #Storage and backup:
-sudo apt-get install nautilus-dropbox
+sudo apt-get install nautilus-dropbox -y
 
 wget https://mega.nz/linux/MEGAsync/xUbuntu_20.04/amd64/megasync-xUbuntu_20.04_amd64.deb
 cd ~/Downloads
