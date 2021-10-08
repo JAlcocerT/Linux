@@ -331,6 +331,13 @@ chmod -R go-rwx /home/user_name_2
 chmod -R go-rwx /home/user_name_3</code></pre>
 <p>Last time tested on Oct 2021 ✔</p>
 </div>
+<div id="check-devices-in-local-network" class="section level3">
+<h3>Check devices in local network</h3>
+<pre><code>sudo apt install nast nmap \
+sudo nast -m</code></pre>
+<p>or</p>
+<pre><code>nmap -sP 192.168.1.0/24 | grep &quot;scan&quot;</code></pre>
+</div>
 </div>
 <div id="create-custom-aliases" class="section level2">
 <h2>Create custom aliases</h2>

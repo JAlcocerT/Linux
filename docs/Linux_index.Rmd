@@ -173,6 +173,18 @@ chmod -R go-rwx /home/user_name_3
 knitr::asis_output("Last time tested on Oct 2021 \U2714")
 ```
 
+### Check devices in local network
+
+```
+sudo apt install nast nmap \
+sudo nast -m
+```
+
+or
+
+```
+nmap -sP 192.168.1.0/24 | grep "scan"
+```
 
 ## Create custom aliases 
  
