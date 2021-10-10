@@ -2,6 +2,18 @@
  
 #Ubuntu tweaks & security
 sudo apt-get install synaptic -y
+
+##ppa GUI manager
+sudo add-apt-repository ppa:webupd8team/y-ppa-manager
+sudo apt-get update
+sudo apt-get install y-ppa-manager -y
+
+#check ppas
+#ls /etc/apt/sources.list.d
+#remove a specific ppa
+#sudo rm -i /etc/apt/sources.list.d/google-chrome.list
+
+
 sudo apt install unattended-upgrades -y
 sudo dpkg-reconfigure -plow unattended-upgrades
 
