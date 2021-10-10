@@ -243,7 +243,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">Linux made easy</h1>
 <h4 class="author">JAT</h4>
-<h4 class="date">08 octubre 2021</h4>
+<h4 class="date">10 octubre 2021</h4>
 
 </div>
 
@@ -378,8 +378,7 @@ echo &#39;net.ipv6.conf.all.forwarding = 1&#39; | sudo tee -a /etc/sysctl.conf &
 sudo sysctl -p /etc/sysctl.conf &amp;&amp;
 sudo tailscale down</code></pre>
 <p>With this final command, the RPi will be an exit node:</p>
-<pre><code>sudo tailscale up --advertise-exit-node
-sudo tailscale up --exit-node=&lt;exit-node-ip&gt;</code></pre>
+<pre><code>sudo tailscale up --advertise-exit-node</code></pre>
 </div>
 <div id="wireguard" class="section level3">
 <h3>Wireguard</h3>
@@ -426,6 +425,20 @@ docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /va
 </div>
 <div id="transmission-telegram-bot" class="section level4">
 <h4>Transmission Telegram Bot</h4>
+</div>
+<div id="nextcloud" class="section level4">
+<h4>Nextcloud</h4>
+<p>In linux systems it is as simple as running the following commands in the terminal after having installed docker:</p>
+<pre><code>sudo docker run -d -v ~/nextcloud:/var/www/html -p 8080:80 --name nextcloud_container nextcloud 
+</code></pre>
+<p>Remember to update the list of trusted domains so that other devices can log, we can see the current list with:</p>
+<pre><code>sudo docker exec --user www-data nextcloud_container php occ config:system:get trusted_domains</code></pre>
+<p>To add a new domain/ internal ip, simply:</p>
+<pre><code>sudo docker exec --user www-data nextcloud_container php occ config:system:set trusted_domains 7 --value 192.168.1.30:8080
+</code></pre>
+<p>You can check your device internal IP adress with:</p>
+<pre><code>hostname -I</code></pre>
+<p>To access nextcloud while being out of home, simply configure your VPN, for example with tailscale, and add the internal Ip address assign by tail scale as shown two commands before.</p>
 </div>
 </div>
 </div>

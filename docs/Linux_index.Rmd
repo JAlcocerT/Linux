@@ -250,7 +250,6 @@ With this final command, the RPi will be an exit node:
 
 ```
 sudo tailscale up --advertise-exit-node
-sudo tailscale up --exit-node=<exit-node-ip>
 ```
 
 ### Wireguard
@@ -309,7 +308,35 @@ knitr::asis_output("Last time tested on Oct 2021 \U2714")
 
 #### Transmission Telegram Bot
 
+#### Nextcloud
 
+In linux systems it is as simple as running the following commands in the terminal after having installed docker:
+
+```
+sudo docker run -d -v ~/nextcloud:/var/www/html -p 8080:80 --name nextcloud_container nextcloud 
+
+```
+
+Remember to update the list of trusted domains so that other devices can log, we can see the current list with:
+
+```
+sudo docker exec --user www-data nextcloud_container php occ config:system:get trusted_domains
+```
+
+To add a new domain/ internal ip, simply:
+
+```
+sudo docker exec --user www-data nextcloud_container php occ config:system:set trusted_domains 7 --value 192.168.1.30:8080
+
+```
+
+You can check your device internal IP adress with:
+
+```
+hostname -I
+```
+
+To access nextcloud while being out of home, simply configure your VPN, for example with tailscale, and add the internal Ip address assign by tail scale as shown two commands before.
 
 ## RPi projects
 
