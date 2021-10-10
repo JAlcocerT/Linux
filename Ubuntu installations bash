@@ -23,6 +23,8 @@ sudo dpkg-reconfigure -plow unattended-upgrades
 #Media
 snap install spotify && snap install vlc
 sudo snap install brave
+#wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+#sudo apt install ./google-chrome-stable_current_amd64.deb
 
 #Design
 sudo snap install blender --classic && snap install freecad && snap install openscad && snap install cura-slicer 
