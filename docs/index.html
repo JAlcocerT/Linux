@@ -243,7 +243,7 @@ div.tocify {
 
 <h1 class="title toc-ignore">Linux made easy</h1>
 <h4 class="author">JAT</h4>
-<h4 class="date">Updated on: 11 octubre 2021</h4>
+<h4 class="date">Updated on: 12 octubre 2021</h4>
 
 </div>
 
@@ -272,7 +272,7 @@ div.tocify {
 <pre><code>sudo nano apps-install-bash.sh
 </code></pre>
 <div id="last-time-tested-on-sept-2021" class="section level5">
-<h5>Last time tested on Sept 2021 ✔</h5>
+<h5><strong>Last time tested on Sept 2021 ✔</strong></h5>
 </div>
 </div>
 <div id="secure-your-distro" class="section level2">
@@ -287,6 +287,9 @@ div.tocify {
 <p>If your script isn’t executing, check the system log for cron events: grep cron /var/log/syslog</p>
 <p>If you’d wish to view your scheduled tasks without editing you can use the command:</p>
 <pre><code>crontab -l </code></pre>
+<div id="last-time-tested-on-sept-2021-1" class="section level5">
+<h5><strong>Last time tested on Sept 2021 ✔</strong></h5>
+</div>
 </div>
 <div id="setup-fail2ban" class="section level3">
 <h3>Setup fail2ban</h3>
@@ -310,6 +313,14 @@ backend = %(sshd_backend)s
 maxretry = 3</code></pre>
 <pre><code>sudo service fail2ban restart &amp;&amp;
 sudo nano /var/log/fail2ban.log</code></pre>
+<div id="last-time-tested-on-sept-2021-2" class="section level5">
+<h5><strong>Last time tested on Sept 2021 ✔</strong></h5>
+</div>
+</div>
+<div id="create-ssh-keys" class="section level3">
+<h3>Create SSH keys</h3>
+<p>This will make possible to log in to your linux server without typing a password when both computers have the same key files.</p>
+<p>In combination with fail2ban described before, it makes the brutte-force attacks to loose sense with your server.</p>
 </div>
 <div id="firewall-setup-ufw" class="section level3">
 <h3>Firewall setup (ufw)</h3>
@@ -322,6 +333,9 @@ sudo ufw status &amp;&amp;
 sudo ufw reload #restart it</code></pre>
 <p>sudo ufw allow 717 #example to allow conexion</p>
 <p>Typical ports that are used: 22 for ssh, 443 for https, 80 for http</p>
+<div id="last-time-tested-on-sept-2021-3" class="section level5">
+<h5><strong>Last time tested on Sept 2021 ✔</strong></h5>
+</div>
 </div>
 <div id="create-users" class="section level3">
 <h3>Create users</h3>
@@ -352,12 +366,13 @@ sudo nast -m</code></pre>
 <h2>Create custom aliases</h2>
 <p>Lets edit this file:</p>
 <pre><code>nano ~/.bash_aliases</code></pre>
-<p>Add this line to know the Rpi temperature by typing ‘temp’ on the terminal:</p>
-<pre><code>alias temp=&#39;/opt/vc/bin/vcgencmd measure_temp&#39; ### TEMP RPi</code></pre>
 <p>Add this line to know your public ip address by typing myip on the terminal:</p>
 <pre><code>alias myip=&#39;curl ipinfo.io/ip&#39; #public ip address</code></pre>
 <p>Use this command to be able to use the new alias already in the current session</p>
 <pre><code>source ~/.bashrc</code></pre>
+<div id="last-time-tested-on-sept-2021-4" class="section level5">
+<h5><strong>Last time tested on Sept 2021 ✔</strong></h5>
+</div>
 </div>
 <div id="install-git-and-sync-your-repos" class="section level2">
 <h2>Install GIT and sync your repos</h2>
@@ -365,6 +380,9 @@ sudo nast -m</code></pre>
 git clone https://github.com/reisikei/RPi.git &amp;&amp;
 cd RPi &amp;&amp;
 git pull #to make sure its up to date (a cron task could be scheduled)</code></pre>
+<p>If you want to add a cron task for this, simply edit, as explained:</p>
+<pre><code>0 0 * * * cd RPi &amp;&amp; git pull
+@reboot cd RPi &amp;&amp; git pull</code></pre>
 </div>
 <div id="vpn-setup" class="section level2">
 <h2>VPN Setup</h2>
@@ -425,7 +443,7 @@ docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /va
 <p>Option 2:</p>
 <p>On <a href="https://github.com/reisikei/docker/blob/main/1%20Docker%20%26%20%20Docker%20compose%20%26%20Portainer">this github repository</a>, there is the possibility to download and install directly a bash program with all the previous commands by typing only this on the terminal:</p>
 <pre><code>wget  -cO - https://raw.githubusercontent.com/reisikei/docker/main/1%20Docker%20%26%20%20Docker%20compose%20%26%20Portainer &gt; docker_install.sh &amp;&amp; chmod 775 docker_install.sh &amp;&amp; sudo ./docker_install.sh</code></pre>
-<div id="last-time-tested-on-sept-2021-1" class="section level5">
+<div id="last-time-tested-on-sept-2021-5" class="section level5">
 <h5>Last time tested on Sept 2021 ✔</h5>
 </div>
 <div id="torrents-within-docker" class="section level3">
@@ -449,7 +467,7 @@ docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /va
 <p>You can check your device internal IP adress with:</p>
 <pre><code>hostname -I</code></pre>
 <p>To access nextcloud while being out of home, simply configure your VPN, for example with tailscale, and add the internal Ip address assign by tail scale as shown two commands before.</p>
-<div id="last-time-tested-on-sept-2021-2" class="section level5">
+<div id="last-time-tested-on-sept-2021-6" class="section level5">
 <h5>Last time tested on Sept 2021 ✔</h5>
 </div>
 </div>
