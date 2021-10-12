@@ -218,6 +218,12 @@ Use this command to be able to use the new alias already in the current session
 source ~/.bashrc
 ```
 
+Personally, I have a file saved with all my alias ready right here, which i simply have to download and my favourite alias will be set in any server with this simple command:
+
+```
+tbd
+```
+
 ##### **Last time tested on Sept 2021 `r a`**
 
 ## Install GIT and sync your repos
