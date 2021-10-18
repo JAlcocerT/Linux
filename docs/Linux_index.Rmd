@@ -83,6 +83,10 @@ sudo nano apps-install-bash.sh
 
 ## Secure your distro
 
+Check your system's version with:
+
+
+
 ### Schedule Crontab tasks
 
 Open crontab:
@@ -124,7 +128,7 @@ fail2ban \
 ntfs-3g
 ```
 
-sudo nano /etc/fail2ban/jail.conf
+Then: 
 
 ```{r, include=TRUE, eval=FALSE, class.source=".TheCode"}
 sudo cp /etc/fail2ban/jail.conf /etc/fail2ban/jail.local && #copying it to edit
@@ -210,6 +214,52 @@ or
 nmap -sP 192.168.1.0/24 | grep "scan"
 ```
 
+## Create your own mount points
+
+Lets first check the storages connected to the machine and identify their current path:
+```{r, include=TRUE, eval=FALSE, class.source=".TheCode"}
+sudo fdisk -l
+```
+
+
+With this information we can create an automount entry in fstab:
+```{r, include=TRUE, eval=FALSE, class.source=".TheCode"}
+sudo mkdir /mnt/data_mounted \
+mount /dev/sdb1 /mnt/data_mounted/ #example
+```
+
+Depending on the file system, this might be needed:
+```{r, include=TRUE, eval=FALSE, class.source=".TheCode"}
+mount -t ntfs /dev/sdb1 /mnt/data_mounted
+```
+
+To do it automatically for a specific external device that we would have we need to find the UUID (Universal Unique Identifier) of the particular drive:
+```{r, include=TRUE, eval=FALSE, class.source=".TheCode"}
+sudo blkid | grep /dev/sda2 | grep UUID= #example
+```
+
+Check what is mounted and where with:
+```{r, include=TRUE, eval=FALSE, class.source=".TheCode"}
+df -h
+```
+
+lets add the automount entry in:
+
+```{r, include=TRUE, eval=FALSE, class.source=".TheCode"}
+sudo nano /etc/fstab
+UUID=14D82C19D82BF81E_example /mnt/data_mounted    auto nosuid,nodev,nofail,x-gvfs-show 0 0
+```
+
+Then we have to simply execute to mount as per our guidelines:
+```{r, include=TRUE, eval=FALSE, class.source=".TheCode"}
+sudo mount -a
+```
+
+Always remember to unmount your external storeges safely with:
+```{r, include=TRUE, eval=FALSE, class.source=".TheCode"}
+sudo umount /my_volume
+```
+
 ## Create custom aliases 
  
 Lets edit this file:
@@ -258,6 +308,9 @@ If you want to add a cron task for this, simply edit, as explained:
 
 ### Tailscale
 
+
+To install a home working VPN, the easiest way is to use Tailscale and pair our devices, lets install it with:
+
 ```{r, include=TRUE, eval=FALSE, class.source=".TheCode"}
 sudo apt-get install apt-transport-https &&
 curl -fsSL https://pkgs.tailscale.com/stable/raspbian/buster.gpg | sudo apt-key add - &&
@@ -271,7 +324,7 @@ tailscale ip -4 #get the ip
 #sudo tailscale down
 ```
  
-#To force all the traffic to go through the Rpi, Port forwarding is needed:
+#To force all the traffic to go through the device, Port forwarding is needed:
 
 ```{r, include=TRUE, eval=FALSE, class.source=".TheCode"}
 echo 'net.ipv4.ip_forward = 1' | sudo tee -a /etc/sysctl.conf &&
@@ -280,18 +333,25 @@ sudo sysctl -p /etc/sysctl.conf &&
 sudo tailscale down
 ```
 
-With this final command, the RPi will be an exit node:
+With this final command, the PC/RPi will be an exit node:
 
 ```{r, include=TRUE, eval=FALSE, class.source=".TheCode"}
 sudo tailscale up --advertise-exit-node
 ```
+
+Remember to allow as admin in the tailscale network this machine as exit node as well. In review route settings -> use as exit node.
+
+##### **Last time tested on Oct 2021 `r a`**
+
+
+
 
 ### Wireguard
 
 ### OpenVPN
 
 
-## Install Docker
+## Docker
 
 To install docker, docker compose and portainer, simply copy the following code chunks in your terminal:
 
@@ -299,26 +359,27 @@ To install docker, docker compose and portainer, simply copy the following code 
 Option 1:
 
 ```{r, include=TRUE, eval=FALSE, class.source=".TheCode"}
-### INSTALL DOCKER
+### INSTALL DOCKER 
 
-sudo apt update
-sudo apt install apt-transport-https ca-certificates curl software-properties-common -y
-curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
-sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+sudo apt update \
+sudo apt install apt-transport-https ca-certificates curl software-properties-common -y \
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - \
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable" \
 
-sudo apt update -y
+sudo apt update -y \
 
-apt-cache policy docker-ce
-sudo apt install docker-ce
+apt-cache policy docker-ce \
+sudo apt install docker-ce \
 
-sudo systemctl status docker
+sudo systemctl status docker \
 
 ## INSTALL DOCKER COMPOSE
 
-sudo apt install docker-compose -y
+sudo apt install docker-compose -y \
 
 ## INSTALL PORTAINER
-docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
+docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data \
+portainer/portainer-ce \
 
 #Test that docker works with this image:
 #docker run hello-world
@@ -382,9 +443,18 @@ It can run Linux distros like: Debian, OpenMediaVault or most commonly Raspbian 
 Check out some recommended setups and projects on [my repo](https://reisikei.github.io/RPi/)
 
 
+
+
+```{r, include=FALSE, eval=FALSE, class.source=".TheCode"}
+
+
 # Arch based distros:
 
 (To be tested with RebornOS)
 
 
 [^1]: Check out other projects from [my main page](https://reisikei.github.io/reisikei/)
+
+
+
+```
