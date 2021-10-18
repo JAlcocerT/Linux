@@ -451,6 +451,7 @@ sudo tailscale down</code></pre>
 <h2>Docker</h2>
 <p>To install docker, docker compose and portainer, simply copy the following code chunks in your terminal:</p>
 <p>Option 1:</p>
+<p>This first chunk is valid only for 64 bits proccesors (not ARM)</p>
 <pre class="r TheCode"><code>### INSTALL DOCKER 
 
 sudo apt update \
@@ -463,31 +464,23 @@ sudo apt update -y \
 apt-cache policy docker-ce \
 sudo apt install docker-ce \
 
-sudo systemctl status docker \
-
-## INSTALL DOCKER COMPOSE
+sudo systemctl status docker \</code></pre>
+<p>This one will work normally in ARM as well:</p>
+<pre class="r TheCode"><code>## INSTALL DOCKER COMPOSE
 
 sudo apt install docker-compose -y \
 
 ## INSTALL PORTAINER
-docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data \
-portainer/portainer-ce \
+sudo docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v \ portainer_data:/data portainer/portainer-ce 
 
 #Test that docker works with this image:
-#docker run hello-world</code></pre>
+#docker run hello-world
+#sudo docker-compose version</code></pre>
 <p>Option 2:</p>
 <p>On <a href="https://github.com/reisikei/docker/blob/main/1%20Docker%20%26%20%20Docker%20compose%20%26%20Portainer">this github repository</a>, there is the possibility to download and install directly a bash program with all the previous commands by typing only this on the terminal:</p>
 <pre class="r TheCode"><code>wget  -cO - https://raw.githubusercontent.com/reisikei/docker/main/1%20Docker%20%26%20%20Docker%20compose%20%26%20Portainer &gt; docker_install.sh &amp;&amp; chmod 775 docker_install.sh &amp;&amp; sudo ./docker_install.sh</code></pre>
 <div id="last-time-tested-on-sept-2021-5" class="section level5">
 <h5>Last time tested on Sept 2021 ✔</h5>
-</div>
-<div id="torrents-within-docker" class="section level3">
-<h3>Torrents within Docker</h3>
-<div id="qbittorrent" class="section level4">
-<h4>Qbittorrent</h4>
-</div>
-<div id="transmission-telegram-bot" class="section level4">
-<h4>Transmission Telegram Bot</h4>
 </div>
 <div id="nextcloud" class="section level4">
 <h4>Nextcloud</h4>
@@ -502,7 +495,6 @@ portainer/portainer-ce \
 <p>To access nextcloud while being out of home, simply configure your VPN, for example with tailscale, and add the internal Ip address assign by tail scale as shown two commands before.</p>
 <div id="last-time-tested-on-sept-2021-6" class="section level5">
 <h5>Last time tested on Sept 2021 ✔</h5>
-</div>
 </div>
 </div>
 </div>

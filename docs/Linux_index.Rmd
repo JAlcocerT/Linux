@@ -375,7 +375,7 @@ sudo apt install docker-ce \
 sudo systemctl status docker \
 ```
 
-This one will work normally in ARM as well.
+This one will work normally in ARM as well:
 ```{r, include=TRUE, eval=FALSE, class.source=".TheCode"}
 ## INSTALL DOCKER COMPOSE
 
