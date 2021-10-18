@@ -358,6 +358,7 @@ To install docker, docker compose and portainer, simply copy the following code 
 
 Option 1:
 
+This first chunk is valid only for 64 bits proccesors (not ARM)
 ```{r, include=TRUE, eval=FALSE, class.source=".TheCode"}
 ### INSTALL DOCKER 
 
@@ -372,17 +373,20 @@ apt-cache policy docker-ce \
 sudo apt install docker-ce \
 
 sudo systemctl status docker \
+```
 
+This one will work normally in ARM as well.
+```{r, include=TRUE, eval=FALSE, class.source=".TheCode"}
 ## INSTALL DOCKER COMPOSE
 
 sudo apt install docker-compose -y \
 
 ## INSTALL PORTAINER
-docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data \
-portainer/portainer-ce \
+sudo docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v \ portainer_data:/data portainer/portainer-ce 
 
 #Test that docker works with this image:
 #docker run hello-world
+#sudo docker-compose version
 ```
 
 Option 2:
@@ -395,11 +399,15 @@ wget  -cO - https://raw.githubusercontent.com/reisikei/docker/main/1%20Docker%20
 
 ##### Last time tested on Sept 2021 `r a`
 
+```{r, include=FALSE, eval=FALSE, class.source=".TheCode"}
+
 ### Torrents within Docker
 
 #### Qbittorrent
 
 #### Transmission Telegram Bot
+
+```
 
 #### Nextcloud
 
