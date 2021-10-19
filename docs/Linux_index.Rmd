@@ -233,7 +233,15 @@ Depending on the file system, this might be needed:
 mount -t ntfs /dev/sdb1 /mnt/data_mounted
 ```
 
+If we know the UUID of the device, we can simply:
+
+```{r, include=TRUE, eval=FALSE, class.source=".TheCode"}
+sudo mount UUID=92C269FAC269E2C9 /mnt/data_mounted
+```
+
 To do it automatically for a specific external device that we would have we need to find the UUID (Universal Unique Identifier) of the particular drive:
+
+Option 1:
 ```{r, include=TRUE, eval=FALSE, class.source=".TheCode"}
 sudo blkid | grep /dev/sda2 | grep UUID= #example
 ```
@@ -247,7 +255,7 @@ lets add the automount entry in:
 
 ```{r, include=TRUE, eval=FALSE, class.source=".TheCode"}
 sudo nano /etc/fstab
-UUID=14D82C19D82BF81E_example /mnt/data_mounted    auto nosuid,nodev,nofail,x-gvfs-show 0 0
+#UUID=14D82C19D82BF81E_example /mnt/data_mounted    auto nosuid,nodev,nofail,x-gvfs-show 0 0
 ```
 
 Then we have to simply execute to mount as per our guidelines:
@@ -259,6 +267,14 @@ Always remember to unmount your external storeges safely with:
 ```{r, include=TRUE, eval=FALSE, class.source=".TheCode"}
 sudo umount /my_volume
 ```
+
+Option 2:
+Another option would be to set a cron task with:
+
+```{r, include=TRUE, eval=FALSE, class.source=".TheCode"}
+@reboot mount /dev/sdb1 /mnt/data_mounted/ #example
+```
+
 
 ## Create custom aliases 
  
@@ -382,7 +398,7 @@ This one will work normally in ARM as well:
 sudo apt install docker-compose -y \
 
 ## INSTALL PORTAINER
-sudo docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v \ portainer_data:/data portainer/portainer-ce 
+sudo docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
 
 #Test that docker works with this image:
 #docker run hello-world
