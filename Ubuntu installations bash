@@ -93,6 +93,8 @@ sudo apt-get install timeshift
 #nextcloud
 sudo add-apt-repository ppa:nextcloud-devs/client
 sudo apt install nextcloud-client -y
+#remember to add in: showExperimentalOptions=true
+#the following line: /home/yourusername/.config/Nextloud
 
 #VPN
 sudo apt-get install apt-transport-https &&
