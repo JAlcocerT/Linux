@@ -20,6 +20,7 @@ sudo dpkg-reconfigure -plow unattended-upgrades
 
  
 #Media
+sudo apt install snapd
 snap install spotify && snap install vlc
 sudo snap install brave
 #wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
@@ -30,13 +31,15 @@ sudo snap install blender --classic && snap install freecad && snap install open
 sudo snap install shotcut -- classic && snap install gimp && snap install photoscape  && snap install inkscape
 sudo add-apt-repository ppa:kicad/kicad-5.1-releases && sudo apt update && sudo apt install kicad
 
-# PROGRAMMING
+### PROGRAMMING
 
 #octave
 sudo apt-get install flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak install flathub org.octave.Octave -y
+
 sudo snap install slack --classic
+sudo snap install code --classic
 
 #Games
 
@@ -82,9 +85,9 @@ sudo apt install lutris -y
 #Storage and backup:
 sudo apt-get install nautilus-dropbox -y
 
-wget https://mega.nz/linux/MEGAsync/xUbuntu_20.04/amd64/megasync-xUbuntu_20.04_amd64.deb
-cd ~/Downloads
-sudo apt install ./megasync-xUbuntu_20.04_amd64.deb
+#wget https://mega.nz/linux/MEGAsync/xUbuntu_20.04/amd64/megasync-xUbuntu_20.04_amd64.deb
+#cd ~/Downloads
+#sudo apt install ./megasync-xUbuntu_20.04_amd64.deb
 
 sudo add-apt-repository ppa:teejee2008/ppa
 sudo apt-get update
@@ -105,12 +108,12 @@ sudo apt-get install tailscale &&
 sudo tailscale up &&
 tailscale ip -4
 
-echo 'net.ipv4.ip_forward = 1' | sudo tee -a /etc/sysctl.conf &&
-echo 'net.ipv6.conf.all.forwarding = 1' | sudo tee -a /etc/sysctl.conf &&
-sudo sysctl -p /etc/sysctl.conf &&
-sudo tailscale down
+#echo 'net.ipv4.ip_forward = 1' | sudo tee -a /etc/sysctl.conf &&
+#echo 'net.ipv6.conf.all.forwarding = 1' | sudo tee -a /etc/sysctl.conf &&
+#sudo sysctl -p /etc/sysctl.conf &&
+#sudo tailscale down
 
-sudo tailscale up --advertise-exit-node
+#sudo tailscale up --advertise-exit-node
 
 
 #VBox
