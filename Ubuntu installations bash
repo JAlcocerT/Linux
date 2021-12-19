@@ -139,3 +139,8 @@ sudo snap install bitwarden
 #LAPTOP 
 
 #sudo snap install auto-cpufreq
+
+#Cambiar teclado
+#sudo apt-get install console-data
+#sudo setxkbmap -layout 'es,es' -model pc105
+
