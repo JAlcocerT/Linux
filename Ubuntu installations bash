@@ -41,6 +41,11 @@ flatpak install flathub org.octave.Octave -y
 sudo snap install slack --classic
 sudo snap install code --classic
 
+#github dsktop
+sudo wget https://github.com/shiftkey/desktop/releases/download/release-2.9.3-linux3/GitHubDesktop-linux-2.9.3-linux3.deb
+sudo apt-get install gdebi-core 
+sudo gdebi GitHubDesktop-linux-2.9.3-linux3.deb -y
+
 #Games
 
 sudo snap install discord
@@ -99,6 +104,16 @@ sudo apt install nextcloud-client -y
 #remember to add in: showExperimentalOptions=true
 #the following line: /home/yourusername/.config/Nextloud
 
+#VBox
+wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] http://download.virtualbox.org/virtualbox/debian $(lsb_release -cs) contrib"
+sudo apt update && sudo apt install virtualbox-6.0 -y
+sudo modprobe vboxdrv
+#sudo apt remove virtualbox-dkms #if error on previous command
+sudo apt install virtualbox-dkms -y
+
+###SECURITY
+
 #VPN
 sudo apt-get install apt-transport-https &&
 curl -fsSL https://pkgs.tailscale.com/stable/raspbian/buster.gpg | sudo apt-key add - &&
@@ -115,14 +130,10 @@ tailscale ip -4
 
 #sudo tailscale up --advertise-exit-node
 
+#authy and bitwarden
+sudo snap install authy
+sudo snap install bitwarden
 
-#VBox
-wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
-sudo add-apt-repository "deb [arch=amd64] http://download.virtualbox.org/virtualbox/debian $(lsb_release -cs) contrib"
-sudo apt update && sudo apt install virtualbox-6.0 -y
-sudo modprobe vboxdrv
-#sudo apt remove virtualbox-dkms #if error on previous command
-sudo apt install virtualbox-dkms -y
 
 
 #LAPTOP 
