@@ -87,7 +87,7 @@ sudo apt install lutris -y
 #origin
 
 
-#Storage and backup:
+#BACKUP
 sudo apt-get install nautilus-dropbox -y
 
 #wget https://mega.nz/linux/MEGAsync/xUbuntu_20.04/amd64/megasync-xUbuntu_20.04_amd64.deb
@@ -103,6 +103,18 @@ sudo add-apt-repository ppa:nextcloud-devs/client
 sudo apt install nextcloud-client -y
 #remember to add in: showExperimentalOptions=true
 #the following line: /home/yourusername/.config/Nextloud
+
+#Synkron
+#sudo add-apt-repository ppa:rock-core/qt4
+#sudo apt update
+#http://synkron.sourceforge.net/download.php
+#apt-get install build-essential libqt4-dev
+#tar -xvf Synkron-1.6.2-src.tar.gz
+#cd Synkron-1.6.2-src
+#lrelease-qt4 Synkron.pro
+#qmake-qt4 Synkron.pro
+#make
+#./synkron
 
 #VBox
 wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
