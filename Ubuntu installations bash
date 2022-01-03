@@ -127,6 +127,9 @@ sudo modprobe vboxdrv
 #sudo apt remove virtualbox-dkms #if error on previous command
 sudo apt install virtualbox-dkms -y
 
+#vnc server
+#vnc viewer
+
 ###SECURITY
 
 #VPN
