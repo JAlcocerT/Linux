@@ -46,7 +46,7 @@ sudo wget https://github.com/shiftkey/desktop/releases/download/release-2.9.3-li
 sudo apt-get install gdebi-core 
 sudo gdebi GitHubDesktop-linux-2.9.3-linux3.deb -y
 
-#Games
+###GAMES###
 
 sudo snap install discord
 sudo apt install anbox -y
@@ -86,14 +86,18 @@ sudo apt install lutris -y
 
 #origin
 
+#gamebuntu
+#https://gitlab.com/rswat09/gamebuntu/
 
-#BACKUP
+###BACKUP###
 sudo apt-get install nautilus-dropbox -y
 
+#megasync
 #wget https://mega.nz/linux/MEGAsync/xUbuntu_20.04/amd64/megasync-xUbuntu_20.04_amd64.deb
 #cd ~/Downloads
 #sudo apt install ./megasync-xUbuntu_20.04_amd64.deb
 
+#timeshift
 sudo add-apt-repository ppa:teejee2008/ppa
 sudo apt-get update
 sudo apt-get install timeshift
@@ -119,7 +123,7 @@ sudo apt install nextcloud-client -y
 #Grsync
 sudo apt-get install grsync
 
-#VBox
+###VBOX###
 wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] http://download.virtualbox.org/virtualbox/debian $(lsb_release -cs) contrib"
 sudo apt update && sudo apt install virtualbox-6.0 -y
@@ -130,7 +134,7 @@ sudo apt install virtualbox-dkms -y
 #vnc server
 #vnc viewer
 
-###SECURITY
+###SECURITY###
 
 #VPN
 sudo apt-get install apt-transport-https &&
@@ -154,7 +158,7 @@ sudo snap install bitwarden
 
 
 
-#LAPTOP 
+###LAPTOP### 
 
 #sudo snap install auto-cpufreq
 
