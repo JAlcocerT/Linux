@@ -136,6 +136,12 @@ sudo apt install virtualbox-dkms -y
 
 ###SECURITY###
 
+#Firewall
+sudo add-apt-repository universe 
+sudo apt update -y
+sudo apt install gufw -y
+
+
 #VPN
 sudo apt-get install apt-transport-https &&
 curl -fsSL https://pkgs.tailscale.com/stable/raspbian/buster.gpg | sudo apt-key add - &&
