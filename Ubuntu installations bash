@@ -19,7 +19,7 @@ sudo dpkg-reconfigure -plow unattended-upgrades
 
 
  
-#Media
+###MEDIA##
 sudo apt install snapd
 snap install spotify && snap install vlc
 sudo snap install brave
@@ -162,7 +162,13 @@ tailscale ip -4
 sudo snap install authy
 sudo snap install bitwarden
 
+#####OTHERS#####
 
+#Unetbootin
+#https://unetbootin.github.io/linux_download.html
+sudo add-apt-repository ppa:gezakovacs/ppa
+sudo apt-get update
+sudo apt-get install unetbootin
 
 ###LAPTOP### 
 
