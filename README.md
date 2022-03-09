@@ -17,9 +17,9 @@ curl
 
 ```
 
-# SHELL ---
+# SHELL 
 
-## Useful Shell commands
+### Useful Shell commands
 
 ```
 head -n 5 seasonal/winter.csv > top.csv
@@ -57,7 +57,7 @@ sudo mkfs -t ext4 /dev/xvdb
 ```
 
 
-# wildcards
+### Wildcards
 To make your life better, the shell allows you to use wildcards to specify a list of files with a single expression. The most common wildcard is *, which means "match zero or more characters". Using it, we can shorten the cut command above to this:
 
 cut -d , -f 1 seasonal/*
@@ -73,16 +73,16 @@ The shell has other wildcards as well, though they are less commonly used:
 [...] matches any one of the characters inside the square brackets, so 201[78].txt matches 2017.txt or 2018.txt, but not 2016.txt.
 {...} matches any of the comma-separated patterns inside the curly brackets, so {*.txt, *.csv} matches any file whose name ends with .txt or .csv, but not files whose names end with .pdf.
 
-# sort lines of text
+### Sort lines of text
 As its name suggests, sort puts data in order. By default it does this in ascending alphabetical order, but the flags -n and -r can be used to sort numerically and reverse the order of its output, while -b tells it to ignore leading blanks and -f tells it to fold case (i.e., be case-insensitive).
 Pipelines often use grep to get rid of unwanted records and then sort to put the remaining records in order.
 
 cut -d , -f 2 seasonal/summer.csv | grep -v Tooth | sort -r
 
-# uniq
+### Uniq
 Another command that is often used with sort is uniq, whose job is to remove duplicated lines. More specifically, it removes adjacent duplicated lines
 
-# set
+### Set
 How does the shell store information?
 Like other programs, the shell stores information in variables. Some of these, called environment variables, are available all the time. Environment variables' names are conventionally written in upper case
 
@@ -104,7 +104,7 @@ training=seasonal/summer.csv
 without any spaces before or after the = sign. Once you have done this, you can check the variable's value with:
 echo $training
 
-# loops
+### Loops
 
 How can I repeat a command many times?
 Shell variables are also used in loops, which repeat commands many times. If we run this command:
@@ -120,7 +120,7 @@ The body of the loop that does the processing (in our case, echo $filetype).
 
 for filename in seasonal/*.csv; do echo $filename; done
 
-# nano
+### Nano
 
 f you type nano filename, it will open filename for editing (or create it if it doesn't already exist). You can move around with the arrow keys, delete characters using backspace, and do other operations with control-key combinations:
 
@@ -129,7 +129,7 @@ Ctrl + U: un-delete a line.
 Ctrl + O: save the file ('O' stands for 'output'). You will also need to press Enter to confirm the filename!
 Ctrl + X: exit the editor.
 
-# save commands to rerun
+### Save commands to rerun
 
 You have been using the shell interactively so far. But since the commands you type in are just text, you can store them in files for the shell to run over and over again. To start exploring this powerful capability, put the following command in a file called headers.sh:
 
@@ -139,7 +139,7 @@ This command selects the first row from each of the CSV files in the seasonal di
 bash headers.sh
 This tells the shell (which is just a program called bash) to run the commands contained in the file headers.sh, which produces the same output as running the commands directly
 
-# pass filenames to scripts
+### Pass filenames to scripts
 
 
 A script that processes specific files is useful as a record of what you did, but one that allows you to process any files you want is more useful. To support this, you can use the special expression $@ (dollar sign immediately followed by at-sign) to mean "all of the command-line parameters given to the script".
@@ -164,13 +164,14 @@ bash column.sh seasonal/autumn.csv 1
 # How can I write loops in a shell script?
 Shell scripts can also contain loops. You can write them using semi-colons, or split them across lines without semi-colons to make them more readable:
 
+```
 #Print the first and last data records of each file.
 for filename in $@
 do
     head -n 2 $filename | tail -n 1
     tail -n 1 $filename
 done
-
+```
 
 
 ## Bash ---
@@ -194,7 +195,7 @@ $# gives the number of ARGVs
 
 
 
-# shell within a shell
+### shell within a shell
 
 model1=87.65
 model2=89.20
@@ -217,7 +218,7 @@ echo $temp_c
 
 
 
-# creating an array in bash
+### Creating an array in bash
 
 declare -a my_first_array
 
@@ -238,7 +239,7 @@ my_array+=(10)
 
 
 
-# associative arrays:
+### Associative arrays:
 like a normal array but with key-value pairs
 similar to python's dictionaries or R's lists
 available from bash 4
@@ -256,8 +257,8 @@ Associative arrays are powerful constructs to use in your Bash scripting. They a
 
 Associative arrays allow you to index using words rather than numbers, which can be important for ease of inputting and accessing properties. For example, rather than accessing 'index 4' of an array about a city's information, you can access the city_population property, which is a lot clearer!
 
-
-#Create variables from the temperature data files
+```
+### Create variables from the temperature data files
 temp_b="$(cat temps/region_B)"
 temp_c="$(cat temps/region_C)"
 
@@ -272,9 +273,11 @@ region_temps+=($average_temp)
 
 #Print out the whole array
 echo ${region_temps[@]}
+```
 
+### Conditions checking
 
-# conditions checking
+```
 if [ condition  ]; then
  #code
 else
@@ -315,34 +318,34 @@ fi
 if grep -q Hello words.txt; then
 	echo "Hello is inside"
 fi
+```
 
 
 
-
-# Extract Accuracy from first ARGV element
+### Extract Accuracy from first ARGV element
 accuracy=$(grep Accuracy $1 | sed 's/.* //')
 
-# Conditionally move into good_models folder
+### Conditionally move into good_models folder
 if [ $accuracy -gt 90 ]; then
     mv $1 good_models/
 fi
 
-# Conditionally move into bad_models folder
+### Conditionally move into bad_models folder
 if [ $accuracy -lt 90 ]; then
     mv $1 bad_models/
 fi
 
 
-# Create variable from first ARGV element
+### Create variable from first ARGV element
 sfile=$1
 
-# Create an IF statement on sfile's contents
+### Create an IF statement on sfile's contents
 if grep -q 'SRVM_' $sfile && grep -q 'vpt' $sfile ; then
 	# Move file if matched
 	mv $sfile good_logs/
 fi
 
-# for and while
+### for and while
 
 for x in 1 2 3
 do 
@@ -444,7 +447,7 @@ done
 
 
 
-# Functions
+## Functions
 
 function_name () {
  #function_code
@@ -564,7 +567,7 @@ echo "The total sum of the test array is $total"
 
 
 
-# Scheduling scripts with cron
+### Scheduling scripts with cron
 
 crontab -l
 crontab -e
