@@ -21,27 +21,40 @@ curl
 
 ## Useful Shell commands
 
-
+```
 head -n 5 seasonal/winter.csv > top.csv
 tail -n 3 top.csv
+```
 
+```
 The pipe symbol tells the shell to use the output of the command on the left as the input to the command on the right:
 head -n 5 seasonal/summer.csv | tail -n 3
+```
 
+```
 cut -d , -f 2 seasonal/summer.csv | grep -v Tooth
 
 #change Cherno to Cherno City in the given file
 cat soccer_scores.csv | sed 's/Cherno/Cherno City/g' | sed 's/Arda/Arda United/g' > soccer_scores_edited.csv
+```
 
-
+```
 grep '[pc]' fruits.txt
 grep '[pc]' ^ fruits.txt #not contains p or c
 
 
 cat two_cities.txt | egrep 'Sydney Carton|Charles Darnay' | wc -l #from the file specified, count the lines where those appeared
+```
 
 The command wc (short for "word count") prints the number of characters, words, and lines in a file. 
 You can make it print only one of these using -c, -w, or -l respectively.
+
+```
+Check file system of a path:
+sudo file -s /dev/xvdb  
+Make the desired file system:
+sudo mkfs -t ext4 /dev/xvdb 
+```
 
 
 # wildcards
