@@ -1,5 +1,7 @@
 
-### Secure network connectivity on Azure
+## Secure network connectivity on Azure
+
+<https://docs.microsoft.com/en-us/learn/modules/secure-network-connectivity-azure/6-configure-access-network-security-group?source=learn>
 
 #### Configure network access to a VM using a network security group
 
