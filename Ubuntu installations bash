@@ -19,18 +19,25 @@ sudo dpkg-reconfigure -plow unattended-upgrades
 
 
  
-###MEDIA##
+### MEDIA ###
+
 sudo apt install snapd
+
+#Browsers
 snap install spotify && snap install vlc
+
 sudo snap install brave
+
 #wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 #sudo apt install ./google-chrome-stable_current_amd64.deb
-
+#rm google-chrome-stable_current_amd64.deb
 
 #Design
 sudo snap install blender --classic && snap install freecad && snap install openscad && snap install cura-slicer 
 sudo snap install shotcut -- classic && snap install gimp && snap install photoscape  && snap install inkscape
 sudo add-apt-repository ppa:kicad/kicad-5.1-releases && sudo apt update && sudo apt install kicad
+
+######
 
 ### PROGRAMMING ###
 
@@ -46,7 +53,7 @@ sudo snap install code --classic
 #wget https://download1.rstudio.org/desktop/bionic/amd64/rstudio-2021.09.2-382-amd64.deb
 #sudo apt install ./rstudio-2021.09.2-382-amd64.deb
 
-#github dsktop
+#github desktop
 sudo wget https://github.com/shiftkey/desktop/releases/download/release-2.9.3-linux3/GitHubDesktop-linux-2.9.3-linux3.deb
 sudo apt install ./GitHubDesktop-linux-2.9.3-linux3.deb
 #sudo apt-get install gdebi-core 
@@ -200,6 +207,9 @@ sudo dkms add -m rtl88x2bu -v ${VER}
 sudo dkms build -m rtl88x2bu -v ${VER}
 sudo dkms install -m rtl88x2bu -v ${VER}
 sudo modprobe 88x2bu
+#rm GitHubDesktop-linux-2.9.3-linux3.deb
+
+
 
 ### LAPTOP ### 
 
@@ -209,3 +219,4 @@ sudo modprobe 88x2bu
 #sudo apt-get install console-data
 #sudo setxkbmap -layout 'es,es' -model pc105
 
+###### ######
