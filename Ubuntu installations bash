@@ -32,7 +32,7 @@ sudo snap install blender --classic && snap install freecad && snap install open
 sudo snap install shotcut -- classic && snap install gimp && snap install photoscape  && snap install inkscape
 sudo add-apt-repository ppa:kicad/kicad-5.1-releases && sudo apt update && sudo apt install kicad
 
-### PROGRAMMING
+### PROGRAMMING ###
 
 #octave
 sudo apt-get install flatpak
@@ -52,7 +52,9 @@ sudo apt install ./GitHubDesktop-linux-2.9.3-linux3.deb
 #sudo apt-get install gdebi-core 
 #sudo gdebi GitHubDesktop-linux-2.9.3-linux3.deb -y
 
-###GAMES###
+######
+
+### GAMES ###
 
 sudo snap install discord
 sudo apt install anbox -y
@@ -95,7 +97,9 @@ sudo apt install lutris -y
 #gamebuntu
 #https://gitlab.com/rswat09/gamebuntu/
 
-###BACKUP###
+######
+
+### BACKUP ###
 sudo apt-get install nautilus-dropbox -y
 
 #megasync
@@ -129,6 +133,8 @@ sudo apt install nextcloud-client -y
 #Grsync
 sudo apt-get install grsync
 
+######
+
 ###VBOX###
 wget -q https://www.virtualbox.org/download/oracle_vbox_2016.asc -O- | sudo apt-key add -
 sudo add-apt-repository "deb [arch=amd64] http://download.virtualbox.org/virtualbox/debian $(lsb_release -cs) contrib"
@@ -140,7 +146,10 @@ sudo apt install virtualbox-dkms -y
 #vnc server
 #vnc viewer
 
-###SECURITY###
+######
+
+
+### SECURITY ###
 
 #Firewall
 sudo add-apt-repository universe 
@@ -168,7 +177,9 @@ tailscale ip -4
 sudo snap install authy
 sudo snap install bitwarden
 
-#####OTHERS#####
+######
+
+##### OTHERS #####
 
 #Unetbootin
 #https://unetbootin.github.io/linux_download.html
@@ -176,7 +187,21 @@ sudo add-apt-repository ppa:gezakovacs/ppa
 sudo apt-get update
 sudo apt-get install unetbootin
 
-###LAPTOP### 
+##Wifi drivers (example dkms)
+sudo apt-get update
+sudo apt-get install dkms
+
+#https://github.com/cilynx/rtl88x2bu
+git clone https://github.com/cilynx/rtl88x2bu.git
+cd rtl88x2bu
+VER=$(sed -n 's/\PACKAGE_VERSION="\(.*\)"/\1/p' dkms.conf)
+sudo rsync -rvhP ./ /usr/src/rtl88x2bu-${VER}
+sudo dkms add -m rtl88x2bu -v ${VER}
+sudo dkms build -m rtl88x2bu -v ${VER}
+sudo dkms install -m rtl88x2bu -v ${VER}
+sudo modprobe 88x2bu
+
+### LAPTOP ### 
 
 #sudo snap install auto-cpufreq
 
