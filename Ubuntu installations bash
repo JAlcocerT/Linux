@@ -38,7 +38,7 @@ sudo snap install shotcut -- classic && snap install gimp && snap install photos
 sudo add-apt-repository ppa:kicad/kicad-5.1-releases && sudo apt update && sudo apt install kicad
 
 # Screen recording & audio
-sudo apt install kazam
+sudo apt install kazam #sharex foss for windows
 sudo snap install audacity
 
 ######
