@@ -58,7 +58,8 @@ sudo snap install android-studio --classic
 
 
 #R
-#wget https://download1.rstudio.org/desktop/bionic/amd64/rstudio-2021.09.2-382-amd64.deb
+sudo apt -y install r-base
+#wget https://download1.rstudio.org/desktop/bionic/amd64/rstudio-2022.02.2-485-amd64.deb
 #sudo apt install ./rstudio-2021.09.2-382-amd64.deb
 
 #github desktop
@@ -165,6 +166,11 @@ sudo apt install virtualbox-dkms -y
 
 ######
 
+### Productivity ###
+
+sudo apt-get install gnome-shell-pomodoro
+
+
 
 ### SECURITY ###
 
@@ -195,6 +201,8 @@ sudo snap install authy
 sudo snap install bitwarden
 
 ######
+
+
 
 ##### OTHERS #####
 
