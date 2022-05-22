@@ -51,7 +51,11 @@ flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flat
 flatpak install flathub org.octave.Octave -y
 
 sudo snap install slack --classic
+
 sudo snap install code --classic
+sudo snap install flutter --classic
+sudo snap install android-studio --classic
+
 
 #R
 #wget https://download1.rstudio.org/desktop/bionic/amd64/rstudio-2021.09.2-382-amd64.deb
