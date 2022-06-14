@@ -197,8 +197,7 @@ tailscale ip -4
 #sudo tailscale down
 
 #sudo tailscale up --advertise-exit-node
-
-tailscale up --exit-node=<ip.add.re.ss> #use this exit node after its validation on the web console
+sudo tailscale up --exit-node=ip.add.re.ss --advertise-exit-node  #use this exit node after its validation on the web console
 
 #authy and bitwarden
 sudo snap install authy
