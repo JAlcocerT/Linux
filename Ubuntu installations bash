@@ -190,6 +190,7 @@ sudo apt-get update &&
 sudo apt-get install tailscale &&
 sudo tailscale up &&
 tailscale ip -4
+#ssh user_name@ip_given_from_tailscale ---> will connect to the device
 
 #echo 'net.ipv4.ip_forward = 1' | sudo tee -a /etc/sysctl.conf &&
 #echo 'net.ipv6.conf.all.forwarding = 1' | sudo tee -a /etc/sysctl.conf &&
