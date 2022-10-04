@@ -23,11 +23,19 @@ sudo dpkg-reconfigure -plow unattended-upgrades
 
 sudo apt install snapd
 
-#Browsers
 snap install spotify && snap install vlc
 
+#Browsers
 sudo snap install brave
 
+distro=$(if echo " bullseye focal impish uma una " | grep -q " $(lsb_release -sc) "; then echo $(lsb_release -sc); else echo focal; fi)
+echo "deb [arch=amd64] http://deb.librewolf.net $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/librewolf.list
+sudo apt install wget -y
+sudo wget https://deb.librewolf.net/keyring.gpg -O /etc/apt/trusted.gpg.d/librewolf.gpg
+sudo apt update -y
+sudo apt install librewolf -y
+
+#chrome
 #wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 #sudo apt install ./google-chrome-stable_current_amd64.deb
 #rm google-chrome-stable_current_amd64.deb
