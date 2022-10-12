@@ -212,6 +212,9 @@ sudo tailscale up --exit-node=ip.add.re.ss --advertise-exit-node  #use this exit
 sudo snap install authy
 sudo snap install bitwarden
 
+#mac
+#sudo apt-get install macchanger
+
 ######
 
 
