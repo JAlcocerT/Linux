@@ -242,7 +242,10 @@ sudo dkms install -m rtl88x2bu -v ${VER}
 sudo modprobe 88x2bu
 #rm GitHubDesktop-linux-2.9.3-linux3.deb
 
-
+#eid #https://github.com/open-eid/DigiDoc4-Client#ubuntu
+#https://installer.id.ee/media/install-scripts/install-open-eid.sh
+#chmod +x ./install-open-eid.sh
+#./install-open-eid.sh
 
 ### LAPTOP ### 
 
