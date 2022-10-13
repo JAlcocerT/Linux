@@ -1,0 +1,6 @@
+#install updates
+sudo pacman -Syu
+
+#install ufw
+sudo pacmac -S ufw
+sudo systemctl enable ufw.service
