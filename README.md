@@ -1,5 +1,68 @@
 Web version on [https://jalcocert.github.io/Linux/]
 
+### Available programs to install from the bash file
+
+FOSS -> :heavy_check_mark:
+
+* General:
+    * Synaptic  :heavy_check_mark:
+    * PPA GUI Manager :heavy_check_mark:
+    * Snap store :heavy_check_mark:
+    
+* Media:
+    * VLC :heavy_check_mark:
+    * Spotify
+    
+* Browsers:
+    * Brave 
+    * Librewolf :heavy_check_mark:
+    * Chrome
+    
+* Design
+    * Blender :heavy_check_mark:
+    * FreeCad :heavy_check_mark:
+    * OpenSCad :heavy_check_mark:
+    * GIMP :heavy_check_mark:
+    * Photoscape :heavy_check_mark:
+    * Cura
+    * Inkscapee
+    * KiCad
+    * Kazam :heavy_check_mark:
+    * Audacity
+    
+* Programming:
+   * Octave :heavy_check_mark:
+   * VSCode
+   * Flutter
+   * Android Studio
+   * RStudio :heavy_check_mark:
+   * GH Desktop
+   * Slack
+   
+* Gaming:
+    * Steam
+    * WINE :heavy_check_mark:
+    * Lutris :heavy_check_mark:
+    * Epic Games
+    * origin
+    
+* BackUps:
+   * Dropbox
+   * MegaSync
+   * NextCloud :heavy_check_mark:
+   * Timeshift :heavy_check_mark:
+   * Synkron
+   * Grsync
+* Others:
+   * VBOX
+   * VMWare
+   * VNC Server :heavy_check_mark:
+   * GUFW :heavy_check_mark:
+   * VPN 
+   * UnetBootin :heavy_check_mark:
+   
+    
+
 Start
 ```
 curl https://raw.githubusercontent.com/reisikei/Linux/main/Ubuntu%20installations%20bash > install-apps.sh && chmod 775 install-apps.sh && sudo ./install-apps.sh
