@@ -45,10 +45,10 @@ Tested with Ubuntu, Elementary OS, Zorin OS (or Raspbian OS were applicable for 
 
 Ever wondered about using linux as a regular OS, but afraid of making tedious installations of all your favorite programs, even games?
 
-Those time consuming tasks can be avoided simpky with the use of the commands [on this repo](`r web_repo`/Linux/blob/main/Ubuntu%20installations%20bash).
+Those time consuming tasks can be avoided simply with the use of the commands [on this repo](`r web_repo`/Linux/blob/main/Ubuntu%20installations%20bash).
 
 
-The list includes, among others: VLC, blender, photoscape, octave, discord, steam and virtualbox - ALL WITH A SINGLE COMMAND.
+The list includes, among others: VLC, blender, photoscape, octave, discord, steam and virtualbox - ALL WITH A SINGLE COMMAND, you can check the detailed list in the README file of the repository as well.
 
 Option 1:
 
