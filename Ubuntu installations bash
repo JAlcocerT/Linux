@@ -209,9 +209,16 @@ tailscale ip -4
 #sudo tailscale up --advertise-exit-node
 sudo tailscale up --exit-node=ip.add.re.ss --advertise-exit-node  #use this exit node after its validation on the web console
 
-#authy and bitwarden
-sudo snap install authy
+#Password managers & 2FA's
+
 sudo snap install bitwarden
+sudo add-apt-repository ppa:phoerious/keepassxc #offline password manager
+sudo apt update && sudo apt install keepassxc
+#sudo add-apt-repository --remove ppa:phoerious/keepassxc
+#sudo apt remove --autoremove keepassxc
+
+sudo apt-get install aegis
+sudo snap install authy
 
 #mac
 #sudo apt-get install macchanger
