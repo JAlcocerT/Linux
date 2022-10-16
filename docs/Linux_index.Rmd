@@ -1,5 +1,5 @@
 ---
-title: "Linux made easy"
+title: "Linux Made Easy"
 author: "JAT"
 date: "Updated on: `r format(Sys.time(), '%d %B %Y')`"
 output:
