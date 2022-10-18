@@ -14,7 +14,7 @@ FOSS -> :heavy_check_mark:
     * Spotify
     
 * Browsers:
-    * Brave 
+    * Brave :heavy_check_mark:
     * Librewolf :heavy_check_mark:
     * Chrome
     
@@ -24,10 +24,11 @@ FOSS -> :heavy_check_mark:
     * OpenSCad :heavy_check_mark:
     * GIMP :heavy_check_mark:
     * Photoscape :heavy_check_mark:
+    * Kazam :heavy_check_mark:
     * Cura
     * Inkscapee
     * KiCad
-    * Kazam :heavy_check_mark:
+
     * Audacity
     
 * Programming:
@@ -37,22 +38,25 @@ FOSS -> :heavy_check_mark:
    * Android Studio
    * RStudio :heavy_check_mark:
    * GH Desktop
+  
    * Slack
    
 * Gaming:
-    * Steam
     * WINE :heavy_check_mark:
     * Lutris :heavy_check_mark:
+    * Steam
     * Epic Games
-    * origin
+    * Origin
     
 * BackUps:
+   * NextCloud :heavy_check_mark:
+   * Syncthing  :heavy_check_mark:
+   * Timeshift :heavy_check_mark:
    * Dropbox
    * MegaSync
-   * NextCloud :heavy_check_mark:
-   * Timeshift :heavy_check_mark:
    * Synkron
    * Grsync
+   
 * Others:
    * VBOX
    * VMWare
@@ -62,8 +66,10 @@ FOSS -> :heavy_check_mark:
    * UnetBootin :heavy_check_mark:
    
     
+## Good to know
 
-Start
+* How to query web content to local:
+
 ```
 curl https://raw.githubusercontent.com/reisikei/Linux/main/Ubuntu%20installations%20bash > install-apps.sh && chmod 775 install-apps.sh && sudo ./install-apps.sh
 
