@@ -28,7 +28,6 @@ FOSS -> :heavy_check_mark:
     * Cura
     * Inkscapee
     * KiCad
-
     * Audacity
     
 * Programming:
@@ -38,7 +37,6 @@ FOSS -> :heavy_check_mark:
    * Android Studio
    * RStudio :heavy_check_mark:
    * GH Desktop
-  
    * Slack
    
 * Gaming:
