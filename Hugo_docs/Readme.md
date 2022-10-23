@@ -140,7 +140,7 @@ categories: ["Tech"]
 ---
 ```
 
-#### If you want to add share *social icons*, add to the config file:
+#### If you want to add share *social icons* in the posts, add to the config file:
 
 - In yml:
 ```
@@ -154,4 +154,102 @@ params:
 ```
 [params]
   ShowShareButtons: "true"
+```
+
+#### If you want to add an intro to your blog, the config file needs to include:
+
+- In .yml:
+
+```
+params:
+  homeInfoParams:
+    Title: "About FossEngineer"
+    Content: Welcome to my blog. Here you will find manuals to get started with open source, as well as some experiments. Let's go!
+  socialIcons:
+    - name: github
+      url: "https://github.com/JAlcocerT"
+```
+
+- In .toml
+
+```
+[params]
+  homeInfoParams:
+    Title: "About FossEngineer"
+    Content: "Welcome to my blog. Here you will find manuals to get started with open source, as well as some experiments. Let's go!"
+  socialIcons:
+    - name: github
+      url: "https://github.com/JAlcocerT"
+``` 
+
+```
+[[params.homeInfoParams]]
+Title = "About FossEngineer"
+Content = "Welcome to my blog. Here you will find manuals to get started with open source, as well as some experiments. Let's go!"
+
+[[params.socialIcons]]
+name = 'github'
+url = "https://github.com/JAlcocerT"
+```
+
+
+```
+[params]
+  ShowShareButtons= "true"
+  [[params.socialIcons]]
+    name = 'github'
+    url = "https://github.com/JAlcocerT"
+```
+
+
+
+Or more compact:
+```
+[params]
+socialIcons = [
+  { name = 'github', url = "https://github.com/JAlcocerT" },
+  { name = 'email', url = "mailto:contribute@fossengineer.com" },
+  { name = 'gitlab', url = "https://gitlab.com/FOSSEngineer"},
+]
+```
+
+
+  homeInfoParams = [
+    {Title: "About FossEngineer", Content: "Welcome to my blog. Here you will find manuals to get started with open source, as well as some experiments. Let's go!"},
+]
+
+#### Combining them all together:
+
+- In .Toml: <https://adityatelange.github.io/hugo-PaperMod/posts/papermod/papermod-icons/>
+
+```
+baseURL= "/"
+languageCode= "en-us"
+title= "Fossengineer"
+theme= "PaperMod"
+
+[params]
+  ShowShareButtons= "true"
+  socialIcons = [
+  { name = 'github', url = "https://github.com/JAlcocerT" },
+  { name = 'email', url = "mailto:contribute@fossengineer.com" },
+  { name = 'gitlab', url = "https://gitlab.com/FOSSEngineer"},
+]
+
+[params.homeInfoParams]
+        Title = "About FossEngineer"
+        Content = "Welcome to my blog. Here you will find manuals to get started with open source, as well as some experiments. Let's go!"
+
+[menu]
+  [[menu.main]]
+    identifier = "categories"
+    name = "categories"
+    url = "/categories/"
+    weight = 1
+  [[menu.main]]
+    identifier = "tags"
+    name = "tags"
+    url = "/tags/"
+    weight = 10
+
 ```
