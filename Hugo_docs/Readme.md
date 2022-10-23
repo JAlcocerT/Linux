@@ -231,9 +231,10 @@ theme= "PaperMod"
 [params]
   ShowShareButtons= "true"
   socialIcons = [
+  { name = 'gitlab', url = "https://gitlab.com/FOSSEngineer"},  
+  { name = 'email', url = "mailto:contribute@fossengineer.com" },  
   { name = 'github', url = "https://github.com/JAlcocerT" },
-  { name = 'email', url = "mailto:contribute@fossengineer.com" },
-  { name = 'gitlab', url = "https://gitlab.com/FOSSEngineer"},
+  { name = 'buymeacoffee', url="https://www.buymeacoffee.com/jalcocert"},
 ]
 
 [params.homeInfoParams]
