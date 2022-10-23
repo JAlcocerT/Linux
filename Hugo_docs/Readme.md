@@ -126,6 +126,7 @@ menu:
 
 And in the post you can do now:
 
+```
 ---
 title: "Second"
 date: 2022-10-23T15:44:13+02:00
@@ -137,7 +138,7 @@ cover:
 tags: ["Self-Hosting", "R", "Porco"]
 categories: ["Tech"]
 ---
-
+```
 
 #### If you want to add share *social icons*, add to the config file:
 
