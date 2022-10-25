@@ -1,6 +1,6 @@
-### Static website generator 
+### Static Site Generator
 
-More info: <gohugo.io>
+Hugo is a fantastic SSG, for more info visit: <gohugo.io>
 
 By static, we refer to webs created with:
 * html
