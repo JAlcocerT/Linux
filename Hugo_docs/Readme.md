@@ -7,7 +7,7 @@ By static, we refer to webs created with:
 * css
 * js
 
-Available themes <https://themes.gohugo.io/>
+Available themes <https://themes.gohugo.io/> <br>
 Be sure to select a theme that is responsive enough for Google if you are interested in having visibility for their eyes -> try the theme's demo with the following tool that Google provides: <https://pagespeed.web.dev/>
 
 #### Windows
