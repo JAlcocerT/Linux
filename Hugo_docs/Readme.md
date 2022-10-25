@@ -13,7 +13,7 @@ Be sure to select a theme that is responsive enough for Google if you are intere
 #### Windows
 Download the binary files.<br>
 Edit the system environment variables.<br>
-Add to user variables -> C:\Users\reisi w10\Desktop\GH\hugo\<br>
+Add to user variables -> C:\Users\reisi w10\Desktop\GH\hugo\ <br>
 Use the path to the folder containing the .exe
 
 
