@@ -1,4 +1,6 @@
-### Static website generator <gohugo.io>
+### Static website generator 
+
+More info: <gohugo.io>
 
 By static, we refer to webs created with:
 * html
@@ -6,6 +8,7 @@ By static, we refer to webs created with:
 * js
 
 Available themes <https://themes.gohugo.io/>
+Be sure to select a theme that is responsive enough for Google if you are interested in having visibility for their eyes -> try the theme's demo with the following tool that Google provides: <https://pagespeed.web.dev/>
 
 #### Windows
 Download the binary files.
