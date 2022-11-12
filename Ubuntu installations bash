@@ -89,6 +89,9 @@ sudo apt install ./GitHubDesktop-linux-2.9.3-linux3.deb
 
 sudo snap install notepad-plus-plus
 
+#RPi
+sudo apt install rpi-imager
+
 ######
 
 ### GAMES ###
