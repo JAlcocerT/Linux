@@ -199,6 +199,7 @@ sudo apt-get install gnome-shell-pomodoro
 
 ### Social ###
 
+sudo apt install thunderbird
 #telegram desktop
 #cawbierd twitter client #chronological tweets
 #feeds (rss client)
