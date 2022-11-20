@@ -266,7 +266,7 @@ sudo add-apt-repository ppa:gezakovacs/ppa
 sudo apt-get update
 sudo apt-get install unetbootin
 
-##Wifi drivers (example dkms)
+##WIFI DRIVERS (example dkms)
 sudo apt-get update
 sudo apt-get install dkms
 
