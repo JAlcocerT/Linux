@@ -231,7 +231,7 @@ tailscale ip -4
 #sudo tailscale down
 
 #sudo tailscale up --advertise-exit-node
-sudo tailscale up --exit-node=ip.add.re.ss --advertise-exit-node  #use this exit node after its validation on the web console
+sudo tailscale up --exit-node=ip.add.re.ss --advertise-exit-node  #action needed on this exit node after its validation on the web console -> settings/edit route settings
 
 #Password managers & 2FA's
 
