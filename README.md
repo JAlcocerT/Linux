@@ -67,7 +67,7 @@ FOSS -> :heavy_check_mark:
 ## Android FOSS recommendations
 
 * Audio recorder - https://github.com/Dimowner/AudioRecorder
-
+* Client for Navidrome- https://gitlab.com/ultrasonic/ultrasonic
     
 ## Good to know
 
