@@ -45,6 +45,10 @@ sudo snap install blender --classic && snap install freecad && snap install open
 sudo snap install shotcut -- classic && snap install gimp && snap install photoscape  && snap install inkscape
 sudo add-apt-repository ppa:kicad/kicad-5.1-releases && sudo apt update && sudo apt install kicad
 
+#https://github.com/upscayl/upscayl/releases
+#sudo wget https://github.com/upscayl/upscayl/releases/download/v1.5.5/Upscayl-1.5.5.AppImage
+#chmod +x ./*.AppImage
+
 # Screen recording & audio
 sudo apt install kazam #sharex foss for windows
 sudo snap install audacity
@@ -98,6 +102,15 @@ sudo apt install rpi-imager
 
 sudo snap install discord
 sudo apt install anbox -y
+
+#waydroid
+sudo apt install curl ca-certificates -y
+#export DISTRO="jammy"
+sudo curl --proto '=https' --tlsv1.2 -Sf https://repo.waydro.id/waydroid.gpg --output /usr/share/keyrings/waydroid.gpg
+echo "deb [signed-by=/usr/share/keyrings/waydroid.gpg] https://repo.waydro.id/ $DISTRO main" | sudo tee /etc/apt/sources.list.d/waydroid.list
+sudo apt update
+sudo apt install waydroid -y
+sudo systemctl enable --now waydroid-container
 
 
 #(AMD drivers to be installed here):
