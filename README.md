@@ -68,6 +68,7 @@ FOSS -> :heavy_check_mark:
 
 * Audio recorder - https://github.com/Dimowner/AudioRecorder
 * Client for Navidrome- https://gitlab.com/ultrasonic/ultrasonic
+* PixelFed client - https://f-droid.org/app/com.h.pixeldroid {F-Droid}
     
 ## Good to know
 
