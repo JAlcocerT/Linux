@@ -42,8 +42,9 @@ sudo apt install librewolf -y
 
 #Design
 sudo snap install blender --classic && snap install freecad && snap install openscad && snap install cura-slicer 
-sudo snap install shotcut -- classic && snap install gimp && snap install photoscape  && snap install inkscape
 sudo add-apt-repository ppa:kicad/kicad-5.1-releases && sudo apt update && sudo apt install kicad
+
+sudo snap install shotcut -- classic && snap install gimp && snap install photoscape  && snap install inkscape
 
 #https://github.com/upscayl/upscayl/releases
 #sudo wget https://github.com/upscayl/upscayl/releases/download/v1.5.5/Upscayl-1.5.5.AppImage
@@ -52,6 +53,16 @@ sudo add-apt-repository ppa:kicad/kicad-5.1-releases && sudo apt update && sudo 
 # Screen recording & audio
 sudo apt install kazam #sharex foss for windows
 sudo snap install audacity
+
+sudo add-apt-repository ppa:openshot.developers/ppa
+sudo apt-get update
+sudo apt-get install openshot-qt
+
+sudo add-apt-repository ppa:scribus/ppa
+sudo apt update
+sudo apt install scribus
+#sudo apt remove scribus
+#sudo add-apt-repository --remove ppa:scribus/ppa
 
 ######
 
