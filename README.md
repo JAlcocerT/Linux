@@ -62,12 +62,18 @@ Web version on [https://jalcocert.github.io/Linux/]
    * VNC Server :heavy_check_mark:
    * GUFW :heavy_check_mark:
    * VPN 
+     * Tailscale :heavy_check_mark:
+     * Wireguard Client
    * UnetBootin :heavy_check_mark:
    
    
 ## Android FOSS recommendations
 
 * Audio recorder - https://github.com/Dimowner/AudioRecorder
-* Client for Navidrome- https://gitlab.com/ultrasonic/ultrasonic
+* Client for Navidrome - https://gitlab.com/ultrasonic/ultrasonic
+* Syncthing - https://github.com/syncthing/syncthing
+* Nextcloud - https://github.com/nextcloud/android
 * PixelFed client - https://f-droid.org/app/com.h.pixeldroid {F-Droid}
+* Organic Maps - https://github.com/organicmaps/organicmaps
+* Readrops - https://github.com/readrops/Readrops
     
