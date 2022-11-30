@@ -1,8 +1,8 @@
 Web version on [https://jalcocert.github.io/Linux/]
 
-## Available programs to install from the bash file
+## Available programs to install from the (bash file)[https://github.com/JAlcocerT/Linux/blob/main/Ubuntu_installations_bash]
 
-FOSS -> :heavy_check_mark:
+**FOSS ->** :heavy_check_mark:
 
 * General:
     * Synaptic  :heavy_check_mark:
