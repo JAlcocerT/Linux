@@ -5,10 +5,10 @@ Web version on [https://jalcocert.github.io/Linux/]
 **FOSS ->** :heavy_check_mark:
 
 * General:
-    * Synaptic  :heavy_check_mark:
-    * PPA GUI Manager :heavy_check_mark:
-    * Snap store :heavy_check_mark:
-    * Docker ---> :fire: **BONUS** :rocket: Extra apps can be installed easily - [Apps list and config files](https://github.com/JAlcocerT/Docker) :heavy_check_mark:
+   * Synaptic  :heavy_check_mark:
+   * PPA GUI Manager :heavy_check_mark:
+   * Snap store :heavy_check_mark:
+   * Docker ---> :fire: **BONUS** :rocket: Extra apps can be installed easily - [Apps list and config files](https://github.com/JAlcocerT/Docker) :heavy_check_mark:
     
 * Media:
     * VLC :heavy_check_mark:
