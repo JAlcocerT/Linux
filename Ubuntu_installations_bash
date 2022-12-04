@@ -210,7 +210,7 @@ sudo apt install virtualbox-dkms -y
 #vnc server
 #vnc viewer
 wget https://downloads.realvnc.com/download/file/viewer.files/VNC-Viewer-6.22.315-Linux-x86.deb
-sudo apt install ~/Downloads/VNC-Viewer-6.22.315-Linux-x86.deb
+sudo apt install ./VNC-Viewer-6.22.315-Linux-x86.deb -y
 
 ######
 
