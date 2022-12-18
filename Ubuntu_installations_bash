@@ -18,8 +18,10 @@ sudo apt install unattended-upgrades -y
 sudo dpkg-reconfigure -plow unattended-upgrades
 
 
- 
+#############
 ### MEDIA ###
+#############
+
 
 sudo apt install snapd
 
@@ -28,6 +30,7 @@ snap install spotify && snap install vlc
 #Browsers
 sudo snap install brave
 
+#librewolf
 distro=$(if echo " bullseye focal impish uma una " | grep -q " $(lsb_release -sc) "; then echo $(lsb_release -sc); else echo focal; fi)
 echo "deb [arch=amd64] http://deb.librewolf.net $(lsb_release -sc) main" | sudo tee /etc/apt/sources.list.d/librewolf.list
 sudo apt install wget -y
@@ -64,9 +67,10 @@ sudo apt install scribus
 #sudo apt remove scribus
 #sudo add-apt-repository --remove ppa:scribus/ppa
 
-######
 
+###################
 ### PROGRAMMING ###
+###################
 
 #octave
 sudo apt-get install flatpak
@@ -79,6 +83,7 @@ sudo snap install code --classic
 sudo snap install flutter --classic
 sudo snap install android-studio --classic
 
+#sublime
 sudo apt-get update
 sudo apt-get upgrade
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
@@ -107,9 +112,10 @@ sudo snap install notepad-plus-plus
 #RPi
 sudo apt install rpi-imager
 
-######
 
+#############
 ### GAMES ###
+#############
 
 sudo snap install discord
 sudo apt install anbox -y
@@ -161,9 +167,12 @@ sudo apt install lutris -y
 #gamebuntu
 #https://gitlab.com/rswat09/gamebuntu/
 
-######
 
-### BACKUP ###
+###############
+### BACKUPS ###
+###############
+
+#dropbox
 sudo apt-get install nautilus-dropbox -y
 
 #megasync
@@ -212,25 +221,45 @@ sudo apt install virtualbox-dkms -y
 wget https://downloads.realvnc.com/download/file/viewer.files/VNC-Viewer-6.22.315-Linux-x86.deb
 sudo apt install ./VNC-Viewer-6.22.315-Linux-x86.deb -y
 
-######
 
+####################
 ### Productivity ###
+####################
 
 sudo apt-get install gnome-shell-pomodoro
 #Ulauncher #ctrl + space
 #Flameshot
 #kdenlive video editor
 
+sudo add-apt-repository ppa:mdoyen/homebank
+sudo apt-get update
+sudo apt-get install homebank
+
+##############
 ### Social ###
+##############
 
 sudo apt install thunderbird
+
+#matrix client - element
+sudo apt install apt-transport-https
+sudo wget -O /usr/share/keyrings/element-io-archive-keyring.gpg https://packages.element.io/debian/element-io-archive-keyring.gpg
+echo "deb [signed-by=/usr/share/keyrings/element-io-archive-keyring.gpg] https://packages.element.io/debian/ default main" | sudo tee /etc/apt/sources.list.d/element-io.list
+sudo apt update
+sudo apt install element-desktop
+
+#mastodon client
+sudo snap install sengi
+
+
 #telegram desktop
 #cawbierd twitter client #chronological tweets
 #feeds (rss client)
 
 
-
+################
 ### SECURITY ###
+################
 
 #Firewall
 #sudo ufw enable
@@ -278,11 +307,12 @@ sudo apt install -y wget apt-transport-https
 sudo apt update
 sudo apt install element-desktop
 
-######
 
 
 
+##################
 ##### OTHERS #####
+##################
 
 #Unetbootin
 #https://unetbootin.github.io/linux_download.html
@@ -314,8 +344,6 @@ sudo modprobe 88x2bu
 
 #sudo snap install auto-cpufreq
 
-#Cambiar teclado
+#change keyboard
 #sudo apt-get install console-data
 #sudo setxkbmap -layout 'es,es' -model pc105
-
-###### ######
