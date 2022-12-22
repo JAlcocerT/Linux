@@ -251,6 +251,8 @@ sudo apt install element-desktop
 #mastodon client
 sudo snap install sengi
 
+#nostr
+
 
 #telegram desktop
 #cawbierd twitter client #chronological tweets
