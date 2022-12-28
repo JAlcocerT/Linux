@@ -142,7 +142,7 @@ sudo apt install mesa-vulkan-drivers mesa-vulkan-drivers:i386 -y
 #Install Steam using the following Terminal command:
 sudo apt install steam -y
 #Once installed, run Steam, install any updates, and sign into your Steam account. 
-#Enable Proton to work with all your Steam library by navigating to Steam / Steam Play / Advanced, and ticking the Enable Steam Play for all other titles.
+#Enable Proton to work with all your Steam library by navigating to Steam / Settings / Steam Play / Advanced, and ticking the Enable Steam Play for all other titles.
 #Reboot Steam once done
 
 #STEP 4 - INSTALL WINE AND LUTRIS
