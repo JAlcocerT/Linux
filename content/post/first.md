@@ -36,6 +36,8 @@ sudo nano apps-install-bash.sh
 
 The list includes:
 
+{{< expandable label="A section of dummy text" level="2" >}}
+
 **FOSS ->** :heavy_check_mark:
 
 * General:
@@ -99,3 +101,5 @@ The list includes:
      * Tailscale :heavy_check_mark:
      * Wireguard Client
    * UnetBootin :heavy_check_mark:
+
+ {{< /expandable >}}  
