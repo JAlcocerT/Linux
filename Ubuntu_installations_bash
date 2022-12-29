@@ -248,6 +248,9 @@ echo "deb [signed-by=/usr/share/keyrings/element-io-archive-keyring.gpg] https:/
 sudo apt update
 sudo apt install element-desktop
 
+#matrix client - fluffychat
+sudo snap install fluffychat
+
 #mastodon client
 sudo snap install sengi
 
@@ -255,7 +258,9 @@ sudo snap install sengi
 
 
 #telegram desktop
-#cawbierd twitter client #chronological tweets
+sudo apt install telegram-desktop
+#cawbird twitter client #chronological tweets
+sudo snap install cawbird
 #feeds (rss client)
 
 
@@ -301,14 +306,6 @@ sudo snap install authy
 
 #mac
 #sudo apt-get install macchanger
-
-#element client
-sudo apt install -y wget apt-transport-https
-‍sudo wget -O /usr/share/keyrings/element-io-archive-keyring.gpg https://packages.element.io/debian/element-io-archive-keyring.gpg
-‍echo "deb [signed-by=/usr/share/keyrings/element-io-archive-keyring.gpg] https://packages.element.io/debian/ default main" | sudo tee /etc/apt/sources.list.d/element-io.list
-sudo apt update
-sudo apt install element-desktop
-
 
 
 
