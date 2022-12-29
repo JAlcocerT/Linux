@@ -37,7 +37,7 @@ Web version on [https://jalcocert.github.io/Linux/]
    * Flutter
    * Android Studio
    * RStudio :heavy_check_mark:
-   * GH Desktop
+   * GH Desktop :heavy_check_mark:
    * Slack
    
 * Gaming:
@@ -74,6 +74,8 @@ Web version on [https://jalcocert.github.io/Linux/]
 * Syncthing - https://github.com/syncthing/syncthing
 * Nextcloud - https://github.com/nextcloud/android
 * PixelFed client - https://f-droid.org/app/com.h.pixeldroid {F-Droid}
+* Matrix Element - https://github.com/vector-im/element-android
+* Matrix Fluffy Chat - https://gitlab.com/KrilleFear/fluffychat
 * Organic Maps - https://github.com/organicmaps/organicmaps
+* MapsMe - https://github.com/mapsme/api-android
 * Readrops - https://github.com/readrops/Readrops
-    
