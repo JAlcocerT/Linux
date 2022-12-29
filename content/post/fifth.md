@@ -12,20 +12,20 @@ To install docker, docker compose and portainer, simply copy the following [code
 
 Test it with:
 
-```
+{{< cmd >}}
 sudo systemctl status docker 
-```
+{{< cmd >}}
 
 #### Docker-Compose
 
 Test it with:
 
-```
+{{< cmd >}}
 docker-compose --version
-```
+{{< cmd >}}
 
 #### Portainer
 
-```
+{{< cmd >}}
 sudo docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
-```
+{{< cmd >}}
