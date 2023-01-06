@@ -314,7 +314,12 @@ sudo snap install authy
 #mac
 #sudo apt-get install macchanger
 
+##################
+##### FINANCE ####
+##################
 
+flatpak install flathub info.portfolio_performance.PortfolioPerformance
+flatpak run info.portfolio_performance.PortfolioPerformance
 
 ##################
 ##### OTHERS #####
