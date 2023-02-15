@@ -34,6 +34,7 @@ Web version on [https://jalcocert.github.io/Linux/]
 * Programming:
    * Octave :heavy_check_mark:
    * VSCode
+   * Codium :heavy_check_mark:
    * Flutter
    * Android Studio
    * RStudio :heavy_check_mark:
