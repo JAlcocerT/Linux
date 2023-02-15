@@ -79,7 +79,10 @@ flatpak install flathub org.octave.Octave -y
 
 sudo snap install slack --classic
 
-sudo snap install code --classic
+#sudo snap install code --classic
+#sudo snap install codium --classic
+nix-env -iA nixpkgs.vscodium
+
 sudo snap install flutter --classic
 sudo snap install android-studio --classic
 
