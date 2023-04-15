@@ -18,13 +18,16 @@ menu:
       url: /
       weight: 1
     - name: Debian Based
-      url: /post/
+      url: /Debian/
       weight: 2
     - name: Arch Based
       url: /Arch/
       weight: 3
-    - name: Tags
-      url: /tags/
+    # - name: Tags
+    #   url: /tags/
+    #  weight: 4   
+    - name: Linux & the Cloud
+      url: /LinuxCloud/
       weight: 4            
     - name: About
       url: /about/
