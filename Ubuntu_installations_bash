@@ -49,6 +49,9 @@ sudo add-apt-repository ppa:kicad/kicad-5.1-releases && sudo apt update && sudo 
 
 sudo snap install shotcut -- classic && snap install gimp && snap install photoscape  && snap install inkscape
 
+sudo snap install penpot-desktop
+
+
 #https://github.com/upscayl/upscayl/releases
 #sudo wget https://github.com/upscayl/upscayl/releases/download/v1.5.5/Upscayl-1.5.5.AppImage
 #chmod +x ./*.AppImage
