@@ -2,7 +2,7 @@
 title: "Secure your Linux"
 date: 2022-10-28T23:20:21+01:00
 draft: false
-tags: ["Guides","Security"]
+tags: ["Guides"]
 ---
 
 

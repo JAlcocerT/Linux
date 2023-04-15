@@ -1,11 +1,12 @@
 ---
-title: "VPN Setup"
+title: "Linux and VPN: Tailscale Setup"
 date: 2022-09-28T23:20:21+01:00
 draft: false
 tags: ["Guides"]
 ---
 
 ### Tailscale
+
 To install a home working VPN, the easiest way is to use Tailscale and pair our devices, lets install it with:
 
 
@@ -36,5 +37,6 @@ With this final command, the PC/RPi will be an exit node:
 ```
 sudo tailscale up --advertise-exit-node
 ```
-Remember to allow as admin in the tailscale network this machine as exit node as well. In review route settings -> use as exit node.
+
+**Remember** to allow as admin in the tailscale network this machine as exit node as well. In review **route settings -> use as exit node**.
 

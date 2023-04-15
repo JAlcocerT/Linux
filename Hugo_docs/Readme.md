@@ -11,6 +11,7 @@ Available themes <https://themes.gohugo.io/> <br>
 Be sure to select a theme that is responsive enough for Google if you are interested in having visibility for their eyes -> try the theme's demo with the following tool that Google provides: <https://pagespeed.web.dev/>
 
 #### Windows
+
 Download the binary files.<br>
 Edit the system environment variables.<br>
 Add to user variables -> C:\Users\reisi w10\Desktop\GH\hugo\ <br>

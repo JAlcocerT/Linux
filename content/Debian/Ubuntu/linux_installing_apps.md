@@ -2,17 +2,16 @@
 title: "Regular Apps Installation"
 date: 2022-10-30T23:20:21+01:00
 draft: false
-tags: ["Guides"] 
+tags: ["Guides","Docker"] 
 ---
 
-### Regular apps installations
+### Regular Apps installations
 
 Ever wondered about using linux as a regular OS, but afraid of making tedious installations of all your favorite programs, even games?
 
 Those time consuming tasks can be avoided simply with the use of the commands on this file <https://github.com/JAlcocerT/Linux/blob/main/Ubuntu_installations_bash>.
 
 If you would like to install all the programs listed there:
-
 
 Option 1:
 
@@ -34,59 +33,57 @@ edit the file, if desired through the command line with:
 sudo nano apps-install-bash.sh
 ```
 
-The list includes:
+{{< expandable label="Expand the list of App you can install" level="2" >}}
 
-{{< expandable label="A section of dummy text" level="2" >}}
-
-**FOSS ->** :heavy_check_mark:
+For each category, I have been ranking in the top the **Free Open Source Software Apps**, but as you might be interested in using propietary popular apps, like chrome or vscode, they are also included. 
 
 * General:
-   * Synaptic  :heavy_check_mark:
-   * PPA GUI Manager :heavy_check_mark:
-   * Snap store :heavy_check_mark:
-   * Docker ---> :fire: **BONUS** :rocket: Extra apps can be installed easily - [Apps list and config files](https://github.com/JAlcocerT/Docker) :heavy_check_mark:
+   * Synaptic  
+   * PPA GUI Manager 
+   * Snap store 
+   * Docker ---> :fire: **BONUS** :rocket: Extra apps can be installed easily - [Apps list and config files](https://github.com/JAlcocerT/Docker). You can also check [my blog for specific self-hosting guides](https://fossengineer.com/tags/self-hosting/).
     
 * Media:
-    * VLC :heavy_check_mark:
+    * VLC 
     * Spotify
     
 * Browsers:
-    * Brave :heavy_check_mark:
-    * Librewolf :heavy_check_mark:
+    * Brave 
+    * Librewolf 
     * Chrome
     
 * Design
-    * Blender :heavy_check_mark:
-    * FreeCad :heavy_check_mark:
-    * OpenSCad :heavy_check_mark:
-    * GIMP :heavy_check_mark:
-    * Photoscape :heavy_check_mark:
-    * Kazam :heavy_check_mark:
+    * Blender 
+    * FreeCad 
+    * OpenSCad 
+    * GIMP 
+    * Photoscape 
+    * Kazam 
     * Cura
     * Inkscapee
     * KiCad
     * Audacity
     
 * Programming:
-   * Octave :heavy_check_mark:
+   * Octave 
    * VSCode
    * Flutter
    * Android Studio
-   * RStudio :heavy_check_mark:
-   * GH Desktop :heavy_check_mark:
+   * RStudio 
+   * GH Desktop 
    * Slack
    
 * Gaming:
-    * WINE :heavy_check_mark:
-    * Lutris :heavy_check_mark:
+    * WINE 
+    * Lutris 
     * Steam
     * Epic Games
     * Origin
     
 * BackUps:
-   * NextCloud :heavy_check_mark:
-   * Syncthing  :heavy_check_mark:
-   * Timeshift :heavy_check_mark:
+   * NextCloud 
+   * Syncthing  
+   * Timeshift 
    * Dropbox
    * MegaSync
    * Synkron
@@ -95,11 +92,11 @@ The list includes:
 * Others:
    * VBOX
    * VMWare
-   * VNC Server :heavy_check_mark:
-   * GUFW :heavy_check_mark:
+   * VNC Server 
+   * GUFW 
    * VPN 
-     * Tailscale :heavy_check_mark:
+     * Tailscale 
      * Wireguard Client
-   * UnetBootin :heavy_check_mark:
+   * UnetBootin 
 
  {{< /expandable >}}  

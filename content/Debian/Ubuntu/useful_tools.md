@@ -1,8 +1,8 @@
 ---
-title: "Useful tools"
+title: "Useful Tools for Linux"
 date: 2022-10-28T23:20:21+01:00
 draft: false
-tags: ["Guides","Tools"]  
+tags: ["Guides"]  
 ---
 
 ### Useful Tools:
