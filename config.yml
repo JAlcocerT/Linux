@@ -23,12 +23,15 @@ menu:
     - name: Arch Based
       url: /Arch/
       weight: 3
+    - name: Nix Package Manager
+      url: /Nix/
+      weight: 4          
     # - name: Tags
     #   url: /tags/
     #  weight: 4   
     - name: Linux & the Cloud
       url: /LinuxCloud/
-      weight: 4            
+      weight: 5            
     - name: About
       url: /about/
-      weight: 5          
+      weight: 6          
