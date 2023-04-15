@@ -1,6 +1,6 @@
 ---
 date: "2022-06-26T18:27:58+01:00"
-title: "Linux and the Cloud"
+title: "Linux and The Cloud"
 ---
 
 # A Mind Map for: Linux, Docker, Open Source, and the Cloud

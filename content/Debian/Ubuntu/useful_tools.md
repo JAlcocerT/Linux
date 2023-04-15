@@ -5,15 +5,50 @@ draft: false
 tags: ["Guides"]  
 ---
 
-### Useful Tools:
+## Useful Tools
 
+### System Monitor
+
+```
+sudo apt-get install htop
+
+#htop
+```
+
+### System Info
+
+```
+sudo apt install neofetch
+#neofetch
+```
+
+### Net Tools
+
+```
+sudo apt install net-tools -y
+```
+
+Get your public ip:
+```
+curl ifconfig.me
+```
+
+Get your local ip:
+```
+ip address
+#ip a
+```
+
+### Testing DNS
 
 ```
 sudo apt install dnsutils
+
+#example
 #nslookup google.com
 ```
 
-#### Crontab tasks:
+### Crontab tasks:
 
 Open crontab:
 
@@ -38,7 +73,7 @@ If you’d wish to view your scheduled tasks without editing you can use the com
 crontab -l 
 ```
 
-#### Example - Install GIT and sync your repositories
+### Example - Install GIT and sync your repositories
 
 ```
 sudo apt install git &&
@@ -55,7 +90,7 @@ If you want to add a cron task for this, simply edit, as explained:
 @reboot cd RPi && git pull
 ```
 
-### Create users
+## Create users
 
 ```
 #simple:
@@ -75,7 +110,7 @@ chmod -R go-rwx /home/user_name_2
 chmod -R go-rwx /home/user_name_3
 ```
 
-### Create your own mount points
+## Create your own mount points
 
 Lets first check the storages connected to the machine and identify their current path:
 
@@ -150,7 +185,7 @@ Option 2: Another option would be to set a cron task with:
 @reboot mount /dev/sdb1 /mnt/data_mounted/ #example
 ```
 
-### Create custom aliases
+## Create Custom Aliases
 
 Lets edit this file:
 
@@ -173,9 +208,9 @@ Use this command to be able to use the new alias already in the current session
 source ~/.bashrc
 ```
 
-Personally, I have a file saved with all my alias ready right here, which i simply have to download and my favourite alias will be set in any server with this simple command:
+<!-- Personally, I have a file saved with all my alias ready right here, which i simply have to download and my favourite alias will be set in any server with this simple command:
 
 
 ```
 tbd
-```
+``` -->

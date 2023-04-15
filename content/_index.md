@@ -17,7 +17,7 @@ Linux is license free, making it a great choice for businesses and individuals l
 
 {{< ticks >}}
 * Linux Install Guides
-    * Debian - Tested with Ubuntu, Elementary OS, Zorin OS (or RaspberryPi OS were applicable for ARM).
+    * Debian - Tested with Ubuntu, Elementary OS, Zorin OS (or [RaspberryPi OS](https://jalcocert.github.io/RPi/) were applicable for ARM).
     * Arch - 
 * Linux & the Cloud: mapping these concepts with open source software and Docker.
 {{< /ticks >}}
