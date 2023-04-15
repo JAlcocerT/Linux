@@ -18,6 +18,8 @@ curl -L https://nixos.org/nix/install | sh
 #sudo bash ./nix-*-multi-user.sh
 {{< /cmd >}}
 
+And **on Arch**:
+
 {{< cmd >}} 
 sudo pacman -S base-devel
 sudo pacman -S yay
