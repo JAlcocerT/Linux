@@ -1,0 +1,181 @@
+---
+- name: Install Docker on the local machine
+  hosts: localhost
+  become: yes
+
+  vars:
+    # For Ansible
+    docker_configs_path: "/home/reisipi/Docker"
+    Media_Path: "/home/Downloads"
+    #For Docker Containers
+    PUID: 1000
+    PGID: 1000
+    TIME_ZONE: Europe/Prague
+    Local_IP: 192.168.3.100
+    WEBUI_PORT: 8080
+    QBIT_PORT: 6881
+    Searx_Port: 3333
+    Transmission_Port: 9091
+    Trnamission_Port2: 51413
+
+
+
+  tasks:
+    - name: Update APT cache (for Debian/Ubuntu)
+      apt:
+        update_cache: yes
+      when: ansible_os_family == 'Debian'
+
+    - name: Upgrade packages (for Debian/Ubuntu)
+      apt:
+        upgrade: safe
+      when: ansible_os_family == 'Debian'
+
+    - name: Install required packages (for Debian/Ubuntu)
+      apt:
+        name:
+          - apt-transport-https
+          - ca-certificates
+          - curl
+          - software-properties-common
+        state: present
+      when: ansible_os_family == 'Debian'
+
+# DOCKER ################################
+
+    - name: Download get-docker.sh script
+      get_url:
+        url: https://get.docker.com
+        dest: /tmp/get-docker.sh
+        mode: '0755'
+      when: ansible_os_family == 'Debian'
+
+    - name: Run get-docker.sh script
+      command: /tmp/get-docker.sh
+      args:
+        creates: /usr/bin/docker
+      when: ansible_os_family == 'Debian'
+
+    - name: Start and enable Docker service
+      service:
+        name: docker
+        state: started
+        enabled: yes
+      when: ansible_os_family == 'Debian'
+
+    - name: Check Docker version
+      shell: docker version
+
+    - name: Install Docker Compose
+      pip:
+        name: docker-compose
+        executable: pip3
+      when: ansible_os_family == 'Debian'
+
+## Installing Containers
+
+    - name: Run Portainer container
+      docker_container:
+        name: portainer
+        image: portainer/portainer-ce
+        state: started
+        restart_policy: always
+        ports:
+          - "8000:8000"
+          - "9000:9000"
+        volumes:
+          - /var/run/docker.sock:/var/run/docker.sock
+          - portainer_data:/data
+
+    - name: Create directory for SearX docker-compose file
+      file:
+        path: "{{ docker_configs_path }}/searx"
+        state: directory
+
+    - name: Download SearX docker-compose.yml file from URL
+      get_url:
+        url: "https://raw.githubusercontent.com/JAlcocerT/Docker/main/Security/SearX_docker-compose_env.yml"
+        dest: "{{ docker_configs_path }}/searx/docker-compose.yml"
+      register: searx_download_result
+
+    - name: Check if SearX file was downloaded successfully
+      fail:
+        msg: "Failed to download the SearX docker-compose.yml file."
+      when: searx_download_result.failed | bool
+
+    - name: Run SearX docker-compose up -d
+      docker_compose:
+        project_src: "{{ docker_configs_path }}/searx"
+        project_name: "searx_project"
+        state: present
+
+    - name: Create directory for Transmission docker-compose file
+      file:
+        path: "{{ docker_configs_path }}/transmission"
+        state: directory
+
+    - name: Download Transmission docker-compose.yml file from URL
+      get_url:
+        url: "https://raw.githubusercontent.com/JAlcocerT/Docker/main/Media/Transmission_docker_compose_w_environment"
+        dest: "{{ docker_configs_path }}/transmission/docker-compose.yml"
+      register: transmission_download_result
+
+    - name: Check if Transmission file was downloaded successfully
+      fail:
+        msg: "Failed to download the Transmission docker-compose.yml file."
+      when: transmission_download_result.failed | bool
+
+    - name: Run Transmission docker-compose up -d
+      docker_compose:
+        project_src: "{{ docker_configs_path }}/transmission"
+        project_name: "transmission_project"
+        state: present
+
+
+
+- name: Install VSCode, VSCodium and R
+  hosts: localhost
+  become: yes
+
+  tasks:
+    - name: Add VSCodium Repository
+      apt_key:
+        url: https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg
+        state: present
+
+    - name: Add VSCodium Repository to sources.list
+      apt_repository:
+        repo: "deb [signed-by=/usr/share/keyrings/vscodium-archive-keyring.gpg] https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/debs/ vscodium main"
+        state: present
+
+    - name: Install Visual Studio Code
+      apt:
+        name: code
+        state: present
+
+    - name: Install VSCodium
+      apt:
+        name: codium
+        state: present
+
+    - name: Install R
+      apt:
+        name: r-base
+        state: present
+
+# Hardware / Networking ########################
+
+    # - name: Install s-tui and stress
+    #   apt:
+    #     name:
+    #       - s-tui
+    #       - stress
+    #     state: present
+    #   when: ansible_os_family == 'Debian'          
+
+    # - name: Install nmap
+    #   apt:
+    #     name:
+    #       - nast nmap
+    #     state: present
+    #   when: ansible_os_family == 'Debian'          
