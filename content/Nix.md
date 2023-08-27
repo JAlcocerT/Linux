@@ -13,42 +13,42 @@ title: "The package Manager: NIX"
 Manage your system dependencies in a more declarative and efficient way. Let's get started with Nix installation **on Debian**, you can follow these steps:
 
 
-{{< sh >}}
+{{< cmd >}}
 curl -L https://nixos.org/nix/install | sh
 #sudo bash ./nix-*-multi-user.sh
-{{< /sh >}}
+{{< /cmd >}}
 
 And **on Arch**:
 
-{{< sh >}}
+{{< cmd >}}
 sudo pacman -S base-devel
 sudo pacman -S yay
 yay -S nix
-{{< /sh >}}
+{{< /cmd >}}
 
 
 
 Activate Nix **common steps again,** by adding the following lines to your shell profile (e.g., ~/.bashrc):
 
-{{< sh >}} 
+{{< cmd >}} 
 . /etc/profile.d/nix.sh
 #. /home/orangepi/.nix-profile/etc/profile.d/nix.sh
-{{< /sh >}}
+{{< /cmd >}}
 
 
 Reload your shell profile:
 
-{{< sh >}} 
+{{< cmd >}} 
 source ~/.bashrc
-{{< /sh >}}
+{{< /scmdh >}}
 
 ## Using NIX
 
 Once Nix is installed, you can use it to install packages by running the nix-env command. For example, to install the git package, you can run:
 
-{{< sh >}} 
+{{< cmd >}} 
 nix-env -i git
-{{< /sh >}}
+{{< /cmd >}}
 
 
 ## Finding Packages 
@@ -61,6 +61,6 @@ You can start by looking at <https://search.nixos.org/packages>
 
 You can use the nix-env command to search for packages on your local system. For example, to search for packages related to the python programming language, you can run:
 
-{{< sh >}} 
+{{< cmd >}} 
 nix-env -qa python
-{{< /sh >}}
+{{< /cmd >}}

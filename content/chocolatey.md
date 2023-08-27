@@ -15,9 +15,9 @@ Ok - this is suposed to be Linux related only, but I discovered about this and i
 
 ## Installing Chocolatey
 
-```sh
+{{< cmd >}}
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
-```
+{{< /cmd >}}
 
 ## Using Chocolatey
 
@@ -26,7 +26,7 @@ Navigate to <https://community.chocolatey.org/packages> and look for the package
 Create a list like this one that you will use from the powershell:
 
 
-```sh
+{{< cmd >}}
 choco install librewolf
 
 choco install vscodium
@@ -36,4 +36,4 @@ choco install obs-studio
 
 
 choco install rpi-imager
-```
+{{< /cmd >}}
