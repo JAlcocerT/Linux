@@ -40,7 +40,7 @@ Reload your shell profile:
 
 {{< cmd >}} 
 source ~/.bashrc
-{{< /scmdh >}}
+{{< /cmd >}}
 
 ## Using NIX
 
