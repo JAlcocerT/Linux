@@ -1,0 +1,17 @@
+---
+- name: Install Raspberry Pi Imager on Ubuntu from URL
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: Download the Raspberry Pi Imager .deb package
+      get_url:
+        url: https://downloads.raspberrypi.org/imager/imager_latest_amd64.deb
+        dest: /tmp/imager_latest_amd64.deb
+        mode: '0755'
+
+    - name: Install the Raspberry Pi Imager .deb package
+      apt:
+        deb: /tmp/imager_latest_amd64.deb
+
+#https://www.raspberrypi.com/software/
+#sudo ansible-playbook install_rpi_imager.yml -vvv

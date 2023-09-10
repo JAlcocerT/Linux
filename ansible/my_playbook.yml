@@ -1,0 +1,23 @@
+# ---
+# - name: Example Playbook
+#   hosts: web_servers
+#   tasks:
+#     - name: Ensure the Nginx package is installed
+#       apt:
+#         name: nginx
+#         state: present
+#       become: yes
+
+#     - name: Ensure Nginx is running
+#       service:
+#         name: nginx
+#         state: started
+#       become: yes
+
+
+#Run the Playbook:
+#ansible-playbook my_playbook.yml -i inventory.ini
+
+
+#Ad-Hoc Commands:
+#ansible all -i inventory.ini -m ping

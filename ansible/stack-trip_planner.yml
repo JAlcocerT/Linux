@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  Your_Stack_Name:
+    image: fossengineer/trip_planner:v2 
+    container_name: py_trip_planner
+    ports:
+      - "8050:8050"
+    # networks:
+    #   - cloudflare_tunnel
+    restart: always     
+
+# networks:
+#   cloudflare_tunnel:
+#     external: true

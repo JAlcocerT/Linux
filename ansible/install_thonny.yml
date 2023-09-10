@@ -1,0 +1,12 @@
+---
+- name: Install Thonny on Ubuntu
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: Install Thonny
+      apt:
+        name: thonny
+        state: present
+
+
+#sudo ansible-playbook install_thonny.yml

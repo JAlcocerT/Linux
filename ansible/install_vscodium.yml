@@ -1,0 +1,24 @@
+---
+- name: Install VSCodium on Ubuntu
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: Add the VSCodium GPG key
+      shell: |
+        wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg | gpg --dearmor -o /usr/share/keyrings/vscodium-archive-keyring.gpg
+
+    - name: Add the VSCodium repository
+      copy:
+        content: 'deb [ signed-by=/usr/share/keyrings/vscodium-archive-keyring.gpg ] https://download.vscodium.com/debs vscodium main'
+        dest: /etc/apt/sources.list.d/vscodium.list
+        mode: '0644'
+
+    - name: Update APT cache and install VSCodium
+      apt:
+        name: codium
+        state: present
+        update_cache: yes
+
+
+#sudo ansible-playbook install_vscodium.yml
+#https://vscodium.com/#install
