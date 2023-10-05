@@ -19,7 +19,7 @@ Web version on: [https://jalcocert.github.io/Linux/]
 Available programs to install from the [bash file](https://github.com/JAlcocerT/Linux/blob/main/Ubuntu_installations_bash)
 
 <details>
-  <summary>Click to expand/close details</summary>
+  <summary>Click to expand/close Available Apps</summary>
   &nbsp;
 
 **FOSS ->** :heavy_check_mark:  
@@ -94,7 +94,7 @@ Available programs to install from the [bash file](https://github.com/JAlcocerT/
 Ways to install your favourite programs across any distribution.
 
 <details>
-  <summary>Click to expand/close details</summary>
+  <summary>Get to know How</summary>
   &nbsp;
 
 #### With Ansible
@@ -118,11 +118,8 @@ Check <https://github.com/JAlcocerT/Linux/tree/main/Nix>
 
 Yes, Android it is built on the Linux kernel and these are some amazing Apps:
 
-
-## Features
-
 <details>
-  <summary>Click to expand/close details</summary>
+  <summary>Click to expand/close Android Apps</summary>
   &nbsp;
 
 * F-Droid - F/OSS Android App Repository - https://gitlab.com/fdroid/fdroidclient

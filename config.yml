@@ -23,7 +23,7 @@ menu:
     - name: Arch Based
       url: /Arch/
       weight: 3
-    - name: Nix - Package Manager for All
+    - name: Nix - One for All
       url: /Nix/
       weight: 4          
     # - name: Tags
