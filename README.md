@@ -14,16 +14,15 @@ Web version on: [https://jalcocert.github.io/Linux/]
 
 ## Quick Installs
 
-### Debian Based
+### Debian Based Linux
 
 Available programs to install from the [bash file](https://github.com/JAlcocerT/Linux/blob/main/Ubuntu_installations_bash)
-
-**FOSS ->** :heavy_check_mark:
-
 
 <details>
   <summary>Click to expand/close details</summary>
   &nbsp;
+
+**FOSS ->** :heavy_check_mark:  
 
 * General:
    * Synaptic  :heavy_check_mark:
@@ -100,11 +99,12 @@ Ways to install your favourite programs across any distribution.
 
 #### With Ansible
 
-Check <https://github.com/JAlcocerT/Linux/tree/main/ansible>
+Check <https://github.com/JAlcocerT/Linux/tree/main/Ansible>
 
 #### With Docker
 
-Check <https://github.com/JAlcocerT/Docker>
+* Check <https://github.com/JAlcocerT/Docker>
+* If you need further assistance, you can find full guides on my Tech blog: <https://fossengineer.com/tags/self-hosting/>
 
 #### With Nix
 
@@ -114,11 +114,16 @@ Check <https://github.com/JAlcocerT/Linux/tree/main/Nix>
 </details>
 
 
-   
-   
 ### Android F/OSS Recommendations
 
 Yes, Android it is built on the Linux kernel and these are some amazing Apps:
+
+
+## Features
+
+<details>
+  <summary>Click to expand/close details</summary>
+  &nbsp;
 
 * F-Droid - F/OSS Android App Repository - https://gitlab.com/fdroid/fdroidclient
 * Audio recorder - https://github.com/Dimowner/AudioRecorder
@@ -131,6 +136,10 @@ Yes, Android it is built on the Linux kernel and these are some amazing Apps:
 * Organic Maps - https://github.com/organicmaps/organicmaps
 * MapsMe - https://github.com/mapsme/api-android
 * Readrops - https://github.com/readrops/Readrops
+
+</details>
+
+
 
 ## Powered Thanks To :heart:
 
