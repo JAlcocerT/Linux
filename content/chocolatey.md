@@ -1,5 +1,6 @@
 ---
 date: "2023-08-26T17:27:58+01:00"
+draft: false
 title: "Chocolatey: A package manager for Windows"
 ---
 

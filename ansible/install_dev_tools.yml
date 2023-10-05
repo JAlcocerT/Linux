@@ -1,0 +1,69 @@
+---
+- name: Install Development Tools on Ubuntu
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: Update APT cache
+      apt:
+        update_cache: yes
+
+    - name: Install Git
+      apt:
+        name: git
+        state: present
+
+    - name: Install GitHub Desktop
+      shell: |
+        wget https://github.com/shiftkey/desktop/releases/download/release-2.9.6-linux1/GitHubDesktop-linux-2.9.6-linux1.deb -O github-desktop.deb
+        sudo dpkg -i github-desktop.deb
+        sudo apt-get install -f
+      args:
+        executable: /bin/bash
+      register: github_desktop_result
+      ignore_errors: yes
+
+    - name: Debug - Checking APT cache
+      debug:
+        msg: "Checking APT cache..."
+
+    - name: Add the VSCodium GPG key
+      shell: |
+        wget -qO - https://gitlab.com/paulcarroty/vscodium-deb-rpm-repo/raw/master/pub.gpg | gpg --dearmor -o /usr/share/keyrings/vscodium-archive-keyring.gpg
+
+    - name: Add the VSCodium repository
+      copy:
+        content: 'deb [ signed-by=/usr/share/keyrings/vscodium-archive-keyring.gpg ] https://download.vscodium.com/debs vscodium main'
+        dest: /etc/apt/sources.list.d/vscodium.list
+        mode: '0644'
+
+    - name: Update APT cache and install VSCodium
+      apt:
+        name: codium
+        state: present
+        update_cache: yes
+
+#https://posit.co/download/rstudio-desktop/
+
+    - name: Install R base package
+      apt:
+        name: r-base
+        state: present
+        update_cache: yes
+
+    - name: Download RStudio .deb package
+      get_url:
+        url: "https://download1.rstudio.org/electron/focal/amd64/rstudio-2023.06.2-561-amd64.deb"
+        dest: "/tmp/rstudio-2023.06.2-561-amd64.deb"
+        mode: '0644'
+
+    - name: Install RStudio
+      apt:
+        deb: "/tmp/rstudio-2023.06.2-561-amd64.deb"
+
+    - name: Clean up GitHub Desktop installer (if successful)
+      file:
+        path: github-desktop.deb
+        state: absent
+      when: github_desktop_result.rc == 0
+
+#sudo ansible-playbook install_dev_tools.yml

@@ -1,0 +1,63 @@
+---
+- name: Install Docker on Ubuntu
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: Download and install Docker
+      shell: |
+        curl -fsSL https://get.docker.com -o /tmp/get-docker.sh
+        sh /tmp/get-docker.sh
+
+    - name: Install docker-compose
+      apt:
+        name: docker-compose
+        state: present
+        update_cache: yes
+
+    - name: Run Double Pendulum Docker container
+      docker_container:
+        name: double_pendulum
+        image: fossengineer/double_pendulum:v1.1-amd64
+        ports:
+          - "8501:8501"
+        state: started
+
+    - name: Ensure docker-compose.yml is present
+      copy:
+        src: /home/jalcocert/ansible/stack-trip_planner.yml
+        dest: /home/jalcocert/ansible/docker-compose.yml
+
+    - name: Deploy with Docker Compose
+      docker_compose:
+        project_src: /home/jalcocert/ansible
+        state: present
+
+    - name: Download kodi_docker_compose.yml from GitHub
+      get_url:
+        url: https://raw.githubusercontent.com/JAlcocerT/Docker/main/Media/kodi_docker_compose.yml
+        dest: /home/jalcocert/ansible/docker-compose.yml
+        mode: '0755'
+
+    - name: Deploy with Docker Compose
+      docker_compose:
+        project_src: /home/jalcocert/ansible
+        state: present        
+
+    # - name: Download Jackett docker-compose from Gist
+    #   get_url:
+    #     url: https://gist.githubusercontent.com/JAlcocerT/a1e51600e3153a400dcd63cf31dd1a63/raw/e8b3b648f6a13abc6bad39500cb1b70bf9e9a3e5/Jacket-Docker
+    #     dest: /home/jalcocert/ansible/jackett_docker-compose.yml
+    #     mode: '0755'
+
+    # - name: Deploy Jackett with Docker Compose
+    #   docker_compose:
+    #     project_src: /home/jalcocert/ansible
+    #     files:
+    #       - jackett_docker-compose.yml
+    #     state: present
+
+#https://github.com/binwiederhier/ntfy
+#https://docs.ntfy.sh/install/
+#sudo docker run -p 80:80 -itd binwiederhier/ntfy serve
+
+#ansible-playbook install_docker.yml -i inventory.ini

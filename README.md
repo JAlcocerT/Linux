@@ -1,8 +1,29 @@
-Web version on [https://jalcocert.github.io/Linux/]
+# Linux 101
 
-## Available programs to install from the [bash file](https://github.com/JAlcocerT/Linux/blob/main/Ubuntu_installations_bash)
+Start using Linux with a smoother learning curve.
+
+Web version on: [https://jalcocert.github.io/Linux/]
+
+## Repository Structure
+
+* Ansible
+* Z_Linux_Installations_101
+* Z_GoodToKnow
+
+* Outro: folders to generate the web version with [**HUGO**](https://fossengineer.com/web-guide-Hugo/).
+
+## Quick Installs
+
+### Debian Based
+
+Available programs to install from the [bash file](https://github.com/JAlcocerT/Linux/blob/main/Ubuntu_installations_bash)
 
 **FOSS ->** :heavy_check_mark:
+
+
+<details>
+  <summary>Click to expand/close details</summary>
+  &nbsp;
 
 * General:
    * Synaptic  :heavy_check_mark:
@@ -66,10 +87,40 @@ Web version on [https://jalcocert.github.io/Linux/]
      * Tailscale :heavy_check_mark:
      * Wireguard Client
    * UnetBootin :heavy_check_mark:
-   
-   
-## Android FOSS recommendations
 
+</details>
+
+### Distro Agnostic Installations
+
+Ways to install your favourite programs across any distribution.
+
+<details>
+  <summary>Click to expand/close details</summary>
+  &nbsp;
+
+#### With Ansible
+
+Check <https://github.com/JAlcocerT/Linux/tree/main/ansible>
+
+#### With Docker
+
+Check <https://github.com/JAlcocerT/Docker>
+
+#### With Nix
+
+Compatible even with mac!
+
+Check <https://github.com/JAlcocerT/Linux/tree/main/Nix>
+</details>
+
+
+   
+   
+### Android F/OSS Recommendations
+
+Yes, Android it is built on the Linux kernel and these are some amazing Apps:
+
+* F-Droid - F/OSS Android App Repository - https://gitlab.com/fdroid/fdroidclient
 * Audio recorder - https://github.com/Dimowner/AudioRecorder
 * Client for Navidrome - https://gitlab.com/ultrasonic/ultrasonic
 * Syncthing - https://github.com/syncthing/syncthing
@@ -80,3 +131,20 @@ Web version on [https://jalcocert.github.io/Linux/]
 * Organic Maps - https://github.com/organicmaps/organicmaps
 * MapsMe - https://github.com/mapsme/api-android
 * Readrops - https://github.com/readrops/Readrops
+
+## Powered Thanks To :heart:
+
+* [HUGO](https://github.com/gohugoio/hugo)
+* [HUGO Theme cupper](https://github.com/zwbetz-gh/cupper-hugo-theme).
+
+* The fantastic community on the internet from where I learn all of this.
+
+## :loudspeaker: Ways to Contribute 
+
+* Please feel free to fork the repository - try it out the guide for yourself and improve or add others tabs.
+
+* Support the Projects that made possible this repo, thanks to their fantastic job, this have been possible.
+
+* Support extra evening code sessions:
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/FossEngineer)
