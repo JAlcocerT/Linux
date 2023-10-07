@@ -1,0 +1,31 @@
+---
+- name: Install Design Tools on Ubuntu
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: Install Blender
+      apt:
+        name: blender
+        state: present
+
+    - name: Install OpenSCAD
+      apt:
+        name: openscad
+        state: present
+
+    - name: Install FreeCAD
+      apt:
+        name: freecad
+        state: present
+
+    - name: Install GIMP
+      apt:
+        name: gimp
+        state: present
+        
+    - name: Install Inkscape
+      apt:
+        name: inkscape
+        state: present
+
+#sudo ansible-playbook install_design_tools.yml

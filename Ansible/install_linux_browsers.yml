@@ -1,0 +1,32 @@
+---
+- name: Install Browsers on Ubuntu
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: Install Firefox
+      apt:
+        name: firefox
+        state: present
+
+    - name: Install Chromium
+      apt:
+        name: chromium-browser
+        state: present
+
+    - name: Install Brave
+      apt:
+        name: brave-browser
+        state: present
+
+    - name: Add LibreWolf APT repository
+      apt_repository:
+        repo: deb https://librewolf-community.gitlab.io/debian/librewolf-release/ focal main
+        state: present
+
+    - name: Install LibreWolf
+      apt:
+        name: librewolf
+        state: present
+
+
+##sudo ansible-playbook install_linux_browsers.yml

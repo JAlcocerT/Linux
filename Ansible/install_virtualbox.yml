@@ -1,0 +1,27 @@
+# ---
+# - name: Install VirtualBox on Ubuntu
+#   hosts: localhost
+#   become: yes
+#   tasks:
+#     - name: Add VirtualBox Repository
+#       apt_repository:
+#         repo: "deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian {{ ansible_distribution_release }} contrib"
+#         state: present
+#       register: repo_result
+
+#     - name: Import VirtualBox Repository Key
+#       apt_key:
+#         url: "https://www.virtualbox.org/download/oracle_vbox_2016.asc"
+#         state: present
+#       when: repo_result.changed
+
+#     - name: Install VirtualBox
+#       apt:
+#         name: virtualbox-6.1
+#         state: present
+
+#     - name: Install VirtualBox Extension Pack
+#       command: VBoxManage extpack install --replace /path/to/Oracle_VM_VirtualBox_Extension_Pack.vbox-extpack
+#       when: ansible_distribution_release == 'bionic'  # Adjust this condition based on your Ubuntu version
+
+# #sudo ansible-playbook install_virtualbox.yml

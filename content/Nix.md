@@ -13,12 +13,16 @@ title: "The package Manager: NIX"
 Manage your system dependencies in a more declarative and efficient way. Let's get started with Nix installation **on Debian**, you can follow these steps:
 
 
+### Debian Based
+
 {{< cmd >}}
 curl -L https://nixos.org/nix/install | sh
 #sudo bash ./nix-*-multi-user.sh
 {{< /cmd >}}
 
-And **on Arch**:
+Check the installed version with: nix-env --version
+
+### Arch Based
 
 {{< cmd >}}
 sudo pacman -S base-devel
@@ -27,6 +31,7 @@ yay -S nix
 {{< /cmd >}}
 
 
+## One for All Steps
 
 Activate Nix **common steps again,** by adding the following lines to your shell profile (e.g., ~/.bashrc):
 
@@ -44,10 +49,22 @@ source ~/.bashrc
 
 ## Using NIX
 
-Once Nix is installed, you can use it to install packages by running the nix-env command. For example, to install the git package, you can run:
+Once Nix is installed, you can use it to **install packages** by running the nix-env command.
+
+* For example, to install the git package, you can run:
 
 {{< cmd >}} 
 nix-env -i git
+{{< /cmd >}}
+
+* Or to install the Julia language:
+
+{{< cmd >}} 
+#nix-shell -p julia #in nix shell only
+
+nix-env -iA nixpkgs.julia
+julia --version
+
 {{< /cmd >}}
 
 

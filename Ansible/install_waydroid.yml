@@ -1,0 +1,36 @@
+---
+- name: Install Waydroid on Ubuntu
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: Update APT cache
+      apt:
+        update_cache: yes
+      become: yes
+
+    - name: Install curl and ca-certificates
+      apt:
+        name:
+          - curl
+          - ca-certificates
+        state: present
+      become: yes
+
+    - name: Add Waydroid repository
+      shell: curl https://repo.waydroid.io | sudo bash
+      become: yes
+
+    - name: Install Waydroid
+      apt:
+        name: waydroid
+        state: present
+      become: yes
+
+
+##sudo ansible-playbook install_waydroid.yml
+
+
+# apt update
+# apt install curl ca-certificates
+# curl https://repo.waydro.id | sudo bash
+# sudo apt install waydroid

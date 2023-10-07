@@ -1,0 +1,36 @@
+---
+- name: Install Android Studio on Ubuntu
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: Ensure required software for adding repositories is installed
+      apt:
+        name: software-properties-common
+        state: present
+
+    - name: Add Android Studio repository
+      apt_repository:
+        repo: 'ppa:maarten-fonville/android-studio'
+        state: present
+      register: repo_added
+
+    - name: Update APT cache if repository was added
+      apt:
+        update_cache: yes
+      when: repo_added.changed
+
+    - name: Install Android Studio
+      apt:
+        name: android-studio
+        state: present
+
+    - name: Install required 32-bit libraries for 64-bit machines (optional)
+      apt:
+        name:
+          - lib32z1
+          - lib32ncurses6
+          - lib32stdc++6
+        state: present
+
+
+#ansible-playbook install_android_dev.yml -i localhost

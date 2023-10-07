@@ -19,3 +19,6 @@ ansible --version
 ```sh
 ansible-playbook ubuntu-essentials_ansible-playbook.yml
 ```
+
+## Using NIX Package Manager
+

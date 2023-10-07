@@ -1,0 +1,47 @@
+---
+- name: Install Flutter on Ubuntu
+  hosts: localhost
+  become: yes
+  vars:
+    flutter_download_url: "https://storage.googleapis.com/flutter_infra_release/releases/stable/linux/flutter_linux_3.13.3-stable.tar.xz"
+    flutter_install_dir: "/home/jalcocert/Downloads"
+
+  tasks:
+  
+    - name: Install git
+      apt:
+        name: git
+        state: present
+
+    - name: Download the Flutter SDK
+      get_url:
+        url: "{{ flutter_download_url }}"
+        dest: "/tmp/flutter.tar.xz"
+        mode: '0755'
+
+    - name: Extract the Flutter SDK
+      unarchive:
+        src: "/tmp/flutter.tar.xz"
+        dest: "{{ flutter_install_dir }}"
+        remote_src: yes
+        creates: "{{ flutter_install_dir }}/flutter/bin/flutter"
+
+    - name: Add Flutter to PATH for the user
+      lineinfile:
+        path: "/etc/profile.d/flutter.sh"
+        create: yes
+        line: 'export PATH=$PATH:{{ flutter_install_dir }}/flutter/bin'
+        state: present
+
+    - name: Run flutter doctor
+      command:
+        cmd: "{{ flutter_install_dir }}/flutter/bin/flutter doctor"
+        warn: false
+      become: no
+
+#ansible-playbook install_dev_flutter.yml -i localhost
+#https://docs.flutter.dev/release/archive?tab=linux
+
+#source /etc/profile.d/flutter.sh
+#echo $PATH
+#flutter --version

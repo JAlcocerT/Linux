@@ -1,0 +1,41 @@
+---
+- name: Install Utilities on Ubuntu
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: Install Gufw (Firewall Configuration Tool)
+      apt:
+        name: gufw
+        state: present
+
+    - name: Install GNOME System Monitor
+      apt:
+        name: gnome-system-monitor
+        state: present
+
+    - name: Install GNOME Terminal
+      apt:
+        name: gnome-terminal
+        state: present
+
+    - name: Install p7zip (7-Zip)
+      apt:
+        name: p7zip-full
+        state: present
+
+    - name: Install sysbench
+      apt:
+        name: sysbench
+        state: present
+
+    - name: Install s-tui and stress
+      apt:
+        name: "{{ item }}"
+        state: present
+      loop:
+        - s-tui
+        - stress
+
+
+
+#sudo ansible-playbook install_linux_tools.yml
