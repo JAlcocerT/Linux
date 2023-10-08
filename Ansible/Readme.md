@@ -8,6 +8,10 @@ apt update
 apt install ansible
 #ansible --version
 
+#sudo snap install semaphore
+# sudo snap stop semaphore
+# sudo snap start semaphore
+#<http://localhost:3000/>
 ```
 
 Example:

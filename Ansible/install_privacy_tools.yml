@@ -21,9 +21,72 @@
     - name: Install Tailscale
       shell: "url -fsSL https://tailscale.com/install.sh | sh"
 
-    - name: Install Tailscale
-      shell: "url -fsSL https://tailscale.com/install.sh | sh"
+# wget --content-disposition https://mullvad.net/en/download/app/deb/latest
+# sudo apt install -y ./Mullvad*
 
+#wireguard
+
+
+   - name: Download compose.yml from GitHub
+      get_url:
+        url: https://raw.githubusercontent.com/JAlcocerT/Docker/main/Security/watchyourlan_docker-compose.yml
+        dest: /home/{{ username }}/Docker/watchyourlan/docker-compose.yml
+        mode: '0755'
+
+    - name: Deploy with Docker Compose - watchyourlan
+      docker_compose:
+        project_src: /home/{{ username }}/Docker/watchyourlan
+        state: present
+
+#https://registry.hub.docker.com/r/jokobsk/pi.alert
+#https://www.virtualizationhowto.com/2022/11/pialert-docker-setup-detecting-rogue-devices-connected-to-the-network/
+
+
+   - name: Download whoogle_docker.yml from GitHub
+      get_url:
+        url: https://raw.githubusercontent.com/JAlcocerT/Docker/main/Security/whoogle_docker-compose.yaml
+        dest: /home/{{ username }}/Docker/whoogle/docker-compose.yml
+        mode: '0755'
+
+    - name: Deploy with Docker Compose - whoogle
+      docker_compose:
+        project_src: /home/{{ username }}/Docker/whoogle
+        state: present
+
+
+   - name: Download fail2ban_docker.yml from GitHub
+      get_url:
+        url: https://raw.githubusercontent.com/JAlcocerT/Docker/main/Security/fail2ban_docker-compose.yaml
+        dest: /home/{{ username }}/Docker/fail2ban/docker-compose.yml
+        mode: '0755'
+
+    - name: Deploy with Docker Compose - fail2ban
+      docker_compose:
+        project_src: /home/{{ username }}/Docker/fail2ban
+        state: present
+
+   - name: Download MeTube_docker-compose.yml from GitHub
+      get_url:
+        url: https://raw.githubusercontent.com/JAlcocerT/Docker/main/Others/MeTube_docker-compose.yml
+        dest: /home/{{ username }}/Docker/fail2ban/docker-compose.yml
+        mode: '0755'
+
+    - name: Deploy with Docker Compose - MeTube
+      docker_compose:
+        project_src: /home/{{ username }}/Docker/MeTube
+        state: present
+
+
+   - name: Download wireguard_docker-compose.yml from GitHub
+      get_url:
+        url: https://raw.githubusercontent.com/JAlcocerT/Docker/main/Security/wireguard_docker-compose.yml
+        dest: /home/{{ username }}/Docker/Wireguard/docker-compose.yml
+        mode: '0755'
+
+    - name: Deploy with Docker Compose - Wireguard
+      docker_compose:
+        project_src: /home/{{ username }}/Docker/Wireguard
+        state: present        
 
 
 

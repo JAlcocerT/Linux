@@ -89,6 +89,8 @@ sudo snap install penpot-desktop
 #Flameshot
 #kdenlive video editor
 #openshot
+#sudo snap install shotcut --classic
+
 
 # Screen recording & audio
 sudo apt install kazam #sharex foss for windows
@@ -303,6 +305,12 @@ flatpak install flathub com.github.zadam.trilium
 flatpak install flathub net.cozic.joplin_desktop
 flatpak install flathub com.logseq.Logseq
 
+#notion vs appflowy
+#https://github.com/AppFlowy-IO/appflowy
+
+#https://github.com/mattermost/mattermost
+
+
 ##############
 ### Social ###
 ##############
@@ -464,3 +472,28 @@ flatpak install flathub app.organicmaps.desktop
 #change keyboard
 #sudo apt-get install console-data
 #sudo setxkbmap -layout 'es,es' -model pc105
+
+
+####################
+### Local Gen-AI ###
+####################
+
+#Vicuna-7B locally with CPU: https://fossengineer.com/Generative-AI-LLMs-locally-with-cpu/
+#https://hub.docker.com/repository/docker/fossengineer/oobabooga_cpu/tags?page=1&ordering=last_updated
+#docker pull fossengineer/oobabooga_cpu:latest
+#wget https://huggingface.co/eachadea/ggml-vicuna-7b-1.1/resolve/main/ggml-old-vic7b-uncensored-q5_1.bin
+#wget https://huggingface.co/eachadea/ggml-vicuna-7b-1.1/resolve/main/ggml-old-vic7b-uncensored-q5_1.bin -O /home/jalcocert/AI/Models/ggml-old-vic7b-uncensored-q5_1.bin
+
+
+# version: '3'
+
+# services:
+#   genai_text:
+#     image: fossengineer/oobabooga_cpu
+#     container_name: genai_ooba_cpu
+#     ports:
+#       - "7860:7860"
+#     working_dir: /app
+#     command: tail -f /dev/null #keep it running
+#     volumes:
+#       - /home/jalcocert/AI/Models:/app/text-generation-webui/models

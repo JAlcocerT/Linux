@@ -20,5 +20,5 @@
         update_cache: yes
 
 
-#sudo ansible-playbook install_vscodium.yml
+#sudo ansible-playbook install_dev_vscodium.yml
 #https://vscodium.com/#install

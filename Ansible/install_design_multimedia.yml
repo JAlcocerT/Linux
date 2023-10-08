@@ -27,6 +27,9 @@
         name: openshot
         state: present
 
+#sudo snap install shotcut --classic
+        
+
     - name: Install Audacity
       apt:
         name: audacity

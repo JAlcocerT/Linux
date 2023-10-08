@@ -6,9 +6,10 @@ Web version on: [https://jalcocert.github.io/Linux/]
 
 ## Repository Structure
 
-* Ansible
-* Z_Linux_Installations_101
-* Z_GoodToKnow
+* ./Ansible
+* ./Z_Cloud
+* ./Z_Linux_Installations_101
+* ./Z_GoodToKnow
 
 * Outro: folders to generate the web version with [**HUGO**](https://fossengineer.com/web-guide-Hugo/).
 
@@ -54,7 +55,7 @@ Available programs to install from the [bash file](https://github.com/JAlcocerT/
 * Programming:
    * Octave :heavy_check_mark:
    * VSCode
-   * Codium :heavy_check_mark:
+   * VSCodium :heavy_check_mark:
    * Flutter
    * Android Studio
    * RStudio :heavy_check_mark:
@@ -123,20 +124,23 @@ Yes, Android it is built on the Linux kernel and these are some amazing Apps:
   &nbsp;
 
 * F-Droid - F/OSS Android App Repository - https://gitlab.com/fdroid/fdroidclient
+
 * Audio recorder - https://github.com/Dimowner/AudioRecorder
 * Client for Navidrome - https://gitlab.com/ultrasonic/ultrasonic
 * Syncthing - https://github.com/syncthing/syncthing
 * Nextcloud - https://github.com/nextcloud/android
+
 * PixelFed client - https://f-droid.org/app/com.h.pixeldroid {F-Droid}
 * Matrix Element - https://github.com/vector-im/element-android
 * Matrix Fluffy Chat - https://gitlab.com/KrilleFear/fluffychat
+
 * Organic Maps - https://github.com/organicmaps/organicmaps
 * MapsMe - https://github.com/mapsme/api-android
 * Readrops - https://github.com/readrops/Readrops
 
 </details>
 
-
+You can check more [here](https://brainfucksec.github.io/android-foss-apps-list#android-based-operating-systems)
 
 ## Powered Thanks To :heart:
 

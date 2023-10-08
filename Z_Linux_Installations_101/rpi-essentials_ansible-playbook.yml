@@ -4,20 +4,57 @@
   gather_facts: no
   become: yes
   tasks:
-    - name: Include VSCodium Playbook
-      include: ../Ansible/install_dev_vscodium.yml
+   - name: Download wireguard_docker-compose.yml from GitHub
+      get_url:
+        url: https://raw.githubusercontent.com/JAlcocerT/Docker/main/Security/wireguard_docker-compose.yml
+        dest: /home/{{ username }}/Docker/Wireguard/docker-compose.yml
+        mode: '0755'
 
-    - name: Include Python Playbook
-      include: ../Ansible/install_dev_python.yml
+    - name: Deploy with Docker Compose - Wireguard
+      docker_compose:
+        project_src: /home/{{ username }}/Docker/Wireguard
+        state: present      
 
-    - name: Include Docker Playbook
-      include: ../Ansible/install_docker.yml      
 
-    - name: Include the specific task from another folder
-      include_tasks: ../Ansible/install_linux_tools.yml
-      tasks_from: #Install sysbench
-        - Install Gufw (Firewall Configuration Tool)
-        - Install sysbench
+   - name: Download uptimekuma_docker-compose.yml from GitHub
+      get_url:
+        url: https://raw.githubusercontent.com/JAlcocerT/Docker/main/Security/uptimekuma_docker-compose.yml
+        dest: /home/{{ username }}/Docker/uptimekuma/docker-compose.yml
+        mode: '0755'
+
+    - name: Deploy with Docker Compose - uptimekuma
+      docker_compose:
+        project_src: /home/{{ username }}/Docker/uptimekuma
+        state: present     
+
+   - name: Download NetData_docker-compose.yml from GitHub
+      get_url:
+        url: https://raw.githubusercontent.com/JAlcocerT/Docker/main/IoT/NetData_docker-compose.yaml
+        dest: /home/{{ username }}/Docker/NetData/docker-compose.yml
+        mode: '0755'
+
+    - name: Deploy with Docker Compose - NetData
+      docker_compose:
+        project_src: /home/{{ username }}/Docker/NetData
+        state: present                     
+
+
+    # - name: Include VSCodium Playbook
+    #   include: ../Ansible/install_dev_vscodium.yml
+
+    # - name: Include Python Playbook
+    #   include: ../Ansible/install_dev_python.yml
+
+    # - name: Include Docker Playbook
+    #   include: ../Ansible/install_docker.yml      
+
+    # - name: Include the specific task from another folder
+    #   include_tasks: ../Ansible/install_linux_tools.yml
+    #   tasks_from: #Install sysbench
+    #     - Install Gufw (Firewall Configuration Tool)
+    #     - Install sysbench
+
+#https://registry.hub.docker.com/r/jokobsk/pi.alert        
 
     # - name: Include the specific task from example.yml
     #   include_tasks: example.yml
