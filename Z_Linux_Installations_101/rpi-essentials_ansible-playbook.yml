@@ -3,40 +3,59 @@
   hosts: localhost
   gather_facts: no
   become: yes
+  # vars:
+  #   username: your_username  # Replace with your username  
   tasks:
+
+    - name: Ensure the destination directory exists - Wireguard
+      file:
+        path: "/home/{{ username }}/Docker/Wireguard"
+        state: directory
+        mode: '0755'
+      become_user: "{{ username }}"  
    - name: Download wireguard_docker-compose.yml from GitHub
       get_url:
         url: https://raw.githubusercontent.com/JAlcocerT/Docker/main/Security/wireguard_docker-compose.yml
         dest: /home/{{ username }}/Docker/Wireguard/docker-compose.yml
         mode: '0755'
-
     - name: Deploy with Docker Compose - Wireguard
       docker_compose:
         project_src: /home/{{ username }}/Docker/Wireguard
         state: present      
 
-
+    - name: Ensure the destination directory exists - uptimekuma
+      file:
+        path: "/home/{{ username }}/Docker/uptimekuma"
+        state: directory
+        mode: '0755'
+      become_user: "{{ username }}"  
    - name: Download uptimekuma_docker-compose.yml from GitHub
       get_url:
         url: https://raw.githubusercontent.com/JAlcocerT/Docker/main/Security/uptimekuma_docker-compose.yml
         dest: /home/{{ username }}/Docker/uptimekuma/docker-compose.yml
         mode: '0755'
-
     - name: Deploy with Docker Compose - uptimekuma
       docker_compose:
         project_src: /home/{{ username }}/Docker/uptimekuma
         state: present     
 
+    - name: Ensure the destination directory exists - NetData
+      file:
+        path: "/home/{{ username }}/Docker/NetData"
+        state: directory
+        mode: '0755'
+      become_user: "{{ username }}"  
    - name: Download NetData_docker-compose.yml from GitHub
       get_url:
         url: https://raw.githubusercontent.com/JAlcocerT/Docker/main/IoT/NetData_docker-compose.yaml
         dest: /home/{{ username }}/Docker/NetData/docker-compose.yml
         mode: '0755'
-
     - name: Deploy with Docker Compose - NetData
       docker_compose:
         project_src: /home/{{ username }}/Docker/NetData
         state: present                     
+
+# sudo ansible-playbook rpi-essentials_ansible-playbook.yml -e "username=reisipi"
 
 
     # - name: Include VSCodium Playbook
@@ -64,4 +83,5 @@
     #   include: other_example.yml
 
 
-    #sudo ansible-playbook rpi_essentials_ansible-playbook.yml
+    #sudo ansible-playbook rpi-essentials_ansible-playbook.yml
+    #sudo ansible-playbook rpi-essentials_ansible-playbook.yml -e "username=reisipi"

@@ -396,6 +396,7 @@ sudo apt install -y ./Mullvad*
 #Password managers & 2FA's
 
 sudo snap install bitwarden
+
 sudo add-apt-repository ppa:phoerious/keepassxc #offline password manager
 sudo apt update && sudo apt install keepassxc
 #sudo add-apt-repository --remove ppa:phoerious/keepassxc
@@ -451,6 +452,7 @@ sudo modprobe 88x2bu
 ### Buziness, Buziness ###
 ##########################
 
+#EE
 #eid #https://github.com/open-eid/DigiDoc4-Client#ubuntu
 #https://installer.id.ee/media/install-scripts/install-open-eid.sh
 #chmod +x ./install-open-eid.sh
@@ -477,6 +479,8 @@ flatpak install flathub app.organicmaps.desktop
 ####################
 ### Local Gen-AI ###
 ####################
+
+#https://github.com/steven2358/awesome-generative-ai
 
 #Vicuna-7B locally with CPU: https://fossengineer.com/Generative-AI-LLMs-locally-with-cpu/
 #https://hub.docker.com/repository/docker/fossengineer/oobabooga_cpu/tags?page=1&ordering=last_updated
