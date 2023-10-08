@@ -1,5 +1,30 @@
-#Bitwarden
+---
+- name: Install Privacy/Security Tools on Ubuntu
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: Install Bitwarden
+      apt:
+        name: bitwarden
+        state: present
 
-#Authy
+    - name: Install Authy
+      apt:
+        name: authy
+        state: present
+
+    - name: Install GUFW (Graphical Uncomplicated Firewall)
+      apt:
+        name: gufw
+        state: present
+
+    - name: Install Tailscale
+      shell: "url -fsSL https://tailscale.com/install.sh | sh"
+
+    - name: Install Tailscale
+      shell: "url -fsSL https://tailscale.com/install.sh | sh"
+
+
+
 
 #https://safing.io/

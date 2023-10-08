@@ -1,0 +1,30 @@
+---
+- name: Master Playbook RPi
+  hosts: localhost
+  gather_facts: no
+  become: yes
+  tasks:
+    - name: Include VSCodium Playbook
+      include: ../Ansible/install_dev_vscodium.yml
+
+    - name: Include Python Playbook
+      include: ../Ansible/install_dev_python.yml
+
+    - name: Include Docker Playbook
+      include: ../Ansible/install_docker.yml      
+
+    - name: Include the specific task from another folder
+      include_tasks: ../Ansible/install_linux_tools.yml
+      tasks_from: #Install sysbench
+        - Install Gufw (Firewall Configuration Tool)
+        - Install sysbench
+
+    # - name: Include the specific task from example.yml
+    #   include_tasks: example.yml
+    #   tasks_from: my_task.yml      
+
+    # - name: Include Other Playbook
+    #   include: other_example.yml
+
+
+    #sudo ansible-playbook rpi_essentials_ansible-playbook.yml

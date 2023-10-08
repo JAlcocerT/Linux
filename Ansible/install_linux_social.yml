@@ -1,0 +1,22 @@
+---
+- name: Install Social Apps on Ubuntu
+  hosts: localhost
+  become: yes
+  tasks:
+    - name: Install Sengi (Mastodon Client)
+      snap:
+        name: sengi
+        state: present
+
+    - name: Install Fluffy Chat (Matrix Client)
+      snap:
+        name: fluffychat
+        state: present
+
+    # - name: Install Cawbird (Twitter Client)
+    #   snap:
+    #     name: cawbird
+    #     state: present
+
+
+#sudo ansible-playbook install_linux_social.yml

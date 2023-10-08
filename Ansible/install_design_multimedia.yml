@@ -22,15 +22,31 @@
         name: kdenlive
         state: present
 
+    - name: Install OpenShot
+      apt:
+        name: openshot
+        state: present
+
     - name: Install Audacity
       apt:
         name: audacity
         state: present
 
+    - name: Install Kazam
+      apt:
+        name: kazam
+        state: present        
+
     - name: Install HandBrake
       apt:
         name: handbrake
         state: present
+
+    - name: Install Flameshot
+      apt:
+        name: flameshot
+        state: present        
+
 
 
 #sudo ansible-playbook install_design_video.yml

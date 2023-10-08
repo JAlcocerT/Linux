@@ -28,5 +28,9 @@
         name: librewolf
         state: present
 
+    - name: Install Tor Browser (Flatpak)
+      become_user: your_username  # Replace with your username
+      command: flatpak install flathub com.github.micahflee.torbrowser-launcher
+
 
 ##sudo ansible-playbook install_linux_browsers.yml

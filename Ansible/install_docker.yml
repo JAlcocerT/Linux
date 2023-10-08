@@ -1,7 +1,10 @@
+
 ---
-- name: Install Docker on Ubuntu
+- name: Install Docker on Ubuntu's
   hosts: localhost
   become: yes
+  vars:
+    username: jalcocert  # Replace with your username
   tasks:
     - name: Download and install Docker
       shell: |
@@ -24,24 +27,73 @@
 
     - name: Ensure docker-compose.yml is present
       copy:
-        src: /home/jalcocert/ansible/stack-trip_planner.yml
-        dest: /home/jalcocert/ansible/docker-compose.yml
+        src: /home/{{ username }}/Linux/Ansible/stack-trip_planner.yml
+        dest: /home/{{ username }}/Linux/Ansible/docker-compose.yml
 
     - name: Deploy with Docker Compose
       docker_compose:
-        project_src: /home/jalcocert/ansible
+        project_src: /home/{{ username }}/Linux/Ansible
         state: present
 
     - name: Download kodi_docker_compose.yml from GitHub
       get_url:
         url: https://raw.githubusercontent.com/JAlcocerT/Docker/main/Media/kodi_docker_compose.yml
-        dest: /home/jalcocert/ansible/docker-compose.yml
+        dest: /home/{{ username }}/Linux/Ansible/docker-compose.yml
         mode: '0755'
 
     - name: Deploy with Docker Compose
       docker_compose:
-        project_src: /home/jalcocert/ansible
-        state: present        
+        project_src: /home/{{ username }}/Linux/Ansible
+        state: present
+
+
+#ansible-playbook docker.yml -e "username=your_username"
+
+
+# ---
+# - name: Install Docker on Ubuntu's
+#   hosts: localhost
+#   become: yes
+#   tasks:
+#     - name: Download and install Docker
+#       shell: |
+#         curl -fsSL https://get.docker.com -o /tmp/get-docker.sh
+#         sh /tmp/get-docker.sh
+
+#     - name: Install docker-compose
+#       apt:
+#         name: docker-compose
+#         state: present
+#         update_cache: yes
+
+#     - name: Run Double Pendulum Docker container
+#       docker_container:
+#         name: double_pendulum
+#         image: fossengineer/double_pendulum:v1.1-amd64
+#         ports:
+#           - "8501:8501"
+#         state: started
+
+#     - name: Ensure docker-compose.yml is present
+#       copy:
+#         src: /home/jalcocert/ansible/stack-trip_planner.yml
+#         dest: /home/jalcocert/ansible/docker-compose.yml
+
+#     - name: Deploy with Docker Compose
+#       docker_compose:
+#         project_src: /home/jalcocert/ansible
+#         state: present
+
+#     - name: Download kodi_docker_compose.yml from GitHub
+#       get_url:
+#         url: https://raw.githubusercontent.com/JAlcocerT/Docker/main/Media/kodi_docker_compose.yml
+#         dest: /home/jalcocert/ansible/docker-compose.yml
+#         mode: '0755'
+
+#     - name: Deploy with Docker Compose
+#       docker_compose:
+#         project_src: /home/jalcocert/ansible
+#         state: present        
 
     # - name: Download Jackett docker-compose from Gist
     #   get_url:

@@ -148,10 +148,10 @@
         repo: "deb [signed-by=/usr/share/keyrings/vscodium-archive-keyring.gpg] https://paulcarroty.gitlab.io/vscodium-deb-rpm-repo/debs/ vscodium main"
         state: present
 
-    - name: Install Visual Studio Code
-      apt:
-        name: code
-        state: present
+    # - name: Install Visual Studio Code
+    #   apt:
+    #     name: code
+    #     state: present
 
     - name: Install VSCodium
       apt:

@@ -1,3 +1,7 @@
+#To use it as example to deploy docker-compose files with Ansible
+#App Source Code: https://github.com/JAlcocerT/Py_Trip_Planner
+#DockerHub: https://hub.docker.com/r/fossengineer/trip_planner/tags 
+
 version: '3.7'
 
 services:

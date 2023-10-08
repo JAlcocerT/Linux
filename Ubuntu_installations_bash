@@ -17,6 +17,22 @@ sudo apt-get install y-ppa-manager -y
 sudo apt install unattended-upgrades -y
 sudo dpkg-reconfigure -plow unattended-upgrades
 
+### Docker ###
+
+#curl -fsSL https://get.docker.com -o /tmp/get-docker.sh
+#sh /tmp/get-docker.sh
+
+################################
+### Package Managent Systems ###
+################################
+
+#sudo apt update
+#sudo apt install snapd #https://snapcraft.io/store
+
+#sudo apt-get install flatpak #https://flathub.org/en
+
+#curl -L https://nixos.org/nix/install | sh #https://search.nixos.org/packages?
+#sudo bash ./nix-*-multi-user.sh
 
 #############
 ### MEDIA ###
@@ -25,10 +41,14 @@ sudo dpkg-reconfigure -plow unattended-upgrades
 
 sudo apt install snapd
 
-snap install spotify && snap install vlc
+#snap install spotify
+snap install vlc
+
+#flatpak install flathub io.freetubeapp.FreeTube
 
 #Browsers
 sudo snap install brave
+flatpak install flathub com.github.micahflee.torbrowser-launcher
 
 #librewolf
 distro=$(if echo " bullseye focal impish uma una " | grep -q " $(lsb_release -sc) "; then echo $(lsb_release -sc); else echo focal; fi)
@@ -42,19 +62,33 @@ sudo apt install librewolf -y
 #wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 #sudo apt install ./google-chrome-stable_current_amd64.deb
 #rm google-chrome-stable_current_amd64.deb
+#chromium
 
-#Design
+
+##############
+### Design ###
+##############
+
+sudo snap install gimp
+
+
+#sudo snap install upscayl
+#flatpak install flathub org.upscayl.Upscayl
+#https://github.com/upscayl/upscayl/releases
+#sudo wget https://github.com/upscayl/upscayl/releases/download/v1.5.5/Upscayl-1.5.5.AppImage
+#chmod +x ./*.AppImage
+
+
 sudo snap install blender --classic && snap install freecad && snap install openscad && snap install cura-slicer 
-sudo add-apt-repository ppa:kicad/kicad-5.1-releases && sudo apt update && sudo apt install kicad
 
-sudo snap install shotcut -- classic && snap install gimp && snap install photoscape  && snap install inkscape
+sudo snap install shotcut -- classic && snap install photoscape  && snap install inkscape
 
 sudo snap install penpot-desktop
 
 
-#https://github.com/upscayl/upscayl/releases
-#sudo wget https://github.com/upscayl/upscayl/releases/download/v1.5.5/Upscayl-1.5.5.AppImage
-#chmod +x ./*.AppImage
+#Flameshot
+#kdenlive video editor
+#openshot
 
 # Screen recording & audio
 sudo apt install kazam #sharex foss for windows
@@ -64,6 +98,7 @@ sudo add-apt-repository ppa:openshot.developers/ppa
 sudo apt-get update
 sudo apt-get install openshot-qt
 
+#E-Book Design
 sudo add-apt-repository ppa:scribus/ppa
 sudo apt update
 sudo apt install scribus
@@ -71,16 +106,20 @@ sudo apt install scribus
 #sudo add-apt-repository --remove ppa:scribus/ppa
 
 
+
+
 ###################
 ### PROGRAMMING ###
 ###################
 
+
+#https://snapcraft.io/docs/python-apps
+
 #octave
-sudo apt-get install flatpak
+#sudo apt-get install flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak install flathub org.octave.Octave -y
 
-sudo snap install slack --classic
 
 #sudo snap install code --classic
 #sudo snap install codium --classic
@@ -113,24 +152,36 @@ sudo apt -y install r-base
 #sudo apt-get install gdebi-core 
 #sudo gdebi GitHubDesktop-linux-2.9.3-linux3.deb -y
 #To get the latest Automatically
-curl -s https://api.github.com/repos/shiftkey/desktop/releases/latest \
-| grep "GitHubDesktop-linux-.*deb" \
-| cut -d : -f 2,3 \
-| tr -d \" \
-| wget -qi -
-sudo apt install ./GitHubDesktop-linux-*.deb
+# curl -s https://api.github.com/repos/shiftkey/desktop/releases/latest \
+# | grep "GitHubDesktop-linux-.*deb" \
+# | cut -d : -f 2,3 \
+# | tr -d \" \
+# | wget -qi -
+# sudo apt install ./GitHubDesktop-linux-*.deb
 
-sudo snap install notepad-plus-plus
+
+
+
+###########
+### IoT ###
+###########
 
 #RPi
 sudo apt install rpi-imager
+
+sudo snap install mosquitto
+sudo snap install node-red
+
+sudo snap install openhab
+
+#Electronics
+sudo add-apt-repository ppa:kicad/kicad-5.1-releases && sudo apt update && sudo apt install kicad
 
 
 #############
 ### GAMES ###
 #############
 
-sudo snap install discord
 sudo apt install anbox -y
 
 #waydroid
@@ -152,8 +203,8 @@ sudo apt install libgl1-mesa-dri:i386
 sudo apt install mesa-vulkan-drivers mesa-vulkan-drivers:i386 -y
 
 
-#Install Steam using the following Terminal command:
-sudo apt install steam -y
+#Install STEAM using the following Terminal command:
+#sudo apt install steam -y
 #Once installed, run Steam, install any updates, and sign into your Steam account. 
 #Enable Proton to work with all your Steam library by navigating to Steam / Settings / Steam Play / Advanced, and ticking the Enable Steam Play for all other titles.
 #Reboot Steam once done
@@ -186,7 +237,7 @@ sudo apt install lutris -y
 ###############
 
 #dropbox
-sudo apt-get install nautilus-dropbox -y
+#sudo apt-get install nautilus-dropbox -y
 
 #megasync
 #wget https://mega.nz/linux/MEGAsync/xUbuntu_20.04/amd64/megasync-xUbuntu_20.04_amd64.deb
@@ -241,18 +292,37 @@ sudo apt install ./VNC-Viewer-6.22.315-Linux-x86.deb -y
 
 sudo apt-get install gnome-shell-pomodoro
 #Ulauncher #ctrl + space
-#Flameshot
-#kdenlive video editor
 
-sudo add-apt-repository ppa:mdoyen/homebank
-sudo apt-get update
-sudo apt-get install homebank
+sudo snap install wekan
+sudo snap install libreoffice
+sudo snap install drawio
+
+
+#flatpak install flathub md.obsidian.Obsidian
+flatpak install flathub com.github.zadam.trilium
+flatpak install flathub net.cozic.joplin_desktop
+flatpak install flathub com.logseq.Logseq
 
 ##############
 ### Social ###
 ##############
 
 sudo apt install thunderbird
+
+
+# sudo snap install slack --classic
+sudo snap install mattermost-desktop
+
+
+# sudo snap install discord
+flatpak install flathub chat.revolt.RevoltDesktop
+#flatpak run chat.revolt.RevoltDesktop
+
+
+#telegram desktop
+#sudo apt install telegram-desktop
+sudo snap install signal-desktop
+
 
 #matrix client - element
 sudo apt install apt-transport-https
@@ -268,10 +338,11 @@ sudo snap install fluffychat
 sudo snap install sengi
 
 #nostr
+#pixelfed
+#https://pixelfed.org/
 
 
-#telegram desktop
-sudo apt install telegram-desktop
+
 #cawbird twitter client #chronological tweets
 sudo snap install cawbird
 #feeds (rss client)
@@ -288,14 +359,17 @@ sudo apt update -y
 sudo apt install gufw -y
 
 
-#VPN
-sudo apt-get install apt-transport-https &&
-curl -fsSL https://pkgs.tailscale.com/stable/raspbian/buster.gpg | sudo apt-key add - &&
-curl -fsSL https://pkgs.tailscale.com/stable/raspbian/buster.list | sudo tee /etc/apt/sources.list.d/tailscale.list &&
-sudo apt-get update &&
-sudo apt-get install tailscale &&
-sudo tailscale up &&
-tailscale ip -4
+#VPNs
+
+#https://github.com/tailscale/tailscale
+# sudo apt-get install apt-transport-https &&
+# curl -fsSL https://pkgs.tailscale.com/stable/raspbian/buster.gpg | sudo apt-key add - &&
+# curl -fsSL https://pkgs.tailscale.com/stable/raspbian/buster.list | sudo tee /etc/apt/sources.list.d/tailscale.list &&
+# sudo apt-get update &&
+# sudo apt-get install tailscale &&
+curl -fsSL https://tailscale.com/install.sh | sh
+sudo tailscale up
+#tailscale ip -4
 #ssh user_name@ip_given_from_tailscale ---> will connect to the device
 
 #echo 'net.ipv4.ip_forward = 1' | sudo tee -a /etc/sysctl.conf &&
@@ -304,7 +378,12 @@ tailscale ip -4
 #sudo tailscale down
 
 #sudo tailscale up --advertise-exit-node
-sudo tailscale up --exit-node=ip.add.re.ss --advertise-exit-node  #action needed on this exit node after its validation on the web console -> settings/edit route settings
+#sudo tailscale up --exit-node=ip.add.re.ss --advertise-exit-node  #action needed on this exit node after its validation on the web console -> settings/edit route settings
+
+
+wget --content-disposition https://mullvad.net/en/download/app/deb/latest
+sudo apt install -y ./Mullvad*
+
 
 #Password managers & 2FA's
 
@@ -315,7 +394,7 @@ sudo apt update && sudo apt install keepassxc
 #sudo apt remove --autoremove keepassxc
 
 sudo apt-get install aegis
-sudo snap install authy
+#sudo snap install authy
 
 #mac
 #sudo apt-get install macchanger
@@ -326,6 +405,14 @@ sudo snap install authy
 
 flatpak install flathub info.portfolio_performance.PortfolioPerformance
 flatpak run info.portfolio_performance.PortfolioPerformance
+
+sudo add-apt-repository ppa:mdoyen/homebank
+sudo apt-get update
+sudo apt-get install homebank
+
+#crypto
+#nix-env -iA nixpkgs.electrum
+#flatpak install flathub org.featherwallet.Feather
 
 ##################
 ##### OTHERS #####
@@ -352,12 +439,25 @@ sudo dkms install -m rtl88x2bu -v ${VER}
 sudo modprobe 88x2bu
 #rm GitHubDesktop-linux-2.9.3-linux3.deb
 
+##########################
+### Buziness, Buziness ###
+##########################
+
 #eid #https://github.com/open-eid/DigiDoc4-Client#ubuntu
 #https://installer.id.ee/media/install-scripts/install-open-eid.sh
 #chmod +x ./install-open-eid.sh
 #./install-open-eid.sh
 
+
+##############
+### TRAVEL ###
+##############
+
+flatpak install flathub app.organicmaps.desktop
+
+##############
 ### LAPTOP ### 
+##############
 
 #sudo snap install auto-cpufreq
 
