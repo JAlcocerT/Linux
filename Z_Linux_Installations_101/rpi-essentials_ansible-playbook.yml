@@ -5,8 +5,7 @@
   become: yes
   # vars:
   #   username: your_username  # Replace with your username  
-  tasks:
-
+  tasks:  
     - name: Ensure the destination directory exists - Wireguard
       file:
         path: "/home/{{ username }}/Docker/Wireguard"

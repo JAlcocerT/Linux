@@ -22,9 +22,10 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 
 ## Using Chocolatey
 
-Navigate to <https://community.chocolatey.org/packages> and look for the packages that you are interested.
+Navigate to **<https://community.chocolatey.org/packages>** and look for the packages that you are interested.
 
 Create a list like this one that you will use from the powershell:
+
 
 
 {{< cmd >}}
@@ -38,3 +39,8 @@ choco install obs-studio
 
 choco install rpi-imager
 {{< /cmd >}}
+
+https://gist.github.com/JAlcocerT/76f22ddf886277ef2653f82898c634d8
+
+
+<script src="https://gist.github.com/JAlcocerT/76f22ddf886277ef2653f82898c634d8"></script>
