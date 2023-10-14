@@ -44,3 +44,5 @@ https://gist.github.com/JAlcocerT/76f22ddf886277ef2653f82898c634d8
 
 
 <script src="https://gist.github.com/JAlcocerT/76f22ddf886277ef2653f82898c634d8"></script>
+
+{{< gist "JAlcocerT/76f22ddf886277ef2653f82898c634d8" >}}
