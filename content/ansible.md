@@ -1,7 +1,7 @@
 ---
 date: "2023-08-26T17:27:58+01:00"
 draft: false
-title: "Chocolatey: A package manager for Windows"
+title: "Ansible: Automate your PC like a DevOps Would"
 ---
 
 Ansible is an **automation tool** that simplifies the management and configuration of servers, applications, and infrastructure. 

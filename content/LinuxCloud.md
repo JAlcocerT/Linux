@@ -57,7 +57,7 @@ As any decision, this has **trade-offs** to be considered:
 
 **at a cost...**
 
-{{< expandable label="expandable 2" level="2" >}} 
+{{< expandable label="Check Which Costs" level="2" >}} 
 
 * Security: Cloud deployment can pose potential security risks, especially if sensitive data is stored on the cloud.
 
