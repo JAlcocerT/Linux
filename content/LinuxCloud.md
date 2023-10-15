@@ -39,7 +39,9 @@ With the use of linux as a stable and secure operative system, the voluntary col
 
 As any decision, this has **trade-offs** to be considered: 
 
-*Scalability: Cloud deployment enables applications to scale quickly and easily to meet changing user demands.
+{{< expandable label="Check the Trade-Offs" level="2" >}} 
+
+* Scalability: Cloud deployment enables applications to scale quickly and easily to meet changing user demands.
 
 * Cost: Cloud deployment can be more cost-effective than traditional hosting solutions, since it allows businesses to pay only for the resources they use.
 
@@ -49,7 +51,13 @@ As any decision, this has **trade-offs** to be considered:
 
 * Flexibility: Cloud deployment offers greater flexibility and customization options compared to traditional hosting solutions.
 
+ {{< /expandable >}}
+
+
+
 **at a cost...**
+
+{{< expandable label="expandable 2" level="2" >}} 
 
 * Security: Cloud deployment can pose potential security risks, especially if sensitive data is stored on the cloud.
 
@@ -60,3 +68,5 @@ As any decision, this has **trade-offs** to be considered:
 * Compliance: Cloud deployment can pose challenges when it comes to regulatory compliance, since businesses may not have full control over the infrastructure where their data is stored.
 
 * Complexity: Cloud deployment can be more complex to manage and deploy compared to traditional hosting solutions, requiring specialized knowledge and expertise.
+
+{{< /expandable >}}

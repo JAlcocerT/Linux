@@ -4,9 +4,11 @@ draft: false
 title: "Chocolatey: A package manager for Windows"
 ---
 
-# Ansible, Why?
+Ansible is an **automation tool** that simplifies the management and configuration of servers, applications, and infrastructure. 
 
-Ansible is an automation tool that simplifies the management and configuration of servers, applications, and infrastructure. It allows you to define tasks in plain text, automate repetitive operations, and ensure consistent system configurations across your network.
+# Why Ansible?
+
+It allows you to define tasks in plain text, automate repetitive operations, and ensure consistent system configurations across your network.
 
 **An Automation tool?**
 
@@ -14,7 +16,7 @@ Ansible is an automation tool that simplifies the management and configuration o
 
 ## Installing Ansible
 
-```
+```sh
 #sudo apt update
 #sudo apt upgrade
 sudo apt install ansible
@@ -24,7 +26,8 @@ sudo apt install ansible
 ```
 
 Check the version with:
-```
+
+```sh
 ansible --version
 ```
 

@@ -9,15 +9,10 @@ Additionally, Linux is highly customizable, allowing users to **tailor the opera
 
 The **open-source** nature of Linux makes it easy for developers to create applications and tools that are compatible with the operating system. 
  
->  It's a digital campfire around which people gather to share and improve their code, collaborating to craft an operating system that's open to all. It's not a shiny corporate product but a reflection of the spirit of sharing, where everyone can take, modify, and contribute, creating a digital tapestry woven with the threads of countless ideas.
+>  It's not a corporate product but a reflection of the spirit of sharing, where everyone can take, modify, and contribute, creating a digital tapestry made of threads of countless ideas.
 
-## Web Structure
+## Why Linux?
 
-{{< ticks >}}
-* Linux Install Guides
-    * Debian - Tested with Ubuntu, Elementary OS, Zorin OS (or [RaspberryPi OS](https://jalcocert.github.io/RPi/) were applicable for ARM).
-    * Arch
-* Nix Package Manager - *One to rule them All*
-* Chocolatey What?
-* Linux & the Cloud: mapping these concepts with open source software and Docker.
-{{< /ticks >}}
+* A better understanding of how computers work: Linux is a Unix-based operating system, which means that it is built on top of the Unix kernel. Unix is a very powerful and versatile operating system, and learning Linux will give you a better understanding of how computers work at a lower level.
+* The ability to work on a variety of platforms: Linux is available on a wide variety of platforms, including desktops, laptops, **servers (Cloud), and even embedded systems**. Learning Linux will give you the ability to work on a variety of platforms without having to learn different operating systems.
+* Learn Linux to gain control over your system's privacy and security, thanks to its **open-source nature** and robust security architecture.

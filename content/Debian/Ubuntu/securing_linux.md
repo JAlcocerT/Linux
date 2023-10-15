@@ -9,7 +9,7 @@ tags: ["Guides"]
 
 ### Setup fail2ban
 
-```
+```sh
 #fail2ban
 sudo apt-get install -y \
 apt-transport-https \

@@ -12,7 +12,7 @@ Ok - this is suposed to be Linux related only, but I discovered about this and i
 
 **Package WHAT?**
 
-> When you want new tools or games, instead of roaming the internet alleys, you tell the shopkeeper what you desire. This shopkeeper knows where to find them, handles all the downloading and setup, and even keeps them updated so you don't have to worry about dusty shelves. This helpful wizardry is what a package manager does for your software world.
+> When you want new tools or games, instead of roaming the internet alleys, you tell the package manager what you desire. This *shopkeeper* knows where to find them, handles all the downloading and setup, and even keeps them updated so you don't have to worry about dusty shelves. 
 
 ## Installing Chocolatey
 
@@ -25,23 +25,6 @@ Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManage
 Navigate to **<https://community.chocolatey.org/packages>** and look for the packages that you are interested.
 
 Create a list like this one that you will use from the powershell:
-
-
-
-{{< cmd >}}
-choco install librewolf
-
-choco install vscodium
-
-choco install blender
-choco install obs-studio 
-
-
-choco install rpi-imager
-{{< /cmd >}}
-
-https://gist.github.com/JAlcocerT/76f22ddf886277ef2653f82898c634d8
-
 
 <script src="https://gist.github.com/JAlcocerT/76f22ddf886277ef2653f82898c634d8"></script>
 
