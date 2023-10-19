@@ -10,6 +10,10 @@ First, you will need gnome tweaks:
 {{< gist "JAlcocerT/197667ec5ec0da53e78eb58c4253a73f#file-z_gnome_tweak" >}}
 
 
+{{< gist "JAlcocerT/197667ec5ec0da53e78eb58c4253a73f" >}}
+
+{{< gist "JAlcocerT/76f22ddf886277ef2653f82898c634d8" >}}
+
 Then, download conky manager:
 
 ``` 
