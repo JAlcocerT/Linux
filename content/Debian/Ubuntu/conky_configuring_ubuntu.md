@@ -7,9 +7,7 @@ tags: ["Guides"]
 
 First, you will need gnome tweaks:
 
-<script src="https://gist.github.com/JAlcocerT/197667ec5ec0da53e78eb58c4253a73f#file-z_gnome_tweak"></script>
-
-<script src="https://gist.github.com/JAlcocerT/197667ec5ec0da53e78eb58c4253a73f"></script>
+{{< gist "JAlcocerT/197667ec5ec0da53e78eb58c4253a73f#file-z_gnome_tweak" >}}
 
 
 Then, download conky manager:
