@@ -36,65 +36,18 @@ sudo nano apps-install-bash.sh
 For each category, I have been ranking in the top the **Free Open Source Software Apps**some propietary popular apps, like vscode, are also included. 
 
 
-{{< expandable label="Expand the list of App you can install" level="2" >}}
-
 <script src="https://gist.github.com/JAlcocerT/197667ec5ec0da53e78eb58c4253a73f#file-z_backups-sh"></script>
-
-{{< /expandable >}}  
-
-
-{{< expandable label="Design" level="2" >}}
 
 <script src="https://gist.github.com/JAlcocerT/197667ec5ec0da53e78eb58c4253a73f#file-z_design-sh"></script>
 
-
-{{< /expandable >}}  
-
-
-{{< expandable label="IoT" level="2" >}}
-
 <script src="https://gist.github.com/JAlcocerT/197667ec5ec0da53e78eb58c4253a73f#file-z_iot-sh"></script>
-
-
-{{< /expandable >}}  
-
-{{< expandable label="Media" level="2" >}}
 
 <script src="https://gist.github.com/JAlcocerT/197667ec5ec0da53e78eb58c4253a73f#file-z_media-sh"></script>
 
-
-{{< /expandable >}}  
-
-
-{{< expandable label="Privacy" level="2" >}}
-
 <script src="https://gist.github.com/JAlcocerT/197667ec5ec0da53e78eb58c4253a73f#file-z_privacy-sh"></script>
-
-
-{{< /expandable >}}  
-
-
-{{< expandable label="Productivity" level="2" >}}
 
 <script src="https://gist.github.com/JAlcocerT/197667ec5ec0da53e78eb58c4253a73f#file-z_productivty-sh"></script>
 
-
-{{< /expandable >}}  
-
-
-
-
-{{< expandable label="Programming" level="2" >}}
-
 <script src="https://gist.github.com/JAlcocerT/197667ec5ec0da53e78eb58c4253a73f#file-z_programming-sh"></script>
 
-
-{{< /expandable >}}  
-
-
-{{< expandable label="Social" level="2" >}}
-
 <script src="https://gist.github.com/JAlcocerT/197667ec5ec0da53e78eb58c4253a73f#file-z_social-sh"></script>
-
-
-{{< /expandable >}}  

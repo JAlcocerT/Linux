@@ -16,7 +16,7 @@ It allows you to define tasks in plain text, automate repetitive operations, and
 
 ## Installing Ansible
 
-```sh
+```
 #sudo apt update
 #sudo apt upgrade
 sudo apt install ansible
@@ -27,7 +27,7 @@ sudo apt install ansible
 
 Check the version with:
 
-```sh
+```
 ansible --version
 ```
 
