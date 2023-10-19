@@ -40,15 +40,16 @@ For each category, I have been ranking in the top the **Free Open Source Softwar
 
 <script src="https://gist.github.com/JAlcocerT/197667ec5ec0da53e78eb58c4253a73f#file-z_backups-sh"></script>
 
+{{< /expandable >}}  
 
-{{< expandable label="Design" level="3" >}}
+
+{{< expandable label="Design" level="2" >}}
 
 <script src="https://gist.github.com/JAlcocerT/197667ec5ec0da53e78eb58c4253a73f#file-z_design-sh"></script>
 
 
 {{< /expandable >}}  
 
-{{< /expandable >}}  
 
 {{< expandable label="IoT" level="2" >}}
 
