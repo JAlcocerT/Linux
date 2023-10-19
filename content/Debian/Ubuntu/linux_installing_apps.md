@@ -33,70 +33,67 @@ edit the file, if desired through the command line with:
 sudo nano apps-install-bash.sh
 ```
 
+For each category, I have been ranking in the top the **Free Open Source Software Apps**some propietary popular apps, like vscode, are also included. 
+
+
 {{< expandable label="Expand the list of App you can install" level="2" >}}
 
-For each category, I have been ranking in the top the **Free Open Source Software Apps**, but as you might be interested in using propietary popular apps, like chrome or vscode, they are also included. 
+<script src="https://gist.github.com/JAlcocerT/197667ec5ec0da53e78eb58c4253a73f#file-z_backups-sh"></script>
 
-* General:
-   * Synaptic  
-   * PPA GUI Manager 
-   * Snap store 
-   * Docker ---> :fire: **BONUS** :rocket: Extra apps can be installed easily - [Apps list and config files](https://github.com/JAlcocerT/Docker). You can also check [my blog for specific self-hosting guides](https://fossengineer.com/tags/self-hosting/).
-    
-* Media:
-    * VLC 
-    * Spotify
-    
-* Browsers:
-    * Brave 
-    * Librewolf 
-    * Chrome
-    
-* Design
-    * Blender 
-    * FreeCad 
-    * OpenSCad 
-    * GIMP 
-    * Photoscape 
-    * Kazam 
-    * Cura
-    * Inkscapee
-    * KiCad
-    * Audacity
-    
-* Programming:
-   * Octave 
-   * VSCode
-   * Flutter
-   * Android Studio
-   * RStudio 
-   * GH Desktop 
-   * Slack
-   
-* Gaming:
-    * WINE 
-    * Lutris 
-    * Steam
-    * Epic Games
-    * Origin
-    
-* BackUps:
-   * NextCloud 
-   * Syncthing  
-   * Timeshift 
-   * Dropbox
-   * MegaSync
-   * Synkron
-   * Grsync
-   
-* Others:
-   * VBOX
-   * VMWare
-   * VNC Server 
-   * GUFW 
-   * VPN 
-     * Tailscale 
-     * Wireguard Client
-   * UnetBootin 
 
- {{< /expandable >}}  
+{{< expandable label="Design" level="3" >}}
+
+<script src="https://gist.github.com/JAlcocerT/197667ec5ec0da53e78eb58c4253a73f#file-z_design-sh"></script>
+
+
+{{< /expandable >}}  
+
+{{< /expandable >}}  
+
+{{< expandable label="IoT" level="2" >}}
+
+<script src="https://gist.github.com/JAlcocerT/197667ec5ec0da53e78eb58c4253a73f#file-z_iot-sh"></script>
+
+
+{{< /expandable >}}  
+
+{{< expandable label="Media" level="2" >}}
+
+<script src="https://gist.github.com/JAlcocerT/197667ec5ec0da53e78eb58c4253a73f#file-z_media-sh"></script>
+
+
+{{< /expandable >}}  
+
+
+{{< expandable label="Privacy" level="2" >}}
+
+<script src="https://gist.github.com/JAlcocerT/197667ec5ec0da53e78eb58c4253a73f#file-z_privacy-sh"></script>
+
+
+{{< /expandable >}}  
+
+
+{{< expandable label="Productivity" level="2" >}}
+
+<script src="https://gist.github.com/JAlcocerT/197667ec5ec0da53e78eb58c4253a73f#file-z_productivty-sh"></script>
+
+
+{{< /expandable >}}  
+
+
+
+
+{{< expandable label="Programming" level="2" >}}
+
+<script src="https://gist.github.com/JAlcocerT/197667ec5ec0da53e78eb58c4253a73f#file-z_programming-sh"></script>
+
+
+{{< /expandable >}}  
+
+
+{{< expandable label="Social" level="2" >}}
+
+<script src="https://gist.github.com/JAlcocerT/197667ec5ec0da53e78eb58c4253a73f#file-z_social-sh"></script>
+
+
+{{< /expandable >}}  

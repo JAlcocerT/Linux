@@ -40,3 +40,6 @@ sudo tailscale up --advertise-exit-node
 
 **Remember** to allow as admin in the tailscale network this machine as exit node as well. In review **route settings -> use as exit node**.
 
+### Other VPNs
+
+Tailscale is really easy to use. With time, you should get also familiar with Wireguard or OpenVPN.

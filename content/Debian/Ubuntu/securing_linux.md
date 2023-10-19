@@ -81,3 +81,5 @@ or
 ```
 nmap -sP 192.168.1.0/24 | grep "scan"
 ```
+
+You can also use any of these tools for [local Network Monitoring](https://jalcocert.github.io/RPi/posts/selfh-internet-better/#pi-alert) with Docker: 

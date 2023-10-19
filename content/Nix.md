@@ -35,7 +35,7 @@ yay -S nix
 
 Activate Nix **common steps again,** by adding the following lines to your shell profile (e.g., ~/.bashrc):
 
-{{< cmd >}} 
+{{< cmd >}}
 . /etc/profile.d/nix.sh
 #. /home/orangepi/.nix-profile/etc/profile.d/nix.sh
 {{< /cmd >}}
@@ -43,7 +43,7 @@ Activate Nix **common steps again,** by adding the following lines to your shell
 
 Reload your shell profile:
 
-{{< cmd >}} 
+{{< cmd >}}
 source ~/.bashrc
 {{< /cmd >}}
 
@@ -53,13 +53,13 @@ Once Nix is installed, you can use it to **install packages** by running the nix
 
 * For example, to install the git package, you can run:
 
-{{< cmd >}} 
+{{< cmd >}}
 nix-env -i git
 {{< /cmd >}}
 
 * Or to install the Julia language:
 
-{{< cmd >}} 
+{{< cmd >}}
 #nix-shell -p julia #in nix shell only
 
 nix-env -iA nixpkgs.julia
@@ -78,6 +78,6 @@ You can start by looking at <https://search.nixos.org/packages>
 
 You can use the nix-env command to search for packages on your local system. For example, to search for packages related to the python programming language, you can run:
 
-{{< cmd >}} 
+{{< cmd >}}
 nix-env -qa python
 {{< /cmd >}}

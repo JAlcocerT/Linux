@@ -6,7 +6,7 @@ theme: cupper-hugo-theme
 params:
   description: Linux OS's quick start guide for everyone.
   homeMetaContent: Linux OS's quick start guide for everyone.
-  footer: Made with [Hugo](https://gohugo.io/). Themed by [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme). Deployed to [Github](https://github.com/JAlcocerT/Linux/).
+  footer: Made with [Hugo](https://gohugo.io/). Themed by [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme). Deployed with [Github Actions](https://github.com/JAlcocerT/Linux/).
   # For more date formats see https://gohugo.io/functions/format/
   dateFormat: Jan 2, 2006
   codePenUser: JAlcocerT
