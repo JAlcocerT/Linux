@@ -7,12 +7,20 @@ tags: ["Guides"]
 
 First, you will need gnome tweaks:
 
-{{< gist "JAlcocerT/197667ec5ec0da53e78eb58c4253a73f#file-z_gnome_tweak" >}}
+````
+sudo apt install gnome-tweaks
 
+sudo apt-get install chrome-gnome-shell
+  
+sudo apt install conky-all curl jq
+  
+#copy conky files to ~/.config/conky
+  
+cp ~/Downloads/conky_config/Graffias ~/.config/conky -r
+sudo mkdir ~/.config/autostart
+cp ~/Downloads/conky_config/start_conky.desktop ~/.config/autostart/start_conky.desktop -r
+```
 
-{{< gist "JAlcocerT/197667ec5ec0da53e78eb58c4253a73f" >}}
-
-{{< gist "JAlcocerT/76f22ddf886277ef2653f82898c634d8" >}}
 
 Then, download conky manager:
 

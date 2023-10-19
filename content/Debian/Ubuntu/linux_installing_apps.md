@@ -35,19 +35,4 @@ sudo nano apps-install-bash.sh
 
 For each category, I have been ranking in the top the **Free Open Source Software Apps**some propietary popular apps, like vscode, are also included. 
 
-
-<script src="https://gist.github.com/JAlcocerT/197667ec5ec0da53e78eb58c4253a73f#file-z_backups-sh"></script>
-
-<script src="https://gist.github.com/JAlcocerT/197667ec5ec0da53e78eb58c4253a73f#file-z_design-sh"></script>
-
-<script src="https://gist.github.com/JAlcocerT/197667ec5ec0da53e78eb58c4253a73f#file-z_iot-sh"></script>
-
-<script src="https://gist.github.com/JAlcocerT/197667ec5ec0da53e78eb58c4253a73f#file-z_media-sh"></script>
-
-<script src="https://gist.github.com/JAlcocerT/197667ec5ec0da53e78eb58c4253a73f#file-z_privacy-sh"></script>
-
-<script src="https://gist.github.com/JAlcocerT/197667ec5ec0da53e78eb58c4253a73f#file-z_productivty-sh"></script>
-
-<script src="https://gist.github.com/JAlcocerT/197667ec5ec0da53e78eb58c4253a73f#file-z_programming-sh"></script>
-
-<script src="https://gist.github.com/JAlcocerT/197667ec5ec0da53e78eb58c4253a73f#file-z_social-sh"></script>
+{{< gist "JAlcocerT/197667ec5ec0da53e78eb58c4253a73f" >}}

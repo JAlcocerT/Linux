@@ -41,7 +41,7 @@ Additionally, Garuda Linux also provides a graphical package manager called "Pam
 
 Update repos with:
 
-{{< cmd >}} 
+{{< cmd >}}
 sudo pacman -Syu
 {{< /cmd >}}
 
@@ -49,7 +49,7 @@ sudo pacman -Syu
 
 And install packages with:
 
-{{< cmd >}} 
+{{< cmd >}}
 sudo pacman -S firefox
 {{< /cmd >}}
 
