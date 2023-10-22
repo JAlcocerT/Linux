@@ -5,7 +5,7 @@ draft: false
 tags: ["Guides","Docker"] 
 ---
 
-### Regular Apps installations
+## Regular Apps installations
 
 Ever wondered about using linux as a regular OS, but afraid of making tedious installations of all your favorite programs, even games?
 
@@ -36,3 +36,28 @@ sudo nano apps-install-bash.sh
 For each category, I have been ranking in the top the **Free Open Source Software Apps**some propietary popular apps, like vscode, are also included. 
 
 {{< gist "JAlcocerT/197667ec5ec0da53e78eb58c4253a73f" >}}
+
+## Uninstall Apps
+
+### With GUI
+
+Use Synaptic Package Manager.
+
+### With CLI
+
+Look for packages to uninstall:
+
+```
+apt list --installed
+```
+
+Filter by keyword:
+
+```
+apt list --installed | grep proton
+```
+
+For example:
+```
+sudo apt remove protonmail-bridge
+```
