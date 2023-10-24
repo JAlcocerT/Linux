@@ -3,9 +3,10 @@
   hosts: localhost
   gather_facts: no
   become: yes
-  # vars:
-  #   username: your_username  # Replace with your username  
-  tasks:  
+  vars:
+    username: reisipi  # Replace with your username  
+  tasks:
+
     - name: Ensure the destination directory exists - Wireguard
       file:
         path: "/home/{{ username }}/Docker/Wireguard"
@@ -52,7 +53,39 @@
     - name: Deploy with Docker Compose - NetData
       docker_compose:
         project_src: /home/{{ username }}/Docker/NetData
-        state: present                     
+        state: present    
+
+        #sudo docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
+                 
+
+# sudo docker exec -it your_gluetun_container_name sh
+# wget -qO- https://ipinfo.io/json #the command to use
+# sudo docker exec your_gluetun_container_name wget -qO- https://ipinfo.io/json
+# curl https://am.i.mullvad.net/json
+# apt installed wireguard
+# cp /home/reisipi/Downloads/pl-waw-wg-101.conf /etc/wireguard
+# sudo wg-quick up your_vpn_wireguard_configuration #the name of the .conf file that you have downloaded (without .conf)
+
+# version: "3"
+# services:
+#   gluetun:
+#     image: qmcgaw/gluetun
+#     container_name: your_gluetun_container_name    
+#     cap_add:
+#       - NET_ADMIN
+#     ports: #make sure to include these for qbittorrent to work
+#       - 51820:51820
+#       # - 6081:6881/udp
+#       # - 6011:6011      
+#     environment:
+#       - VPN_SERVICE_PROVIDER=mullvad
+#       - VPN_TYPE=wireguard
+#       - WIREGUARD_PRIVATE_KEY=yourkey
+#       - WIREGUARD_ADDRESSES=theip/something
+#       - SERVER_CITIES=New York NY #choose any available city
+#     volumes:
+#       - /home/Docker/Gluetun:/gluetun
+#     restart: unless-stopped
 
 # sudo ansible-playbook rpi-essentials_ansible-playbook.yml -e "username=reisipi"
 
