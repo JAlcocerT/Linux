@@ -138,23 +138,22 @@ Yes, Android it is built on the Linux kernel and these are some amazing Apps:
 * MapsMe - https://github.com/mapsme/api-android
 * Readrops - https://github.com/readrops/Readrops
 
+* PhyPhox - https://github.com/phyphox/phyphox-android
+
 </details>
 
 You can check more [here](https://brainfucksec.github.io/android-foss-apps-list#android-based-operating-systems)
 
 ## Powered Thanks To :heart:
 
-* [HUGO](https://github.com/gohugoio/hugo)
-* [HUGO Theme cupper](https://github.com/zwbetz-gh/cupper-hugo-theme).
-
-* The fantastic community on the internet from where I learn all of this.
+* The fantastic community on the internet from where I learn the foundations to put together all of this content.
+* [HUGO](https://github.com/gohugoio/hugo) the SSG that allowed me to generate this web
+  * [HEXA](https://github.com/imfing/hextra) the HUGO theme I use (previously [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme)
 
 ## :loudspeaker: Ways to Contribute 
 
 * Please feel free to fork the repository - try it out the guide for yourself and improve or add others tabs.
-
 * Support the Projects that made possible this repo, thanks to their fantastic job, this have been possible.
+* Support extra evening tinkering sessions:
 
-* Support extra evening code sessions:
-
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/FossEngineer)
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Z8Z1QPGUM)
