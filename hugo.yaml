@@ -9,6 +9,13 @@ theme: hextra
 #   imports:
 #   - path: github.com/imfing/hextra
 
+# services:
+#   googleAnalytics:
+#     ID: G-MEASUREMENT_ID
+
+params:
+  description: Linux Guides to make the learning journey easier for everyone.
+
 markup:
   # allow raw html
   goldmark:
@@ -73,10 +80,17 @@ params:
   navbar:
     displayTitle: true
     displayLogo: false
+    logo:
+      path: images/logo.svg
+      dark: images/logo.svg
+      width: 40
+      height: 20
+      link: /
+    width: wide    
 
   footer:
     displayCopyright: false
-    displayPoweredBy: true
+    displayPoweredBy: false
 
   editURL:
     enable: true
