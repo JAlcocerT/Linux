@@ -16,9 +16,9 @@ Ok - this is suposed to be Linux related only, but I discovered about this and i
 
 ## Installing Chocolatey
 
-{{< cmd >}}
+```sh
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
-{{< /cmd >}}
+```
 
 ## Using Chocolatey
 
