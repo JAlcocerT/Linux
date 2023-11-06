@@ -148,7 +148,7 @@ You can check more [here](https://brainfucksec.github.io/android-foss-apps-list#
 
 * The fantastic community on the internet from where I learn the foundations to put together all of this content.
 * [HUGO](https://github.com/gohugoio/hugo) the SSG that allowed me to generate this web
-  * [HEXA](https://github.com/imfing/hextra) the HUGO theme I use (previously [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme)
+  * [HEXTRA](https://github.com/imfing/hextra)
 
 ## :loudspeaker: Ways to Contribute 
 
