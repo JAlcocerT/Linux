@@ -29,7 +29,7 @@ It's worth noting that the choice of open-source license can impact how the soft
 Here's a brief introduction to Podman and how to use it like Docker:
 
 1. **Installation**:
-   You can install Podman on a Linux system by using the package manager specific to your distribution. For example, on Ubuntu, you can install it with:
+   You can [install Podman](https://podman.io/docs/installation) on a Linux system by using the package manager specific to your distribution. For example, on Ubuntu, you can install it with:
 
    ```bash
    sudo apt install podman

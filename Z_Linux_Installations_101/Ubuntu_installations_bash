@@ -22,6 +22,11 @@ sudo dpkg-reconfigure -plow unattended-upgrades
 #curl -fsSL https://get.docker.com -o /tmp/get-docker.sh
 #sh /tmp/get-docker.sh
 
+
+### Podman ###
+
+
+
 ################################
 ### Package Managent Systems ###
 ################################
@@ -33,6 +38,8 @@ sudo dpkg-reconfigure -plow unattended-upgrades
 
 #curl -L https://nixos.org/nix/install | sh #https://search.nixos.org/packages?
 #sudo bash ./nix-*-multi-user.sh
+
+#nala
 
 #############
 ### MEDIA ###
@@ -117,36 +124,48 @@ sudo apt install scribus
 
 #https://snapcraft.io/docs/python-apps
 
-#octave
+#Octave (GPL v3)
 #sudo apt-get install flatpak
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 flatpak install flathub org.octave.Octave -y
 
 
 #sudo snap install code --classic
+
 #sudo snap install codium --classic
 nix-env -iA nixpkgs.vscodium
 
 sudo snap install flutter --classic
 sudo snap install android-studio --classic
 
-#Sublime:
-sudo apt-get update
-sudo apt-get upgrade
-wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
-sudo apt install apt-transport-https
-echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
-sudo apt update
-sudo apt install sublime-text
+#Sublime (Not OSS)
+#sudo apt-get update
+#sudo apt-get upgrade
+#wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
+#sudo apt install apt-transport-https
+#echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
+#sudo apt update
+#sudo apt install sublime-text
 
-sudo snap install notepad-plus-plus
-sudo snap install atom --classic
+sudo snap install notepad-plus-plus #(GPL v2)
+sudo snap install atom --classic #(MIT)
 
 
-#R:
-sudo apt -y install r-base
+#R & Rstudio(GPL)
+sudo apt -y install r-base #https://cran.rstudio.com/
 #wget https://download1.rstudio.org/desktop/bionic/amd64/rstudio-2022.02.2-485-amd64.deb
 #sudo apt install ./rstudio-2021.09.2-382-amd64.deb
+
+
+#KNIME (GPL)
+
+# wget -O knime.tar.gz https://download.knime.org/analytics-platform/linux/knime-latest51-linux.gtk.x86_64.tar.gz
+# tar -xvzf knime.tar.gz
+# sudo mv knime_* /opt/knime
+# # Create a symbolic link (optional, for easier execution)
+# sudo ln -s /opt/knime/knime /usr/local/bin/knime
+# # Run KNIME (you can now run it using 'knime' command)
+# knime
 
 #Github Desktop:
 #sudo wget https://github.com/shiftkey/desktop/releases/download/release-2.9.3-linux3/GitHubDesktop-linux-2.9.3-linux3.deb
