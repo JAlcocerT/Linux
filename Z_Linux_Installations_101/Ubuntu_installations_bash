@@ -114,7 +114,7 @@ sudo apt install scribus
 #sudo apt remove scribus
 #sudo add-apt-repository --remove ppa:scribus/ppa
 
-
+#snap install librepcb # (GPL v3)
 
 
 ###################
@@ -133,7 +133,7 @@ flatpak install flathub org.octave.Octave -y
 #sudo snap install code --classic
 
 #sudo snap install codium --classic
-nix-env -iA nixpkgs.vscodium
+nix-env -iA nixpkgs.vscodium #(MIT)
 
 sudo snap install flutter --classic
 sudo snap install android-studio --classic
@@ -149,7 +149,7 @@ sudo snap install android-studio --classic
 
 sudo snap install notepad-plus-plus #(GPL v2)
 sudo snap install atom --classic #(MIT)
-
+#apt install neovim #
 
 #R & Rstudio(GPL)
 sudo apt -y install r-base #https://cran.rstudio.com/
@@ -273,6 +273,7 @@ sudo apt-get install timeshift
 #nextcloud
 flatpak install flathub com.nextcloud.desktopclient.nextcloud
 # sudo add-apt-repository ppa:nextcloud-devs/client
+# apt update
 # sudo apt install nextcloud-client -y
 #remember to add in: showExperimentalOptions=true
 #the following line: /home/yourusername/.config/Nextloud
@@ -312,6 +313,12 @@ sudo apt install ./VNC-Viewer-6.22.315-Linux-x86.deb -y
 ### Productivity ###
 ####################
 
+#Tabby (MIT)
+wget https://github.com/Eugeny/tabby/releases/download/v1.0.205/tabby-1.0.205-linux-x64.deb
+sudo dpkg -i tabby-1.0.205-linux-x64.deb
+sudo apt-get install -f
+
+
 sudo apt-get install gnome-shell-pomodoro
 #Ulauncher #ctrl + space
 
@@ -323,7 +330,7 @@ sudo snap install drawio
 #flatpak install flathub md.obsidian.Obsidian
 flatpak install flathub com.github.zadam.trilium
 flatpak install flathub net.cozic.joplin_desktop
-flatpak install flathub com.logseq.Logseq
+flatpak install flathub com.logseq.Logseq #AGPLv3
 
 #notion vs appflowy
 #https://github.com/AppFlowy-IO/appflowy
