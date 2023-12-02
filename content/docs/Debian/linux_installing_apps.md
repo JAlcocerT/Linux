@@ -39,8 +39,6 @@ For each category, I have been ranking in the top the **Free Open Source Softwar
 
 ## Package Management
 
-
-
 ### With CLI
 
 #### APT
@@ -118,4 +116,62 @@ Use Synaptic Package Manager.
 sudo apt-get install synaptic
 ```
 
-apt-get is an older tool, part of the Advanced Packaging Tool (APT) suite. It's known for its stability and is heavily used in scripts and automation due to its predictable behavior.
+apt-get is an older tool, part of the Advanced Packaging Tool (APT) suite.
+
+It's known for its stability and is heavily used in scripts and automation due to its predictable behavior.
+
+
+## FAQ
+
+### What it is a PPA?
+
+Think of a **PPA**, or Personal Package Archive, in Ubuntu as **a special store for software**.
+
+Ubuntu already comes with a big collection of software, like a standard store where you can find most things you need. However, sometimes you might want a specific software or a newer version of a program that the standard store doesn’t have. This is where PPAs come in.
+
+They are like smaller, specialized stores run by developers or enthusiasts. You can add these PPAs to your Ubuntu, and it's like getting access to an exclusive store where you can download and install these special or newer software programs. PPAs are **great for getting the latest features or programs that are not yet available in the main collection of Ubuntu software.**
+
+* Examples:
+    * Graphics Drivers PPA: This PPA provides the latest graphics drivers for NVIDIA, AMD, and Intel GPUs. It's essential for gamers, graphic designers, and other users who need the latest drivers for optimal performance and features.
+    * LibreOffice PPA: LibreOffice is a popular open-source office suite. This PPA offers the latest versions of LibreOffice, which can include new features and improvements not yet available in the version included with Ubuntu.
+
+
+#### How about PPA's for other Distros?
+
+PPAs, or Personal Package Archives, are specific to Ubuntu and its derivatives like Linux Mint. They are not directly applicable to other Linux distributions. However, many **other distributions have their own ways* of handling additional software repositories.
+
+For instance, Fedora uses COPR (Cool Other Package Repo), Arch Linux has the [Arch User Repository](https://jalcocert.github.io/Linux/docs/arch/garuda/#useful-repositories) (AUR), and openSUSE has OBS (Open Build Service).
+
+These are similar in concept to Ubuntu's PPAs in that they allow users to access software that's not in the main repositories, but they work differently and are specific to their respective distributions.
+
+### How to use PPA's?
+
+We just need 3 very simples steps:
+
+* Add the PPA to your system: You need to add the PPA repository to your list of sources.
+
+```sh
+add-apt-repository ppa:name-of-ppa
+#add-apt-repository ppa:libreoffice/ppa 
+
+#sudo add-apt-repository --remove ppa:name-of-ppa
+```
+
+Replace name-of-ppa with the actual PPA's name.
+
+* Update your package list: After adding the PPA, update your package list to include the new software from the PPA:
+
+```sh
+apt update
+```
+
+* Install the software: Finally, install the software you want from the PPA using:
+
+```sh
+apt install name-of-package
+#apt-get install libreoffice
+
+#apt-get remove name-of-package
+```
+
+Remember, **it's important to trust the PPAs you add**, as they can potentially contain unvetted or harmful software. **Only use PPAs from known and trusted sources.**

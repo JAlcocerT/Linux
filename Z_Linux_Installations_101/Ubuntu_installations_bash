@@ -439,6 +439,7 @@ sudo apt-get install aegis
 ##### FINANCE ####
 ##################
 
+#Portfolio Performance
 flatpak install flathub info.portfolio_performance.PortfolioPerformance
 flatpak run info.portfolio_performance.PortfolioPerformance
 
@@ -446,7 +447,9 @@ sudo add-apt-repository ppa:mdoyen/homebank
 sudo apt-get update
 sudo apt-get install homebank
 
-#crypto
+#Ghosfolio (https://hub.docker.com/r/ghostfolio/ghostfolio)
+
+#Crypto
 #nix-env -iA nixpkgs.electrum
 #flatpak install flathub org.featherwallet.Feather
 
