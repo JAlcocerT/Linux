@@ -18,29 +18,22 @@ sudo sh get-docker.sh && sudo docker --version
 sudo apt install docker-compose -y
 ```
 
-This might not be the latest version of docker-compose, but it will work.
+This might not be the [latest version of docker-compose](https://jalcocert.github.io/Linux/docs/debian/docker/#how-to-install-the-latest-version-of-docker-compose), but it will work.
 
-
-{{% details title=" How can I test that Docker works?" closed="true" %}}
+Testing that Docker works with:
 
 ```sh
 sudo systemctl status docker
 ``` 
 
-### Docker-Compose
-
-Test it with:
+And check the installed versions with:
 
 ```sh
 docker --version
 docker-compose --version
 ```
-{{% /details %}}
 
-{{% details title=" How can I install Portainer?" closed="true" %}}
-
-
-### Portainer
+### Portainer: GUI for Containers
 
 Not really confortable with the command line yet? 
 
@@ -51,12 +44,13 @@ sudo docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -
 ```
 
 
-{{% /details %}}
-
-
 ## FAQ
 
 ### How to install the latest version of Docker-Compose?
+
+
+{{% details title="Get the Latest Docker-Compose" closed="true" %}}
+
 
 Visit their Github Repo: <https://github.com/docker/compose/tags>
 
@@ -67,3 +61,6 @@ And execute the code below with the desired version (example v2.23.0):
 sudo curl -L "https://github.com/docker/compose/releases/download/v2.23.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 ```
+
+
+{{% /details %}}
