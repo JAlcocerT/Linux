@@ -216,3 +216,13 @@ source ~/.bashrc
 ```
 tbd
 ``` -->
+
+
+
+## FAQ
+
+### Must know CLI
+
+```sh
+systemctl suspend
+```
