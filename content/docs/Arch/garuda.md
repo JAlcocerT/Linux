@@ -12,6 +12,8 @@ A rolling release is a software distribution model where updates and new feature
 
 In comparison, Debian-based distributions, like Ubuntu, follow a more traditional release model. They have fixed release cycles (e.g., every 6 months or every 2 years) where a new version is created, tested, and released as a complete package. Users then upgrade to the new version by performing an upgrade process.
 
+> The easiest way that will allow you to say: *I use Arch, btw*
+
 ## Advantages of a rolling release
 
 - **Continuous Updates:** You're always running the latest software versions without waiting for a new release.

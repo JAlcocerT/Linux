@@ -217,6 +217,16 @@ source ~/.bashrc
 tbd
 ``` -->
 
+### CPU Freq
+
+Adjusting CPU Freq in Laptops with [AUto-CPUFreq](https://github.com/AdnanHodzic/auto-cpufreq#auto-cpufreq-installer):
+
+```sh
+#sudo snap install auto-cpufreq
+git clone https://github.com/AdnanHodzic/auto-cpufreq.git
+cd auto-cpufreq && sudo ./auto-cpufreq-installer
+```
+
 
 
 ## FAQ
