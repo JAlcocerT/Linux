@@ -500,7 +500,10 @@ flatpak install flathub app.organicmaps.desktop
 ##############
 
 #sudo snap install auto-cpufreq
-#WIth GUI: https://github.com/AdnanHodzic/auto-cpufreq#auto-cpufreq-installer
+#With GUI: https://github.com/AdnanHodzic/auto-cpufreq#auto-cpufreq-installer
+
+#sudo apt-get install htop
+#flatpak install flathub io.missioncenter.MissionCenter
 
 #change keyboard
 #sudo apt-get install console-data
