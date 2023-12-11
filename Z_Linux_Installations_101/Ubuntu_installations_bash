@@ -515,6 +515,21 @@ flatpak install flathub app.organicmaps.desktop
 ####################
 
 #https://github.com/steven2358/awesome-generative-ai
+#https://github.com/sindresorhus/awesome-whisper
+
+### TTS / STT
+
+# Speech Note
+#flatpak install flathub net.mkiol.SpeechNote
+#flatpak run net.mkiol.SpeechNote
+#https://github.com/mkiol/dsnote #(MPL-2.0)
+
+# Whisper
+
+# Bark
+#https://github.com/suno-ai/bark #(MIT)
+
+### LLMs
 
 #Vicuna-7B locally with CPU: https://fossengineer.com/Generative-AI-LLMs-locally-with-cpu/
 #https://hub.docker.com/repository/docker/fossengineer/oobabooga_cpu/tags?page=1&ordering=last_updated
