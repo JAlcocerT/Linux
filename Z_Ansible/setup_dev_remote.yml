@@ -1,0 +1,30 @@
+---
+- name: Install Dev Remote Tools on Ubuntu
+  hosts: localhost
+  become: yes
+  become_method: sudo  # Explicitly specify the become method as sudo
+  vars:
+    username: jalcocert  # Replace with your username
+  tasks:
+    - name: Create directory for Wireguard
+      file:
+        path: /home/{{ username }}/Docker/Wireguard
+        state: directory
+        mode: '0755'
+
+    - name: Download wireguard_docker.yml from GitHub #kodi/kodi
+      get_url:
+        url: https://raw.githubusercontent.com/JAlcocerT/Docker/main/Security/wireguard_docker-compose.yml
+        dest: /home/{{ username }}/Docker/Wireguard/docker-compose.yml
+        mode: '0755'
+
+    - name: Deploy Wireguard with Docker Compose
+      docker_compose:
+        project_src: /home/{{ username }}/Docker/Wireguard
+        state: present
+
+
+#https://github.com/JAlcocerT/Docker/blob/main/Security/watchyourlan_docker-compose.yml
+#https://raw.githubusercontent.com/JAlcocerT/Docker/main/Security/watchyourlan_docker-compose.yml
+
+#ansible-playbook setup_dev_remote.yml -e "username=your_username"

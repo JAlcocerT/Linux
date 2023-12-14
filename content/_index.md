@@ -13,7 +13,7 @@ Linux is an **open-source operating system** that is used in a variety of device
 
 ## Why Linux?
 
-{{% details title="Click me to reveal WHY" closed="true" %}}
+{{% details title="Awsome Question to Start 🚀" closed="true" %}}
 
 Linux is highly customizable, allowing users to tailor the operating system to their own needs and preferences.
 

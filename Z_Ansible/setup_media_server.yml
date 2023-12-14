@@ -1,0 +1,26 @@
+---
+- name: Install Dev Remote Tools on Ubuntu
+  hosts: localhost
+  become: yes
+  become_method: sudo  # Explicitly specify the become method as sudo
+  vars:
+    username: jalcocert  # Replace with your username
+  tasks:
+    - name: Create directory for Docker Compose file
+      file:
+        path: /home/{{ username }}/Docker/Kodi
+        state: directory
+        mode: '0755'
+
+    - name: Download kodi_docker_compose.yml from GitHub #kodi/kodi
+      get_url:
+        url: https://raw.githubusercontent.com/JAlcocerT/Docker/main/Media/kodi_docker_compose.yml
+        dest: /home/{{ username }}/Docker/Kodi/docker-compose.yml
+        mode: '0755'
+
+    - name: Deploy with Docker Compose
+      docker_compose:
+        project_src: /home/{{ username }}/Docker/Kodi
+        state: present
+
+##ansible-playbook setup_media_server.yml -e "username=your_username"
