@@ -33,7 +33,7 @@ docker --version
 docker-compose --version
 ```
 
-### Portainer: GUI for Containers
+### Portainer - GUI for Containers
 
 Not really confortable with the command line yet? 
 
@@ -42,6 +42,33 @@ No worries, once Docker is installed, you can use a GUI, thanks to [Portainer to
 ```sh
 sudo docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
 ```
+
+### Dockge - A Great Container GUI
+
+Today, I discovered another great project to manage our containers via GUI: **[Dockge](https://github.com/louislam/dockge)**
+
+To use it we just need:
+
+```sh
+# Create directories that store your stacks and stores Dockge's stack
+mkdir -p /opt/stacks /opt/dockge
+cd /opt/dockge
+
+# Download the compose.yaml
+curl https://raw.githubusercontent.com/louislam/dockge/master/compose.yaml --output compose.yaml
+#curl https://raw.githubusercontent.com/louislam/dockge/master/compose.yaml --output docker-compose.yaml
+
+# Start the server
+docker compose up -d
+
+# If you are using docker-compose V1 or Podman
+# docker-compose up -d #change version to 2.2 if error
+```
+
+And that's it, Dockge is waiting for us on: localhost:5001
+
+![Docke-GUI](/images/dockge-gui.png)
+
 
 
 ## FAQ

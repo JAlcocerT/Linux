@@ -127,18 +127,34 @@ It's known for its stability and is heavily used in scripts and automation due t
 
 Think of a **PPA**, or Personal Package Archive, in Ubuntu as **a special store for software**.
 
-Ubuntu already comes with a big collection of software, like a standard store where you can find most things you need. However, sometimes you might want a specific software or a newer version of a program that the standard store doesn’t have. This is where PPAs come in.
+Ubuntu already comes with a big collection of software, like a standard store where you can find most things you need. However, sometimes you might want a specific software or a newer version of a program that the standard store doesn’t have.
 
-They are like smaller, specialized stores run by developers or enthusiasts. You can add these PPAs to your Ubuntu, and it's like getting access to an exclusive store where you can download and install these special or newer software programs. PPAs are **great for getting the latest features or programs that are not yet available in the main collection of Ubuntu software.**
+This is where PPAs come in: **PPA's allows any person** to create their own repositories **to distribute software**. They are like smaller, specialized stores run by developers or Linux enthusiasts.
+
+You can add these PPAs to your Ubuntu, and it's like getting access to an exclusive store where you can download and install these special or newer software programs.
+
+PPAs are great for getting the latest features or programs that are not yet available in the main collection of Ubuntu software.
 
 * Examples:
     * Graphics Drivers PPA: This PPA provides the latest graphics drivers for NVIDIA, AMD, and Intel GPUs. It's essential for gamers, graphic designers, and other users who need the latest drivers for optimal performance and features.
     * LibreOffice PPA: LibreOffice is a popular open-source office suite. This PPA offers the latest versions of LibreOffice, which can include new features and improvements not yet available in the version included with Ubuntu.
 
+#### Ubuntu Official Repos
+
+Every [Ubuntu version](http://archive.ubuntu.com/ubuntu/dists/) has its official set of 4 repos:
+
+* Main – Canonical-supported free and open-source software.
+* Universe – Community-maintained free and open-source software.
+* Restricted – Proprietary drivers for devices.
+* Multiverse – Software restricted by copyright or legal issues.
+
+When we use APT (or [NALA](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#nala)), we are checking these repositories for newer version of the software.
 
 #### How about PPA's for other Distros?
 
-PPAs, or Personal Package Archives, are specific to Ubuntu and its derivatives like Linux Mint. They are not directly applicable to other Linux distributions. However, many **other distributions have their own ways* of handling additional software repositories.
+PPAs, or Personal Package Archives, are **specific to Ubuntu and its derivatives** like Linux Mint. They are not directly applicable to other Linux distributions.
+
+However, many **other distributions have their own ways* of handling additional software repositories.
 
 For instance, Fedora uses COPR (Cool Other Package Repo), Arch Linux has the [Arch User Repository](https://jalcocert.github.io/Linux/docs/arch/garuda/#useful-repositories) (AUR), and openSUSE has OBS (Open Build Service).
 
