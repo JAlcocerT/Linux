@@ -131,6 +131,8 @@ flatpak install flathub org.octave.Octave -y
 
 
 #sudo snap install code --classic
+#sudo snap install pycharm-community --classic
+
 
 #sudo snap install codium --classic
 nix-env -iA nixpkgs.vscodium #(MIT)
@@ -318,7 +320,11 @@ wget https://github.com/Eugeny/tabby/releases/download/v1.0.205/tabby-1.0.205-li
 sudo dpkg -i tabby-1.0.205-linux-x64.deb
 sudo apt-get install -f
 
+#sudo apt install guake (GPL v2) #F12
 
+
+
+snap install pomatez #(MIT)
 sudo apt-get install gnome-shell-pomodoro
 #Ulauncher #ctrl + space
 
@@ -343,6 +349,7 @@ flatpak install flathub com.logseq.Logseq #AGPLv3
 ##############
 
 sudo apt install thunderbird
+#https://proton.me/mail/bridge
 
 
 # sudo snap install slack --classic
@@ -375,7 +382,7 @@ sudo snap install sengi
 #nostr
 #pixelfed
 #https://pixelfed.org/
-
+#mastodon
 
 
 #cawbird twitter client #chronological tweets
@@ -396,6 +403,7 @@ sudo apt install gufw -y
 
 #VPNs
 
+## Tailscale
 #https://github.com/tailscale/tailscale
 # sudo apt-get install apt-transport-https &&
 # curl -fsSL https://pkgs.tailscale.com/stable/raspbian/buster.gpg | sudo apt-key add - &&
@@ -415,10 +423,15 @@ sudo tailscale up
 #sudo tailscale up --advertise-exit-node
 #sudo tailscale up --exit-node=ip.add.re.ss --advertise-exit-node  #action needed on this exit node after its validation on the web console -> settings/edit route settings
 
-
+## Mullvad
 wget --content-disposition https://mullvad.net/en/download/app/deb/latest
 sudo apt install -y ./Mullvad*
 
+## ProtonVPN
+#https://repo.protonvpn.com/debian/dists/stable/main/binary-all/
+sudo dpkg --install ./protonvpn-stable-release*  #_1.0.3-2_all.deb
+sudo apt-get update
+sudo apt-get install proton-vpn-gnome-desktop
 
 #Password managers & 2FA's
 
@@ -432,7 +445,7 @@ sudo apt update && sudo apt install keepassxc
 sudo apt-get install aegis
 #sudo snap install authy
 
-#mac
+# mac
 #sudo apt-get install macchanger
 
 ##################
@@ -456,6 +469,8 @@ sudo apt-get install homebank
 ##################
 ##### OTHERS #####
 ##################
+
+#autocpu-freq
 
 #Unetbootin
 #https://unetbootin.github.io/linux_download.html
@@ -503,6 +518,8 @@ flatpak install flathub app.organicmaps.desktop
 #With GUI: https://github.com/AdnanHodzic/auto-cpufreq#auto-cpufreq-installer
 
 #sudo apt-get install htop
+#sudo apt-get install glances
+#sudo apt-get install sysstat #mpstat
 #flatpak install flathub io.missioncenter.MissionCenter
 
 #change keyboard

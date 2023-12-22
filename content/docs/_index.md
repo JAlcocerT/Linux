@@ -23,8 +23,39 @@ func main() {
 ```mermaid
 graph TD;
     Linux-->Cloud;
+    Cloud-->GCP;
+    Cloud-->Ansible;
     Linux-->IoT;
     Linux-->Debian/Arch;
     Linux-->SysEng;
     SysEng-->Dev-Ops;
+```
+
+
+
+This is what you can expect:
+
+```mermaid
+journey
+    title Your User Journey as a New Linux User Adventure
+    section Heard about Linux
+        Excitement for Linux: 4: You
+    section Getting Started
+        Install Linux: 5: You
+        Confusion sets in: 2: You
+        Google for help: 3: You
+    section The Valley of Despair
+        Encounter Terminal: 2: You
+        "What is sudo?": 2: You
+        Stack Overflow Deep Dive: 3: You
+    section Climbing the Learning Curve
+        Find Linux Made Easy! (YOU are HERE): 4: You
+        First successful script: 4: You
+    section Triumph!
+        Customized desktop: 4: You
+        Proud Linux user: 5: You
+        Feeling like a hacker: 3: You        
+    section Next Steps
+        Dreaming in code: 5: You
+        Helping others with Linux: 5: You
 ```
