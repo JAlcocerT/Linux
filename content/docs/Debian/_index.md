@@ -16,7 +16,11 @@ Debian's **package management system, APT** (Advanced Package Tool), simplifies 
 While Debian doesn't have the same "do-it-yourself" philosophy as Arch Linux, it provides a solid foundation for various use cases, including desktop computing, server hosting, and embedded systems. It's well-regarded for its community-driven development process and commitment to free software, making it a trusted choice for users who prioritize open-source principles and long-term support.
 
 
-## How can I Use APT?
+## Managing Packages in Debian
+
+You might be wondering, where do I start to install my favourite Apps in Debian (most likely, in Ubuntu)?
+
+### How can I Use APT?
 
 You can search for available Packages at: <https://tracker.debian.org/>  - (For example: <https://tracker.debian.org/pkg/7zip>)
 
@@ -75,3 +79,13 @@ sudo apt clean
 These are some of the basic APT commands you can use to manage software packages on your Debian-based system. Remember to run these commands with superuser privileges (using `sudo`) if you're not already logged in as the root user. Additionally, you can use the `man apt` command to access the manual pages for APT and learn more about its options and features.
 
 {{% /details %}}
+
+### Other Ways to Manage Packages with Debian
+
+* [Snap](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#snap)
+* [Flatpak](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#flatpak)
+
+* [Nix](https://jalcocert.github.io/Linux/docs/nix/)
+
+* The already mentioned - [APT](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#apt)
+   * Or use it with [NALA](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#nala)

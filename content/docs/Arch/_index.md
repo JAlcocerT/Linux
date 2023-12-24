@@ -29,3 +29,11 @@ While Arch Linux demands a deeper understanding of Linux and requires users to c
 * Long-term Support: Some fixed-release distributions offer long-term support (LTS) versions, which receive updates and security patches for an extended period.
 
 {{% /details %}}
+
+## Ways to Manage Packages in Arch
+
+* [Flatpak](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#flatpak)
+
+* [Nix](https://jalcocert.github.io/Linux/docs/nix/)
+
+* [Pacman](https://jalcocert.github.io/Linux/docs/arch/garuda/#pacman---garuda-package-manager)

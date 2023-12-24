@@ -191,3 +191,25 @@ apt install name-of-package
 ```
 
 Remember, **it's important to trust the PPAs you add**, as they can potentially contain unvetted or harmful software. **Only use PPAs from known and trusted sources.**
+
+### Other ways to Install in Debian
+
+#### Snap
+
+**Snap packages** are primarily associated with Canonical, the company behind Ubuntu. However, they are not limited to Ubuntu and can be used on various Linux distributions.
+
+* Automatic Updates: Snap packages are designed to automatically update themselves in the background, ensuring that users have access to the latest versions of applications without manual intervention.
+
+* Centralized Store: Snap packages are distributed through the [Snap Store](https://snapcraft.io/store), a centralized repository where users can find and install a wide range of software applications.
+
+> Snap Packages together with Ubuntu are a great entry point if you are starting your Linux journey.
+
+#### Flatpak
+
+Flatpak is designed to be a **cross-distribution packaging format**. It aims to work on multiple Linux distributions, making it more distribution-agnostic compared to Snap packages.
+
+* Sandboxing: Like Snap, Flatpak uses sandboxing to isolate applications from the host system, improving security and reducing potential conflicts with system libraries.
+
+* Multiple Repositories: Flatpak supports multiple software repositories, allowing users to access applications from various sources, including the [Flathub repository](https://flathub.org/), which is a popular repository for Flatpak packages.
+
+* Manual Updates: While Flatpak does support updates, it typically requires manual intervention or the use of package manager tools to update applications.

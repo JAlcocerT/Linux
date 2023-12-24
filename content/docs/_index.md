@@ -3,7 +3,7 @@ title: Documentation
 next: about
 ---
 
-Welcome to the Docs! here you have an overview of what you can learn.
+Welcome to the Docs! here you have an overview of what you can learn at **Linux Made Easy**.
 
 <!-- This is a demo of the theme's documentation layout.
 
@@ -23,17 +23,18 @@ func main() {
 ```mermaid
 graph TD;
     Linux-->Cloud;
-    Cloud-->GCP;
-    Cloud-->Ansible;
+    Cloud-->GCP/Azure/AWS;
     Linux-->IoT;
     Linux-->Debian/Arch;
     Linux-->SysEng;
     SysEng-->Dev-Ops;
+    SysEng-->Ansible;
+    SysEng-->Docker/Podman;
+    Debian/Arch-->Gaming;
+    Debian/Arch-->ProductivityApps;
 ```
 
-
-
-This is what you can expect:
+This is what you can expect in **the Linux journey**:
 
 ```mermaid
 journey
