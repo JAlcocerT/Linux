@@ -4,7 +4,7 @@ type: docs
 prev: docs/Debian/
 ---
 
-Yes, it is definitely possible to play games on Linux.
+Yes, it is definitely possible to **play games on Linux**.
 
 While Linux was traditionally less popular for gaming compared to Windows, there have been significant improvements in recent years, making Linux a viable gaming platform. Here's how you can play games on Linux:
 
