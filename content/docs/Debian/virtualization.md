@@ -1,5 +1,5 @@
 ---
-title: Gaming
+title: VMs
 type: docs
 prev: docs/Debian/
 draft: false
@@ -66,3 +66,17 @@ You will need to create a Virtual Disk if you want to store data in the VM - By 
 /var/lib/libvirt/images/the_name_you_want.qcow2
 
 <https://www.youtube.com/watch?v=VC9Kk7Ao944>
+
+
+## FAQ
+
+### I heard it is possible to run MacOS in Linux, is it True?
+
+Yes, you can quickly try MacOS [thanks to](#https://snapcraft.io/install/sosumi/ubuntu):
+
+```sh
+sudo snap install sosumi
+#sosumi
+
+#CTRL+ALT+G
+```
