@@ -1,9 +1,9 @@
 ---
-title: Must have Apps
+title: Must Have Apps
 type: docs
 prev: /docs/gcp/
 next: docs/ansible/
-draft: true
+draft: false
 ---
 
 ## Productivity
