@@ -1,5 +1,5 @@
 ---
-title: Linux & The Cloud 
+title: Linux + The Cloud 
 type: docs
 prev: docs/first-page
 next: docs/folder/leaf

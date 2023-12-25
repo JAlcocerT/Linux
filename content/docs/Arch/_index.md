@@ -4,7 +4,7 @@ type: docs
 prev: docs/first-page
 next: docs/Debian/docker
 sidebar:
-  open: true
+  open: false
 ---
 
 Arch Linux is a popular, **rolling-release Linux distribution** known for its simplicity, customization, and minimalist design.

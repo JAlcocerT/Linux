@@ -4,7 +4,7 @@ type: docs
 prev: docs/first-page
 next: docs/Debian/docker
 sidebar:
-  open: true
+  open: false
 ---
 
 

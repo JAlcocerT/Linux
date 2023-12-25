@@ -245,3 +245,13 @@ tbd
 ```sh
 systemctl suspend
 ```
+
+### Mac in Linux?
+
+```sh
+#https://snapcraft.io/install/sosumi/ubuntu
+sudo snap install sosumi
+
+#CTRL+ALT+G
+```
+

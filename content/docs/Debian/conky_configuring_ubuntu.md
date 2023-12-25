@@ -1,8 +1,11 @@
 ---
-title: Customizing your Ubuntu Desktop with Conky
+title:  Conky
 type: docs
 prev: docs/Debian/
 ---
+
+Customizing your Ubuntu Desktop with [Conky](https://github.com/brndnmtthws/conky).
+
 
 First, you will need gnome tweaks:
 
