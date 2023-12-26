@@ -1,5 +1,5 @@
 ---
-title: CI/CD
+title: MLOps
 type: docs
 prev: /docs/gcp/
 next: docs/ansible/

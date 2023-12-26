@@ -34,6 +34,7 @@ chmod +x ./setup.sh
 
 ### Apache Superset
 
+<script src="https://gist.github.com/JAlcocerT/953cab1052af58f4241f28dbc0a314a0#file-superset"></script>
 
 {{< gist "JAlcocerT/953cab1052af58f4241f28dbc0a314a0#file-superset" >}}
 
