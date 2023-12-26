@@ -9,9 +9,11 @@ draft: false
 ## BI Tools
 
 ### Metabase
+<!-- 
 
+{{< gist "JAlcocerT/953cab1052af58f4241f28dbc0a314a0#file-metabase" >}} -->
 
-{{< gist "JAlcocerT/953cab1052af58f4241f28dbc0a314a0#file-metabase" >}}
+<script src="https://gist.github.com/JAlcocerT/953cab1052af58f4241f28dbc0a314a0#file-metabase"></script>
 
 
 ### Redash
@@ -20,7 +22,10 @@ draft: false
 
 Install it with: https://github.com/getredash/setup.
 
-{{< gist "JAlcocerT/953cab1052af58f4241f28dbc0a314a0#file-redash" >}}
+
+<script src="https://gist.github.com/JAlcocerT/953cab1052af58f4241f28dbc0a314a0#file-redash"></script>
+<!-- 
+{{< gist "JAlcocerT/953cab1052af58f4241f28dbc0a314a0#file-redash" >}} -->
 
 <!-- ```sh
 git clone https://github.com/getredash/setup
@@ -34,9 +39,12 @@ chmod +x ./setup.sh
 
 ### Apache Superset
 
+
+<script src="https://gist.github.com/JAlcocerT/953cab1052af58f4241f28dbc0a314a0#file-superset"></script>
+<!-- 
 <script src="https://gist.github.com/JAlcocerT/953cab1052af58f4241f28dbc0a314a0#file-superset"></script>
 
-{{< gist "JAlcocerT/953cab1052af58f4241f28dbc0a314a0#file-superset" >}}
+{{< gist "JAlcocerT/953cab1052af58f4241f28dbc0a314a0#file-superset" >}} -->
 
 <!-- ```sh
 git clone https://github.com/apache/superset.git
