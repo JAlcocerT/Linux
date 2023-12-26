@@ -34,3 +34,10 @@ Probably the quickest way to get LLMs working, specially if you already have Doc
 You can [setup Netdata with Docker](https://fossengineer.com/selfhosting-server-monitoring-with-netdata-and-docker/) really quick.
 
 It will give you insights on workload, temperatures of your Hardware where you run LLMs.
+
+### Can I use LLMs to Code?
+
+Yes, there are many ways to replace Github Copilot for Free:
+
+* [Tabby](https://fossengineer.com/selfhosting-Tabby-coding-assistant/)
+* LLama Coder vscode extension
