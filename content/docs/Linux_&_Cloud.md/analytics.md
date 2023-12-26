@@ -24,8 +24,8 @@ draft: false
 
 Install it with: https://github.com/getredash/setup.
 
-
-<script src="https://gist.github.com/JAlcocerT/953cab1052af58f4241f28dbc0a314a0#file-redash"></script>
+<!-- 
+<script src="https://gist.github.com/JAlcocerT/953cab1052af58f4241f28dbc0a314a0#file-redash"></script> -->
 <!-- 
 {{< gist "JAlcocerT/953cab1052af58f4241f28dbc0a314a0#file-redash" >}} -->
 
@@ -41,8 +41,10 @@ chmod +x ./setup.sh
 
 ### Apache Superset
 
+<!-- 
+<script src="https://gist.github.com/JAlcocerT/953cab1052af58f4241f28dbc0a314a0#file-superset"></script> -->
 
-<script src="https://gist.github.com/JAlcocerT/953cab1052af58f4241f28dbc0a314a0#file-superset"></script>
+
 <!-- 
 <script src="https://gist.github.com/JAlcocerT/953cab1052af58f4241f28dbc0a314a0#file-superset"></script>
 
@@ -63,8 +65,6 @@ TAG=3.0.0 docker compose -f docker-compose-non-dev.yml up
 
 ## Databases
 
-
-<script src="https://gist.github.com/JAlcocerT/953cab1052af58f4241f28dbc0a314a0.js"></script>
 
 <!-- ### MariaDB
 
@@ -91,3 +91,6 @@ TBD
 
 #### Airflow
 
+### SelfHost These Tools with Docker
+
+<script src="https://gist.github.com/JAlcocerT/953cab1052af58f4241f28dbc0a314a0.js"></script>

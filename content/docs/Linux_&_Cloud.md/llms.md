@@ -17,15 +17,19 @@ Probably the quickest way to get LLMs working, specially if you already have Doc
 
 * <https://fossengineer.com/selfhosting-llms-ollama/>
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/jl9bfPsBBcM" frameborder="0" allowfullscreen></iframe>
+
 ## PrivateGPT
 
 * <https://fossengineer.com/selfhosting-local-llms-with-privateGPT/>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Ib3nQu5bB_k" frameborder="0" allowfullscreen></iframe>
 
 ## TextGeneration Web UI
 
 * <https://fossengineer.com/Generative-AI-LLMs-locally-with-cpu/>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Ib3nQu5bB_k" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-zNWDTqKF1E" frameborder="0" allowfullscreen></iframe>
 
 ## FAQ
 
@@ -40,4 +44,8 @@ It will give you insights on workload, temperatures of your Hardware where you r
 Yes, there are many ways to replace Github Copilot for Free:
 
 * [Tabby](https://fossengineer.com/selfhosting-Tabby-coding-assistant/)
-* LLama Coder vscode extension
+* [LLama Coder](https://github.com/ex3ndr/llama-coder) in a [vscode extension](https://marketplace.visualstudio.com/items?itemName=ex3ndr.llama-coder&ssr=false#review-details)
+
+### And to Power my Notes?
+
+* LogSeq + Ollama: <https://github.com/omagdy7/ollama-logseq>
