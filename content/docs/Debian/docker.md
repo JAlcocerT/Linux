@@ -73,12 +73,62 @@ And that's it, Dockge is waiting for us on: localhost:5001
 
 ## FAQ
 
+### Docker, another Tool? Why should I bother?
+
+Shortly? Because it **will save you hours**.
+
+Let's say that you were trying to host a Wordpress Site and because you did not know about Docker, you were running all this steps (Wathching some YT in the meantime etc):
+
+
+{{% details title="Time consuming CLI steps" closed="true" %}}
+
+
+```sh
+sudo apt install apache2 -y
+sudo apt install mariadb-server mariadb-client -y
+sudo systemctl start mariadb
+sudo systemctl status mariadb
+sudo mysql_secure_installation
+clear
+sudo apt install php -y
+sudo apt install wget -y
+wget https://wordpress.org/latest.zip
+sudo apt install unzip -y
+ls
+unzip ./latest.zip
+cd wordpress
+sudo mkdir /var/www/html
+#sudo rm /var/www/html/index.html
+sudo cp -r * /var/www/html
+sudo apt install php-mysql php-cgi php-cli php-gd -y
+sudo systemctl restart apache2
+sudo chown -R www-data:www-data /var/www
+ip a #----> to browser
+sudo mysql -u root -p
+create database wordpress;
+show databases;
+create user "wordpress"@"%" identified by "password";
+grant all privileges on wordpress.* to "wordpress"@"%";
+exit
+```
+
+/var/www/html/wp-content/plugins/simply-static/static-files/
+
+{{% /details %}}
+
+And now, you simply install [Docker with Portainer](https://fossengineer.com/selfhosting-portainer-docker/).
+
+And just copy and paste the Wordpress configuration as a Stack. 
+
+Yes, and you already have [Wordpress running with Docker](https://fossengineer.com/selfhosting-wordpress-docker/). **It's that simple.**
+
+And of course, you can use it for much more than just Wordpress. Welcome to [Self-Hosting with Docker rabbit hole](https://fossengineer.com/tags/self-hosting/).
+
+
 ### How to install the latest version of Docker-Compose?
 
 
 {{% details title="Get the Latest Docker-Compose" closed="true" %}}
-
-
 Visit their Github Repo: <https://github.com/docker/compose/tags>
 
 And execute the code below with the desired version (example v2.23.0):
@@ -88,6 +138,38 @@ And execute the code below with the desired version (example v2.23.0):
 sudo curl -L "https://github.com/docker/compose/releases/download/v2.23.0/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 sudo chmod +x /usr/local/bin/docker-compose
 ```
+{{% /details %}}
+
+### How to keep my containers to the latest version?
+
+You can get help of [WatchTower](https://containrrr.dev/watchtower/).
+
+{{% details title="Run WatchTower with Docker" closed="true" %}}
 
 
+```yml
+version: '3'
+
+services:
+  watchtower:
+    image: containrrr/watchtower
+    container_name: watchtower
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - WATCHTOWER_LABELS=com.watchtower.autoupdate=true
+```
+
+And use the environment flag in the containers that you want to be updated:
+
+
+```yml
+services:
+  nextcloud:
+    image: nextcloud:latest
+    container_name: nextcloud
+    labels:
+      - com.watchtower.autoupdate=true # ADD THIS to be updated automatically by WT
+    # Other Nextcloud service configuration that you had
+```
 {{% /details %}}

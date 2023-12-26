@@ -86,6 +86,8 @@ Be mindful about this change, if you lost connectivity to internet. No valid DNS
 
 * Quad9: Quad9 provides a free DNS service at the IP addresses 9.9.9.9 and 149.112.112.112. They emphasize security and block access to known malicious websites.
 
+
+
 #### Checking DNS Leaks
 
 <https://mullvad.net/en/check>
@@ -105,6 +107,20 @@ You can also make your containerized [qbittorrent to have as network only your V
 * [Unbound](https://jalcocert.github.io/RPi/posts/selfh-internet-better/#unbound-dns)
 * [CoreDNS](https://github.com/coredns/coredns)
 
+#### Check Port 67 is Free
+
+```sh
+netstat -tuln | grep :67
+#netstat -tuln
+```
+
+If something is there, you can stop it for this session
+
+```sh
+sudo systemctl stop a_conflicting_service #for now
+#sudo systemctl stop a_conflicting_service #prevent it to run on boot
+```
+
 ### So I can block Adds On the go now?
 
 Yes, if you have [PiHole](https://fossengineer.com/selfhosting-PiHole-docker/) at home, you can access it from anywhere when using Tailscale: <https://tailscale.com/kb/1114/pi-hole>
@@ -113,9 +129,35 @@ Yes, if you have [PiHole](https://fossengineer.com/selfhosting-PiHole-docker/) a
 
 Yes, you can with Tailscale + VSCode Server: <https://tailscale.com/kb/1166/vscode-ipad>
 
+
 ### Tailscale MagicDNS
 
 <https://tailscale.com/kb/1081/magicdns>
+
+
+### DuckDNS?
+
+You might have heard about DuckDNS as well.
+
+#### what is DuckDNS?
+
+DuckDNS is a free dynamic DNS (Domain Name System) service that allows users to create a custom domain name (subdomain) that points to their dynamic IP address. 
+
+It can provide HTTPs to your SelfHosted services - [example](https://fossengineer.com/selfhosting-whoogle-docker/)
+
+#### How can I use DuckDNS?
+
+You can use DuckDNS together with [NGINX](https://fossengineer.com/selfhosting-nginx-proxy-manager-docker/#https-locally-nginx--duckdns)
+
+### And No-IP?
+
+No-IP is a dynamic DNS service that offers more options and additional services compared to some other free dynamic DNS providers like DuckDNS.
+
+<https://www.noip.com/>
+
+### What are DHCPs?
+
+A DHCP (Dynamic Host Configuration Protocol) server is a **network service that automatically assigns IP addresses and network configuration settings** to devices on a local area network (LAN) or network segment. Here's what a DHCP server does and why it's important:
 
 ### Other VPNs
 
