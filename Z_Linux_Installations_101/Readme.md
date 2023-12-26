@@ -2,11 +2,9 @@
 
 Trying Linux for the first time? This guide will get you and your system started with your favourite Apps.
 
-## Using sh scripts
+* Using sh Scripts: <https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/>
 
-
-## Using Ansible
-
+* Using Ansible: <https://jalcocert.github.io/Linux/docs/linux__cloud.md/ansible/>
 
 ```sh
 apt install ansible
@@ -20,5 +18,4 @@ ansible --version
 ansible-playbook ubuntu-essentials_ansible-playbook.yml
 ```
 
-## Using NIX Package Manager
-
+* Using NIX Package Manager: <https://jalcocert.github.io/Linux/docs/nix/>

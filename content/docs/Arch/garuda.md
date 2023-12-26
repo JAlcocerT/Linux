@@ -96,3 +96,16 @@ Like Debian-based distributions:
 Fixed releases prioritize stability and ease of maintenance but might not have the latest features as soon as they're released.
 
 Garuda Linux, being a rolling-release distribution, continually delivers the latest software to users, providing them with the cutting-edge experience.
+
+### Example installation with Pacman
+
+Getting UFW up and running:
+
+```sh
+#install updates
+sudo pacman -Syu
+
+#install ufw
+sudo pacmac -S ufw
+sudo systemctl enable ufw.service
+```

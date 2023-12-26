@@ -12,9 +12,11 @@ draft: false
 <!-- 
 
 {{< gist "JAlcocerT/953cab1052af58f4241f28dbc0a314a0#file-metabase" >}} -->
+<!-- 
+<script src="https://gist.github.com/JAlcocerT/953cab1052af58f4241f28dbc0a314a0#file-metabase"></script> -->
 
-<script src="https://gist.github.com/JAlcocerT/953cab1052af58f4241f28dbc0a314a0#file-metabase"></script>
 
+<script src="https://gist.github.com/JAlcocerT/953cab1052af58f4241f28dbc0a314a0#file-metabase.js"></script>
 
 ### Redash
 
@@ -60,6 +62,9 @@ TAG=3.0.0 docker compose -f docker-compose-non-dev.yml up
 ``` -->
 
 ## Databases
+
+
+<script src="https://gist.github.com/JAlcocerT/953cab1052af58f4241f28dbc0a314a0.js"></script>
 
 <!-- ### MariaDB
 
