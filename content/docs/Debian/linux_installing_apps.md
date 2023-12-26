@@ -152,7 +152,7 @@ When we use APT (or [NALA](https://jalcocert.github.io/Linux/docs/debian/linux_i
 
 #### How about PPA's for other Distros?
 
-PPAs, or Personal Package Archives, are **specific to Ubuntu and its derivatives** like Linux Mint. They are not directly applicable to other Linux distributions.
+PPAs, or Personal Package Archives, are **specific to Debian and its derivatives** like Ubuntu or Linux Mint. They are not directly applicable to other Linux distributions.
 
 However, many **other distributions have their own ways* of handling additional software repositories.
 
@@ -193,6 +193,12 @@ apt install name-of-package
 Remember, **it's important to trust the PPAs you add**, as they can potentially contain unvetted or harmful software. **Only use PPAs from known and trusted sources.**
 
 ### Other ways to Install in Debian
+
+#### UI
+
+With the UI and double click, thanks to **.deb packages**.
+
+.deb packages are **individual software packages** that can be installed directly on your computer, similar to installing software from a CD or a downloaded file. PPAs, on the other hand, are like online repositories that can contain multiple .deb packages. 
 
 #### Snap
 

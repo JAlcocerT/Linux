@@ -27,6 +27,47 @@ The **open-source** nature of Linux makes it easy for developers to create appli
 
 {{% /details %}}
 
+{{% details title="Do I have to do stuff with the terminal?" closed="true" %}}
+
+No, **you dont have to**. But you will love to.
+
+If you are in the beginning of the journey, I recommend to to start with Debian and [install your favourite apps with .deb packages](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#ui). **Just double click the downloaded file**.
+
+That was not that hard right? You can also give it a try to [snap](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#snap).
+
+Warning: you might feel like a hacker.
+{{% /details %}}
+
+{{% details title="Isn't it better to use mac/windows?" closed="true" %}}
+
+It is true that Windows or Mac had a better learning curve some years ago than Linux. But **today, Linux is just as easy to use**.
+
+Additionally, Linux is community built so you are more certain that there are no lock-up incentives into such software, like *it could happend* with proprietary OS's.
+
+Plus, in the information era, it is quite clear than a **decentralized network of free minds collaborating** can thrive progress much more efficiently than hierarchical and close organizations. 
+
+
+{{< callout type="info" >}}
+A note regarding costs: **think of money just as signals**.
+
+* Organizations need some kind of licensing / hook you into their Software as a Service to be able to continue providing their product/service.
+
+* Same applies for Linux and F/OSS in general - there are people behind all of this Software and thanks to **voluntary support**, aka donations, we can let know to this generous people that what they are doing, is valuable to us and that we are interested that they continue to do so.
+{{< /callout >}}
+
+{{% /details %}}
+
+
+
+{{% details title="Decentralized? Isn't it that Crypto stuff?" closed="true" %}}
+
+We can think of Linux as an OS built in a Decentralized way.
+
+And yes, **crypto like Bitcoin**, is basically a decentralized information system. Nobody is in control, there are **simple rules and agents interacting** according to them.
+
+But we should remember that **Science's nature is also Decentralized**. Anyone can propose, question or test the Current status Quo.
+{{% /details %}}
+
 ## Explore
 
 {{< cards >}}
