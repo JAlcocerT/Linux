@@ -3,7 +3,7 @@ title: LLMs
 type: docs
 prev: /docs/gcp/
 next: docs/ansible/
-draft: true
+draft: false
 ---
 
 
@@ -26,3 +26,11 @@ Probably the quickest way to get LLMs working, specially if you already have Doc
 * <https://fossengineer.com/Generative-AI-LLMs-locally-with-cpu/>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Ib3nQu5bB_k" frameborder="0" allowfullscreen></iframe>
+
+## FAQ
+
+### How to monitor Hardware while using LLMs?
+
+You can [setup Netdata with Docker](https://fossengineer.com/selfhosting-server-monitoring-with-netdata-and-docker/) really quick.
+
+It will give you insights on workload, temperatures of your Hardware where you run LLMs.

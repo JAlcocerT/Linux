@@ -35,7 +35,7 @@ If you are in the beginning of the journey, I recommend to to start with Debian 
 
 That was not that hard right? You can also give it a try to [snap](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#snap).
 
-Warning: you might feel like a hacker.
+**Warning**: you might feel like a hacker.
 {{% /details %}}
 
 {{% details title="Isn't it better to use mac/windows?" closed="true" %}}
