@@ -27,6 +27,18 @@ The **open-source** nature of Linux makes it easy for developers to create appli
 
 {{% /details %}}
 
+{{% details title="Because *Most Likely*, **you already use Linux**" closed="true" %}}
+
+And that's right, providing that globally ~70% of market share in smartphones goes to **Android**.
+
+Surprise, Android is an **Open Source OS** which uses the **Linux Kernel** (the very core of it).
+
+Whatever fight you might have heard with Google Services, commercial battles etc, it doesn't change that anyone can use Android and that most likely, you have one near you.
+
+{{% /details %}}
+
+## Wait I have some Questions
+
 {{% details title="Do I have to do stuff with the terminal?" closed="true" %}}
 
 No, **you dont have to**. But you will love to.
@@ -57,8 +69,6 @@ A note regarding costs: **think of money just as signals**.
 
 {{% /details %}}
 
-
-
 {{% details title="Decentralized? Isn't it that Crypto stuff?" closed="true" %}}
 
 We can think of Linux as an OS built in a Decentralized way.
@@ -67,6 +77,8 @@ And yes, **crypto like Bitcoin**, is basically a decentralized information syste
 
 But we should remember that **Science's nature is also Decentralized**. Anyone can propose, question or test the Current status Quo.
 {{% /details %}}
+
+
 
 ## Explore
 

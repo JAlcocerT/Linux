@@ -4,8 +4,11 @@ type: docs
 prev: docs/Debian/
 ---
 
-Customizing your Ubuntu Desktop with [Conky](https://github.com/brndnmtthws/conky).
+We all want to make our Desktop look nice and confortable for our use.
 
+Lets see how to customize your Ubuntu Desktop with [Conky](https://github.com/brndnmtthws/conky).
+
+## Pre-Requisites
 
 First, you will need gnome tweaks:
 
@@ -23,6 +26,7 @@ sudo mkdir ~/.config/autostart
 cp ~/Downloads/conky_config/start_conky.desktop ~/.config/autostart/start_conky.desktop -r
 ```
 
+## Setup Conky
 
 Then, download conky manager:
 
@@ -39,3 +43,5 @@ sudo ./conky-manager-v2.4-amd64.run -y
 
 sudo apt install conky p7zip imagemagick rsync
 ```
+
+## Using Conky
