@@ -9,10 +9,28 @@ prev: docs/Debian/
 
 ### System Info
 
+* Info about Hardware, Network, OS (Kernel...), even benchmarks
+
+```sh
+sudo apt-get install hardinfo
+```
+* For Benchmarks (Cross-Platform, Free at this moment, but not Open Source)
+
+```sh
+curl -O https://cdn.geekbench.com/Geekbench-6.2.2-Linux.tar.gz  #https://www.geekbench.com/download/linux/ 
+tar -xzf Geekbench-6.2.2-Linux.tar.gz
+cd Geekbench-6.2.2-Linux
+./geekbench_x86_64
+```
+
+* Terminal Based:
+
 ```sh
 sudo apt install neofetch
 #neofetch
 ```
+
+
 
 ### Hardware Monitor
 
@@ -42,7 +60,9 @@ sudo apt-get install htop
 #htop
 ```
 
-### Net Tools
+### Network Monitor
+
+#### Net Tools
 
 ```sh
 sudo apt install net-tools -y
@@ -61,7 +81,7 @@ ip address
 #ip a
 ```
 
-### Testing DNS
+#### Testing DNS
 
 ```sh
 sudo apt install dnsutils
@@ -70,7 +90,9 @@ sudo apt install dnsutils
 #nslookup google.com
 ```
 
-### Crontab tasks:
+## General Ubuntu
+
+### Crontab Tasks
 
 Open crontab:
 
@@ -112,7 +134,7 @@ If you want to add a cron task for this, simply edit, as explained:
 @reboot cd RPi && git pull
 ```
 
-## Create users
+### Create users
 
 ```sh
 #simple:
@@ -132,7 +154,7 @@ chmod -R go-rwx /home/user_name_2
 chmod -R go-rwx /home/user_name_3
 ```
 
-## Create your own mount points
+### Create your own mount points
 
 Lets first check the storages connected to the machine and identify their current path:
 
@@ -207,7 +229,7 @@ Option 2: Another option would be to set a cron task with:
 @reboot mount /dev/sdb1 /mnt/data_mounted/ #example
 ```
 
-## Create Custom Aliases
+### Create Custom Aliases
 
 Lets edit this file:
 
@@ -254,4 +276,3 @@ sudo snap install sosumi
 
 #CTRL+ALT+G
 ```
-

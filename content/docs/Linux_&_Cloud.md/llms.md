@@ -11,7 +11,9 @@ Generative AI and particularly LLMs are taking over.
 
 You can **get LLMs running** in your personal computer or in big servers just for you or whoever you want to give access.
 
-## Ollama
+## Interfaces
+
+### Ollama
 
 Probably the quickest way to get LLMs working, specially if you already have Docker installed.
 
@@ -19,13 +21,13 @@ Probably the quickest way to get LLMs working, specially if you already have Doc
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jl9bfPsBBcM" frameborder="0" allowfullscreen></iframe>
 
-## PrivateGPT
+### PrivateGPT
 
 * <https://fossengineer.com/selfhosting-local-llms-with-privateGPT/>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Ib3nQu5bB_k" frameborder="0" allowfullscreen></iframe>
 
-## TextGeneration Web UI
+### TextGeneration Web UI
 
 * <https://fossengineer.com/Generative-AI-LLMs-locally-with-cpu/>
 
@@ -49,3 +51,15 @@ Yes, there are many ways to replace Github Copilot for Free:
 ### And to Power my Notes?
 
 * LogSeq + Ollama: <https://github.com/omagdy7/ollama-logseq>
+
+### What is a MoE?
+
+**Mixed of Experts** is an approach in machine learning where a model consists of numerous sub-models (referred to as "experts"). Each expert specializes in handling different types of data or tasks. The main idea is to route different inputs to the most relevant experts to handle **specific tasks more efficiently** and effectively.
+
+For example, some experts might be better at understanding technical jargon, while others might excel at creative writing or conversational language.
+
+### What is a RAG?
+
+RAG," which stands for "Retrieval-Augmented Generation," is a methodology used in the development of advanced natural language processing (NLP) systems, particularly in the context of large language models (LLMs)
+
+RAG is particularly useful for tasks that require a blend of understanding context, generating coherent responses, and incorporating up-to-date or specific factual information, such as in question-answering systems or chatbots.
