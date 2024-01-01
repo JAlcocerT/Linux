@@ -6,10 +6,9 @@ next: docs/ansible/
 draft: false
 ---
 
+**Generative AI** and particularly LLMs are taking over.
 
-Generative AI and particularly LLMs are taking over.
-
-You can **get LLMs running** in your personal computer or in big servers just for you or whoever you want to give access.
+You can **Get LLMs Running** in your personal computer or in big servers just for you or whoever you want to give access.
 
 ## Interfaces
 
@@ -21,17 +20,23 @@ Probably the **quickest way to get LLMs working**, specially if you already have
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jl9bfPsBBcM" frameborder="0" allowfullscreen></iframe>
 
-### PrivateGPT
+### {{% details title="Other Ways! PrivateGPT, TextGenWebUI" closed="true" %}}
+
+
+#### PrivateGPT
 
 * <https://fossengineer.com/selfhosting-local-llms-with-privateGPT/>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Ib3nQu5bB_k" frameborder="0" allowfullscreen></iframe>
 
-### TextGeneration Web UI
+#### TextGeneration Web UI
 
 * <https://fossengineer.com/Generative-AI-LLMs-locally-with-cpu/>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-zNWDTqKF1E" frameborder="0" allowfullscreen></iframe>
+
+{{% /details %}}
+
 
 ## FAQ
 
@@ -63,6 +68,20 @@ GPT4 is an example of MoE. But also [Mixtral](https://erichartford.com/dolphin-2
 ```sh
 ollama run mixtral:8x7b #https://mistral.ai/news/mixtral-of-experts/
 ```
+
+You can also try Solar 10.7B to compare these MoE's:
+
+```sh 
+ollama run solar:10.7b #https://ollama.ai/library/solar/tags
+```
+
+#### Which LLMs are Trending now?
+
+You can always check the leaderboards:
+
+* <https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard>
+* With **ELO** Rating: <https://huggingface.co/spaces/lmsys/chatbot-arena-leaderboard>
+    * <https://chat.lmsys.org/?arena>
 
 ### What is a RAG?
 

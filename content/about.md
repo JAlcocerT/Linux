@@ -13,7 +13,7 @@ Hope that these guides will make the **Start of your Linux Journey** a better ex
 {{< callout type="info" >}}
 * I also have other repositories with notes that can be helpful:
 * The [Docker Repository](https://github.com/JAlcocerT/Docker) with several configuration files.
-* [Raspberry Pi & IoT](https://jalcocert.github.io/RPi/) - with Linux, you are not far from creating Awsome Projects
+* [Raspberry Pi & IoT](https://jalcocert.github.io/RPi/) - with Linux, you're not far from Making Awsome Projects
 {{< /callout >}}
 
 ## Powered Thanks To ❤️ 
