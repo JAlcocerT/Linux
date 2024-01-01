@@ -15,7 +15,7 @@ You can **get LLMs running** in your personal computer or in big servers just fo
 
 ### Ollama
 
-Probably the quickest way to get LLMs working, specially if you already have Docker installed.
+Probably the **quickest way to get LLMs working**, specially if you already have Docker installed.
 
 * <https://fossengineer.com/selfhosting-llms-ollama/>
 
@@ -58,8 +58,21 @@ Yes, there are many ways to replace Github Copilot for Free:
 
 For example, some experts might be better at understanding technical jargon, while others might excel at creative writing or conversational language.
 
+GPT4 is an example of MoE. But also [Mixtral](https://erichartford.com/dolphin-25-mixtral-8x7b?source=more_articles_bottom_blogs) - Which you can [run for Free locally with Ollama](https://fossengineer.com/selfhosting-llms-ollama/):
+
+```sh
+ollama run mixtral:8x7b #https://mistral.ai/news/mixtral-of-experts/
+```
+
 ### What is a RAG?
 
 RAG," which stands for "Retrieval-Augmented Generation," is a methodology used in the development of advanced natural language processing (NLP) systems, particularly in the context of large language models (LLMs)
 
 RAG is particularly useful for tasks that require a blend of understanding context, generating coherent responses, and incorporating up-to-date or specific factual information, such as in question-answering systems or chatbots.
+
+
+### Do I need to Know programming to use LLMs?
+
+You dont have to be a developer to get to use LLMs. Mostly we will be using frameworks that provide a level of abstraction to the real code behind the scenes.
+
+It would be definitely beneficial if you are [familiar with Python](https://fossengineer.com/guide-python/) if you want to try [Cutting-Edge and Free AI](https://fossengineer.com/tags/gen-ai/) or at least to know [how to manage Python Dependencies](https://fossengineer.com/guide-python/).
