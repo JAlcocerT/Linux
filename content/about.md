@@ -5,15 +5,15 @@ sidebar:
   open: true
 ---
 
-Consolidating my **notes about Linux** in a public simple site the content and guides that the old me would have loved when starting with linux.
+Consolidating my **Notes about Linux** in a public simple site the content and guides that the old me would have loved when starting with linux.
 
 Hope that these guides will make the **Start of your Linux Journey** a better experience.
 
 
 {{< callout type="info" >}}
 * I also have other repositories with notes that can be helpful:
-* My [Docker repository](https://github.com/JAlcocerT/Docker) with several configuration files.
-* About [Raspberry Pi & IoT](https://jalcocert.github.io/RPi/) - with Linux, you are not far from creating Awsome Projects
+* The [Docker Repository](https://github.com/JAlcocerT/Docker) with several configuration files.
+* [Raspberry Pi & IoT](https://jalcocert.github.io/RPi/) - with Linux, you are not far from creating Awsome Projects
 {{< /callout >}}
 
 ## Powered Thanks To ❤️ 
