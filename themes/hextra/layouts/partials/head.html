@@ -25,11 +25,13 @@
 
 
   <!-- Google Analytics -->
-  {{- if and (eq hugo.Environment "production") (or .Site.GoogleAnalytics .Site.Config.Services.GoogleAnalytics.ID) }}
+  <!-- {{- if and (eq hugo.Environment "production") (or .Site.GoogleAnalytics .Site.Config.Services.GoogleAnalytics.ID) }}
     <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
     {{ partial "google-analytics.html" . }}
-  {{- end }}
+  {{- end }} -->
 
+<!-- Umami Web Analytics -->
+  <script async src="https://hugowithumami.fossengineer.com/script.js" data-website-id="e5ec6d28-d226-43ba-a473-9eafa862701e"></script>
 
   <script>
     /* Initialize light/dark mode */

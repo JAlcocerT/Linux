@@ -33,6 +33,9 @@ Here's a brief introduction to Podman and how to use it like Docker:
 
    ```bash
    sudo apt install podman
+   #flatpak install flathub io.podman_desktop.PodmanDesktop
+
+   #nix-shell -p podman
    ```
 
 2. **Running Containers**:
