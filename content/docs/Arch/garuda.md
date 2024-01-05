@@ -74,7 +74,7 @@ If you are really new to Linux, I would recommend to start better with Debian.
 
 Anyways, you can always try these:
 
-* Create a Virtual Machine and run Garuda inside of it, without worrying to break your main OS (Windows, mac, other linux...)
+* Create a [Virtual Machine and run Garuda](https://jalcocert.github.io/Linux/docs/debian/virtualization/#how-to-virtualize) inside of it, without worrying to break your main OS (Windows, mac, other linux...)
 
 * Or...if you are somehow familiar with [Docker](https://jalcocert.github.io/Linux/docs/debian/docker/) and [have it running in your system](https://fossengineer.com/docker-first-steps-guide-for-data-analytics/) - You can also [try Arch with A Webtop](https://fossengineer.com/selfhosting-webtops-docker/) without any risk to damage your main OS.
 
