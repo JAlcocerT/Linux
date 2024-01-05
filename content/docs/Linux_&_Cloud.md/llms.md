@@ -77,7 +77,7 @@ ollama run solar:10.7b #https://ollama.ai/library/solar/tags
 
 #### Which LLMs are Trending now?
 
-You can always check the leaderboards:
+You can always check the LLM's Leaderboards:
 
 * <https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard>
 * With **ELO** Rating: <https://huggingface.co/spaces/lmsys/chatbot-arena-leaderboard>
@@ -85,13 +85,15 @@ You can always check the leaderboards:
 
 ### What is a RAG?
 
-RAG," which stands for "Retrieval-Augmented Generation," is a methodology used in the development of advanced natural language processing (NLP) systems, particularly in the context of large language models (LLMs)
+RAG, which stands for "Retrieval-Augmented Generation" is a methodology used in the development of advanced natural language processing (NLP) systems, particularly in the context of large language models (LLMs)
 
 RAG is particularly useful for tasks that require a blend of understanding context, generating coherent responses, and incorporating up-to-date or specific factual information, such as in question-answering systems or chatbots.
 
 
 ### Do I need to Know programming to use LLMs?
 
-You dont have to be a developer to get to use LLMs. Mostly we will be using frameworks that provide a level of abstraction to the real code behind the scenes.
+You dont have to be a developer to get to use LLMs.
+
+Mostly we will be using frameworks that provide a level of abstraction to the real code behind the scenes.
 
 It would be definitely beneficial if you are [familiar with Python](https://fossengineer.com/guide-python/) if you want to try [Cutting-Edge and Free AI](https://fossengineer.com/tags/gen-ai/) or at least to know [how to manage Python Dependencies](https://fossengineer.com/guide-python/).

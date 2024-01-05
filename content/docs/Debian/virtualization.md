@@ -78,5 +78,6 @@ Yes, you can quickly try MacOS [thanks to](#https://snapcraft.io/install/sosumi/
 sudo snap install sosumi
 #sosumi
 
-#CTRL+ALT+G
+#CTRL+ALT+G #to get out of the VM
+#sudo snap remove sosumi
 ```

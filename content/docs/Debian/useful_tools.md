@@ -23,6 +23,8 @@ cd Geekbench-6.2.2-Linux
 ./geekbench_x86_64
 ```
 
+You will get something like: <https://browser.geekbench.com/v6/cpu/your_id_number> which will tell you single core and multi core scores. *I got ~1100 and ~3300 with a laptop*
+
 * Terminal Based:
 
 ```sh
@@ -274,5 +276,19 @@ systemctl suspend
 #https://snapcraft.io/install/sosumi/ubuntu
 sudo snap install sosumi
 
-#CTRL+ALT+G
+#CTRL+ALT+G #to get out of the VM
+
+
+#sudo snap remove sosumi
+```
+
+Interested in [VMs? Check this out](https://jalcocert.github.io/Linux/docs/debian/virtualization/#how-to-virtualize).
+
+### What's taking that much disk space?
+
+```sh
+du -h --max-depth=1 ~/ | sort -rh
+
+#sudo apt-get install ncdu
+#ncdu /
 ```

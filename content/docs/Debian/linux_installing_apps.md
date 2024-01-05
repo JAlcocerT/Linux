@@ -120,6 +120,7 @@ apt-get is an older tool, part of the Advanced Packaging Tool (APT) suite.
 
 It's known for its stability and is heavily used in scripts and automation due to its predictable behavior.
 
+---
 
 ## FAQ
 
@@ -192,7 +193,7 @@ apt install name-of-package
 
 Remember, **it's important to trust the PPAs you add**, as they can potentially contain unvetted or harmful software. **Only use PPAs from known and trusted sources.**
 
-### Other ways to Install in Debian
+### Other ways to Install Apps
 
 #### UI
 
@@ -219,3 +220,20 @@ Flatpak is designed to be a **cross-distribution packaging format**. It aims to 
 * Multiple Repositories: Flatpak supports multiple software repositories, allowing users to access applications from various sources, including the [Flathub repository](https://flathub.org/), which is a popular repository for Flatpak packages.
 
 * Manual Updates: While Flatpak does support updates, it typically requires manual intervention or the use of package manager tools to update applications.
+
+### What did I Installed?
+
+```sh
+dpkg --list
+#dpkg --list | grep -E 'python'
+
+
+#apt list --installed
+#apt list --installed | grep -E 'python'
+```
+
+### Installing with Ansible
+
+Ansible is an Automation tool that we can use to install apps / spin docker containers and virtually any tasks.
+
+You can use Ansible to [install Apps like a pro dev-ops as shown here](https://jalcocert.github.io/Linux/docs/linux__cloud.md/ansible/#using-ansible)
