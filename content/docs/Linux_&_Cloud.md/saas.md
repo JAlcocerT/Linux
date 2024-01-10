@@ -8,6 +8,8 @@ draft: true
 
 ## PostHog
 
+The F/OSS Amplitude Alternative.
+
 ## Leantime
 
 ## TimeLite

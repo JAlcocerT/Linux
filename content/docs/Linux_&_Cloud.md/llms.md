@@ -20,7 +20,7 @@ Probably the **quickest way to get LLMs working**, specially if you already have
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jl9bfPsBBcM" frameborder="0" allowfullscreen></iframe>
 
-### {{% details title="Other Ways! PrivateGPT, TextGenWebUI" closed="true" %}}
+<!-- ### {{% details title="Other Ways! PrivateGPT, TextGenWebUI" closed="true" %}} -->
 
 
 #### PrivateGPT
@@ -35,8 +35,21 @@ Probably the **quickest way to get LLMs working**, specially if you already have
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-zNWDTqKF1E" frameborder="0" allowfullscreen></iframe>
 
-{{% /details %}}
+<!-- {{% /details %}} -->
 
+## VectorDBs
+
+### VectorAdmin
+
+[VectorAdmin with Docker](https://fossengineer.com/what-are-vector-dbs/#selfhosting-vectoradmin-with-docker)
+
+### ChromaDB
+
+[ChromaDB with Docker](https://fossengineer.com/selfhosting-chroma-vector-db/)
+
+### QDrant
+
+---
 
 ## FAQ
 

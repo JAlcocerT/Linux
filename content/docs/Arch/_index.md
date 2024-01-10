@@ -37,3 +37,14 @@ While Arch Linux demands a deeper understanding of Linux and requires users to c
 * [Nix](https://jalcocert.github.io/Linux/docs/nix/)
 
 * [Pacman](https://jalcocert.github.io/Linux/docs/arch/garuda/#pacman---garuda-package-manager)
+
+
+### SelfHosting with Arch
+
+If you are used to deploy your favourite Apps with [Docker](https://jalcocert.github.io/Linux/docs/debian/docker/) (or [Podman](https://jalcocert.github.io/Linux/docs/debian/podman/)), congratulations, you can use them seamlessly with Arch as you do with Debian, mac or Windows.
+
+For example:
+
+* [Analytic Tools](https://jalcocert.github.io/Linux/docs/linux__cloud.md/analytics/)
+* Local Gen AI - [LLMs](https://jalcocert.github.io/Linux/docs/linux__cloud.md/llms/)
+* [SelfHosting](https://fossengineer.com/tags/self-hosting/)

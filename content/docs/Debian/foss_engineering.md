@@ -4,6 +4,8 @@ type: docs
 prev: docs/Debian/
 ---
 
+A list of F/OSS Apps that we can use with Debian to create Awsome Projects.
+
 ## OpenFOAM
 
 [OpenFOAM](https://www.openfoam.com/) is an **[open-source](https://github.com/OpenFOAM/OpenFOAM-11) computational fluid dynamics (CFD)** software, offering flexibility and customization but requiring advanced technical expertise for effective use.

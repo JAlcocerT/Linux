@@ -23,6 +23,9 @@ If you want to tinker with Jenkins, a great way is to [Self-Host Jenkins with Do
 
 ### Grafana
 
+### NetData
+
+[SelfHost NetData with Docker](https://fossengineer.com/selfhosting-server-monitoring-with-netdata-and-docker/)
 
 ## FAQ
 
