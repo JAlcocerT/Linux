@@ -21,21 +21,21 @@ Probably the **quickest way to get LLMs working**, specially if you already have
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jl9bfPsBBcM" frameborder="0" allowfullscreen></iframe>
 
 <!-- ### {{% details title="Other Ways! PrivateGPT, TextGenWebUI" closed="true" %}} -->
+<!-- {{% /details %}} -->
 
 
-#### PrivateGPT
+### PrivateGPT
 
 * <https://fossengineer.com/selfhosting-local-llms-with-privateGPT/>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Ib3nQu5bB_k" frameborder="0" allowfullscreen></iframe>
 
-#### TextGeneration Web UI
+### TextGeneration Web UI
 
 * <https://fossengineer.com/Generative-AI-LLMs-locally-with-cpu/>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-zNWDTqKF1E" frameborder="0" allowfullscreen></iframe>
 
-<!-- {{% /details %}} -->
 
 ## VectorDBs
 

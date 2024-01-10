@@ -1,5 +1,5 @@
 ---
-title: DevOps
+title: DevOps Tools
 type: docs
 prev: /docs/gcp/
 next: docs/ansible/

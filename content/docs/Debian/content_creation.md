@@ -1,5 +1,5 @@
 ---
-title: Content Creation
+title: Apps Content Creation
 type: docs
 prev: docs/Debian/
 ---

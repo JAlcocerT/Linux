@@ -19,9 +19,6 @@ While Arch Linux demands a deeper understanding of Linux and requires users to c
 * Less Disruption: No need to perform major version upgrades, which can sometimes require a lot of time and effort.
 * Access to New Features: You can access new features and improvements as soon as they’re available.
 
-
-
-
 {{% details title=" WHY a fixed release like Debian?" closed="true" %}}
 
 * Stability: Software updates are thoroughly tested before being released, which can lead to a more stable experience.
@@ -35,6 +32,7 @@ While Arch Linux demands a deeper understanding of Linux and requires users to c
 * [Flatpak](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#flatpak)
 
 * [Nix](https://jalcocert.github.io/Linux/docs/nix/)
+  * And [installing common Apps with NIX](https://jalcocert.github.io/Linux/docs/nix/fav-apps/) is as simple as one command.
 
 * [Pacman](https://jalcocert.github.io/Linux/docs/arch/garuda/#pacman---garuda-package-manager)
 

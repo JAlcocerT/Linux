@@ -60,6 +60,7 @@ The AUR website is particularly useful for finding user-contributed packages tha
 
 Remember that when installing packages from the AUR, you should follow the AUR guidelines and consider using an AUR helper like yay for better package management and dependency handling.
 
+---
 
 ## FAQ
 
@@ -77,6 +78,24 @@ Anyways, you can always try these:
 * Create a [Virtual Machine and run Garuda](https://jalcocert.github.io/Linux/docs/debian/virtualization/#how-to-virtualize) inside of it, without worrying to break your main OS (Windows, mac, other linux...)
 
 * Or...if you are somehow familiar with [Docker](https://jalcocert.github.io/Linux/docs/debian/docker/) and [have it running in your system](https://fossengineer.com/docker-first-steps-guide-for-data-analytics/) - You can also [try Arch with A Webtop](https://fossengineer.com/selfhosting-webtops-docker/) without any risk to damage your main OS.
+
+### Example installation with Pacman
+
+Getting UFW up and running:
+
+```sh
+#install updates
+sudo pacman -Syu
+
+#install ufw
+sudo pacmac -S ufw
+sudo systemctl enable ufw.service
+```
+
+### Other Ways to Install
+
+* Try SelfHosting
+* Try Nix Package Manager - Learn this once and use it on any Linux and even on Macs!
 
 ### Rolling vs Fix Releases?
 
@@ -96,16 +115,3 @@ Like Debian-based distributions:
 Fixed releases prioritize stability and ease of maintenance but might not have the latest features as soon as they're released.
 
 Garuda Linux, being a rolling-release distribution, continually delivers the latest software to users, providing them with the cutting-edge experience.
-
-### Example installation with Pacman
-
-Getting UFW up and running:
-
-```sh
-#install updates
-sudo pacman -Syu
-
-#install ufw
-sudo pacmac -S ufw
-sudo systemctl enable ufw.service
-```

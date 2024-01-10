@@ -1,5 +1,5 @@
 ---
-title:  Conky
+title: Conky
 type: docs
 prev: docs/Debian/
 ---
