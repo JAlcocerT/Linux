@@ -69,7 +69,7 @@ Remember that when installing packages from the AUR, you should follow the AUR g
 * [Manjaro](https://manjaro.org/)
 * [BlendOS](https://blendos.co/) -  It is an immutable, container-based operating system that allows you to run applications from multiple Linux distributions and Android without the fear of breaking your system.
 
-### How can I try Arch easily?
+### How can I try Arch Easily?
 
 If you are really new to Linux, I would recommend to start better with Debian.
 
@@ -94,8 +94,8 @@ sudo systemctl enable ufw.service
 
 ### Other Ways to Install
 
-* Try SelfHosting
-* Try Nix Package Manager - Learn this once and use it on any Linux and even on Macs!
+* [Try SelfHosting](https://jalcocert.github.io/Linux/docs/selfhosting)
+* [Try Nix](https://jalcocert.github.io/Linux/docs/nix/) Package Manager - Learn this once and use it on any Linux and even on Macs!
 
 ### Rolling vs Fix Releases?
 
