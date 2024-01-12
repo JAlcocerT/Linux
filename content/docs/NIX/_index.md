@@ -1,9 +1,9 @@
 
 ---
-title: NIX - Package Manager for All 
+title: NIX - The Package Manager 
 type: docs
-prev: docs/first-page
-next: docs/folder/leaf
+prev: docs/debian
+next: docs/arch
 sidebar:
   open: false
 ---

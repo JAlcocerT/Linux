@@ -34,7 +34,7 @@ graph TD;
     Debian/Arch-->ProductivityApps;
 ```
 
-This is what you can expect in **the Linux journey**:
+<!-- This is what you can expect in **the Linux journey**:
 
 ```mermaid
 journey
@@ -59,13 +59,13 @@ journey
     section Next Steps
         Dreaming in code: 5: You
         Helping others with Linux: 5: You
-```
+``` -->
 
 ## Im an Android User
 
-Congrats, Android is also Linux!
+Congrats, Android is also Linux - YOu are already a Linux User!
 
-{{% details title="Awsome Question to Start! 🚀" closed="true" %}}
+{{% details title="And you can use Android & Linux Together! 🚀" closed="true" %}}
 
 ### How to use Android from Linux?
 
@@ -83,7 +83,7 @@ kdeconnect-cli --refresh
 kdeconnect-cli --list-devices
 ```
 
-YOu can get it from: <https://f-droid.org/packages/org.kde.kdeconnect_tp/>
+You can get it from: <https://f-droid.org/packages/org.kde.kdeconnect_tp/>
 
 Alternatively, you have GSConnect or scrcpy:
 
@@ -103,7 +103,7 @@ In the meantime, if you are wondering why should it be so painfull to install al
 Making clean install is really simple in Linux thanks to Tools like: Ansible, Docker (you can also use it) or scripts.
 
 
-{{% details title="You can use Scripts in Windows as well, together with Chocolatey!" closed="true" %}}
+{{% details title="You can use Scripts in Windows as well, together with Chocolatey! 🍫 " closed="true" %}}
 
 
 ### Chocolatey What?
@@ -114,7 +114,7 @@ Ok - this is suposed to be Linux related only, but I discovered about this and i
 
 **Package WHAT?**
 
-> When you want new tools or games, instead of roaming the internet, you tell the package manager what you desire. This *shopkeeper* knows where to find them, handles all the downloading and setup, and even keeps them updated so you don't have to worry about dusty shelves. 
+When you want new tools or games, instead of roaming the internet, you tell the package manager what you desire. This *shopkeeper* knows where to find them, handles all the downloading and setup, and even keeps them updated so you don't have to worry about dusty shelves. 
 
 ### Installing Chocolatey 🚀
 
@@ -167,10 +167,12 @@ Create a list like this one with your favourite Apps , then use it from the powe
 
 {{% /details %}}
 
+> Yes, you also can use **Chocolatey GUI** and avoid the scripting part.
+
 --- 
 
 ## FAQ
 
 ### What it is F-DROID?
 
-It is an alternative Google Store, full of Open Source Android APPs.
+It is an alternative Google App Store, full of Open Source Android APPs.

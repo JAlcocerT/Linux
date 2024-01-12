@@ -50,20 +50,16 @@ ansible --version
 Installing your favourite Apps without effort. I have created some playbooks to install popular apps at: <https://github.com/JAlcocerT/Linux/tree/main/Z_Ansible>
 
 
-Example: Install Docker with Ansible
+### Example: Install Docker with Ansible
 
 * Create the yml file 
     * Copy paste the one below
     * Use one from Github (review it first to know what you are installing!)
 * Execute Ansible
 
-```sh
-nano install_docker.yml #write the yml below
-ansible-playbook install_docker.yml -i inventory.ini #execute our playbook
+{{% steps %}}
 
-#curl -o setup_dev_remote.yml -L https://raw.githubusercontent.com/JAlcocerT/Linux/main/Z_Ansible/setup_dev_remote.yml
-#ansible-playbook setup_dev_remote.yml
-```
+#### Save the Ansible Playbook
 
 ```yml
 ---
@@ -97,6 +93,18 @@ ansible-playbook install_docker.yml -i inventory.ini #execute our playbook
           - portainer_data:/data
 ```
 
+### Install and Execute Ansible
+
+```sh
+nano install_docker.yml #write the yml below
+ansible-playbook install_docker.yml -i inventory.ini #execute our playbook
+
+#curl -o setup_dev_remote.yml -L https://raw.githubusercontent.com/JAlcocerT/Linux/main/Z_Ansible/setup_dev_remote.yml
+#ansible-playbook setup_dev_remote.yml
+```
+{{% /steps %}}
+
+
 As you can see, now Docker is running:
 
 ```sh
@@ -109,3 +117,20 @@ And also [Portainer](https://fossengineer.com/selfhosting-portainer-docker/) is 
 ```sh
 docker ps
 ```
+
+---
+
+## FAQ
+
+{{< tabs items="Ansible+IoT,YAML,TOML" >}}
+
+  {{< tab >}}**Ansible+IoT**: An IoT Project with [Ansible, a Raspberry Pi and some Sensors](https://jalcocert.github.io/RPi/posts/rpi-ansible/){{< /tab >}}
+  {{< tab >}}**YAML**: YAML is a human-readable data serialization language.{{< /tab >}}
+  {{< tab >}}**TOML**: TOML aims to be a minimal configuration file format that's easy to read due to obvious semantics.{{< /tab >}}
+
+{{< /tabs >}}
+
+
+{{< cards >}}
+  {{< card link="https://jalcocert.github.io/RPi/posts/rpi-ansible/" title="Image Card" image="https://source.unsplash.com/featured/800x600?landscape" subtitle="Unsplash Landscape" >}}
+{{< /cards >}}
