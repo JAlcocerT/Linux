@@ -102,6 +102,7 @@ In the meantime, if you are wondering why should it be so painfull to install al
 
 Making clean install is really simple in Linux thanks to Tools like: Ansible, Docker (you can also use it) or scripts.
 
+> Yes, you also can use **Chocolatey GUI** and avoid the scripting part.
 
 {{% details title="You can use Scripts in Windows as well, together with Chocolatey! 🍫 " closed="true" %}}
 
@@ -167,7 +168,6 @@ Create a list like this one with your favourite Apps , then use it from the powe
 
 {{% /details %}}
 
-> Yes, you also can use **Chocolatey GUI** and avoid the scripting part.
 
 --- 
 

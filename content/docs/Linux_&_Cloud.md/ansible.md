@@ -47,7 +47,9 @@ ansible --version
 
 ## Using Ansible
 
-Installing your favourite Apps without effort. I have created some playbooks to install popular apps at: <https://github.com/JAlcocerT/Linux/tree/main/Z_Ansible>
+Installing your favourite Apps without effort.
+
+I have created some playbooks to install popular apps at: <https://github.com/JAlcocerT/Linux/tree/main/Z_Ansible>
 
 
 ### Example: Install Docker with Ansible
@@ -59,7 +61,7 @@ Installing your favourite Apps without effort. I have created some playbooks to 
 
 {{% steps %}}
 
-#### Save the Ansible Playbook
+### Save the Ansible Playbook
 
 ```yml
 ---
@@ -132,5 +134,10 @@ docker ps
 
 
 {{< cards >}}
-  {{< card link="https://jalcocert.github.io/RPi/posts/rpi-ansible/" title="Image Card" image="https://source.unsplash.com/featured/800x600?landscape" subtitle="Unsplash Landscape" >}}
+  {{< card link="https://jalcocert.github.io/RPi/posts/rpi-ansible/" title="Image Card" image="https://jalcocert.github.io/RPi/img/RPi-Projects.png" subtitle="Raspberry Pi" >}}
 {{< /cards >}}
+
+
+<!-- {{< cards >}}
+  {{< card link="https://jalcocert.github.io/RPi/posts/rpi-ansible/" title="Image Card" image="https://source.unsplash.com/featured/800x600?landscape" subtitle="Raspberry Pi" >}}
+{{< /cards >}} -->
