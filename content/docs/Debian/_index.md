@@ -15,6 +15,36 @@ Debian's **package management system, APT** (Advanced Package Tool), simplifies 
 
 While Debian doesn't have the same "do-it-yourself" philosophy as Arch Linux, it provides a solid foundation for various use cases, including desktop computing, server hosting, and embedded systems. It's well-regarded for its community-driven development process and commitment to free software, making it a trusted choice for users who prioritize open-source principles and long-term support.
 
+  <!-- {{< hextra/feature-card
+    title="Get Ubuntu"
+    subtitle="The most popular OS to start your Linux Journey."
+    class="aspect-auto md:aspect-[1.1/1] max-lg:min-h-[340px]"
+    image="https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/ubuntu.png"
+    imageClass="top-[40%] left-[36px] w-[180%] sm:w-[110%] dark:opacity-80"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(142,53,74,0.15),hsla(0,0%,100%,0));"
+  >}}
+
+{{< hextra/feature-card
+    title="Get Ubuntu"
+    subtitle="The most popular OS to start your Linux Journey."
+    class="aspect-auto md:aspect-[1.1/1] max-lg:min-h-[100px]"  
+    image="https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/ubuntu.png"
+    imageClass="top-[40%] left-[10px] w-[45%] sm:w-[35%]"  
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(142,53,74,0.15),hsla(0,0%,100%,0));"
+>}}
+
+
+{{< hextra/feature-card
+    title="Get Ubuntu"
+    subtitle="The most popular OS to start your Linux Journey."
+    class="aspect-auto md:aspect-[1.1/1] max-lg:min-h-[85px]" 
+    image="https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/ubuntu.png"
+    imageClass="top-[20%] left-[9px] w-[45%] sm:w-[27.5%]"  
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(142,53,74,0.15),hsla(0,0%,100%,0));"
+>}} -->
+
+
+
 
 ## Managing Packages in Debian
 

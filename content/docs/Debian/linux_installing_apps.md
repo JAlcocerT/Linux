@@ -4,7 +4,7 @@ type: docs
 prev: docs/Debian/
 ---
 
-## Regular Apps installations
+## How to Install Apps in Debian
 
 Ever wondered about using linux as a regular OS, but afraid of making tedious installations of all your favorite programs, even games?
 

@@ -50,8 +50,8 @@ Linux is an **open-source operating system** that is used in a variety of device
 {{< /cards >}}
 
 {{< cards >}}
-  {{< card link="/docs/debian/linux_installing_apps/" title="Just Setup Linux!" image="https://source.unsplash.com/featured/800x600?computer" subtitle="I am a regular user / Want to Setup my uncle's machine without breaking the sweat" >}}
-  {{< card link="/" title="IoT with Raspberry Pi" image="https://jalcocert.github.io/RPi/img/RPi-Projects.png" subtitle="Linux will onboard you to the IoT and Embedding World. Are you ready to take the first step?" >}}
+  {{< card link="Linux/docs/debian/linux_installing_apps/" title="Just Setup Linux!" image="https://source.unsplash.com/featured/800x600?computer" subtitle="I am a regular user / Want to Setup my uncle's machine without breaking the sweat" >}}
+  {{< card link="https://jalcocert.github.io/RPi/" title="IoT with Raspberry Pi" image="https://jalcocert.github.io/RPi/img/RPi-Projects.png" subtitle="Linux will onboard you to the IoT and Embedding World. Are you ready to take the first step?" >}}
   <!-- {{< card link="/" title="LLMs with Linux" image="https://fossengineer.com/img/GenAI/ollama.png" subtitle="Linux nature is Open Source - Same like these LLMs that you can use with your Laptop (no GPU required)" method="Resize" options="600x q80 webp" >}} -->
 {{< /cards >}}
 
@@ -65,8 +65,8 @@ Linux is an **open-source operating system** that is used in a variety of device
   >}} -->
 
   {{< hextra/feature-card
-    title="I need some Privacy"
-    subtitle="Feeling constantly bombarded by big Tech targeted advertising? It's not too late to say Hi to Linux."
+    title="One Step Closer to AI"
+    subtitle="LLMs with Linux - Linux nature is Open Source - Same like these LLMs that you can use with your Laptop (no GPU required)."
     class="aspect-auto md:aspect-[1.1/1] max-lg:min-h-[340px]"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(221,210,59,0.15),hsla(0,0%,100%,0));"
   >}}
