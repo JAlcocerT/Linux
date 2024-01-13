@@ -57,3 +57,14 @@ sudo apt install conky p7zip imagemagick rsync
   {{< /filetree/folder >}}
   {{< filetree/file name="hugo.toml" >}}
 {{< /filetree/container >}}
+
+
+--- 
+
+## FAQ
+
+
+### Cool GNOME Shell Extension
+
+
+GNOME developers improved the Quick Settings menu in GNOME 44 to make connecting to previously-paired Bluetooth devices faster, but battery levels for connected devices, like mice, keyboards, headphones, game controllers, etc, aren’t displayed.

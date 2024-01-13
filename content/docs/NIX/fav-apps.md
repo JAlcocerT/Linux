@@ -13,14 +13,18 @@ A list of Apps that will [cover 80% of the needs from 80% of the people](https:/
 * LogSec + Pomatez
 
 ```sh
-#https://github.com/logseq/logseq/releases/download/0.10.2/Logseq-linux-x64-0.10.2.AppImage
-#https://zidoro.github.io/pomatez/
+flatpak install flathub com.logseq.Logseq #https://github.com/logseq/logseq/releases/download/0.10.2/Logseq-linux-x64-0.10.2.AppImage
+snap install pomatez #https://zidoro.github.io/pomatez/
 ```
 
-* Thunderbird
+{{< callout type="info" >}}
+LogSec can do more than notes, [Power your knowledge with F/OSS Local LLMs](https://fossengineer.com/selfhosting-logseq/)
+{{< /callout >}}
+
+* Thunderbird: A Free email Client to rule them all
 
 ```sh
-nix-shell -p thunderbird
+nix-shell -p thunderbird #flatpak install flathub org.mozilla.Thunderbird
 ```
 
 ## Daily Driver
@@ -28,7 +32,8 @@ nix-shell -p thunderbird
 * Browser
 
 ```sh
-nix-shell -p librewolf
+nix-shell -p librewolf #flatpak install flathub org.mozilla.firefox
+#https://flathub.org/apps/org.chromium.Chromium 
 #nix-shell -p mullvad-browser
 ```
 
@@ -46,8 +51,45 @@ nix-shell -p nextcloud-client
 
 
 {{< callout type="info" >}}
-This is a Nextcloud Client. For server, [checkout Docker installation](https://jalcocert.github.io/RPi/posts/selfhosting-nextcloud/).
+This installs a Nextcloud Client. [You can also have your own Nextcloud Server](https://jalcocert.github.io/RPi/posts/selfhosting-nextcloud/).
 {{< /callout >}}
+
+
+
+{{< tabs items="Celeste,Weylus,App Fleet" defaultIndex="1" >}}
+
+  {{< tab >}}**Celeste**: [A simple GUI sync client](https://github.com/hwittenborn/celeste) which supports multiple cloud providers.
+  ```sh
+  flatpak install flathub com.hunterwittenborn.Celeste
+  ```
+
+  As simple as this, you have support for Google Drive or Proton Drive (among others) in Linux.
+  
+    You can have a look also to FreeFileSync, RClone as well.{{< /tab >}}
+  {{< tab >}}**Weylus**: [A great App](https://github.com/H-M-H/Weylus) to use your Table as a second (Touch) Screen.
+  ```sh
+  sudo apt-get install libgtk-3-dev libappindicator3-dev libwebkit2gtk-4.0-dev
+  wget https://github.com/H-M-H/Weylus/releases/download/v0.11.4/Weylus_0.11.4_amd64.deb
+  sudo dpkg -i Weylus_*.deb
+  sudo apt-get -f install
+  #ifconfig
+  ```
+  And this is it, visit `http:localip:1701`
+
+  You can also have a look to Deskreen or Remmina.
+
+  Also, you can [try WebTops from your Tablet's browser](https://fossengineer.com/selfhosting-webtops-docker/) to have full desktop experience.
+  {{< /tab >}}
+  {{< tab >}}**App Fleet**:
+  Create workspaces for your Desktop
+  ```sh
+  curl https://raw.githubusercontent.com/omegaui/app_fleet/main/network-install.sh | bash
+  ``` 
+  {{< /tab >}}
+
+{{< /tabs >}}
+
+
 
 ## Dev + Content
 
@@ -68,6 +110,18 @@ nix-shell -p obs-studio
 ```sh
 nix-env -iA nixpkgs.blender
 ```
+
+Have a look to [other Apps for content creation](https://jalcocert.github.io/Linux/docs/debian/content_creation/).
+
+{{< callout emoji="❓" >}}
+  I am an engineer, where can I get [the good stuff (FEM, CAD...) in Linux](https://jalcocert.github.io/Linux/docs/debian/foss_engineering/)?
+{{< /callout >}}
+
+{{% details title="And that's not All 🚀" closed="true" %}}
+
+
+
+{{% /details %}}
 
 ## Sec/Privacy
 
@@ -103,7 +157,7 @@ nix-env -iA nixpkgs.element-desktop
 ```
 
 {{< callout type="info" >}}
-This will install a client for Matrix. If want your own server, checkout the [**Matrix Server** Docker installation](https://fossengineer.com/selfhosting-matrix-synapse-docker/).
+This will install a client for Matrix. You can have own server, checkout the [**Matrix Server** Docker installation](https://fossengineer.com/selfhosting-matrix-synapse-docker/).
 {{< /callout >}}
 
 

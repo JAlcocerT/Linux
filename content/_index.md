@@ -3,11 +3,9 @@ title: Linux Made Easy
 toc: false
 ---
 
-Linux is an **open-source operating system** that is used in a variety of devices, from embedded systems to cloud computing. It is highly secure, reliable, and efficient, making it an ideal choice for a range of applications.
+If you are reading it, you are not like others.
 
-{{< callout emoji="🌐" >}}
-  It’s not a corporate product but **a reflection of the spirit of sharing**, where everyone can use, take, modify, and contribute, creating a digital tapestry made of countless ideas.
-{{< /callout >}}
+You like not only to think different, but act different - That brought you here.
 
 
 
@@ -31,13 +29,61 @@ The **open-source** nature of Linux makes it easy for developers to create appli
 
 And that's right, providing that globally ~70% of market share in smartphones goes to **Android**.
 
-Surprise, Android is an **Open Source OS** which uses the **Linux Kernel** (the very core of it).
+Surprise! [Android is an **Open Source OS**](https://jalcocert.github.io/Linux/docs/#im-an-android-user) which uses the **Linux Kernel** (the very core of it).
 
 Whatever fight you might have heard with Google Services, commercial battles etc, it doesn't change that anyone can use Android and that most likely, you have one near you.
 
 {{% /details %}}
 
+Linux is an **open-source operating system** that is used in a variety of devices, from embedded systems to cloud computing. It is highly secure, reliable, and efficient, making it an ideal choice for a range of applications.
+
+{{< callout emoji="🌐" >}}
+  It’s not a corporate product but **a reflection of the spirit of sharing**, where everyone can use, take, modify, and contribute, creating a digital tapestry made of countless ideas.
+{{< /callout >}}
+
+
+## Explore
+
+{{< cards >}}
+  {{< card link="docs" title="Docs" icon="book-open" >}}
+  {{< card link="about" title="About" icon="user" >}}
+{{< /cards >}}
+
+{{< cards >}}
+  {{< card link="/docs/debian/linux_installing_apps/" title="Just Setup Linux!" image="https://source.unsplash.com/featured/800x600?computer" subtitle="I am a regular user / Want to Setup my uncle's machine without breaking the sweat" >}}
+  {{< card link="/" title="IoT with Raspberry Pi" image="https://jalcocert.github.io/RPi/img/RPi-Projects.png" subtitle="Linux will onboard you to the IoT and Embedding World. Are you ready to take the first step?" >}}
+  <!-- {{< card link="/" title="LLMs with Linux" image="https://fossengineer.com/img/GenAI/ollama.png" subtitle="Linux nature is Open Source - Same like these LLMs that you can use with your Laptop (no GPU required)" method="Resize" options="600x q80 webp" >}} -->
+{{< /cards >}}
+
+  <!-- {{< hextra/feature-card
+    title="One Step Closer to AI"
+    subtitle="LLMs with Linux - Linux nature is Open Source - Same like these LLMs that you can use with your Laptop (no GPU required)"
+    class="aspect-auto md:aspect-[1.1/1] max-md:min-h-[340px]"
+    image="https://fossengineer.com/img/GenAI/ollama.png"
+    imageClass="top-[40%] left-[36px] w-[110%] sm:w-[110%] dark:opacity-80"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(221,210,59,0.15),hsla(0,0%,100%,0));"
+  >}} -->
+
+  {{< hextra/feature-card
+    title="I need some Privacy"
+    subtitle="Feeling constantly bombarded by big Tech targeted advertising? It's not too late to say Hi to Linux."
+    class="aspect-auto md:aspect-[1.1/1] max-lg:min-h-[340px]"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(221,210,59,0.15),hsla(0,0%,100%,0));"
+  >}}
+
+  {{< hextra/feature-card
+    title="I need some Privacy"
+    subtitle="Feeling constantly bombarded by big Tech targeted advertising? It's not too late to say Hi to Linux."
+    class="aspect-auto md:aspect-[1.1/1] max-lg:min-h-[340px]"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(142,53,74,0.15),hsla(0,0%,50%,0));"
+  >}}
+
+
 ## Wait I have some Questions
+
+I Know, I know, you are not sure to get Started with Linux.
+
+If these are some QQ that come to your mind right now, dont let that stop you to show others what you are capable of 🔥
 
 {{% details title="Do I have to do stuff with the terminal?" closed="true" %}}
 
@@ -47,7 +93,7 @@ If you are in the beginning of the journey, I recommend to to start with Debian 
 
 That was not that hard right? You can also give it a try to [snap](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#snap).
 
-**Warning**: you might feel like a hacker.
+**Warning**: you might feel like a hacker 🙊
 {{% /details %}}
 
 {{% details title="Isn't it better to use mac/windows?" closed="true" %}}
@@ -77,12 +123,3 @@ And yes, **crypto like Bitcoin**, is basically a decentralized information syste
 
 But we should remember that **Science's nature is also Decentralized**. Anyone can propose, question or test the Current status Quo.
 {{% /details %}}
-
-
-
-## Explore
-
-{{< cards >}}
-  {{< card link="docs" title="Docs" icon="book-open" >}}
-  {{< card link="about" title="About" icon="user" >}}
-{{< /cards >}}
