@@ -12,42 +12,54 @@ You can **Get LLMs Running** in your personal computer or in big servers just fo
 
 ## Interfaces
 
-### Ollama
+{{< tabs items="Ollama,PrivateGPT,TextGeneration Web UI" >}}
 
-Probably the **quickest way to get LLMs working**, specially if you already have Docker installed.
+  {{< tab >}}
+  Probably the **Ollama is the quickest way** to [get LLMs working locally](https://fossengineer.com/selfhosting-llms-ollama), specially if you already have Docker installed.
 
-* <https://fossengineer.com/selfhosting-llms-ollama/>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/jl9bfPsBBcM" frameborder="0" allowfullscreen></iframe>
+  {{< /tab >}}
+  {{< tab >}}
+  Say Hi to your documents, locally, when you interact with them with [PrivateGPT Freely](https://fossengineer.com/selfhosting-local-llms-with-privateGPT)
 
-<!-- ### {{% details title="Other Ways! PrivateGPT, TextGenWebUI" closed="true" %}} -->
-<!-- {{% /details %}} -->
 
-
-### PrivateGPT
-
-* <https://fossengineer.com/selfhosting-local-llms-with-privateGPT/>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Ib3nQu5bB_k" frameborder="0" allowfullscreen></iframe>
+  
+  {{< /tab >}}
+  {{< tab >}}
 
-### TextGeneration Web UI
+  Yet another way to [get LLMs running locally, and with UI](https://fossengineer.com/Generative-AI-LLMs-locally-with-cpu/).
+  
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/-zNWDTqKF1E" frameborder="0" allowfullscreen></iframe>
 
-* <https://fossengineer.com/Generative-AI-LLMs-locally-with-cpu/>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/-zNWDTqKF1E" frameborder="0" allowfullscreen></iframe>
+  {{< /tab >}}
+
+{{< /tabs >}}
+
 
 
 ## VectorDBs
 
-### VectorAdmin
+When you are using embedding models to give LLMs context about your files, this is where that knowledge goes.
 
-[VectorAdmin with Docker](https://fossengineer.com/what-are-vector-dbs/#selfhosting-vectoradmin-with-docker)
+And there are many Vector DBs that you can use with Linux
 
-### ChromaDB
+{{< tabs items="VectorAdmin,ChromaDB,Other Vector DBs" >}}
 
-[ChromaDB with Docker](https://fossengineer.com/selfhosting-chroma-vector-db/)
+  {{< tab >}}
+  Manage them with [VectorAdmin and Docker](https://fossengineer.com/what-are-vector-dbs/#selfhosting-vectoradmin-with-docker)
+  {{< /tab >}}
+  {{< tab >}}
+  [ChromaDB with Docker](https://fossengineer.com/selfhosting-chroma-vector-db/)
+  {{< /tab >}}
+  {{< tab >}}QDrant{{< /tab >}}
 
-### QDrant
+{{< /tabs >}}
+
+All of this tech will work in Linux and **with just CPU**, if you dont have a GPU handy.
 
 ---
 
@@ -68,7 +80,8 @@ Yes, there are many ways to replace Github Copilot for Free:
 
 ### And to Power my Notes?
 
-* LogSeq + Ollama: <https://github.com/omagdy7/ollama-logseq>
+* LogSeq + Ollama
+    * The plugin: <https://github.com/omagdy7/ollama-logseq>
 
 ### What is a MoE?
 
