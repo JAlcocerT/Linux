@@ -15,7 +15,7 @@ It allows you to define tasks in plain text, automate repetitive operations, and
 
 > You simply describe what you want, and this assistant takes care of the rest, ensuring your systems are always in tip-top shape. That's the power of automation, and Ansible is our digital assistant.
 
-## Installing Ansible
+## Installing Ansible ♻️
 
 ```sh
 #sudo apt update

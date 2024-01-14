@@ -27,7 +27,9 @@ Use different tools to search:
 
 * [Whoogle!](https://fossengineer.com/selfhosting-whoogle-docker/)
 * <https://jalcocert.github.io/RPi/posts/selfh-internet-better/#searxng>
-* 
+* Youtube Alternatives:
+  * NewPipe / Youtube-DL https://jalcocert.github.io/RPi/posts/youtube-video-download/
+  * https://github.com/tubearchivist/tubearchivist
 
 ### VPNs
 
