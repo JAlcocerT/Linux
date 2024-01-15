@@ -20,6 +20,13 @@ You can try with [PiHole](https://fossengineer.com/selfhosting-PiHole-docker/)
 
 * <https://jalcocert.github.io/RPi/posts/selfh-internet-better/#unbound-dns>
 
+Whats my current DNS?
+
+```sh
+sudo apt install resolvconf
+sudo systemctl status resolvconf.service
+```
+
 ## Changing Bad Habits
 
 Use different tools to search:
