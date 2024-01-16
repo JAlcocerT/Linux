@@ -19,6 +19,8 @@ You already [have a secure OS](https://jalcocert.github.io/Linux/docs/debian/sec
 You can try with [PiHole](https://fossengineer.com/selfhosting-PiHole-docker/)
 
 * <https://jalcocert.github.io/RPi/posts/selfh-internet-better/#unbound-dns>
+  * <https://github.com/JamesTurland/JimsGarage/tree/main/Unbound>
+* Or try [Bind9](https://hub.docker.com/r/ubuntu/bind9#!)
 
 Whats my current DNS?
 
@@ -45,6 +47,8 @@ Use different tools to search:
 ---
 
 ## FAQ
+
+Definitely check: <https://github.com/pluja/awesome-privacy>
 
 ### Crypto? 
 

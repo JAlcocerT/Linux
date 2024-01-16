@@ -39,6 +39,8 @@ You can **Get LLMs Running** in your personal computer or in big servers just fo
 
 {{< /tabs >}}
 
+Others: [LibreChat](https://www.youtube.com/watch?v=0BRnK5BGZHU), Autogen + AutogenStudio https://microsoft.github.io/autogen/blog/2023/12/01/AutoGenStudio/
+
 
 
 ## VectorDBs

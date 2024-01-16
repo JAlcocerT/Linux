@@ -6,6 +6,7 @@ next: docs/ansible/
 draft: true
 ---
 
+Crontab for Docker - https://github.com/mcuadros/ofelia
 
 ## CI/CD
 
@@ -26,6 +27,12 @@ If you want to tinker with Jenkins, a great way is to [Self-Host Jenkins with Do
 ### NetData
 
 [SelfHost NetData with Docker](https://fossengineer.com/selfhosting-server-monitoring-with-netdata-and-docker/)
+
+
+* [Redis](https://www.youtube.com/watch?v=qucL1F2YEKE)
+* SandStorm [SelfHost WebApps](https://docs.sandstorm.io/en/latest/)
+
+---
 
 ## FAQ
 

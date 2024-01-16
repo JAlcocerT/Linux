@@ -40,6 +40,8 @@ https://www.blender.org/
 
 ## Other F/OSS Tools for Engineers
 
+Definitely [check](https://www.youtube.com/watch?v=yDwu-cmVR9Q): <https://www.youtube.com/@TheEngineeringToolboxChannel>
+
 * GNU Octave: GNU Octave is a high-level programming language and open-source alternative to MATLAB, suitable for numerical analysis and simulations.
 
 * Elmer: Elmer is an open-source multiphysics simulation software used for solving problems in fluid dynamics, structural mechanics, and more.
