@@ -10,3 +10,7 @@ draft: true
 ## Visualizing NNs
 
 https://github.com/lutzroeder/netron
+
+## AI Operations
+
+https://pezzo.ai/

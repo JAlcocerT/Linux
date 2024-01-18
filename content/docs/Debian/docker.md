@@ -75,6 +75,12 @@ And that's it, Dockge is waiting for us on: localhost:5001
 
 Podman is a **container management tool** that is similar to Docker but has some differences in its approach. It allows you to run and manage containers on your system, just like Docker, but it offers some advantages, such as being daemonless (no central server) and providing **compatibility with Docker commands and images**. 
 
+
+```sh
+flatpak install flathub io.podman_desktop.PodmanDesktop
+flatpak run io.podman_desktop.PodmanDesktop
+```
+
 ## Why Podman?
 
 Both Podman and Docker are open-source projects, and they are released under different open-source licenses. 

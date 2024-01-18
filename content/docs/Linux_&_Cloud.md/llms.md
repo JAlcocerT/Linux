@@ -39,7 +39,10 @@ You can **Get LLMs Running** in your personal computer or in big servers just fo
 
 {{< /tabs >}}
 
-Others: [LibreChat](https://www.youtube.com/watch?v=0BRnK5BGZHU), Autogen + AutogenStudio https://microsoft.github.io/autogen/blog/2023/12/01/AutoGenStudio/
+* **Others:** [LibreChat](https://www.youtube.com/watch?v=0BRnK5BGZHU), Autogen + AutogenStudio https://microsoft.github.io/autogen/blog/2023/12/01/AutoGenStudio/ or [Quivir](https://github.com/StanGirard/quivr) with great [docs](https://docs.quivr.app/home/intro) or [LocalGPT](https://github.com/PromtEngineer/localGPT).
+  * Bindings:
+    * https://github.com/abetlen/llama-cpp-python
+    *
 
 
 
@@ -103,6 +106,15 @@ You can also try Solar 10.7B to compare these MoE's:
 ollama run solar:10.7b #https://ollama.ai/library/solar/tags
 ```
 
+### Choosing the Right Model
+
+#### Quantization
+
+* GPTQ quantization, a state-of-the-art method featured in research papers, offers minimal performance loss compared to previous techniques. It's most efficient on NVIDIA GPUs when the model fits entirely in VRAM.
+* GGML, a machine learning library by Georgi Gerganov (who also developed llama.cpp for running local LLMs on Mac), performs best on Apple or Intel hardware.
+
+Thanks: https://aituts.com/local-llms/#Which_Quantization
+
 #### Which LLMs are Trending now?
 
 You can always check the LLM's Leaderboards:
@@ -110,6 +122,32 @@ You can always check the LLM's Leaderboards:
 * <https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard>
 * With **ELO** Rating: <https://huggingface.co/spaces/lmsys/chatbot-arena-leaderboard>
     * <https://chat.lmsys.org/?arena>
+
+* Examples:
+  * <https://huggingface.co/TheBloke/Llama-2-13B-Chat-fp16/tree/main>
+
+#### What about Image Generation?
+
+You can find them in [Hugging Face](https://huggingface.co/spaces):
+
+* Stable Difussion:
+  * <https://huggingface.co/runwayml/stable-diffusion-v1-5/tree/main>
+  * <https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/tree/main>
+  * <https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/tree/main>
+  * <https://huggingface.co/stabilityai/stable-diffusion-2-base>
+  * <https://github.com/AUTOMATIC1111/stable-diffusion-webui> or <https://github.com/vladmandic/automatic>
+    * <https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features#stable-diffusion-20>
+
+What are other people building? https://civitai.com/
+
+#### Voice?
+
+* <https://www.futuretools.io/tools/uberduck>
+* Audiocraft - https://gist.github.com/mberman84/afd800f8d4a8764a22571c1a82187bad
+
+#### Other Interesting AI Tools
+
+* <https://www.futuretools.io/?pricing-model=open-source>
 
 ### What is a RAG?
 
@@ -125,3 +163,8 @@ You dont have to be a developer to get to use LLMs.
 Mostly we will be using frameworks that provide a level of abstraction to the real code behind the scenes.
 
 It would be definitely beneficial if you are [familiar with Python](https://fossengineer.com/guide-python/) if you want to try [Cutting-Edge and Free AI](https://fossengineer.com/tags/gen-ai/) or at least to know [how to manage Python Dependencies](https://fossengineer.com/guide-python/).
+
+
+### Prompting
+
+* <https://prompthero.com/prompt/ccc554cf355-stable-diffusion-1-5-renaissance-painting-of-darth-vader-in-pink-fur-as-a-fashion-model-vogue-oil-paint-on-dark-background-masked-darth>

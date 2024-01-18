@@ -32,7 +32,13 @@ sudo apt install neofetch
 #neofetch
 ```
 
+* For Open Source: https://github.com/akopytov/sysbench
 
+
+```sh
+curl -s https://packagecloud.io/install/repositories/akopytov/sysbench/script.deb.sh | sudo bash
+sudo apt -y install sysbench
+```
 
 ### Hardware Monitor
 
