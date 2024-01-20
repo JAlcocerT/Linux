@@ -120,26 +120,29 @@ And also [Portainer](https://fossengineer.com/selfhosting-portainer-docker/) is 
 docker ps
 ```
 
-#### Ansible Example: JDownloader, QBitTorrent, Metube, Navidrome
+#### Ansible Like a Pro
 
-https://github.com/JAlcocerT/Docker/blob/main/Media/navidrome_docker-compose.yml
-https://github.com/JAlcocerT/Docker/blob/main/Media/jdownloader_docker-compose.yml
-https://github.com/JAlcocerT/Docker/blob/main/Media/Qbittorrent_docker-compose.yaml
+Now What? Well, you can start making your life easier.
 
-
+These two commands will spin up the following services: JDownloader, QBitTorrent, Metube, Navidrome
 
 ```sh
-#wget https://raw.githubusercontent.com/JAlcocerT/Docker/main/Media/MEDIA_docker-compose.yml 
-#ansible-playbook ./RPi/Z_ansible/Ansible_py_dht_mongo_arm32.yml -i inventory.ini #execute Meta Project Playbook
-
-ansible-playbook setup_media_server.yml -e "username=your_username"
+wget https://raw.githubusercontent.com/JAlcocerT/Linux/main/Z_Ansible/setup_media_server.yml
+ansible-playbook setup_media_server.yml -e "username=your_username" -i inventory.ini
 ```
+
 * QbitTorrent: `http://localhost:6011`
 * JDownloader: `http://localhost:5800`
 * Navidrome: `http://localhost:4533`
 * Metube: `http://localhost:8081`
 
-Acess Navidrome server from Android with the **Substreamer App**
+Access Navidrome server from Android with the **Substreamer App**
+
+{{< callout type="info" >}}
+* [Expose with Cloudflare](https://fossengineer.com/selfhosting-cloudflared-tunnel-docker/)
+* Add [HTTPs with NGINX](https://fossengineer.com/selfhosting-nginx-proxy-manager-docker/)
+* Add [VPN with Gluetun](https://fossengineer.com/gluetun-vpn-docker/)
+{{< /callout >}}
 
 > You can try also with [Youtube-DL](https://jalcocert.github.io/RPi/posts/youtube-video-download/#youtube-dl-material)
 
@@ -148,10 +151,10 @@ Acess Navidrome server from Android with the **Substreamer App**
 
 ## FAQ
 
-{{< tabs items="Ansible+IoT,YAML,TOML" >}}
+{{< tabs items="Ansible+IoT,Ansible+MediaServer,TOML" >}}
 
   {{< tab >}}**Ansible+IoT**: An IoT Project with [Ansible, a Raspberry Pi and some Sensors](https://jalcocert.github.io/RPi/posts/rpi-ansible/){{< /tab >}}
-  {{< tab >}}**YAML**: YAML is a human-readable data serialization language.{{< /tab >}}
+  {{< tab >}}**Ansible+MediaServer**: Your local Media Server. Setup with literally 2 commands.{{< /tab >}}
   {{< tab >}}**TOML**: TOML aims to be a minimal configuration file format that's easy to read due to obvious semantics.{{< /tab >}}
 
 {{< /tabs >}}
