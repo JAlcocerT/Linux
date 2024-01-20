@@ -120,7 +120,29 @@ And also [Portainer](https://fossengineer.com/selfhosting-portainer-docker/) is 
 docker ps
 ```
 
-#### Ansible Example: JDownloader, QBitTorrent, Youtube-DL, Navidrome
+#### Ansible Example: JDownloader, QBitTorrent, Metube, Navidrome
+
+https://github.com/JAlcocerT/Docker/blob/main/Media/navidrome_docker-compose.yml
+https://github.com/JAlcocerT/Docker/blob/main/Media/jdownloader_docker-compose.yml
+https://github.com/JAlcocerT/Docker/blob/main/Media/Qbittorrent_docker-compose.yaml
+
+
+
+```sh
+#wget https://raw.githubusercontent.com/JAlcocerT/Docker/main/Media/MEDIA_docker-compose.yml 
+#ansible-playbook ./RPi/Z_ansible/Ansible_py_dht_mongo_arm32.yml -i inventory.ini #execute Meta Project Playbook
+
+ansible-playbook setup_media_server.yml -e "username=your_username"
+```
+* QbitTorrent: `http://localhost:6011`
+* JDownloader: `http://localhost:5800`
+* Navidrome: `http://localhost:4533`
+* Metube: `http://localhost:8081`
+
+Acess Navidrome server from Android with the **Substreamer App**
+
+> You can try also with [Youtube-DL](https://jalcocert.github.io/RPi/posts/youtube-video-download/#youtube-dl-material)
+
 
 ---
 

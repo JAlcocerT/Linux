@@ -6,21 +6,39 @@
   vars:
     username: jalcocert  # Replace with your username
   tasks:
+    # - name: Create directory for Docker Compose file
+    #   file:
+    #     path: /home/{{ username }}/Docker/Kodi
+    #     state: directory
+    #     mode: '0755'
+
+    # - name: Download kodi_docker_compose.yml from GitHub #kodi/kodi
+    #   get_url:
+    #     url: https://raw.githubusercontent.com/JAlcocerT/Docker/main/Media/kodi_docker_compose.yml
+    #     dest: /home/{{ username }}/Docker/Kodi/docker-compose.yml
+    #     mode: '0755'
+
+    # - name: Deploy with Docker Compose
+    #   docker_compose:
+    #     project_src: /home/{{ username }}/Docker/Kodi
+    #     state: present
+
     - name: Create directory for Docker Compose file
       file:
-        path: /home/{{ username }}/Docker/Kodi
+        path: /home/{{ username }}/Docker/Media
         state: directory
         mode: '0755'
 
-    - name: Download kodi_docker_compose.yml from GitHub #kodi/kodi
+    - name: Download MEDIA_docker-compose.yml from GitHub
       get_url:
-        url: https://raw.githubusercontent.com/JAlcocerT/Docker/main/Media/kodi_docker_compose.yml
-        dest: /home/{{ username }}/Docker/Kodi/docker-compose.yml
+        url: https://raw.githubusercontent.com/JAlcocerT/Docker/main/Media/MEDIA_docker-compose.yml
+        dest: /home/{{ username }}/Docker/Media/docker-compose.yml
         mode: '0755'
 
     - name: Deploy with Docker Compose
       docker_compose:
-        project_src: /home/{{ username }}/Docker/Kodi
+        project_src: /home/{{ username }}/Docker/Media
         state: present
+        restarted: yes
 
 ##ansible-playbook setup_media_server.yml -e "username=your_username"

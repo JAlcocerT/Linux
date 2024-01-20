@@ -142,6 +142,9 @@ You can find them in [Hugging Face](https://huggingface.co/spaces):
   * <https://github.com/AUTOMATIC1111/stable-diffusion-webui> or <https://github.com/vladmandic/automatic>
     * <https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Features#stable-diffusion-20>
 
+* Foocus: <https://www.youtube.com/watch?v=zIhODzEVZqg> https://github.com/lllyasviel/Fooocus
+* Speech to IMG?!: https://www.youtube.com/watch?v=IAc-G-enRII
+
 What are other people building? https://civitai.com/
 
 #### Voice?
