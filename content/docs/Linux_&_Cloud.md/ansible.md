@@ -120,6 +120,8 @@ And also [Portainer](https://fossengineer.com/selfhosting-portainer-docker/) is 
 docker ps
 ```
 
+#### Ansible Example: JDownloader, QBitTorrent, Youtube-DL, Navidrome
+
 ---
 
 ## FAQ

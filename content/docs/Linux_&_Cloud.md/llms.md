@@ -106,6 +106,8 @@ You can also try Solar 10.7B to compare these MoE's:
 ollama run solar:10.7b #https://ollama.ai/library/solar/tags
 ```
 
+You can also run it in Google Colab: https://www.youtube.com/watch?v=ZyFlySElG1U
+
 ### Choosing the Right Model
 
 #### Quantization
@@ -126,11 +128,13 @@ You can always check the LLM's Leaderboards:
 * Examples:
   * <https://huggingface.co/TheBloke/Llama-2-13B-Chat-fp16/tree/main>
 
+> You can also check this repository: https://github.com/sindresorhus/awesome-chatgpt and https://github.com/f/awesome-chatgpt-prompts
+
 #### What about Image Generation?
 
 You can find them in [Hugging Face](https://huggingface.co/spaces):
 
-* Stable Difussion:
+* Stable Difussion: Quick Setup -> https://github.com/AbdBarho/stable-diffusion-webui-docker/wiki/Setup (Thanks to Jim Garage https://www.youtube.com/watch?v=5XHSV56hsJM)
   * <https://huggingface.co/runwayml/stable-diffusion-v1-5/tree/main>
   * <https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/tree/main>
   * <https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/tree/main>
@@ -142,8 +146,28 @@ What are other people building? https://civitai.com/
 
 #### Voice?
 
+Generally, here you can get many ideas: <https://github.com/sindresorhus/awesome-whisper>
+
 * <https://www.futuretools.io/tools/uberduck>
-* Audiocraft - https://gist.github.com/mberman84/afd800f8d4a8764a22571c1a82187bad
+* [Audiocraft](http://localhost:1313/whishper-docker/#how-to-install-audiocraft)
+* ecoute (OpenAI API needed)
+* Meeper (OpenAI API needed)
+* Bark
+* Whisper
+* [Whishper](https://fossengineer.com/whishper-docker)
+  * <https://github.com/pluja/whishper>
+  * https://libretranslate.com/
+
+* Linux Desktop App:
+
+```sh
+flatpak install flathub net.mkiol.SpeechNote
+flatpak run net.mkiol.SpeechNote
+```
+
+* Not F/OSS: 
+  * https://www.gladia.io/pricing
+  * https://bigwav.app/
 
 #### Other Interesting AI Tools
 
@@ -168,3 +192,7 @@ It would be definitely beneficial if you are [familiar with Python](https://foss
 ### Prompting
 
 * <https://prompthero.com/prompt/ccc554cf355-stable-diffusion-1-5-renaissance-painting-of-darth-vader-in-pink-fur-as-a-fashion-model-vogue-oil-paint-on-dark-background-masked-darth>
+
+### Where to host in the Cloud?
+
+If you need big GPU power, you can always try https://www.runpod.io/gpu-instance/pricing and similar services.

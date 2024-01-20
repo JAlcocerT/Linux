@@ -37,6 +37,9 @@ But you can even do it in the very same computer you are reading this.
 * <https://github.com/pluja/awesome-privacy>
 * <https://jalcocert.github.io/RPi/about/#where-can-i-learn-more-about-rpi>
 * <https://fossengineer.com/tags/self-hosting/>
+* <https://github.com/anderspitman/awesome-tunneling>
+* <https://github.com/awesome-selfhosted/awesome-selfhosted>
+    * <https://awesome-selfhosted.net/>
 
 ### How to Secure my Services?
 

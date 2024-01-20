@@ -67,6 +67,7 @@ You will need to create a Virtual Disk if you want to store data in the VM - By 
 
 <https://www.youtube.com/watch?v=VC9Kk7Ao944>
 
+---
 
 ## FAQ
 
@@ -81,3 +82,5 @@ sudo snap install sosumi
 #CTRL+ALT+G #to get out of the VM
 #sudo snap remove sosumi
 ```
+
+### How to do GPU PassThrough?

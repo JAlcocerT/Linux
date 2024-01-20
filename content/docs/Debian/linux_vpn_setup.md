@@ -92,6 +92,11 @@ Be mindful about this change, if you lost connectivity to internet. No valid DNS
 
 <https://mullvad.net/en/check>
 
+
+> You might also be interested in **HeadScale**: https://www.youtube.com/watch?v=OECp6Pj2ihg, or [Zrok](https://zrok.io/) or [telebit](https://www.youtube.com/watch?v=-QGbfTY5ExE)
+
+---
+
 ## FAQ
 
 ### How to use VPN for Firefox only?

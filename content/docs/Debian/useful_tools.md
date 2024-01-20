@@ -267,6 +267,16 @@ source ~/.bashrc
 tbd
 ``` -->
 
+TMUX:
+
+```sh
+apt install tmux
+#tmux #CTRL+B CTRL+D to detacht and CTRL+A to attach again
+```
+
+https://tmuxcheatsheet.com/
+
+---
 
 ## FAQ
 
