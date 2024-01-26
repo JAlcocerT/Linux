@@ -33,6 +33,8 @@ https://www.blender.org/
 
 <https://github.com/blender/blender>
 
+* <https://github.com/gd3kr/BlenderGPT>
+
 ### Blender Add-ons
 
 * <https://github.com/agmmnn/awesome-blender>

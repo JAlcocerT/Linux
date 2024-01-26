@@ -73,6 +73,13 @@ TAG=3.0.0 docker compose -f docker-compose-non-dev.yml up
 ### InfluxDB
  -->
 
+## Product Analytics
+
+* Umami
+* PostHog
+
+---
+
 ## FAQ
 
 ### IoT Project example with Metabase
