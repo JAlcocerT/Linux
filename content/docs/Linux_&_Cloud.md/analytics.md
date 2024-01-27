@@ -112,6 +112,13 @@ code --list-extensions
 
 --- 
 
+## Product Analytics
+
+* Umami
+* PostHog
+
+---
+
 ## FAQ
 
 

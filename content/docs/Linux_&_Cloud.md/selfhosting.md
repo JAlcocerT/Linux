@@ -18,14 +18,27 @@ But you can even do it in the very same computer you are reading this.
 
 ## Analytical Tools
 
+* https://github.com/knime/knime-core
+* https://hub.docker.com/r/apache/superset
+
+
 ## GenAI - LLMs
 
 ## Productivity
 
 ## Communication
 
+* Matrix Server: https://fossengineer.com/selfhosting-matrix-synapse-docker/
 
+You can connect to Matrix with Thunderbird as well.
 
+## Media
+
+Quick seedbox: Torrents + Mullvad -> Syncthing/Filebrowser
+
+## How to Back Up my Server?
+
+Duplicati to other location (HD / Mega, One drive, s3...)
 
 ---
 

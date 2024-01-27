@@ -52,7 +52,7 @@ Definitely check: <https://github.com/pluja/awesome-privacy>
 
 ### Crypto? 
 
-You are not in the right place.
+This is not in the right place to learn big about Crypto - but [WhyCryptoCurrencies](https://whycryptocurrencies.com/) it is (and Free).
 
 But there are couple of wallets that you can use in Linux:
 

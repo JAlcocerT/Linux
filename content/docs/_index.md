@@ -115,7 +115,7 @@ I list of your favourite Apps always helps, [here is mine for inspiration](https
 {{< tabs items="I am an Android user,I use Windows,I was told I Think Different Already" >}}
 
   {{< tab >}} 
-  Congrats, Android is also Linux - YOu are already a Linux User!
+  Congrats, Android is also Linux - You are already a Linux User!
 
 {{% details title="And you can use Android & Linux Together! 🚀" closed="false" %}}
 
@@ -159,7 +159,7 @@ Making clean install is really simple in Linux thanks to Tools like: Ansible, Do
 
 Ok - this is suposed to be Linux related only, but I discovered about this and if there is some Windows user reading this, probably will be wondering if formating and setup a Windows machine from scratch has to be so painful.
 
-**Chocolatey is a package manager** for Windows that enables users to **easily install**, manage, and update software applications from the command line or through a graphical interface.
+**Chocolatey is a F/OSS package manager** for Windows that enables users to **easily install**, manage, and update software applications from the command line or through a graphical interface.
 
 **Package WHAT?**
 
@@ -204,6 +204,16 @@ Write-Host "Installing Visual Studio Code..."
 choco install vscode -y
 
 Write-Host "Installation completed."
+```
+
+Useful commands:
+
+```sh
+choco search packageName: Search for packages by name.
+choco install packageName: Install a package.
+choco list --local-only: List all installed packages.
+choco uninstall packageName: Uninstall a package.
+choco upgrade packageName: Upgrade a package to the latest version.
 ```
 
 Create a list like this one with your favourite Apps , then use it from the powershell.
