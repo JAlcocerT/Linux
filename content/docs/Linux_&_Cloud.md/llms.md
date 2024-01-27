@@ -199,3 +199,9 @@ It would be definitely beneficial if you are [familiar with Python](https://foss
 ### Where to host in the Cloud?
 
 If you need big GPU power, you can always try https://www.runpod.io/gpu-instance/pricing and similar services.
+
+### How to use HF?
+
+In HuggingFace you will find really cool AI Projects to try:
+
+* Example: <https://huggingface.co/spaces/HuggingFaceM4/screenshot2html>

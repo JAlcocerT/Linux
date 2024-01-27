@@ -68,3 +68,35 @@ sudo apt install conky p7zip imagemagick rsync
 
 
 GNOME developers improved the Quick Settings menu in GNOME 44 to make connecting to previously-paired Bluetooth devices faster, but battery levels for connected devices, like mice, keyboards, headphones, game controllers, etc, aren’t displayed.
+
+
+```txt
+sudo apt install gnome-tweaks
+sudo apt-get install chrome-gnome-shell
+
+sudo apt install conky-all curl jq
+
+#copy conky files to ~/.config/conky
+cp ~/Downloads/conky_config/Graffias ~/.config/conky -r
+sudo mkdir ~/.config/autostart
+cp ~/Downloads/conky_config/start_conky.desktop ~/.config/autostart/start_conky.desktop -r
+
+
+
+
+sudo apt-get install conky-all curl
+sudo apt update
+conky --version
+
+wget --no-check-certificate https://github.com/teejee2008/conky-manager/releases/download/v2.4/conky-manager-v2.4-amd64.run
+
+sudo chmod +x conky-manager-v2.4-amd64.run
+ls -l
+sudo ./conky-manager-v2.4-amd64.run -y
+
+sudo apt install conky p7zip imagemagick rsync
+
+#https://openweathermap.org/city/756135
+## add Graffias to ~/.conky 
+#modify the city in /.config/conky/Graffias/scripts/weather.sh
+```
