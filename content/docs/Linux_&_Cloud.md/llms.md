@@ -231,3 +231,10 @@ Unlike traditional neural networks that process data sequentially (like RNNs and
 
 {{% /details %}}
 
+
+
+### How to use HF?
+
+In HuggingFace you will find really cool AI Projects to try:
+
+* Example: <https://huggingface.co/spaces/HuggingFaceM4/screenshot2html>
