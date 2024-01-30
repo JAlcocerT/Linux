@@ -82,6 +82,8 @@ Yes, there are many ways to replace Github Copilot for Free:
 
 * [Tabby](https://fossengineer.com/selfhosting-Tabby-coding-assistant/)
 * [LLama Coder](https://github.com/ex3ndr/llama-coder) in a [vscode extension](https://marketplace.visualstudio.com/items?itemName=ex3ndr.llama-coder&ssr=false#review-details)
+* Codeium
+* BITO
 
 ### And to Power my Notes?
 
@@ -125,8 +127,10 @@ You can always check the LLM's Leaderboards:
 * With **ELO** Rating: <https://huggingface.co/spaces/lmsys/chatbot-arena-leaderboard>
     * <https://chat.lmsys.org/?arena>
 
-* Examples:
+* Examples: use them also with GPT4All or TextGenWebUI
   * <https://huggingface.co/TheBloke/Llama-2-13B-Chat-fp16/tree/main>
+  * <https://huggingface.co/docs/transformers/main/model_doc/mpt>
+    * And [this one](https://www.mosaicml.com/mpt) you can train it and use commercially: https://www.mosaicml.com/training
 
 > You can also check this repository: https://github.com/sindresorhus/awesome-chatgpt and https://github.com/f/awesome-chatgpt-prompts
 
@@ -199,3 +203,31 @@ It would be definitely beneficial if you are [familiar with Python](https://foss
 ### Where to host in the Cloud?
 
 If you need big GPU power, you can always try https://www.runpod.io/gpu-instance/pricing and similar services.
+
+### Using HuggingFace for LLMs
+
+https://huggingface.co/spaces
+
+
+### You might be Wondering
+
+
+{{% details title="Awsome Question to Start! 🚀" closed="true" %}}
+
+* RNN (Recurrent Neural Network):
+
+Typical Use: RNNs are typically used for sequential data where the order and context of the data points are important. They are well-suited for time-series data, natural language processing (NLP), speech recognition, and other tasks where data points are interdependent.
+Characteristics: RNNs have a memory-like feature that captures information about what has been calculated so far, essentially allowing them to have a sense of 'time' or sequence. This makes them ideal for processing sequences of data like sentences or time series.
+
+* CNN (Convolutional Neural Network):
+
+Typical Use: CNNs are predominantly used for image and video recognition, image classification, object detection, and similar tasks that require the model to recognize patterns in spatial data. They are also used in some NLP tasks, although to a lesser extent than RNNs and Transformers.
+Characteristics: CNNs use convolutional layers, pooling layers, and fully connected layers. The convolutional layers automatically and adaptively learn spatial hierarchies of features from input images. This makes them particularly good at tasks like image recognition where understanding spatial hierarchy in pixels is crucial.
+
+* Transformers, is another type of neural network architecture.
+These mechanisms allow the model to weigh the importance of different parts of the input data differently.
+
+Unlike traditional neural networks that process data sequentially (like RNNs and LSTMs), transformers can process entire sequences of data simultaneously, making them highly efficient for tasks like language modeling and translation.
+
+{{% /details %}}
+
