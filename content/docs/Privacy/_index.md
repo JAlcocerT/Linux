@@ -30,8 +30,12 @@ sudo systemctl status resolvconf.service
 ```
 
 {{< callout type="info" >}}
-Check your DNS with: surfshark
+Check your DNS with: WireShark
+And the DNS performance with: GRC's DNS Benchmark, Knot DNS Resolver , DNSPerf or dnsmasq
 {{< /callout >}}
+
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=xAo61IaXun8" frameborder="0" allowfullscreen></iframe>
+
 
 ## Changing Bad Habits
 
