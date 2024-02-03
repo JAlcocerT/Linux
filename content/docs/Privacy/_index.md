@@ -34,8 +34,7 @@ Check your DNS with: WireShark
 And the DNS performance with: GRC's DNS Benchmark, Knot DNS Resolver , DNSPerf or dnsmasq
 {{< /callout >}}
 
-<iframe width="560" height="315" src="https://www.youtube.com/watch?v=xAo61IaXun8" frameborder="0" allowfullscreen></iframe>
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xAo61IaXun8" frameborder="0" allowfullscreen></iframe>
 
 ## Changing Bad Habits
 
@@ -95,6 +94,18 @@ flatpak install flathub org.featherwallet.Feather #Monero
 Use them wisely and be responsible.
 
 * DeFi Protocols Info: <https://defillama.com/top-protocols>
+  * Example: <https://defillama.com/yields?attribute=stablecoins>
+    * <https://ethereum.org/stablecoins>
 * Create your own Crypto Analytics Dashboard with: <https://github.com/duneanalytics/docs>
   * Also, you can see what others have created and whats trending: <https://dune.com/browse/dashboards?tags=DeFi>
 
+{{< callout type="info" >}}
+How this also resonates with Linux? 
+
+Well, nature of crypto is F/OSS (if it is not you better run):
+
+* Many [wallets](https://ethereum.org/wallets/find-wallet) are F/OSS
+* Smart Contracts are F/OSS
+  * And [dApps](https://dappradar.com/) sense is also F/OSS
+* And you can have a look to full history of transactions: [ETH](https://etherscan.io/txs), [BTC](https://bitcoinexplorer.org/)...
+{{< /callout >}}

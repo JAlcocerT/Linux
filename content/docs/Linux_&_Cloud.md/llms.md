@@ -42,7 +42,6 @@ You can **Get LLMs Running** in your personal computer or in big servers just fo
 * **Others:** [LibreChat](https://www.youtube.com/watch?v=0BRnK5BGZHU), Autogen + AutogenStudio https://microsoft.github.io/autogen/blog/2023/12/01/AutoGenStudio/ or [Quivir](https://github.com/StanGirard/quivr) with great [docs](https://docs.quivr.app/home/intro) or [LocalGPT](https://github.com/PromtEngineer/localGPT).
   * Bindings:
     * https://github.com/abetlen/llama-cpp-python
-    *
 
 
 
@@ -82,8 +81,6 @@ Yes, there are many ways to replace Github Copilot for Free:
 
 * [Tabby](https://fossengineer.com/selfhosting-Tabby-coding-assistant/)
 * [LLama Coder](https://github.com/ex3ndr/llama-coder) in a [vscode extension](https://marketplace.visualstudio.com/items?itemName=ex3ndr.llama-coder&ssr=false#review-details)
-* Codeium
-* BITO
   * [CodeLLama in HF](https://huggingface.co/codellama/CodeLlama-70b-hf)
 * Others: Bito, Codeium, or [Adrenaline](https://github.com/shobrook/adrenaline/)
 
