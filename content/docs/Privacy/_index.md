@@ -40,6 +40,8 @@ Use different tools to search:
   * NewPipe / Youtube-DL https://jalcocert.github.io/RPi/posts/youtube-video-download/
   * https://github.com/tubearchivist/tubearchivist
 
+* Use a Password Manager: Bitwarden, KeePass...
+
 ### VPNs
 
 * <https://jalcocert.github.io/Linux/docs/debian/linux_vpn_setup/>
@@ -48,7 +50,15 @@ Use different tools to search:
 
 ## FAQ
 
-Definitely check: <https://github.com/pluja/awesome-privacy>
+Definitely check: 
+
+* <https://github.com/pluja/awesome-privacy>
+* <https://github.com/awesome-selfhosted/awesome-selfhosted>
+* <https://github.com/anderspitman/awesome-tunneling>
+* <https://www.techlore.tech/>
+
+<!-- 
+https://libreselfhosted.com/ -->
 
 ### Crypto? 
 
@@ -64,4 +74,8 @@ flatpak install flathub org.featherwallet.Feather #Monero
 ```
 
 Use them wisely and be responsible.
+
+* DeFi Protocols Info: <https://defillama.com/top-protocols>
+* Create your own Crypto Analytics Dashboard with: <https://github.com/duneanalytics/docs>
+  * Also, you can see what others have created and whats trending: <https://dune.com/browse/dashboards?tags=DeFi>
 

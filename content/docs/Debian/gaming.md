@@ -68,6 +68,8 @@ If you only want to play older or less demanding games, you may be able to get b
 
 If you want to play modern or graphically demanding games, you will need to use GPU passthrough. This involves **passing one of your physical GPUs** (assuming you have 2) to the virtual machine. This will allow the virtual machine to use the graphics card directly, which will significantly improve the performance of your games.
 
+Learn more about it: <https://github.com/JamesTurland/JimsGarage/tree/main/GPU_passthrough>
+
 #### Nested Virtualization
 
 If you have only one GPU, it's still possible to play games with QEMU, but you'll need to use a technique called **nested virtualization**. This involves running a separate hypervisor inside the virtual machine, such as KVM. The nested hypervisor will then take control of the GPU and pass it on to the virtual machine.

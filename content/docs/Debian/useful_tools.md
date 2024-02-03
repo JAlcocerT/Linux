@@ -98,6 +98,8 @@ sudo apt install dnsutils
 #nslookup google.com
 ```
 
+Worth to have a look: https://weberblog.net/benchmarking-dns-namebench-dnseval/
+
 ## General Ubuntu
 
 ### Crontab Tasks

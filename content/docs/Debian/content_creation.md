@@ -22,11 +22,11 @@ flatpak run com.obsproject.Studio
 ### Editing Videos in Linux
 
 ```sh
-sudo snap install blender --classic && snap install freecad && snap install openscad && snap install cura-slicer 
+#sudo snap install blender --classic && snap install freecad && snap install openscad && snap install cura-slicer 
 
 sudo snap install shotcut -- classic && snap install photoscape  && snap install inkscape
 
-sudo snap install penpot-desktop
+#sudo snap install penpot-desktop
 
 
 #Flameshot
@@ -62,8 +62,16 @@ flatpak install flathub org.upscayl.Upscayl
 
 ## Audio Editing in Linux
 
+* Audacity
+
 ```sh
 wget https://github.com/audacity/audacity/releases/download/Audacity-3.4.2/audacity-linux-3.4.2-x64.AppImage
 ```
 
 And shortly we will get the Plugin OpenVino ready in Linux which will bring AI to Audacity: https://github.com/intel/openvino-plugins-ai-audacity/releases
+
+* [Mixxx](https://flathub.org/apps/org.mixxx.Mixxx)
+
+```sh
+flatpak install flathub org.mixxx.Mixxx
+```

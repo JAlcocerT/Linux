@@ -82,6 +82,8 @@ Yes, there are many ways to replace Github Copilot for Free:
 
 * [Tabby](https://fossengineer.com/selfhosting-Tabby-coding-assistant/)
 * [LLama Coder](https://github.com/ex3ndr/llama-coder) in a [vscode extension](https://marketplace.visualstudio.com/items?itemName=ex3ndr.llama-coder&ssr=false#review-details)
+  * [CodeLLama in HF](https://huggingface.co/codellama/CodeLlama-70b-hf)
+* Others: Bito, Codeium, or [Adrenaline](https://github.com/shobrook/adrenaline/)
 
 ### And to Power my Notes?
 
@@ -151,12 +153,18 @@ What are other people building? https://civitai.com/
 
 Generally, here you can get many ideas: <https://github.com/sindresorhus/awesome-whisper>
 
+Also, in [HF there are already interesting projects](https://jalcocert.github.io/Linux/docs/linux__cloud.md/llms/#how-to-use-hf).
+
 * <https://www.futuretools.io/tools/uberduck>
 * [Audiocraft](http://localhost:1313/whishper-docker/#how-to-install-audiocraft)
 * ecoute (OpenAI API needed)
 * Meeper (OpenAI API needed)
 * Bark
-* Whisper
+* Whisper - https://github.com/openai/whisper
+  * https://github.com/Vaibhavs10/insanely-fast-whisper
+  * https://github.com/ggerganov/whisper.cpp
+  * https://huggingface.co/openai/whisper-large-v2#long-form-transcription
+  * https://github.com/SYSTRAN/faster-whisper
 * [Whishper](https://fossengineer.com/whishper-docker)
   * <https://github.com/pluja/whishper>
   * https://libretranslate.com/
@@ -202,6 +210,7 @@ If you need big GPU power, you can always try https://www.runpod.io/gpu-instance
 
 ### How to use HF?
 
-In HuggingFace you will find really cool AI Projects to try:
+In HuggingFace you will find really cool and Open AI Projects to try out:
 
-* Example: <https://huggingface.co/spaces/HuggingFaceM4/screenshot2html>
+* Image to Code: <https://huggingface.co/spaces/HuggingFaceM4/screenshot2html>
+* Audio to text: <https://huggingface.co/spaces/sanchit-gandhi/whisper-jax>
