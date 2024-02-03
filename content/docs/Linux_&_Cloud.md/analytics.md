@@ -132,6 +132,8 @@ code --list-extensions
 * <https://fossengineer.com/airflow-docker/>
 
 
+https://fossengineer.com/airflow-docker/
+
 ### SelfHost These Tools with Docker
 
 <script src="https://gist.github.com/JAlcocerT/953cab1052af58f4241f28dbc0a314a0.js"></script>

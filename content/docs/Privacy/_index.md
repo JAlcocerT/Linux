@@ -29,6 +29,14 @@ sudo apt install resolvconf
 sudo systemctl status resolvconf.service
 ```
 
+{{< callout type="info" >}}
+Check your DNS with: WireShark
+And the DNS performance with: GRC's DNS Benchmark, Knot DNS Resolver , DNSPerf or dnsmasq
+{{< /callout >}}
+
+<iframe width="560" height="315" src="https://www.youtube.com/watch?v=xAo61IaXun8" frameborder="0" allowfullscreen></iframe>
+
+
 ## Changing Bad Habits
 
 Use different tools to search:
@@ -45,6 +53,17 @@ Use different tools to search:
 ### VPNs
 
 * <https://jalcocert.github.io/Linux/docs/debian/linux_vpn_setup/>
+
+### Communication
+
+* Thunderbird allows you not only to use email, but to connect to Matrix Servers
+* Rocket.chat
+* 
+
+{{< callout type="info" >}}
+You can [SelfHost your own Matrix Server](https://fossengineer.com/selfhosting-matrix-synapse-docker/) and Federate it with other servers if you wish.
+{{< /callout >}}
+
 
 ---
 
