@@ -89,8 +89,8 @@ volumes:
 You can also try with
 
 ```sh
-python -m venv pilot-env (create a virtual environment)
-source pilot-env/bin/activate (or on Windows pilot-env\Scripts\activate) (activate the virtual environment)
+python -m venv your-env #(create a virtual environment)
+source your-env/bin/activate #(or on Windows your-env\Scripts\activate) (activatea the venv)
 #deactivate
 ```
 
@@ -104,6 +104,10 @@ conda deactivate
 
 * Ollama
 
+{{< callout type="info" >}}
+The [ML Compilation for LLMs](https://github.com/mlc-ai/mlc-llm) project aims to spread the development and deployment of AI Models.
+{{< /callout >}}
+
 ### Text-to-Image
 
 * Automatic111
@@ -115,6 +119,8 @@ conda deactivate
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xsvTEzTirlQ" frameborder="0" allowfullscreen></iframe>
 
 Thanks to to [Tech-Practice](https://www.youtube.com/watch?v=HPO7fu7Vyw4&t=445s) for inspiration.
+
+
 
 ## Productivity
 
