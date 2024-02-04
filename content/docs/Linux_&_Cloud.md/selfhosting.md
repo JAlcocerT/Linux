@@ -106,6 +106,13 @@ volumes:
 * Automatic111
 * Fooocus
 
+### Affordable Local Gen AI with iGPU's
+
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xsvTEzTirlQ" frameborder="0" allowfullscreen></iframe>
+
+Thanks to to [Tech-Practice](https://www.youtube.com/watch?v=HPO7fu7Vyw4&t=445s) for inspiration.
+
 ## Productivity
 
 ## Communication
