@@ -24,7 +24,7 @@ But you can even do it in the very same computer you are reading this.
 
 ## GenAI
 
-{{< tabs items="Dockerfile,requirements,Docker-compose.yaml" defaultIndex="1" >}}
+{{< tabs items="Dockerfile,requirements,Config" defaultIndex="2" >}}
 
   {{< tab >}}**Dockerfile**: 
   
@@ -65,14 +65,21 @@ python entry_with_update.py
 #Not needed here, provicded by repo.
 ```
   {{< /tab >}}
-  {{< tab >}}**Docker-compose.yaml**:
-  
+  {{< tab >}}**Config**:
+Make sure to build the image first with:
+
+```sh
+docker build -t fooocus .
+#docker-compose up -d
+```
+Then, use this to spin up the container:
+
 ```yml
 version: '3'
 
 services:
   sd-fooocus:
-    image: python:3.11-slim
+    image: fooocus #python:3.11-slim
     container_name: fooocus
     command: tail -f /dev/null
     volumes:
@@ -88,27 +95,16 @@ volumes:
 
 {{< /tabs >}}
 
-```yml
-version: '3'
 
-services:
-  sd-fooocus:
-    image: python:3.11-slim
-    container_name: fooocus
-    command: tail -f /dev/null
-    volumes:
-      - ai_fooocus:/app
-    working_dir: /app  # Set the working directory to /app
-    ports:
-      - "7865:7865"
-
-volumes:
-  ai_fooocus:
-```
 
 ### LLMs
 
+* Ollama
+
 ### Text-to-Image
+
+* Automatic111
+* Fooocus
 
 ## Productivity
 
