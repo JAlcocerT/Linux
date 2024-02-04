@@ -43,19 +43,10 @@ RUN apt-get update && apt-get install -y \
 RUN git clone https://github.com/lllyasviel/Fooocus
 
 WORKDIR /app/Fooocus
-pip install -r requirements_versions.txt
+RUN pip install -r requirements_versions.txt
 
-python entry_with_update.py
+#python entry_with_update.py
 
-# RUN apt-get update && apt-get install -y \
-#     build-essential \
-#     curl \
-#     software-properties-common \
-#     git \
-#     && rm -rf /var/lib/apt/lists/*
-
-# Install production dependencies.
-#RUN pip install -r requirements.txt
 ```
 
   {{< /tab >}}
@@ -95,7 +86,19 @@ volumes:
 
 {{< /tabs >}}
 
+You can also try with
 
+```sh
+python -m venv pilot-env (create a virtual environment)
+source pilot-env/bin/activate (or on Windows pilot-env\Scripts\activate) (activate the virtual environment)
+#deactivate
+```
+
+```sh
+conda create -n yourcondaenvironment python=3.11
+conda activate yourcondaenvironment
+conda deactivate
+```
 
 ### LLMs
 
