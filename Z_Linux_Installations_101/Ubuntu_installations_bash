@@ -460,6 +460,8 @@ sudo add-apt-repository ppa:mdoyen/homebank
 sudo apt-get update
 sudo apt-get install homebank
 
+#https://docs.firefly-iii.org/how-to/firefly-iii/installation/docker/
+
 #Ghosfolio (https://hub.docker.com/r/ghostfolio/ghostfolio)
 
 #Crypto

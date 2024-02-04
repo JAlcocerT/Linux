@@ -22,7 +22,93 @@ But you can even do it in the very same computer you are reading this.
 * https://hub.docker.com/r/apache/superset
 
 
-## GenAI - LLMs
+## GenAI
+
+{{< tabs items="Dockerfile,requirements,Docker-compose.yaml" defaultIndex="1" >}}
+
+  {{< tab >}}**Dockerfile**: 
+  
+```Dockerfile
+FROM python:3.11-slim
+
+# Copy local code to the container image.
+ENV APP_HOME /app
+WORKDIR $APP_HOME
+
+RUN apt-get update && apt-get install -y \
+    git \
+    build-essential
+
+# Clone the private repository
+RUN git clone https://github.com/lllyasviel/Fooocus
+
+WORKDIR /app/Fooocus
+pip install -r requirements_versions.txt
+
+python entry_with_update.py
+
+# RUN apt-get update && apt-get install -y \
+#     build-essential \
+#     curl \
+#     software-properties-common \
+#     git \
+#     && rm -rf /var/lib/apt/lists/*
+
+# Install production dependencies.
+#RUN pip install -r requirements.txt
+```
+
+  {{< /tab >}}
+  {{< tab >}}**requirements**:
+  
+```txt
+#Not needed here, provicded by repo.
+```
+  {{< /tab >}}
+  {{< tab >}}**Docker-compose.yaml**:
+  
+```yml
+version: '3'
+
+services:
+  sd-fooocus:
+    image: python:3.11-slim
+    container_name: fooocus
+    command: tail -f /dev/null
+    volumes:
+      - ai_fooocus:/app
+    working_dir: /app  # Set the working directory to /app
+    ports:
+      - "7865:7865"
+
+volumes:
+  ai_fooocus:
+```
+  {{< /tab >}}
+
+{{< /tabs >}}
+
+```yml
+version: '3'
+
+services:
+  sd-fooocus:
+    image: python:3.11-slim
+    container_name: fooocus
+    command: tail -f /dev/null
+    volumes:
+      - ai_fooocus:/app
+    working_dir: /app  # Set the working directory to /app
+    ports:
+      - "7865:7865"
+
+volumes:
+  ai_fooocus:
+```
+
+### LLMs
+
+### Text-to-Image
 
 ## Productivity
 

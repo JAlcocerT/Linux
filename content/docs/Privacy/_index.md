@@ -96,8 +96,8 @@ Use them wisely and be responsible.
 * DeFi Protocols Info: <https://defillama.com/top-protocols>
   * Example: <https://defillama.com/yields?attribute=stablecoins>
     * <https://ethereum.org/stablecoins>
-* Create your own Crypto Analytics Dashboard with: <https://github.com/duneanalytics/docs>
-  * Also, you can see what others have created and whats trending: <https://dune.com/browse/dashboards?tags=DeFi>
+* Create your own Crypto Analytics Dashboard with [Dune](https://github.com/duneanalytics/docs)
+  * Also, you can see [what others have created and whats trending](https://dune.com/browse/dashboards?tags=DeFi)
 
 {{< callout type="info" >}}
 How this also resonates with Linux? 
