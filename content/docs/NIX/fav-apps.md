@@ -63,7 +63,7 @@ This installs a Nextcloud Client. [You can also have your own Nextcloud Server](
   flatpak install flathub com.hunterwittenborn.Celeste
   ```
 
-  As simple as this, you have support for Google Drive or Proton Drive (among others) in Linux.
+  As simple as this, you have support for Google Drive or **Proton Drive** (among others) in Linux.
   
     You can have a look also to FreeFileSync, RClone as well.{{< /tab >}}
   {{< tab >}}**Weylus**: [A great App](https://github.com/H-M-H/Weylus) to use your Table as a second (Touch) Screen.
@@ -82,6 +82,7 @@ This installs a Nextcloud Client. [You can also have your own Nextcloud Server](
   {{< /tab >}}
   {{< tab >}}**App Fleet**:
   Create workspaces for your Desktop
+  
   ```sh
   curl https://raw.githubusercontent.com/omegaui/app_fleet/main/network-install.sh | bash
   ``` 
@@ -190,6 +191,17 @@ If you want to make your life easier, check how to install them with [Chocolatey
 
 * https://2fas.com/browser-extension/
 * https://bitwarden.com/download/
+
+### What about PWA?
+
+Progressive Web Apps can fit any form factor (desktop, mobile, tablet, or forms yet to emerge).
+
+They are also Connectivity independent – Service workers allow apps to work offline or on low-quality networks.
+And they are App-like – Feel like a native app to the user with app-style interactions and navigation, plus they can be distributed without using the Google/Apple stores, simply use them with a browser and *no installation required**.
+
+* Hand Written notes in browser - [ExcaliDraw](https://github.com/excalidraw/excalidraw)
+
+* More Ideas? [Awsome-PWA](https://github.com/hemanth/awesome-pwa)
 
 ### What about the remaining 20% of people and 20% of use cases?
 

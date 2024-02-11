@@ -105,6 +105,7 @@ How this also resonates with Linux?
 Well, nature of crypto is F/OSS (if it is not you better run):
 
 * Many [wallets](https://ethereum.org/wallets/find-wallet) are F/OSS
+  * You can explore them with F/OSS tools like the [PWA Merklin](https://github.com/toniengelhardt/merklin)
 * Smart Contracts are F/OSS
   * And [dApps](https://dappradar.com/) sense is also F/OSS
 * And you can have a look to full history of transactions: [ETH](https://etherscan.io/txs), [BTC](https://bitcoinexplorer.org/)...

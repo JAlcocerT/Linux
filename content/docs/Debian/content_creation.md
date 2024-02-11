@@ -21,6 +21,10 @@ flatpak run com.obsproject.Studio
 
 ### Editing Videos in Linux
 
+Probably the simplest will be KDEnlive. But here you have few options.
+<!-- 
+https://www.youtube.com/watch?v=EHnAV6fObGI -->
+
 ```sh
 #sudo snap install blender --classic && snap install freecad && snap install openscad && snap install cura-slicer 
 
@@ -41,13 +45,13 @@ https://gist.githubusercontent.com/JAlcocerT/197667ec5ec0da53e78eb58c4253a73f/ra
 
 ## Photo Editing in Linux
 
-The one and only - GIMP:
+* The one and only - **GIMP**:
 
 ```sh
 sudo snap install gimp
 ```
 
-Resize Images without loosing quality - Upscayl
+* Resize Images without loosing quality - **Upscayl**
 
 A great project that provides us with 3 different ways to install (For Debian any of these will do): [snap](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#snap) / [flatpak](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#flatpak) / [AppImage](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#ui)
 
