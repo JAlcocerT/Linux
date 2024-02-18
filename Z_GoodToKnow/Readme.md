@@ -166,7 +166,7 @@ it processes two data files, and so on.
 How can I process a single argument?
 As well as $@, the shell lets you use $1, $2, and so on to refer to specific command-line parameters. You can use this to write commands that feel simpler or more natural than the shell's. For example, you can create a script called column.sh that selects a single column from a CSV file when the user provides the filename as the first parameter and the column as the second:
 
-```
+```sh
 cut -d , -f $2 $1
 ```
 
@@ -177,7 +177,7 @@ bash column.sh seasonal/autumn.csv 1
 # How can I write loops in a shell script?
 Shell scripts can also contain loops. You can write them using semi-colons, or split them across lines without semi-colons to make them more readable:
 
-```
+```sh
 #Print the first and last data records of each file.
 for filename in $@
 do
@@ -586,7 +586,7 @@ echo $first_filename
 
 #the return value 0 or 1 is in the variable $?
 
-```
+```sh
 #Create a function 
 function return_percentage () {
 
@@ -600,7 +600,7 @@ function return_percentage () {
 
 #Call the function with 456 and 632 and echo the result
 
-```
+```sh
 return_test=$(return_percentage 456 632)
 echo "456 out of 632 as a percent is $return_test%"
 ```
@@ -609,7 +609,7 @@ echo "456 out of 632 as a percent is $return_test%"
 
 #Create a function with a local base variable
 
-```
+```sh
 function sum_array () {
   local sum=0
   #Loop through, adding to base variable
@@ -629,7 +629,7 @@ echo "The total sum of the test array is $total"
 
 ### Scheduling scripts with cron
 
-```
+```sh
 crontab -l
 crontab -e
 
@@ -638,4 +638,13 @@ crontab -e
 15 * * * *
 15,30,45 * * * *
 */15 * * * *
+```
+
+
+## FAQ
+
+Provide the biggest 10 folders in a directory
+
+```sh
+sudo du -ahx /home/your_directory | sort -rh | head -n 10
 ```

@@ -171,6 +171,7 @@ WASM allow us to compiled code and run it in various environments (for example b
 
 With Docker we have (generally) bigger Images than WASM. Wasm follows both OCI and w3c standards.
 
+* You can get more ideas at [awesome-WASM](https://github.com/mbasso/awesome-wasm)
 
 ```mermaid
 graph TD;

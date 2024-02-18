@@ -95,7 +95,7 @@ Yes, there are many ways to replace Github Copilot for Free:
 
 For example, some experts might be better at understanding technical jargon, while others might excel at creative writing or conversational language.
 
-GPT4 is an example of MoE. But also [Mixtral](https://erichartford.com/dolphin-25-mixtral-8x7b?source=more_articles_bottom_blogs) - Which you can [run for Free locally with Ollama](https://fossengineer.com/selfhosting-llms-ollama/):
+GPT4 is an example of MoE. But also [Mixtral](https://erichartford.com/dolphin-25-mixtral-8x7b?source=more_articles_bottom_blogs) - Which you [download from HF](https://huggingface.co/TheBloke/dolphin-2.5-mixtral-8x7b-GGUF) and [run for Free locally with Ollama](https://fossengineer.com/selfhosting-llms-ollama/):
 
 ```sh
 ollama run mixtral:8x7b #https://mistral.ai/news/mixtral-of-experts/
