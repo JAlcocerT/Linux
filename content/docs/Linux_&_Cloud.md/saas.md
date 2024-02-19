@@ -17,3 +17,6 @@ The F/OSS Amplitude Alternative.
 ## Active Pieces
 
 Automate like a pro - https://www.activepieces.com/
+
+* [FlowiseAI](https://fossengineer.com/selfhosting-flowise-ai)
+* n8n

@@ -1,4 +1,3 @@
-
 ---
 title: NIX - The Package Manager 
 type: docs
@@ -8,7 +7,7 @@ sidebar:
   open: false
 ---
 
-You might know NIX as the Linux OS. What we will see, is that we can actually use the NIX Package Manager for any other Linux (and even mac).
+You might know NIX as the Linux OS. What we will see, is that we can actually use the [NIX Package Manager](https://github.com/NixOS/nix) for any other Linux (and even mac).
 
 ## Nix Package Manager
 

@@ -10,6 +10,8 @@ draft: false
 
 You can **Get LLMs Running** in your personal computer or in big servers just for you or whoever you want to give access.
 
+> To get the most popular commercial trends: https://theresanaiforthat.com/most-saved/
+
 ## Interfaces
 
 {{< tabs items="Ollama,PrivateGPT,TextGeneration Web UI" >}}
@@ -95,7 +97,7 @@ Yes, there are many ways to replace Github Copilot for Free:
 
 For example, some experts might be better at understanding technical jargon, while others might excel at creative writing or conversational language.
 
-GPT4 is an example of MoE. But also [Mixtral](https://erichartford.com/dolphin-25-mixtral-8x7b?source=more_articles_bottom_blogs) - Which you [download from HF](https://huggingface.co/TheBloke/dolphin-2.5-mixtral-8x7b-GGUF) and [run for Free locally with Ollama](https://fossengineer.com/selfhosting-llms-ollama/):
+GPT4 is an example of MoE. But also [Mixtral](https://erichartford.com/dolphin-25-mixtral-8x7b?source=more_articles_bottom_blogs) - Which you [download from HF](https://huggingface.co/TheBloke/dolphin-2.5-mixtral-8x7b-GGUF) or [this](https://huggingface.co/mistralai/Mixtral-8x7B-v0.1) and [run for Free locally with Ollama](https://fossengineer.com/selfhosting-llms-ollama/):
 
 ```sh
 ollama run mixtral:8x7b #https://mistral.ai/news/mixtral-of-experts/
@@ -211,8 +213,9 @@ If you need big GPU power, you can always try https://www.runpod.io/gpu-instance
 
 ### Using HuggingFace for LLMs
 
-https://huggingface.co/spaces
-
+* https://huggingface.co/spaces
+* https://www.youtube.com/watch?v=_Ua6065p-Cw
+* https://www.youtube.com/watch?v=_Ua6065p-Cw
 
 ### You might be Wondering
 
