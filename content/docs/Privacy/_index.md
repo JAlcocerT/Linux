@@ -190,3 +190,29 @@ Well, nature of crypto is F/OSS (if it is not you better run):
   * And [dApps](https://dappradar.com/) sense is also F/OSS
 * And you can have a look to full history of transactions: [ETH](https://etherscan.io/txs), [BTC](https://bitcoinexplorer.org/)...
 {{< /callout >}}
+
+#### IPFS
+
+IPFS (InterPlanetary File System) is one of the foundational technologies that could serve as a backbone for Web3 due to its role in enabling decentralized storage and access to data across the internet. 
+
+PFS provides the infrastructure necessary for developing and hosting decentralized applications.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/xsvTEzTirlQ" frameborder="0" allowfullscreen></iframe>
+
+{{% details title="Filecoin" closed="true" %}}
+
+[FileCoin](https://docs.filecoin.io/) is a decentralized storage network designed to turn cloud storage into an algorithmic market. It runs on a blockchain with a native token, also called Filecoin (FIL), which is used as a payment system for storage and retrieval services. Here’s how Filecoin relates to IPFS:
+
+* Built on IPFS: Filecoin is essentially an incentive layer on top of IPFS. While IPFS allows for the decentralized storing and sharing of files, Filecoin incentivizes the storage of those files through financial rewards. Storage providers earn Filecoin tokens by hosting files, effectively turning data storage into a market where users pay to have their files stored.
+
+* Decentralization and Redundancy: Like IPFS, Filecoin aims to make the web more decentralized and less reliant on centralized cloud storage providers. By distributing files across numerous nodes, it enhances data redundancy and reliability.
+
+* Security and Efficiency: Filecoin introduces cryptographic proofs to ensure files are stored correctly and securely. These include Proof of Replication (PoRep) and Proof of Spacetime (PoSt), which verify that data is being stored as intended over time.
+
+Filecoin introduces cryptographic proofs to ensure files are stored correctly and securely. These include Proof of Replication (PoRep) and Proof of Spacetime (PoSt), which verify that data is being stored as intended over time.
+
+{{% /details %}}
+
+
+#### Web3
+
+Web 3.0, often referred to simply as Web3, represents the next phase of the internet's evolution, emphasizing decentralization, blockchain technologies, and token-based economics. It seeks to address issues related to privacy, data ownership, and centralization that have become prevalent in the era of Web 2.0, which is dominated by large tech companies. 
