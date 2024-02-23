@@ -114,10 +114,17 @@ Definitely check:
 * <https://github.com/pluja/awesome-privacy>
 * <https://github.com/awesome-selfhosted/awesome-selfhosted>
 * <https://github.com/anderspitman/awesome-tunneling>
+
+
 * <https://www.techlore.tech/>
 
 <!-- 
 https://libreselfhosted.com/ -->
+
+### Is my WIFI secure enough?
+
+* https://github.com/Ragnt/AngryOxide
+* https://www.youtube.com/watch?v=fc2oNY_W0YY
 
 ### TOR 🧅
 
@@ -190,6 +197,8 @@ Well, nature of crypto is F/OSS (if it is not you better run):
   * And [dApps](https://dappradar.com/) sense is also F/OSS
 * And you can have a look to full history of transactions: [ETH](https://etherscan.io/txs), [BTC](https://bitcoinexplorer.org/)...
 {{< /callout >}}
+
+
 
 #### IPFS
 

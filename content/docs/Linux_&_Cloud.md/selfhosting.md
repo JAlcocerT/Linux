@@ -108,6 +108,11 @@ conda deactivate
 The [ML Compilation for LLMs](https://github.com/mlc-ai/mlc-llm) project aims to spread the development and deployment of AI Models.
 {{< /callout >}}
 
+* Home LLM + Home Assistant - https://www.youtube.com/watch?v=kJfIM9siD00
+  * https://github.com/acon96/home-llm
+
+> This repo contains interesting projects (𝗟𝗟𝗠𝘀, 𝗟𝗟𝗠𝗢𝗽𝘀, and 𝘃𝗲𝗰𝘁𝗼𝗿 𝗗𝗕𝘀) to have a look: https://github.com/iusztinpaul/hands-on-llms
+
 ### Text-to-Image
 
 * Automatic111
@@ -139,11 +144,23 @@ You can connect to Matrix with Thunderbird as well.
 
 Quick seedbox: Torrents + Mullvad -> Syncthing/Filebrowser
 
+### Decentralized Storage
+
+* Centralization -> Simplicity and Single Point of Failure
+
+* Some alternatives:
+  * [IPFS](https://ipfs.tech/) -  an open system to manage data without a central server
+  * [Filecoin](https://filecoin.io/) - an open-source cloud storage marketplace, protocol, and incentive layer.
+
+> Great intro video from [Naomi on Decentralized Storage](https://www.youtube.com/watch?v=rOtMGJVp2MU)
+
 Metube + JDownloader + Navidrome
 
 ## How to Back Up my Server?
 
 Duplicati to other location (HD / Mega, One drive, s3...)
+
+
 
 ---
 

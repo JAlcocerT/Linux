@@ -88,3 +88,23 @@ apt install filezilla
 * Have a look to [Nextcloud with Docker](https://jalcocert.github.io/RPi/posts/selfhosting-nextcloud/)
 * [Samba Server with Docker](https://fossengineer.com/selfhosting-samba/)
     * Samba is the de facto open-source implementation of the SMB/CIFS protocol for Unix-like systems, including Linux. You can install and configure Samba on your Linux server to share files and directories with Windows and other SMB clients.
+
+### What about Proxmox?
+
+https://www.proxmox.com/en/
+
+### What it is LXC?
+
+LXC (LinuX Containers) is a OS-level virtualization technology that allows creation and running of multiple isolated Linux virtual environments (VE) on a single control host.
+
+### How to run Rust w/o OS?
+
+https://www.youtube.com/watch?v=jZT8APrzvc4
+
+### How to develop inside a Docker Container
+
+https://www.youtube.com/watch?v=dihfA7Ol6Mw
+
+### Linux and Robotics?
+
+https://www.youtube.com/watch?v=-JVHvU3Oor8

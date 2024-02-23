@@ -58,6 +58,11 @@ Think of DNS like a phonebook for the internet. Instead of using people's names 
 
 DNS servers are essential for the internet to work smoothly because they help connect domain names (like website names) to the actual places (IP addresses) where those websites are hosted.
 
+* Choosing domain provider - https://www.reddit.com/r/selfhosted/comments/19fmoy2/aaand_it_begins/
+    * DDNS Updater - https://github.com/qdm12/ddns-updater
+    * https://github.com/rohit267/cloudflare-ddns-updater
+    * https://www.reddit.com/r/selfhosted/comments/19fjva1/just_got_an_email_from_googledomains_that_they/
+
 #### Which DNS am I using?
 
 You can check it with:

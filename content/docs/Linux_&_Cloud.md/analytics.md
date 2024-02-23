@@ -89,7 +89,7 @@ IoT Project example with Superset: <https://jalcocert.github.io/RPi/posts/rpi-gp
  * Github Copilot
  * Codeium
  * Tabby - https://fossengineer.com/selfhosting-Tabby-coding-assistant/
- * Bito AI
+ * [Bito AI](https://docs.bito.ai/feature-guides/ai-that-understands-your-code/how-it-works)
 
 
  {{% details title="VS Extensions" closed="true" %}}
@@ -130,6 +130,10 @@ code --list-extensions
 #### Airflow
 
 * <https://fossengineer.com/airflow-docker/>
+
+* Alternatives:
+    * Mage - https://www.youtube.com/watch?v=sNagAw91PW0
+    * Prefect - https://www.youtube.com/watch?v=f_MPmRj7P_w
 
 
 https://fossengineer.com/airflow-docker/
