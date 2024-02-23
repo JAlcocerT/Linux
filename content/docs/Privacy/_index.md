@@ -55,14 +55,55 @@ Use different tools to search:
 
 ### Communication
 
+#### Matrix
+
 * Thunderbird allows you not only to use email, but to connect to Matrix Servers
 * Rocket.chat
-* 
 
 {{< callout type="info" >}}
 You can [SelfHost your own Matrix Server](https://fossengineer.com/selfhosting-matrix-synapse-docker/) and Federate it with other servers if you wish.
 {{< /callout >}}
 
+#### Signal
+
+{{% details title="How to Install Signal" closed="true" %}}
+
+You need to add the repository to your packages list, then install it:
+
+```sh
+# wget -O- https://updates.signal.org/desktop/apt/keys.asc | gpg --dearmor > signal-desktop-keyring.gpg
+# cat signal-desktop-keyring.gpg | sudo tee -a /usr/share/keyrings/signal-desktop-keyring.gpg > /dev/null
+# echo 'deb [arch=amd64 signed-by=/usr/share/keyrings/signal-desktop-keyring.gpg] https://updates.signal.org/desktop/apt xenial main' | sudo tee -a /etc/apt/sources.list.d/signal-xenial.list
+
+sudo apt update
+sudo apt install signal-desktop
+
+#signal-desktop
+```
+{{% /details %}}
+
+#### Session
+
+Built on top of Oxen.
+
+{{% details title="How to Install [Session](https://getsession.org/)" closed="true" %}}
+
+
+Check the [latest release](https://github.com/oxen-io/session-desktop/tags)
+
+```sh
+wget https://github.com/oxen-io/session-desktop/releases/download/v1.11.5/session-desktop-linux-amd64-1.11.5.deb
+sudo dpkg -i session-desktop-linux-amd64-1.11.5.deb
+sudo apt install -f
+
+#chmod +x session-desktop-linux-x86_64-1.11.5.AppImage
+#./session-desktop-linux-x86_64-1.11.5.AppImage
+```
+
+{{% /details %}}
+
+
+> Send Messages, not MetaData - https://getsession.org/
 
 ---
 
@@ -78,11 +119,48 @@ Definitely check:
 <!-- 
 https://libreselfhosted.com/ -->
 
+### TOR 🧅
+
+The Onion Router -  Tor is a well-established network that operates as a decentralized network of nodes (volunteer-run servers, without financial incentives) that route and encrypt traffic through multiple layers (called onion routing) to conceal the origin and destination of data. 
+
+### I2P
+
+I2P is primarily designed for anonymous communication and services within the I2P network itself. It's optimized for hidden services, like websites (eepsites), email, and file sharing, that are accessible only within I2P.
+
+* Garlic Routing: I2P uses garlic routing, an extension of onion routing. It bundles messages together, providing an additional layer of anonymity. This method is designed to make traffic analysis more difficult.
+
+* Peer Selection: In I2P, peers are selected based on continuous performance profiling, which can lead to faster performance for the user since the network optimizes over time based on usage.
+
+### LokiNet
+
+
+[Lokinet](https://lokinet.org/) also utilizes onion routing to route and encrypt traffic, but it employs a mixnet architecture, which means that each packet of data is routed through multiple nodes in the network, similar to Tor.
+
+https://github.com/oxen-io/lokinet/releases
+
+{{% details title="How to Install [Latest LokiNet](https://github.com/oxen-io/lokinet/releases)" closed="true" %}}
+
+```sh
+wget https://github.com/oxen-io/lokinet/releases/download/v0.9.11/lokinet-v0.9.11.tar.xz
+tar -xvf lokinet-v0.9.11.tar.xz #extract
+```
+
+{{% /details %}}
+
+However, [Lokinet](https://github.com/oxen-io/lokinet) nodes are incentivized by the ~~Loki~~ [Oxen](https://docs.oxen.io/oxen-docs/products-built-on-oxen/lokinet) cryptocurrency to participate in the network, and it operates as a separate network from Tor.
+
+[Lokinet](https://loki.network/team/) also aims to provide a platform for decentralized applications (dApps) and services, such as secure messaging, decentralized websites (SNApps), and other privacy-focused applications.
+
+SNApps, or Session Network Applications, are DApps built on top of the Session network. Session is a privacy-focused messaging and communication platform that utilizes end-to-end encryption and onion routing to provide anonymous and censorship-resistant communication.
+
+* Oxen Blockchain Explorer - https://lokiblocks.com/
+* [Oxen Name System](https://docs.oxen.io/oxen-docs/using-the-oxen-blockchain/using-oxen-name-system)
+
 ### Crypto? 
 
 This is not in the right place to learn big about Crypto - but [WhyCryptoCurrencies](https://whycryptocurrencies.com/) it is (and Free).
 
-But there are couple of wallets that you can use in Linux:
+{{% details title="A couple of wallets that you can use in Linux" closed="true" %}}
 
 ```sh
 flatpak install flathub org.electrum.electrum #BTC
@@ -91,7 +169,9 @@ flatpak install flathub org.featherwallet.Feather #Monero
 #flatpak install flathub org.getmonero.Monero
 ```
 
-Use them wisely and be responsible.
+Use them wisely and be responsibly.
+
+{{% /details %}}
 
 * DeFi Protocols Info: <https://defillama.com/top-protocols>
   * Example: <https://defillama.com/yields?attribute=stablecoins>

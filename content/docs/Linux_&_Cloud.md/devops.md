@@ -32,6 +32,12 @@ If you want to tinker with Jenkins, a great way is to [Self-Host Jenkins with Do
 * [Redis](https://www.youtube.com/watch?v=qucL1F2YEKE)
 * SandStorm [SelfHost WebApps](https://docs.sandstorm.io/en/latest/)
 
+## Server-less Functions - FaaS
+
+Cloud Native [Function-as-a-Service Platform](https://github.com/OpenFunction/OpenFunction) 
+
+> Thanks to [DevOps Toolkit](https://www.youtube.com/watch?v=UGysOX84v2c) for showing this. 
+
 ---
 
 ## FAQ

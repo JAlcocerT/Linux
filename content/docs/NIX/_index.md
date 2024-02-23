@@ -84,3 +84,11 @@ You can use the nix-env command to search for packages on your local system. For
 ```sh
 nix-env -qa python
 ```
+
+---
+
+## FAQ
+
+### Ephimeral Environments 
+
+Nix Ephimeral Shell Enviroments - [video](https://www.youtube.com/watch?v=0ulldVwZiKA)

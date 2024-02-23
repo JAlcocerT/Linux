@@ -139,6 +139,8 @@ You can connect to Matrix with Thunderbird as well.
 
 Quick seedbox: Torrents + Mullvad -> Syncthing/Filebrowser
 
+Metube + JDownloader + Navidrome
+
 ## How to Back Up my Server?
 
 Duplicati to other location (HD / Mega, One drive, s3...)
@@ -178,6 +180,8 @@ graph TD;
     WASM_Module_1(".WASM Module 1,2,3...") -->|WA| WASM_Runtime("WASM Runtime (wasmtime, wamr, wagi)");
     WASM_Runtime -->|WASI - Web Assembly Interface| Host_OS("Host OS");
 ```
+
+> Thanks to [DevOps Toolkit](https://www.youtube.com/watch?v=uZ8xI26sno8)
 
 {{% details title="Get Started with WASM 🐰" closed="true" %}}
 
