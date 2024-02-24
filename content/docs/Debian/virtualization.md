@@ -83,4 +83,41 @@ sudo snap install sosumi
 #sudo snap remove sosumi
 ```
 
+1. Boot macOS install from macOS Base System
+2. Format Virtual Hard Drive
+
+### How to run Mac Apps on Linux?
+
+Use [DarlingHQ](https://github.com/darlinghq/darling) - https://docs.darlinghq.org/build-instructions.html
+
+```sh
+sudo apt-get install cmake clang bison flex xz-utils libfuse-dev libudev-dev pkg-config libc6-dev-i386 linux-headers-generic gcc-multilib libcap2-bin libcairo2-dev libgl1-mesa-dev libtiff-dev libfreetype6-dev libxml2-dev libegl1-mesa-dev libfontconfig1-dev libbsd-dev
+
+git clone --recursive https://github.com/darlinghq/darling.git
+
+sudo apt install clang-11
+sudo bash -c "$(wget -O - https://apt.llvm.org/llvm.sh)"
+sudo apt install clang-11 lldb-11 lld-11
+sudo apt install clang-11 lldb-11 lld-11
+
+sudo apt-get install libgif-dev
+sudo apt-get install libxkbfile-dev
+sudo apt-get install libpulse-dev
+
+sudo apt-get install libglu1-mesa-dev
+
+
+cd darling
+mkdir build
+cd build
+#cmake ..
+cmake .. -DCMAKE_C_COMPILER=/usr/bin/clang-11 -DCMAKE_CXX_COMPILER=/usr/bin/clang++-11
+
+make
+
+sudo make install
+
+
+```
+
 ### How to do GPU PassThrough?

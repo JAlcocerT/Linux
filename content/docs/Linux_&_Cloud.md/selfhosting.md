@@ -134,6 +134,12 @@ Thanks to to [Tech-Practice](https://www.youtube.com/watch?v=HPO7fu7Vyw4&t=445s)
 
 ## Productivity
 
+* [Cal](https://github.com/calcom/cal.com)
+  * Together with a caldav / [Stripe](https://cal.com/docs/how-to-guides/how-to-set-up-an-event-type-to-receive-payments) / Signal / Matrix / Web Analytics / ...
+  * It admits [webhooks](https://cal.com/docs/core-features/webhooks)
+* [Chatwoot](https://fossengineer.com/selfhosting-chatwoot)
+  * Also allows webhooks
+
 ## Communication
 
 * Matrix Server: https://fossengineer.com/selfhosting-matrix-synapse-docker/

@@ -205,7 +205,7 @@ Well, nature of crypto is F/OSS (if it is not you better run):
 IPFS (InterPlanetary File System) is one of the foundational technologies that could serve as a backbone for Web3 due to its role in enabling decentralized storage and access to data across the internet. 
 
 PFS provides the infrastructure necessary for developing and hosting decentralized applications.
-<iframe width="560" height="315" src="https://www.youtube.com/embed/xsvTEzTirlQ" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rOtMGJVp2MU" frameborder="0" allowfullscreen></iframe>
 
 {{% details title="Filecoin" closed="true" %}}
 
@@ -218,6 +218,8 @@ PFS provides the infrastructure necessary for developing and hosting decentraliz
 * Security and Efficiency: Filecoin introduces cryptographic proofs to ensure files are stored correctly and securely. These include Proof of Replication (PoRep) and Proof of Spacetime (PoSt), which verify that data is being stored as intended over time.
 
 Filecoin introduces cryptographic proofs to ensure files are stored correctly and securely. These include Proof of Replication (PoRep) and Proof of Spacetime (PoSt), which verify that data is being stored as intended over time.
+
+> You can also check [Arweave](https://www.arweave.org/)
 
 {{% /details %}}
 
