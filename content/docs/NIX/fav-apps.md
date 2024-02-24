@@ -199,7 +199,7 @@ Progressive Web Apps can fit any form factor (desktop, mobile, tablet, or forms 
 They are also Connectivity independent – Service workers allow apps to work offline or on low-quality networks.
 And they are App-like – Feel like a native app to the user with app-style interactions and navigation, plus they can be distributed without using the Google/Apple stores, simply use them with a browser and *no installation required**.
 
-* Hand Written notes in browser - [ExcaliDraw](https://github.com/excalidraw/excalidraw)
+* Hand Written notes in browser - [ExcaliDraw](https://fossengineer.com/selfhosting-excalidraw)
 
 * More Ideas? [Awsome-PWA](https://github.com/hemanth/awesome-pwa)
 

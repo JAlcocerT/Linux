@@ -140,11 +140,15 @@ Thanks to to [Tech-Practice](https://www.youtube.com/watch?v=HPO7fu7Vyw4&t=445s)
 * [Chatwoot](https://fossengineer.com/selfhosting-chatwoot)
   * Also allows webhooks
 
+* Only Office Server
+
 ## Communication
 
 * Matrix Server: https://fossengineer.com/selfhosting-matrix-synapse-docker/
 
 You can connect to Matrix with Thunderbird as well.
+
+* [Cabal](https://github.com/cabal-club/cabal-desktop)
 
 ## Media
 
