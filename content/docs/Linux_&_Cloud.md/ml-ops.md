@@ -14,3 +14,7 @@ https://github.com/lutzroeder/netron
 ## AI Operations
 
 https://pezzo.ai/
+
+
+https://github.com/tensorchord/awesome-llmops
+https://github.com/EthicalML/awesome-production-machine-learning

@@ -171,6 +171,7 @@ Also, in [HF there are already interesting projects](https://jalcocert.github.io
 * [Whishper](https://fossengineer.com/whishper-docker)
   * <https://github.com/pluja/whishper>
   * https://libretranslate.com/
+* https://github.com/CorentinJ/Real-Time-Voice-Cloning
 
 * Linux Desktop App:
 
@@ -250,3 +251,7 @@ In HuggingFace you will find really cool and Open AI Projects to try out:
 
 <!-- 
 ### How to install Torch? -->
+
+### Other Resources
+
+* <https://github.com/jondot/awesome-rust-llm>

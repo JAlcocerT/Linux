@@ -64,6 +64,12 @@ flatpak install flathub org.upscayl.Upscayl
 #chmod +x ./*.AppImage
 ```
 
+* [Krita](https://krita.org/en/): full-featured digital art studio.
+
+```sh
+flatpak install flathub org.kde.krita
+```
+
 ## Audio Editing in Linux
 
 * Audacity

@@ -10,6 +10,7 @@ docker build -t privategpt .
 #docker push docker.io/fossengineer/privategpt:v1
 
 docker-compose up -d #to spin the container up with CLI
+#docker images privategpt:latest
 ```
 
 [![SelfHosting PrivateGPT](http://img.youtube.com/vi/Ib3nQu5bB_k/0.jpg)](http://www.youtube.com/watch?v=Ib3nQu5bB_k)
