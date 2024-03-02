@@ -14,7 +14,7 @@ But they havent discovered this guide and **now you can prove them wrong**.
 
 Ever wondered about using linux as a regular OS, but afraid of making tedious installations of all your favorite programs, even games?
 
-Those time consuming tasks can be avoided simply with the use of [CLI commands, like these](https://github.com/JAlcocerT/Linux/blob/main/Ubuntu_installations_bash).
+Those time consuming tasks can be avoided simply with the use of [CLI commands, like these](https://github.com/JAlcocerT/Linux/blob/main/Z_Linux_Installations_101/Ubuntu_installations_bash) or the ones in this [Gist](https://gist.github.com/JAlcocerT/197667ec5ec0da53e78eb58c4253a73f).
 
 But we are not there yet, right? Let me show you some options to install your Apps in Debian:
 
@@ -148,6 +148,10 @@ It's known for its robustness and efficiency in handling complex package managem
 
 Look for packages to uninstall:
 
+
+* With GUI - Use Synaptic Package Manager.
+* With CLI:
+
 ```sh
 apt list --installed
 ```
@@ -156,11 +160,7 @@ Filter by keyword:
 
 ```sh
 apt list --installed | grep proton
-```
-
-For example:
-```sh
-sudo apt remove protonmail-bridge
+#sudo apt remove protonmail-bridge #example
 ```
 
 You can have a look to the available packages at:

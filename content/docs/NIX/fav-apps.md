@@ -27,6 +27,14 @@ LogSec can do more than notes, [Power your knowledge with F/OSS Local LLMs](http
 nix-shell -p thunderbird #flatpak install flathub org.mozilla.Thunderbird
 ```
 
+
+{{< callout type="info" >}}
+* If you need to create Diagrams, consider: [Mermaid](https://mermaid.live/edit), [Python Diagrams](https://pypi.org/project/diagrams/)
+
+* And for PPT's: [Sli.dev](https://github.com/slidevjs/slidev), [marp](https://github.com/marp-team/marp) or [revealjs](https://revealjs.com/)
+
+{{< /callout >}}
+
 ## Daily Driver
 
 * Browser

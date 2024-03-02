@@ -1,26 +1,20 @@
 # Linux 101
 
-Start using Linux with a smoother learning curve.
-
-Web version on: [https://jalcocert.github.io/Linux/]
+[Linux Made Easy](https://jalcocert.github.io/Linux/) - Start using Linux with a smoother learning curve.
 
 ## Repository Structure
 
-* ./Z_Ansible
-* ./Z_Cloud
-* ./Z_Linux_Installations_101
-* ./Z_GoodToKnow
-
+```
 my-repository/
 ├── README.md
 ├── content/
 │ ├── the .md files that generate the [HUGO Site](https://fossengineer.com/web-guide-Hugo/)
 ├── themes/
 │ ├── Hextra HUGO Theme files/
-│ └── Cupper HUGO THeme files (ex theme)/
+│ └── Cupper HUGO Theme files (ex theme)/
 ├── Z_*/ 
 └── LICENSE
-
+```
 
 ## Quick Installs
 
@@ -46,6 +40,7 @@ Available programs to install from:
     
 * Media:
     * VLC :heavy_check_mark:
+    * Supersonic :heavy_check_mark:
     * Spotify
     
 * Browsers:
@@ -120,8 +115,8 @@ Ways to install your favourite programs across any distribution.
 
 #### With Docker
 
-* Check <https://github.com/JAlcocerT/Docker>
-* If you need further assistance, you can find full guides on my Tech blog: <https://fossengineer.com/tags/self-hosting/>
+* Check my [Docker Repo](https://github.com/JAlcocerT/Docker)
+* If you need further assistance, you can find full guides on [my Tech blog](https://fossengineer.com/tags/self-hosting/)
 
 #### With Nix
 

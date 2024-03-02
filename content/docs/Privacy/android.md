@@ -21,10 +21,11 @@ This is were F-Droid enters - you can [get F/OSS Apps](https://f-droid.org/en/pa
 * Audio recorder 
     * https://github.com/Dimowner/AudioRecorder
     * https://f-droid.org/en/packages/org.fossify.voicerecorder/
-* Music
-    * Client for Navidrome - https://gitlab.com/ultrasonic/ultrasonic
+
 * Syncthing - https://github.com/syncthing/syncthing
 * Nextcloud - https://github.com/nextcloud/android
+
+* https://github.com/bitwarden/clients
 
 * PixelFed client - https://f-droid.org/app/com.h.pixeldroid {F-Droid}
 * Matrix Element - https://github.com/vector-im/element-android
@@ -36,9 +37,12 @@ This is were F-Droid enters - you can [get F/OSS Apps](https://f-droid.org/en/pa
 * Readrops - https://github.com/readrops/Readrops
 
 * PhyPhox - https://github.com/phyphox/phyphox-android
+* https://f-droid.org/en/packages/github.umer0586.sensorserver/
 
 * Media - 
     * [Jellyfin](https://f-droid.org/en/packages/org.jellyfin.androidtv/index.html) - https://github.com/jellyfin/jellyfin
+    * Client for Navidrome - https://gitlab.com/ultrasonic/ultrasonic
+    * Substreamer
 
 </details>
 
@@ -59,3 +63,13 @@ flatpak install flathub org.localsend.localsend_app
 ```
 
 And send that F-Droid APK to your Android TV - Then enjoy any of the apps available in there.
+
+### Awsome Lists for Android Apps
+
+* https://github.com/albertomosconi/foss-apps
+* https://github.com/offa/android-foss
+* https://github.com/Generator/Awesome-Android-TV-FOSS-Apps
+
+* https://gitlab.com/bitfireAT/NoPhoneSpam
+* https://github.com/thunderbird/thunderbird-android
+* https://github.com/termux/termux-app
