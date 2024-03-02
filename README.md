@@ -6,21 +6,34 @@ Web version on: [https://jalcocert.github.io/Linux/]
 
 ## Repository Structure
 
-* ./Ansible
+* ./Z_Ansible
 * ./Z_Cloud
 * ./Z_Linux_Installations_101
 * ./Z_GoodToKnow
 
-* Outro: folders to generate the web version with [**HUGO**](https://fossengineer.com/web-guide-Hugo/).
+my-repository/
+├── README.md
+├── content/
+│ ├── the .md files that generate the [HUGO Site](https://fossengineer.com/web-guide-Hugo/)
+├── themes/
+│ ├── Hextra HUGO Theme files/
+│ └── Cupper HUGO THeme files (ex theme)/
+├── Z_*/ 
+└── LICENSE
+
 
 ## Quick Installs
 
 ### Debian Based Linux
 
-Available programs to install from the [bash file](https://github.com/JAlcocerT/Linux/blob/main/Ubuntu_installations_bash)
+Available programs to install from:
+
+* This [bash file](https://github.com/JAlcocerT/Linux/blob/main/Ubuntu_installations_bash)
+* Or on this [gist](https://gist.github.com/JAlcocerT/197667ec5ec0da53e78eb58c4253a73f)
+
 
 <details>
-  <summary>Click to expand/close Available Apps</summary>
+  <summary>Click to expand/close Available Apps 👇</summary>
   &nbsp;
 
 **FOSS ->** :heavy_check_mark:  
@@ -29,7 +42,7 @@ Available programs to install from the [bash file](https://github.com/JAlcocerT/
    * Synaptic  :heavy_check_mark:
    * PPA GUI Manager :heavy_check_mark:
    * Snap store :heavy_check_mark:
-   * Docker ---> :fire: **BONUS** :rocket: Extra apps can be installed easily - [Apps list and config files](https://github.com/JAlcocerT/Docker) :heavy_check_mark:
+   * Docker :fire: **BONUS** :rocket: Extra apps can be [installed easily](https://github.com/JAlcocerT/Docker) :heavy_check_mark:
     
 * Media:
     * VLC :heavy_check_mark:
@@ -72,6 +85,7 @@ Available programs to install from the [bash file](https://github.com/JAlcocerT/
 * BackUps:
    * NextCloud :heavy_check_mark:
    * Syncthing  :heavy_check_mark:
+   * Celeste :heavy_check_mark:
    * Timeshift :heavy_check_mark:
    * Dropbox
    * MegaSync
@@ -95,12 +109,14 @@ Available programs to install from the [bash file](https://github.com/JAlcocerT/
 Ways to install your favourite programs across any distribution.
 
 <details>
-  <summary>Get to know How</summary>
+  <summary>Get to know How 👇</summary>
   &nbsp;
 
 #### With Ansible
 
-Check <https://github.com/JAlcocerT/Linux/tree/main/Z_Ansible>
+* Check:
+  * <https://github.com/JAlcocerT/Linux/tree/main/Z_Ansible>
+  * <https://jalcocert.github.io/Linux/docs/linux__cloud/ansible/>
 
 #### With Docker
 
@@ -109,40 +125,14 @@ Check <https://github.com/JAlcocerT/Linux/tree/main/Z_Ansible>
 
 #### With Nix
 
-Compatible even with mac!
+[Nix Package Manager](https://github.com/JAlcocerT/Linux/tree/main/Nix) is compatible even with mac!
 
-Check <https://github.com/JAlcocerT/Linux/tree/main/Nix>
 </details>
 
 
 ### Android F/OSS Recommendations
 
-Yes, Android it is built on the Linux kernel and these are some amazing Apps:
-
-<details>
-  <summary>Click to expand/close Android Apps</summary>
-  &nbsp;
-
-* F-Droid - F/OSS Android App Repository - https://gitlab.com/fdroid/fdroidclient
-
-* Audio recorder - https://github.com/Dimowner/AudioRecorder
-* Client for Navidrome - https://gitlab.com/ultrasonic/ultrasonic
-* Syncthing - https://github.com/syncthing/syncthing
-* Nextcloud - https://github.com/nextcloud/android
-
-* PixelFed client - https://f-droid.org/app/com.h.pixeldroid {F-Droid}
-* Matrix Element - https://github.com/vector-im/element-android
-* Matrix Fluffy Chat - https://gitlab.com/KrilleFear/fluffychat
-
-* Organic Maps - https://github.com/organicmaps/organicmaps
-* MapsMe - https://github.com/mapsme/api-android
-* Readrops - https://github.com/readrops/Readrops
-
-* PhyPhox - https://github.com/phyphox/phyphox-android
-
-</details>
-
-You can check more [here](https://brainfucksec.github.io/android-foss-apps-list#android-based-operating-systems)
+Yes, Android it is built on the Linux kernel - Many people use Linux and dont even know [how much more can get from it](https://jalcocert.github.io/Linux/docs/Privacy/android/).
 
 ## Powered Thanks To :heart:
 
@@ -154,6 +144,7 @@ You can check more [here](https://brainfucksec.github.io/android-foss-apps-list#
 
 * Please feel free to fork the repository - try it out the guide for yourself and improve or add others tabs.
 * Support the Projects that made possible this repo, thanks to their fantastic job, this have been possible.
-* Support extra evening tinkering sessions:
+
+* Support extra tinkering sessions with a ☕
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Z8Z1QPGUM)

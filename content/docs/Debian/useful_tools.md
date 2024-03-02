@@ -278,6 +278,15 @@ apt install tmux
 
 https://tmuxcheatsheet.com/
 
+* Cleaning the System with UI: clean cache, monitor processes, snap packages installed, apt repositories...
+
+```sh
+sudo add-apt-repository ppa:oguzhaninan/stacer
+sudo apt-get update
+sudo apt-get install stacer
+#stacer
+```
+
 ---
 
 ## FAQ
