@@ -18,6 +18,8 @@ my-repository/
 
 ## Quick Installs
 
+Install Apps and get confortable with your PC, while using Linux.
+
 ### Debian Based Linux
 
 Available programs to install from:

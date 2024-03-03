@@ -46,6 +46,8 @@ Use different tools to search:
 * Youtube Alternatives:
   * NewPipe / Youtube-DL https://jalcocert.github.io/RPi/posts/youtube-video-download/
   * https://github.com/tubearchivist/tubearchivist
+  * https://github.com/FreeTubeApp/FreeTube
+  * https://github.com/TeamPiped/Piped
 
 * Use a Password Manager: Bitwarden, KeePass...
 
