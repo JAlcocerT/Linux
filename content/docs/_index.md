@@ -216,13 +216,13 @@ choco uninstall packageName: Uninstall a package.
 choco upgrade packageName: Upgrade a package to the latest version.
 ```
 
-Create a list like this one with your favourite Apps , then use it from the powershell.
+Create a list like [this one](https://gist.github.com/JAlcocerT/76f22ddf886277ef2653f82898c634d8) with your favourite Apps , then use it from the powershell.
 
 > The logic here is Work Smart. Do once, re-use forever ♻️
 
-<script src="https://gist.github.com/JAlcocerT/76f22ddf886277ef2653f82898c634d8"></script>
+<script src="https://gist.github.com/JAlcocerT/76f22ddf886277ef2653f82898c634d8#file-home-server-sh"></script>
 
-{{< gist "JAlcocerT/76f22ddf886277ef2653f82898c634d8" >}}
+{{< gist "JAlcocerT/76f22ddf886277ef2653f82898c634d8#file-home-server-sh" >}}
 
 {{% /details %}}
 
