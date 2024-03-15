@@ -220,9 +220,9 @@ Create a list like [this one](https://gist.github.com/JAlcocerT/76f22ddf886277ef
 
 > The logic here is Work Smart. Do once, re-use forever ♻️
 
-<script src="https://gist.github.com/JAlcocerT/76f22ddf886277ef2653f82898c634d8#file-home-server-sh"></script>
+<!-- <script src="https://gist.github.com/JAlcocerT/76f22ddf886277ef2653f82898c634d8#file-home-server-sh"></script>
 
-{{< gist "JAlcocerT/76f22ddf886277ef2653f82898c634d8#file-home-server-sh" >}}
+{{< gist "JAlcocerT/76f22ddf886277ef2653f82898c634d8" >}} -->
 
 {{% /details %}}
 
@@ -351,4 +351,4 @@ Create a list like this one with your favourite Apps , then use it from the powe
 
 ### What it is F-DROID?
 
-It is an alternative Google App Store, full of Open Source Android APPs.
+It is an alternative Google App Store, full of Open Source [Android](https://jalcocert.github.io/Linux/docs/privacy/android/) APPs.
