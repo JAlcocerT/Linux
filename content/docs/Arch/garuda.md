@@ -8,14 +8,16 @@ prev: docs/Debian/
 
 Garuda Linux is a rolling-release, Arch Linux-based distribution that boasts a user-friendly approach, a focus on performance, and a visually striking desktop experience, catering to both newcomers and experienced Linux users.
 
-A rolling release is a software distribution model where updates and new features are continuously rolled out to users as soon as they're ready, eliminating the need for major version upgrades. This means that you always have the latest software versions and improvements without needing to reinstall the entire operating system.
-
-In comparison, Debian-based distributions, like Ubuntu, follow a more traditional release model. They have fixed release cycles (e.g., every 6 months or every 2 years) where a new version is created, tested, and released as a complete package. Users then upgrade to the new version by performing an upgrade process.
 
 > Consider **Garuda a flavour of Arch** and most likely, the easiest way that will allow you to say: *I use Arch, btw*
 
+Why Garuda Linux?
 
-### Pacman - Garuda's Package Manager
+It comes with [Searx as the default search engine](https://jalcocert.github.io/Linux/docs/privacy/#changing-bad-habits)
+
+### How to use Garuda Linux
+
+#### Pacman - Package Manager
 
 Garuda Linux uses the **Arch Linux package manager**, which is called "Pacman".
 
@@ -23,13 +25,16 @@ Garuda Linux uses the **Arch Linux package manager**, which is called "Pacman".
 
 Additionally, Garuda Linux also provides a graphical package manager called "Pamac" for those who prefer a user-friendly interface.
 
+* The **official Arch Linux website** provides a package search tool that lets you search for packages available in the official repositories.
+    * The Arch Linux Package Search:  <https://archlinux.org/packages/>
+
 
 Update repos with:
 
 ```sh
-sudo pacman -Syu
+#sudo pacman -Syu
+garuda-update
 ```
-
 
 And install packages with:
 
@@ -37,28 +42,33 @@ And install packages with:
 sudo pacman -S firefox
 ```
 
-### Useful Repositories
+#### Useful Repositories - AUR
 
+But the beauty is that anyone can contribute and publish their Apps at:
 
 * Arch User Repository (AUR)
+    * AUR Website: <https://aur.archlinux.org/>
 
-The AUR is a **community-driven repository** that contains a wide range of software packages not available in the official Arch Linux repositories. Garuda Linux users can also benefit from the AUR.
-
-AUR Website: <https://aur.archlinux.org/>
-
-
-* Arch Linux Package Search
-
-The **official Arch Linux website** provides a package search tool that lets you search for packages available in the official repositories.
-
-Arch Linux Package Search: <https://archlinux.org/packages/>
+The AUR is a **community-driven repository** that contains a wide range of software packages not available in the official Arch Linux repositories. And we, as Garuda Linux users can also benefit from the AUR.
 
 
 When you visit these websites, you can use the search functionality to look for packages by name. 
 
 The AUR website is particularly useful for finding user-contributed packages that may not be in the official repositories. Once you find a package you want to install, you can note its name and use it with the pacman or yay command in the terminal, or search for it in the Pamac graphical package manager.
 
-Remember that when installing packages from the AUR, you should follow the AUR guidelines and consider using an AUR helper like yay for better package management and dependency handling.
+Remember that when installing packages from the AUR, you should follow the AUR guidelines and consider using an **AUR helper like yay** for better package management and dependency handling.
+
+Lets install yay and use it to give us an [UI to manage packages](https://aur.archlinux.org/packages/pamac-all)
+
+```sh
+sudo pacman -Syu
+
+sudo pacman -S yay #install yay
+yay -S pamac-all
+pamac-manager
+```
+
+> yay can also handle packages from the official repositories!
 
 ---
 
@@ -66,22 +76,29 @@ Remember that when installing packages from the AUR, you should follow the AUR g
 
 ### Other *User Friendly* Arch Distros
 
+I really like Garuda KDE (Dragonized Edition), but you can also try:
+
 * [Manjaro](https://manjaro.org/)
 * [BlendOS](https://blendos.co/) -  It is an immutable, container-based operating system that allows you to run applications from multiple Linux distributions and Android without the fear of breaking your system.
+* [EndevourOS](https://endeavouros.com/)
 
 ### How can I try Arch Easily?
 
-If you are really new to Linux, I would recommend to start better with Debian.
+If you are really new to Linux, I would recommend to start with [Debian Based Distros](https://jalcocert.github.io/Linux/docs/debian/).
 
-Anyways, you can always try these:
+{{% details title="Anyways, you can always try Garuda risk-free by following these ✌️" closed="true" %}}
 
 * Create a [Virtual Machine and run Garuda](https://jalcocert.github.io/Linux/docs/debian/virtualization/#how-to-virtualize) inside of it, without worrying to break your main OS (Windows, mac, other linux...)
-
+* [Get Garuda](https://garudalinux.org/downloads) and boot it from USB (without removing your SSD OS)
 * Or...if you are somehow familiar with [Docker](https://jalcocert.github.io/Linux/docs/debian/docker/) and [have it running in your system](https://fossengineer.com/docker-first-steps-guide-for-data-analytics/) - You can also [try Arch with A Webtop](https://fossengineer.com/selfhosting-webtops-docker/) without any risk to damage your main OS.
 
-### Example installation with Pacman
+{{% /details %}}
 
-Getting UFW up and running:
+
+
+### Example App installation with Pacman
+
+Getting UFW (A [Firewall to Secure Linux](https://jalcocert.github.io/Linux/docs/debian/securing_linux/#firewall-setup-ufw)) up and running:
 
 ```sh
 #install updates
@@ -92,12 +109,60 @@ sudo pacmac -S ufw
 sudo systemctl enable ufw.service
 ```
 
-### Other Ways to Install
+Or say that you just installed Garuda and want to see how are the [system resources doing with htop](https://jalcocert.github.io/Linux/docs/debian/securing_linux/#firewall-setup-ufw) or to [Benchmark the system](https://jalcocert.github.io/Linux/docs/debian/useful_tools/#system-info):
+
+
+```sh
+sudo pacman -S htop
+#sudo pacman -S gotop conky glances
+
+sudo pacman -S sysbench
+```
+
+
+
+### Other Ways to Install Apps
+
+* [AppImages](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#appimages) are self-contained and portable Apps - compatible with Arch bases Distros as well
+
+* [FlatPak!](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#flatpak)
+
+```sh
+sudo pacman -S flatpak
+#flatpak install flathub org.audacityteam.Audacity
+```
 
 * [Try SelfHosting](https://jalcocert.github.io/Linux/docs/selfhosting)
+
+{{% details title="Get Docker in Arch 🐳✌️" closed="true" %}}
+
+```sh
+sudo pacman -S docker
+#systemctl status docker
+
+sudo systemctl start docker
+sudo systemctl enable docker
+#docker --version
+
+sudo pacman -S docker-compose
+
+#sudo pacman -S podman
+```
+
+{{% /details %}}
+
 * [Try Nix](https://jalcocert.github.io/Linux/docs/nix/) Package Manager - Learn this once and use it on any Linux and even on Macs!
 
+
 ### Rolling vs Fix Releases?
+
+Garuda Linux, being a rolling-release distribution, continually delivers the latest software to users, providing the cutting-edge experience (which can cut us sometimes).
+
+{{% details title="Rolling or Fixed Release? 😧" closed="true" %}}
+
+A rolling release is a software distribution model where updates and new features are continuously rolled out to users as soon as they're ready, eliminating the need for major version upgrades. This means that you always have the latest software versions and improvements without needing to reinstall the entire operating system.
+
+In comparison, Debian-based distributions, like Ubuntu, follow a more traditional release model. They have fixed release cycles (e.g., every 6 months or every 2 years) where a new version is created, tested, and released as a complete package. Users then upgrade to the new version by performing an upgrade process.
 
 #### Advantages of a rolling release
 
@@ -114,4 +179,4 @@ Like Debian-based distributions:
 
 Fixed releases prioritize stability and ease of maintenance but might not have the latest features as soon as they're released.
 
-Garuda Linux, being a rolling-release distribution, continually delivers the latest software to users, providing them with the cutting-edge experience.
+{{% /details %}}

@@ -32,6 +32,8 @@ This is were **F-Droid** enters - you can [get F/OSS Apps](https://f-droid.org/e
 * Matrix Element - https://github.com/vector-im/element-android
 * Matrix Fluffy Chat - https://gitlab.com/KrilleFear/fluffychat
 
+* Browsers: Firefox, Brave, Bromite, Kiwi
+
 * Organic Maps - https://github.com/organicmaps/organicmaps
 * MapsMe - https://github.com/mapsme/api-android
 
@@ -58,13 +60,17 @@ This is were **F-Droid** enters - you can [get F/OSS Apps](https://f-droid.org/e
 
 We can use [LocalSend](https://github.com/localsend/localsend?tab=readme-ov-file#download), a F/OSS cross-platform alternative to AirDrop.
 
-Install it with [Flathub](https://flathub.org/apps/org.localsend.localsend_app):
+Install it with [FlatHub](https://flathub.org/apps/org.localsend.localsend_app):
 
 ```sh
 flatpak install flathub org.localsend.localsend_app
 ```
 
 And send that F-Droid APK to your Android TV - Then enjoy any of the apps available in there.
+
+### How to Check Android Apps Permissions
+
+Use the [Exodus App](https://github.com/Exodus-Privacy/exodus-android-app) 
 
 ### Awsome Lists for Android Apps
 
@@ -80,3 +86,9 @@ And send that F-Droid APK to your Android TV - Then enjoy any of the apps availa
 * https://github.com/termux/termux-app
 
 {{% /details %}}
+
+### Better Android OS
+
+* <https://www.privacytools.io/android-alternatives>
+  * <https://wiki.lineageos.org/devices/>
+  * Pixels Only - https://grapheneos.org/releases

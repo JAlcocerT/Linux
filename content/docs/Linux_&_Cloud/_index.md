@@ -4,7 +4,7 @@ type: docs
 prev: docs/first-page
 next: docs/folder/leaf
 sidebar:
-  open: true
+  open: false #true
 ---
 
 **A Mind Map for: Linux, Docker, Open Source, and the Cloud.**

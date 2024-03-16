@@ -9,7 +9,10 @@ sidebar:
 
 Arch Linux is a popular, **rolling-release Linux distribution** known for its simplicity, customization, and minimalist design.
 
-It follows a "do-it-yourself" philosophy, allowing users to build their Linux environment from the ground up. Arch's **package manager, Pacman**, provides easy access to a vast repository of software packages, and the **Arch User Repository (AUR)** offers even more community-contributed packages.
+It follows a "do-it-yourself" philosophy, allowing users to build their Linux environment from the ground up.
+
+* Arch's **package manager, Pacman**, provides easy access to a vast repository of software packages
+* And the **Arch User Repository (AUR)** offers even more community-contributed packages.(not officially maintained by Arch Linux developers).
 
 While Arch Linux demands a deeper understanding of Linux and requires users to configure many aspects of their system manually, it rewards users with a highly personalized and efficient computing experience. It's a favorite among Linux enthusiasts and experienced users seeking a lightweight and highly customizable operating system.
 
@@ -30,6 +33,7 @@ While Arch Linux demands a deeper understanding of Linux and requires users to c
 ## Ways to Manage Packages in Arch
 
 * [Flatpak](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#flatpak)
+  * Yes, Flatpak is a universal package format! Feel Free to explore them at [FlatHub](https://flathub.org/) and install them in Arch Based just like you [would in Debian](https://jalcocert.github.io/Linux/docs/debian/content_creation/#audio-editing-in-linux).
 
 * [Nix](https://jalcocert.github.io/Linux/docs/nix/)
   * And [installing common Apps with NIX](https://jalcocert.github.io/Linux/docs/nix/fav-apps/) is as simple as one command.
@@ -43,6 +47,6 @@ If you are used to deploy your favourite Apps with [Docker](https://jalcocert.gi
 
 For example:
 
-* [Analytic Tools](https://jalcocert.github.io/Linux/docs/linux__cloud.md/analytics/)
-* Local Gen AI - [LLMs](https://jalcocert.github.io/Linux/docs/linux__cloud.md/llms/)
-* [SelfHosting](https://fossengineer.com/tags/self-hosting/)
+* [Analytic Tools](https://jalcocert.github.io/Linux/docs/linux__cloud/analytics/)
+* Local Gen AI - [LLMs](https://jalcocert.github.io/Linux/docs/linux__cloud/llms/)
+* [SelfHosting](https://jalcocert.github.io/Linux/docs/linux__cloud/selfhosting/)
