@@ -319,3 +319,18 @@ du -h --max-depth=1 ~/ | sort -rh
 #sudo apt-get install ncdu
 #ncdu /
 ```
+
+### How to Clone a SSD?
+
+{{% details title="Clone your drives with Clonezilla" closed="true" %}}
+
+Save and restores only used blocks in a hard drive [with Clonezilla](https://github.com/stevenshiau/clonezilla) 
+
+```sh
+apt update
+apt install clonezilla
+```
+
+You can also download the ISO, boot clonezilla from usb and select: [device to device](https://www.youtube.com/watch?v=34MT6frNp5w) 
+
+{{% /details %}}
