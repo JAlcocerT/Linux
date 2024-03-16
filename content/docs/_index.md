@@ -352,3 +352,22 @@ Create a list like this one with your favourite Apps , then use it from the powe
 ### What it is F-DROID?
 
 It is an alternative Google App Store, full of Open Source [Android](https://jalcocert.github.io/Linux/docs/privacy/android/) APPs.
+
+### What is the best Linux for Low Resources?
+
+* Peppermint OS: Peppermint OS is a lightweight Linux distribution based on Ubuntu LTS releases. It features a customized Xfce desktop environment and focuses on speed, efficiency, and cloud integration.
+
+* Lubuntu: Lubuntu is an official Ubuntu flavor that uses the lightweight LXQt desktop environment (formerly LXDE). It's designed to be fast, energy-efficient, and suitable for older hardware.
+
+* Xubuntu: Xubuntu is an official Ubuntu flavor that features the lightweight Xfce desktop environment. It offers a balance between performance and features, making it suitable for older hardware or systems with limited resources.
+
+* MX Linux: MX Linux is a midweight Linux distribution based on Debian stable and featuring the Xfce desktop environment. It's known for its stability, performance, and user-friendly experience. MX Linux is designed to run well on older hardware.
+
+
+These distributions come with different desktop environments, which are UI flavors of the same operating system:
+
+* Xfce: Xfce is a lightweight desktop environment known for its resource efficiency and customization options. It provides a traditional desktop layout with a panel, menu, and desktop icons.
+
+* LXQt: LXQt is a lightweight desktop environment that combines the LXDE and Razor-qt projects. It's designed to be fast, modular, and feature-rich while consuming minimal system resources.
+
+* LXDE: LXDE (Lightweight X11 Desktop Environment) is a lightweight desktop environment that focuses on speed, simplicity, and ease of use. It's suitable for older hardware and systems with limited resources.
