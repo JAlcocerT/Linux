@@ -50,3 +50,10 @@ For example:
 * [Analytic Tools](https://jalcocert.github.io/Linux/docs/linux__cloud/analytics/)
 * Local Gen AI - [LLMs](https://jalcocert.github.io/Linux/docs/linux__cloud/llms/)
 * [SelfHosting](https://jalcocert.github.io/Linux/docs/linux__cloud/selfhosting/)
+
+### Benchmark with Arch
+
+```sh
+paru -S phoronix-test-suite
+phoronix-test-suite benchmark smallpt
+```

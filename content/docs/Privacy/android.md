@@ -58,7 +58,7 @@ This is were **F-Droid** enters - you can [get F/OSS Apps](https://f-droid.org/e
 
 ### How to send files to Android TV?
 
-We can use [LocalSend](https://github.com/localsend/localsend?tab=readme-ov-file#download), a F/OSS cross-platform alternative to AirDrop.
+We can use [Local Send](https://github.com/localsend/localsend?tab=readme-ov-file#download), a F/OSS cross-platform alternative to AirDrop.
 
 Install it with [FlatHub](https://flathub.org/apps/org.localsend.localsend_app):
 

@@ -96,9 +96,25 @@ sudo apt install dnsutils
 
 #example
 #nslookup google.com
+#ping google.com
 ```
 
 Worth to have a look: https://weberblog.net/benchmarking-dns-namebench-dnseval/
+
+
+```sh
+cat /etc/resolv.conf
+```
+
+You can see the DNS of each Network in your PC with:
+
+```sh
+resolvectl status #see which one you want to change, ex: enp2s0
+#resolvectl dns enp2s0 9.9.9.9 149.112.112.112
+#resolvectl status enp2s0
+```
+
+> [Quad9](https://quad9.net/service/service-addresses-and-features/) is a good start point
 
 ## General Ubuntu
 
@@ -332,5 +348,7 @@ apt install clonezilla
 ```
 
 You can also download the ISO, boot clonezilla from usb and select: [device to device](https://www.youtube.com/watch?v=34MT6frNp5w) 
+
+Be carefull with the options you choose (source device, destination...)
 
 {{% /details %}}
