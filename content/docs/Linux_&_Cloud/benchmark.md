@@ -1,5 +1,5 @@
 ---
-title: How to Benchmark a CPU with Linux
+title: Benchmark CPU with Linux
 type: docs
 prev: /docs/linux__cloud/selfhosting/
 next: /docs/linux__cloud/llms/

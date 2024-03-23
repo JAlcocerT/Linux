@@ -70,6 +70,13 @@ pamac-manager
 
 > yay can also handle packages from the official repositories!
 
+### Gaming on Arch
+
+```sh
+sudo pacman -Sy
+sudo pacman -S steam
+```
+
 ---
 
 ## FAQ
@@ -104,8 +111,14 @@ Getting UFW (A [Firewall to Secure Linux](https://jalcocert.github.io/Linux/docs
 #install updates
 sudo pacman -Syu
 
+# sudo pacman -S openssh
+# sudo systemctl enable sshd
+# sudo systemctl start sshd
+# systemctl status sshd
+
+
 #install ufw
-sudo pacmac -S ufw
+sudo pacman -S ufw
 sudo systemctl enable ufw.service
 ```
 
@@ -119,6 +132,7 @@ sudo pacman -S htop
 sudo pacman -S sysbench
 ```
 
+> You can also try with [Phoronix in Arch](https://jalcocert.github.io/Linux/docs/arch/#benchmark-with-arch)
 
 
 ### Other Ways to Install Apps
@@ -148,6 +162,8 @@ sudo pacman -S docker-compose
 
 #sudo pacman -S podman
 ```
+
+Now you can start feel at home with [Portainer](https://fossengineer.com/selfhosting-portainer-docker/) or [Dockge](https://fossengineer.com/selfhosting-dockge/) and even [local Gen-AI](https://jalcocert.github.io/Linux/docs/linux__cloud/llms/) awaits.
 
 {{% /details %}}
 
