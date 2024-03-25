@@ -49,7 +49,7 @@ You can **Get LLMs Running** in your personal computer or in big servers just fo
 
 ## VectorDBs
 
-When you are using embedding models to give LLMs context about your files, this is where that knowledge goes.
+When you are using [embedding models](https://www.youtube.com/watch?v=QdDoFfkVkcw) to give LLMs context about your files, this is where that knowledge goes.
 
 And there are many Vector DBs that you can use with Linux
 
@@ -255,3 +255,7 @@ In HuggingFace you will find really cool and Open AI Projects to try out:
 ### Other Resources
 
 * <https://github.com/jondot/awesome-rust-llm>
+
+
+langchain 
+https://www.youtube.com/watch?v=mrjq3lFz23s

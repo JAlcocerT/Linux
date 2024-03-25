@@ -76,6 +76,7 @@ flatpak install flathub org.kde.krita
 
 ```sh
 wget https://github.com/audacity/audacity/releases/download/Audacity-3.4.2/audacity-linux-3.4.2-x64.AppImage
+#flatpak install flathub org.audacityteam.Audacity
 ```
 
 And shortly we will get the Plugin OpenVino ready in Linux which will bring AI to Audacity: https://github.com/intel/openvino-plugins-ai-audacity/releases

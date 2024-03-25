@@ -9,6 +9,11 @@ draft: false
 ## BI Tools
 
 ### Metabase
+
+
+Get Metabase running locally with [docker-compose](https://github.com/JAlcocerT/Docker/tree/main/IoT/Metabase)
+
+
 <!-- 
 
 {{< gist "JAlcocerT/953cab1052af58f4241f28dbc0a314a0#file-metabase" >}} -->
@@ -22,6 +27,7 @@ draft: false
 IoT Project example with Metabase: <https://jalcocert.github.io/RPi/posts/rpi-iot-dht1122-mongo/#metabase>
 {{< /callout >}}
 
+> IoT Projec tith [Metabase](https://jalcocert.github.io/RPi/posts/rpi-iot-dht1122-mongo/)
 
 
 ### Redash
@@ -54,9 +60,10 @@ Redash is a versatile data analytics tool that simplifies the process of queryin
 
 > You can use this [Docker-Compose to SelfHost Redash](https://github.com/JAlcocerT/Docker/tree/main/IoT/Redash).
 
-<https://github.com/getredash/redash>
+Get Redash running locally with [docker-compose](https://github.com/JAlcocerT/Docker/tree/main/IoT/Redash)
 
-Install it with: https://github.com/getredash/setup.
+
+> IoT Project example [with Redash]().
 
 <!-- 
 <script src="https://gist.github.com/JAlcocerT/953cab1052af58f4241f28dbc0a314a0#file-redash"></script> -->
@@ -74,6 +81,10 @@ chmod +x ./setup.sh
 ``` -->
 
 ### Apache Superset
+
+Get Superset running locally with [docker-compose](https://github.com/JAlcocerT/Docker/tree/main/IoT/Superset).
+
+<!-- > IoT Project example [with Superset](). -->
 
 <!-- 
 <script src="https://gist.github.com/JAlcocerT/953cab1052af58f4241f28dbc0a314a0#file-superset"></script> -->
@@ -104,20 +115,14 @@ IoT Project example with Superset: <https://jalcocert.github.io/RPi/posts/rpi-gp
 
 ## Databases
 
-```sh
-flatpak install flathub io.dbeaver.DBeaverCommunity
-
-#flatpak install flathub io.conduktor.Conduktor #Kafka Desktop Client
-
-#https://flathub.org/apps/dev.k8slens.OpenLens #k8s IDE
-```
-
 
 <!-- ### MariaDB
 
 ### MongoDB
 
 ### InfluxDB
+
+TimeScale
  -->
 
  ## AI Assisted Analytics
@@ -158,19 +163,31 @@ code --list-extensions
 
 {{% /details %}}
 
---- 
+You can also try [PandasAI](https://pypi.org/project/pandasai/) and [Sketch](https://pypi.org/project/sketch/) with Python
+
+<!-- 
+https://www.quadratichq.com/
+
+Infinite spreadsheet with Python, SQL, and AI.
+
+
+https://github.com/quadratichq/quadratic/tree/main
+https://github.com/quadratichq/quadratic/issues/416
+docker build -t quadratic --platform=linux/amd64 . -->
+
+
 
 ## Product Analytics
 
-* Umami
-* PostHog
+* [Umami](https://fossengineer.com/selfhosting-umami-with-docker/)
+* PostHog - https://github.com/JAlcocerT/Docker/tree/main/Web/Analytics
+
+
+
 
 ---
 
 ## FAQ
-
-
-### IoT Project example with Redash
 
 
 ### Other Tools For Data Analytics

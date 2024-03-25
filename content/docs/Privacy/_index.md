@@ -55,6 +55,14 @@ Use different tools to search:
 
 * <https://jalcocert.github.io/Linux/docs/debian/linux_vpn_setup/>
 
+DNS =>> https://github.com/mullvad/dns-blocklists/tree/main
+https://quad9.net/service/service-addresses-and-features/
+https://www.youtube.com/watch?v=xAo61IaXun8&t=1s
+
+DNS over TLS (DoT) is an enhancement over the traditional DNS that adds encryption to DNS queries and responses. It uses the Transport Layer Security (TLS) protocol to secure the communication between the DNS client and the DNS server, preventing eavesdropping and tampering by third parties.
+
+> P2P safely with [VPN and QBittorrent](https://fossengineer.com/selfhosting-qBittorrent-with-docker-and-VPN/) or with [Transmission](https://fossengineer.com/torrent-with-transmission-and-VPN/)
+
 ### Communication
 
 #### Matrix

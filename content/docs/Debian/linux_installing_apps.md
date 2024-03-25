@@ -52,7 +52,7 @@ graph TD;
 
   For starters, you can open your terminal anytime with: CTRL+ ALT + T
 
-  Then, the easiest way to install something is to find it in as [snapcraft](https://snapcraft.io/) package or [flathub](https://flathub.org/) and make your one liner (you can copy paste it), to have your first APP installed with CLI.
+  Then, the easiest way to install something is to find it in as [snapcraft](https://snapcraft.io/) package or [FlatHub](https://flathub.org/) and make your one liner (you can copy paste it), to have your first APP installed with CLI.
   
   This is how they will look:
 
@@ -315,13 +315,17 @@ apt install name-of-package
 
 Remember, **it's important to trust the PPAs you add**, as they can potentially contain unvetted or harmful software. **Only use PPAs from known and trusted sources.**
 
-### Ways to Install Apps in Debian
+### Other Ways to Install Apps in Debian
 
-#### UI
+### Deb Packages
 
-With the UI and double click, thanks to **.deb packages**.
+We can install through the UI and double click, thanks to **.deb packages**.
 
-.deb packages are **individual software packages** that can be installed directly on your computer, similar to installing software from a CD or a downloaded file. PPAs, on the other hand, are like online repositories that can contain multiple .deb packages. 
+* .deb packages are **individual software packages** that can be installed directly on your computer, similar to installing software from a CD or a downloaded file.
+
+* PPAs, on the other hand, are like online repositories that can contain multiple .deb packages. 
+
+### AppImages
 
 You can also try with the portable **.Appimage** - For devs the idea is simple - One package, run everywhere.
 
@@ -335,7 +339,7 @@ An AppImage is self-contained, it does not modify the host system. Its impact is
 
 These are designed to be compatible with a wide range of Linux distributions. This includes non Debian distros, like [Arch Linux](https://jalcocert.github.io/Linux/docs/arch/), among others.
 
-Some AppImages come with update information embedded and can be updated with tools like AppImageUpdate.
+> Some AppImages even come with update information embedded and can be updated with tools like AppImageUpdate.
 
 #### Snap
 
@@ -353,7 +357,7 @@ Flatpak is designed to be a **cross-distribution packaging format**. It aims to 
 
 * Sandboxing: Like Snap, Flatpak uses sandboxing to isolate applications from the host system, improving security and reducing potential conflicts with system libraries.
 
-* Multiple Repositories: Flatpak supports multiple software repositories, allowing users to access applications from various sources, including the [Flathub repository](https://flathub.org/), which is a popular repository for Flatpak packages.
+* Multiple Repositories: Flatpak supports multiple software repositories, allowing users to access applications from various sources, including the [FlatHub repository](https://flathub.org/), which is a popular repository for Flatpak packages.
 
 * Manual Updates: While Flatpak does support updates, it typically requires manual intervention or the use of package manager tools to update applications.
 

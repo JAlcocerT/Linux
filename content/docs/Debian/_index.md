@@ -4,16 +4,16 @@ type: docs
 prev: docs/first-page
 next: docs/folder/leaf
 sidebar:
-  open: true
+  open: false #true
 ---
 
 Debian is a widely respected, stable Linux distribution known for its reliability, **extensive software repository**, and strong commitment to free and open-source software principles.
 
 Debian provides users with a robust and well-maintained ecosystem of software packages, covering a wide range of applications and utilities. It offers multiple release branches, including the stable, testing, and unstable branches, allowing users to choose the level of stability and software freshness that suits their needs.
 
-Debian's **package management system, APT** (Advanced Package Tool), simplifies software installation, upgrades, and maintenance. The distribution **emphasizes system stability** and security, making it a popular choice for servers and mission-critical environments.
+Debian's **package management system, [APT](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#apt)** (Advanced Package Tool), simplifies software installation, upgrades, and maintenance. The distribution **emphasizes system stability** and security, making it a popular choice for servers and mission-critical environments.
 
-While Debian doesn't have the same "do-it-yourself" philosophy as Arch Linux, it provides a solid foundation for various use cases, including desktop computing, server hosting, and embedded systems. It's well-regarded for its community-driven development process and commitment to free software, making it a trusted choice for users who prioritize open-source principles and long-term support.
+While Debian doesn't have the same "do-it-yourself" philosophy as [Arch Linux](https://jalcocert.github.io/Linux/docs/arch/), it provides a solid foundation for various use cases, including desktop computing, server hosting, and embedded systems. It's well-regarded for its community-driven development process and commitment to free software, making it a trusted choice for users who prioritize open-source principles and long-term support.
 
   <!-- {{< hextra/feature-card
     title="Get Ubuntu"

@@ -96,9 +96,25 @@ sudo apt install dnsutils
 
 #example
 #nslookup google.com
+#ping google.com
 ```
 
 Worth to have a look: https://weberblog.net/benchmarking-dns-namebench-dnseval/
+
+
+```sh
+cat /etc/resolv.conf
+```
+
+You can see the DNS of each Network in your PC with:
+
+```sh
+resolvectl status #see which one you want to change, ex: enp2s0
+#resolvectl dns enp2s0 9.9.9.9 149.112.112.112
+#resolvectl status enp2s0
+```
+
+> [Quad9](https://quad9.net/service/service-addresses-and-features/) is a good start point
 
 ## General Ubuntu
 
@@ -319,6 +335,23 @@ du -h --max-depth=1 ~/ | sort -rh
 #sudo apt-get install ncdu
 #ncdu /
 ```
+
+### How to Clone a SSD?
+
+{{% details title="Clone your drives with Clonezilla" closed="true" %}}
+
+Save and restores only used blocks in a hard drive [with Clonezilla](https://github.com/stevenshiau/clonezilla) 
+
+```sh
+apt update
+apt install clonezilla
+```
+
+You can also download the ISO, boot clonezilla from usb and select: [device to device](https://www.youtube.com/watch?v=34MT6frNp5w) 
+
+Be carefull with the options you choose (source device, destination...)
+
+{{% /details %}}
 
 ### How to Benchmark Linux
 
