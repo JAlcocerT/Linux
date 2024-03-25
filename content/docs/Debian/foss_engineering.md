@@ -49,6 +49,7 @@ Definitely [check](https://www.youtube.com/watch?v=yDwu-cmVR9Q): <https://www.yo
 * Elmer: Elmer is an open-source multiphysics simulation software used for solving problems in fluid dynamics, structural mechanics, and more.
 
 * KiCad: KiCad is an open-source electronic design automation (EDA) suite for designing printed circuit boards (PCBs).
+    * Frizting - flatpak install flathub org.fritzing.Fritzing
 
 * OpenSCAD: OpenSCAD is a script-based 3D CAD modeler, particularly useful for creating parametric designs and mechanical parts.
 

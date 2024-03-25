@@ -111,6 +111,10 @@ The [ML Compilation for LLMs](https://github.com/mlc-ai/mlc-llm) project aims to
 * Home LLM + Home Assistant - https://www.youtube.com/watch?v=kJfIM9siD00
   * https://github.com/acon96/home-llm
 
+```sh
+https://flathub.org/apps/com.cassidyjames.butler #HA visualizer
+```
+
 > This repo contains interesting projects (𝗟𝗟𝗠𝘀, 𝗟𝗟𝗠𝗢𝗽𝘀, and 𝘃𝗲𝗰𝘁𝗼𝗿 𝗗𝗕𝘀) to have a look: https://github.com/iusztinpaul/hands-on-llms
 
 ### Text-to-Image

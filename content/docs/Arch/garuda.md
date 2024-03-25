@@ -23,19 +23,19 @@ Garuda Linux uses the **Arch Linux package manager**, which is called "Pacman".
 
 Additionally, Garuda Linux also provides a graphical package manager called "Pamac" for those who prefer a user-friendly interface.
 
-
 Update repos with:
 
 ```sh
 sudo pacman -Syu
 ```
 
-
 And install packages with:
 
 ```sh
 sudo pacman -S firefox
 ```
+
+> More examples [here](https://gist.github.com/JAlcocerT/9865a045b2b86adb41fad71e4beddc06).
 
 ### Useful Repositories
 

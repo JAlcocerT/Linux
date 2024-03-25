@@ -36,6 +36,7 @@ While Arch Linux demands a deeper understanding of Linux and requires users to c
 
 * [Pacman](https://jalcocert.github.io/Linux/docs/arch/garuda/#pacman---garuda-package-manager)
 
+> Here you have [this Gist](https://gist.github.com/JAlcocerT/9865a045b2b86adb41fad71e4beddc06) with some usefull installs on Arch.♻️*There are similar ones for [Ubuntu](https://gist.github.com/JAlcocerT/197667ec5ec0da53e78eb58c4253a73f), even [Windows](https://gist.github.com/JAlcocerT/76f22ddf886277ef2653f82898c634d8)* ♻️.
 
 ### SelfHosting with Arch
 

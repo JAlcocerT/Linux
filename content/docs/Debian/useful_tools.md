@@ -319,3 +319,28 @@ du -h --max-depth=1 ~/ | sort -rh
 #sudo apt-get install ncdu
 #ncdu /
 ```
+
+### How to Benchmark Linux
+
+* Phoronix Test Suite
+* MemTest
+* prime95
+
+
+### Screen Share with Linux
+
+* [RustDesk](https://github.com/rustdesk/rustdesk/releases)
+
+```sh
+sudo apt install flatpak
+flatpak --version
+#flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+wget https://github.com/rustdesk/rustdesk/releases/download/1.2.3-1/rustdesk-1.2.3-x86_64.flatpak
+flatpak install rustdesk-1.2.3-x86_64.flatpak
+
+flatpak run com.rustdesk.RustDesk
+```
+
+* Remmina, Vinagre, TigerVNC
+* Guacamole with Docker
