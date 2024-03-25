@@ -116,6 +116,14 @@ IoT Project example with Superset: <https://jalcocert.github.io/RPi/posts/rpi-gp
 ## Databases
 
 
+```sh
+flatpak install flathub io.dbeaver.DBeaverCommunity
+
+#flatpak install flathub io.conduktor.Conduktor #Kafka Desktop Client
+
+#https://flathub.org/apps/dev.k8slens.OpenLens #k8s IDE
+```
+
 <!-- ### MariaDB
 
 ### MongoDB
