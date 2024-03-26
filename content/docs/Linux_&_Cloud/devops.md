@@ -18,6 +18,40 @@ We have all been new to CI/CD at some point.
 
 If you want to tinker with Jenkins, a great way is to [Self-Host Jenkins with Docker](https://fossengineer.com/selfhosting-jenkins-ci-cd/).
 
+## Ansible
+
+> It's all about the playbook
+
+<!-- UI: ansible semaphore
+<https://www.youtube.com/watch?v=NyOSoLn5T5U>
+<https://github.com/ChristianLempa/videos/tree/main/ansiblesemaphore-tutorial> -->
+
+<!-- 
+and terraform? -->
+
+Ansible is an open-source software provisioning, configuration management, and application-deployment tool. It is used to automate repetitive tasks such as configuration management, application deployment, and intra-service orchestration. Ansible uses a simple syntax written in YAML called playbooks, which allows you to describe automation jobs in a way that approaches plain English.
+
+Docker, on the other hand, is an open-source platform that automates the deployment, scaling, and management of applications. It does this through containerization, which is a lightweight form of virtualization. Docker allows developers to package an application with all of its dependencies into a standardized unit for software development. This ensures that the application will run the same, regardless of the environment it is running in.
+
+Ansible and Docker are both powerful technologies that are widely used in the field of software development and operations (DevOps). They serve different but complementary purposes.
+
+These two tools can work together in a few different ways:
+
+* Ansible can manage Docker containers: Ansible can be used to automate the process of managing Docker containers. Ansible has modules like docker_image and docker_container which can be used to download Docker images and to start, stop, and manage the life cycle of Docker containers.
+* Ansible can be used to install Docker: You can write an Ansible playbook to automate the process of installing Docker on a server.
+* Docker can run Ansible: You can create Docker containers that have Ansible installed. This might be useful if you want to run Ansible commands or playbooks inside a Docker container for testing or isolation.
+
+In a typical DevOps pipeline, *Docker can be used for creating a reproducible build and runtime environment* for an application, while **Ansible can be used to automate the process of deploying that application** across various environments. This combination can help teams create efficient, reliable, and reproducible application deployment pipelines.
+
+
+
+```sh
+apt install ansible
+ansible --version
+```
+
+
+
 ## Kubernetes
 
 ## Monitoring
