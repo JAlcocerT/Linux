@@ -34,6 +34,7 @@ While Arch Linux demands a deeper understanding of Linux and requires users to c
 
 * [Flatpak](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#flatpak)
   * Yes, Flatpak is a universal package format! Feel Free to explore them at [FlatHub](https://flathub.org/) and install them in Arch Based just like you [would in Debian](https://jalcocert.github.io/Linux/docs/debian/content_creation/#audio-editing-in-linux).
+  * Dont Forget to leverage Flatpak with **[Warehouse](https://www.linuxfordevices.com/tutorials/linux/install-setup-warehouse-flatpak)** or with [Flatseal](https://www.linuxfordevices.com/tutorials/linux/manage-flatpak-app-permissions-with-flatseal )
 
 * [Nix](https://jalcocert.github.io/Linux/docs/nix/)
   * And [installing common Apps with NIX](https://jalcocert.github.io/Linux/docs/nix/fav-apps/) is as simple as one command.

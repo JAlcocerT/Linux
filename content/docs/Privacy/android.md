@@ -83,12 +83,69 @@ Use the [Exodus App](https://github.com/Exodus-Privacy/exodus-android-app)
 
 * https://gitlab.com/bitfireAT/NoPhoneSpam
 * https://github.com/thunderbird/thunderbird-android
-* https://github.com/termux/termux-app
+
 
 {{% /details %}}
+
+### How to use Linux on Android
+
+You can have an emulated [Debian](https://jalcocert.github.io/Linux/docs/debian/) inside Android with [**Termux**](https://termux.dev/en/).
+
+{{% details title="Start using Termux with [Alpine Linux](https://alpinelinux.org/downloads/)! 🚀" closed="true" %}}
+
+* https://github.com/termux/termux-app
+* https://f-droid.org/es/packages/com.termux/
+
+* Check [available Packages](https://packages.termux.dev) and install them as:
+
+```sh
+pkg install htop
+pkg install openssh
+#pkg install tigervnc-viewer
+#vncviewer 192.168.1.100::5902
+
+```
+
+You can also [Virtualize](https://jalcocert.github.io/Linux/docs/debian/virtualization) with [QEMU](https://jalcocert.github.io/Linux/docs/debian/virtualization).
+
+```sh
+# pkg install root-repo
+# pkg install unstable-repo
+# pkg install x11-repo
+# pkg install qemu-system-x86_64-headless
+# termux-setup-storage
+
+pkg update
+pkg install pkg install qemu-system-x86_64-headless qemu-utils wget -y
+
+
+#Virtual & x86_64 
+#wget https://dl-cdn.alpinelinux.org/alpine/v3.19/releases/x86_64/alpine-virt-3.19.1-x86_64.iso
+```
+
+Here you can [find more packages](https://github.com/may215/awesome-termux-hacking).
+<!-- 
+https://www.youtube.com/watch?v=ISvdxtW-Cls&t=543s
+https://www.youtube.com/watch?v=prpa58OEmzs
+https://www.youtube.com/watch?v=pR5jOQnfNtY
+https://www.youtube.com/watch?v=g8mQdICewis -->
+
+{{% /details %}}
+
+### How to Run Docker on Android
+
+We will be using Termux to run Docker on Android (without Root).
+
+
 
 ### Better Android OS
 
 * <https://www.privacytools.io/android-alternatives>
   * <https://wiki.lineageos.org/devices/>
   * Pixels Only - https://grapheneos.org/releases
+
+> How to do it - https://www.linuxfordevices.com/tutorials/openandroidinstaller-android-rom
+
+### Private Android with GrapheneOS
+<!-- 
+https://www.youtube.com/watch?v=qxAnWYUvDxg -->

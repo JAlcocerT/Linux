@@ -36,11 +36,12 @@ You might need to enable it in the BIOS.
 
 ### Installing QEMU-KVM
 
-You are right, we are ~~not going to use VirtualBox nor VMWare~~, but QEMU.
+You are right, we are ~~not going to use VirtualBox nor VMWare~~, but [QEMU](https://www.qemu.org/).
 
 QEMU-KVM (Kernel-based Virtual Machine) is a virtualization technology for Linux-based systems that allows you to run virtual machines on a host system. It combines the **QEMU emulator with the KVM kernel module** to provide efficient and **high-performance virtualization capabilities**.
 
 ```sh
+#apt install quemu
 sudo apt install qemu-kvm libvirt-clients libvirt-daemon-system bridge-utils virtinst libvirt-daemon
 ```
 
@@ -65,7 +66,13 @@ You can always get out of the VM by using: **CTRL+ALT+G**
 You will need to create a Virtual Disk if you want to store data in the VM - By default it will be at:
 /var/lib/libvirt/images/the_name_you_want.qcow2
 
-<https://www.youtube.com/watch?v=VC9Kk7Ao944>
+```sh
+qemu-system-x86_64 -m 2G -smp 2 --enable-kvm -name 'Your_test_VM' -boot d -cdrom /home/Downloads/Linux_Images
+```
+
+<!-- 
+https://www.youtube.com/watch?v=ISvdxtW-Cls
+<https://www.youtube.com/watch?v=VC9Kk7Ao944> -->
 
 ---
 

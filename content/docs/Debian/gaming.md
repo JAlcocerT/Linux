@@ -49,7 +49,7 @@ Steam, one of the largest gaming platforms, has a feature called Proton, which a
 
 This is another choice - Have your **Linux main OS** and then just 'swap' to Windows for those games that you are not able to make work properly.
 
-[QEMU](https://www.qemu.org/) and KVM are two open-source virtualization technologies that work together to create powerful virtual machines.
+[QEMU](https://jalcocert.github.io/Linux/docs/debian/virtualization/#installing-qemu-kvm) and KVM are two open-source virtualization technologies that work together to create powerful virtual machines.
 
 * QEMU is a general purpose emulator that can run operating systems on different hardware architectures. It can also be used to create virtual machines that run on top of a host operating system. QEMU is written in C and C++ and is available for a wide range of platforms, including Linux, Windows, and macOS.
 
@@ -57,18 +57,19 @@ This is another choice - Have your **Linux main OS** and then just 'swap' to Win
 
 When QEMU and KVM are used together, QEMU provides the emulation of the virtual machine's hardware, while KVM provides the acceleration that makes the virtual machine run quickly. This combination makes QEMU and KVM a powerful and versatile virtualization solution that can be used for a wide variety of purposes.
 
-
-You can play games with QEMU, but it depends on the type of games you want to play and your hardware configuration.
+> You can play games with QEMU, but it depends on the type of games you want to play and your hardware configuration.
 
 #### Without GPU passthrough
 
-If you only want to play older or less demanding games, you may be able to get by without using GPU passthrough. However, this will significantly impact the performance of your games. You may experience lag, stuttering, and low frame rates. This is because **QEMU will have to emulate the graphics hardware**, which can be a very CPU-intensive task.
+If you only want to play older or less demanding games, you may be able to get by without using GPU passthrough. However, this will significantly impact the performance of your games. You may experience lag, stuttering, and low frame rates.
+
+This is because **QEMU will have to emulate the graphics hardware**, which can be a very CPU-intensive task.
 
 #### With GPU passthrough
 
-If you want to play modern or graphically demanding games, you will need to use GPU passthrough. This involves **passing one of your physical GPUs** (assuming you have 2) to the virtual machine. This will allow the virtual machine to use the graphics card directly, which will significantly improve the performance of your games.
+If you want to play modern or graphically demanding games, you will need to use GPU passthrough. This involves [**passing one of your physical GPUs** (assuming you have 2) to the virtual machine](https://jalcocert.github.io/Linux/docs/debian/virtualization/#how-to-do-gpu-passthrough). This will allow the virtual machine to use the graphics card directly, which will significantly improve the performance of your games.
 
-Learn more about it: <https://github.com/JamesTurland/JimsGarage/tree/main/GPU_passthrough>
+> Learn more about it: <https://github.com/JamesTurland/JimsGarage/tree/main/GPU_passthrough>
 
 #### Nested Virtualization
 

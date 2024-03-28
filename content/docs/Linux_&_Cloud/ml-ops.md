@@ -18,3 +18,10 @@ https://pezzo.ai/
 
 https://github.com/tensorchord/awesome-llmops
 https://github.com/EthicalML/awesome-production-machine-learning
+
+## OpenVino
+
+https://github.com/openvinotoolkit/openvino
+
+> OpenVINO™ is an open-source toolkit for optimizing and deploying AI inference
+

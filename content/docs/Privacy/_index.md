@@ -36,6 +36,8 @@ And the DNS performance with: GRC's DNS Benchmark, Knot DNS Resolver , DNSPerf o
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xAo61IaXun8" frameborder="0" allowfullscreen></iframe>
 
+* Securing HomeLan - https://www.youtube.com/watch?v=ivPptt3Ae5o
+
 ## Changing Bad Habits
 
 Use different tools to search:
