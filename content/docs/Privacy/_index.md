@@ -38,6 +38,23 @@ And the DNS performance with: GRC's DNS Benchmark, Knot DNS Resolver , DNSPerf o
 
 * Securing HomeLan - https://www.youtube.com/watch?v=ivPptt3Ae5o
 
+
+### Monitoring OutGoing Connections
+
+* {{% details title="[OpenSnitch](https://github.com/evilsocket/opensnitch)" closed="true" %}}
+
+```sh
+wget https://github.com/evilsocket/opensnitch/releases/download/v1.6.5.1/python3-opensnitch-ui_1.6.5.1-1_all.deb #https://github.com/evilsocket/opensnitch/releases
+sudo apt install ./opensnitch*.deb ./python3-opensnitch-ui*.deb
+```
+
+{{% /details %}}
+
+
+* Douane
+* gufw (GUI for Uncomplicated Firewall)
+<!-- * another one -->
+
 ## Changing Bad Habits
 
 Use different tools to search:

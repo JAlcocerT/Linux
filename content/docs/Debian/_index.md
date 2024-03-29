@@ -119,3 +119,5 @@ These are some of the basic APT commands you can use to manage software packages
 
 * The already mentioned - [APT](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#apt)
    * Or use it with [NALA](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#nala)
+
+> A [Gist](https://gist.github.com/JAlcocerT/197667ec5ec0da53e78eb58c4253a73f) with useful installations for Debian

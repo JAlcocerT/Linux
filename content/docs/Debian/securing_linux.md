@@ -82,6 +82,8 @@ nmap -sP 192.168.1.0/24 | grep "scan"
 
 You can also use any of these tools for [local Network Monitoring](https://jalcocert.github.io/RPi/posts/selfh-internet-better/#pi-alert) with Docker.
 
+---
+
 ## FAQ
 
 ### WatchYourLAN with Docker
@@ -94,7 +96,7 @@ You can [install WYL really quickly with Docker](https://fossengineer.com/selfho
 
 You can get regular internet speed tests with the help of [OpenSpeedTest Tracker in Docker](https://fossengineer.com/selfhosting-internet-speed-tracker-with-docker/).
 
-### I want to expose services to the Internet
+### How to expose services safely to the Internet
 
 A great starting point is to [get Cloudflare tunnels running in Docker](https://fossengineer.com/selfhosting-cloudflared-tunnel-docker/).
 
@@ -102,6 +104,6 @@ Then, you can connect any other Docker container to Cloudflare Tunnel Network an
 
 You might also want to try another approach. Setup [NGINX with Docker](https://fossengineer.com/selfhosting-nginx-proxy-manager-docker/) and just expose the Home Router / Cloud Provider ports for NGINX. For this approach to work at home, you will need to Port Forward. And the IP of the home/cloud would be expose.
 
-### I want to have HTTPs at home services
+### How to have HTTPs with Local Services
 
 For this case, you can setup a [local NGINX with Docker and use DuckDNS](https://fossengineer.com/selfhosting-nginx-proxy-manager-docker/#https-locally-nginx--duckdns).

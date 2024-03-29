@@ -131,6 +131,11 @@ flatpak install flathub io.dbeaver.DBeaverCommunity
 ### InfluxDB
 
 TimeScale
+
+
+Airtable alternatives:
+https://github.com/nocodb/nocodb
+https://github.com/bram2w/baserow
  -->
 
  ## AI Assisted Analytics

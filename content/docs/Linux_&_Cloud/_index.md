@@ -35,6 +35,8 @@ The cloud refers to a network of remote servers that are used to store, manage, 
 
 Linux, Docker, and open source software have all played a significant role in the development and adoption of cloud computing technologies.
 
+> Typical cloud providers list: <https://awesome-devops.xyz/list/#cloud-platforms>
+
 ## Merging the Concepts
 
 With the use of linux as a stable and secure operative system, the voluntary collaboration of anyone in the world that want to contribute to a project or start a new one and share it with everyone, plus the possibility to containerize an application *so that it works in your computer the same way that in mine*...

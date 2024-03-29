@@ -87,7 +87,12 @@ Use the [Exodus App](https://github.com/Exodus-Privacy/exodus-android-app)
 
 {{% /details %}}
 
-### How to use Linux on Android
+### How to control Linux from Android
+
+* With VNCViewer
+* With RustDesk
+
+### How to use Linux on Android with Termux
 
 You can have an emulated [Debian](https://jalcocert.github.io/Linux/docs/debian/) inside Android with [**Termux**](https://termux.dev/en/).
 
@@ -128,6 +133,7 @@ Here you can [find more packages](https://github.com/may215/awesome-termux-hacki
 https://www.youtube.com/watch?v=ISvdxtW-Cls&t=543s
 https://www.youtube.com/watch?v=prpa58OEmzs
 https://www.youtube.com/watch?v=pR5jOQnfNtY
+https://www.youtube.com/watch?v=izydeK8eTGw
 https://www.youtube.com/watch?v=g8mQdICewis -->
 
 {{% /details %}}
@@ -137,8 +143,21 @@ https://www.youtube.com/watch?v=g8mQdICewis -->
 We will be using Termux to run Docker on Android (without Root).
 
 
+### How to use Andronix to Run Linux
+
+https://github.com/AndronixApp
+
+https://github.com/AndronixApp/termux-packages
+
+https://www.youtube.com/watch?v=M4GYxkzCobA
+
+### How to use VSCode from Android
+
+https://dev.to/dotnetdreamer/using-android-phone-as-a-development-machine-3f39
+
 
 ### Better Android OS
+
 
 * <https://www.privacytools.io/android-alternatives>
   * <https://wiki.lineageos.org/devices/>
@@ -148,4 +167,10 @@ We will be using Termux to run Docker on Android (without Root).
 
 ### Private Android with GrapheneOS
 <!-- 
-https://www.youtube.com/watch?v=qxAnWYUvDxg -->
+https://www.youtube.com/watch?v=qxAnWYUvDxg
+https://www.youtube.com/watch?v=KBWlB9f_SAo
+
+
+ -->
+
+ * Other custom ROMs: https://www.xda-developers.com/tag/custom-rom/

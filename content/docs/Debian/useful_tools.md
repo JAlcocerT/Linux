@@ -9,7 +9,7 @@ prev: docs/Debian/
 
 ### System Info
 
-* Info about Hardware, Network, OS (Kernel...), even benchmarks
+* Info about Hardware, Network, OS (Kernel...), even [benchmarks](https://jalcocert.github.io/Linux/docs/linux__cloud/benchmark/).
 
 ```sh
 sudo apt-get install hardinfo
@@ -253,6 +253,76 @@ Option 2: Another option would be to set a cron task with:
 
 ```sh
 @reboot mount /dev/sdb1 /mnt/data_mounted/ #example
+```
+
+### How to lower CPU consumption?
+
+
+To lower CPU power consumption on an Ubuntu system, you can install and configure various tools and utilities designed to manage and optimize power usage.
+
+
+{{% details title="Some effective tools and techniques" closed="true" %}}
+
+
+1. **TLP**: TLP is an advanced power management tool that optimizes battery life on laptops and power usage on desktops. It comes with default settings tailored for saving power and can be customized according to your needs.
+
+   - Install TLP using the following command:
+     ```
+     sudo apt install tlp tlp-rdw
+     ```
+   - After installation, TLP will start automatically. However, you can start it manually and enable it to start at boot with:
+     ```
+     sudo tlp start
+     ```
+
+2. **cpufrequtils or cpupower**: These tools allow you to adjust the CPU frequency scaling and governor settings. The CPU governor controls the scaling of the CPU frequency according to the current load, allowing you to balance between performance and power consumption.
+
+   - Install cpufrequtils with:
+     ```
+     sudo apt install cpufrequtils
+     ```
+   - Or, for more recent versions of Ubuntu, cpupower might be available:
+     ```
+     sudo apt install linux-cpupower
+     ```
+   - You can then set the CPU governor to a power-saving mode, like `powersave`, using:
+     ```
+     sudo cpufreq-set -r -g powersave
+     ```
+
+3. **Powertop**: Powertop is a tool developed by Intel that shows you the power consumption of your device and suggests optimizations to reduce power usage.
+
+   - Install Powertop with:
+     ```
+     sudo apt install powertop
+     ```
+   - To see the current power usage and suggestions, run:
+     ```
+     sudo powertop
+     ```
+   - Powertop can also automatically apply its optimization suggestions at startup by creating a service or script that runs `powertop --auto-tune`.
+
+4. **Auto-cpufreq**: This tool automatically adjusts CPU frequency and power modes in real-time based on system load and power source. It's useful for those who prefer a more "set it and forget it" approach.
+
+   - Since Auto-cpufreq isn't available directly from the standard Ubuntu repositories, it can be installed via a snap or its GitHub repository. To install it using snap, use:
+     ```
+     sudo snap install auto-cpufreq
+     ```
+   - To monitor and automatically adjust the CPU settings, you may need to run it with:
+     ```
+     sudo auto-cpufreq --live
+     ```
+   - To enable persistent changes, consider installing it as a service through its GitHub instructions.
+
+
+{{% /details %}}
+
+> Remember, while these tools and settings can help reduce power consumption, they might also impact the performance of your system under certain workloads.
+
+### How to Test the network card?
+
+```sh
+iperf3 -c 192.168.3.200
 ```
 
 ### Create Custom Aliases
