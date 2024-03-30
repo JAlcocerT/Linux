@@ -65,7 +65,7 @@ As any decision, this has **trade-offs** to be considered:
 
 **at a cost...**
 
- {{% details title=" Check Which Costs" closed="true" %}}
+{{% details title=" Check Which Costs" closed="true" %}}
 
 * Security: Cloud deployment can pose potential security risks, especially if sensitive data is stored on the cloud.
 
@@ -79,3 +79,13 @@ As any decision, this has **trade-offs** to be considered:
 
 
 {{% /details %}}
+
+---
+
+## FAQ
+
+### Clouds ( & GPU Clouds)
+
+* RunPod, Linode, Paper Space, Lambda Cloud
+* vast.ai, 
+* GOogle Colab TPU...

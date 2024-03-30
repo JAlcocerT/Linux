@@ -13,7 +13,7 @@ Garuda Linux is a rolling-release, Arch Linux-based distribution that boasts a u
 
 Why Garuda Linux?
 
-It comes with [Searx as the default search engine](https://jalcocert.github.io/Linux/docs/privacy/#changing-bad-habits)
+It comes with [Searx as the default search engine](https://jalcocert.github.io/Linux/docs/privacy/#changing-bad-habits) and KDE Plasma as Desktop Environment.
 
 ### How to use Garuda Linux
 

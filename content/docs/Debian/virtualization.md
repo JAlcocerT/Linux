@@ -72,7 +72,10 @@ qemu-system-x86_64 -m 2G -smp 2 --enable-kvm -name 'Your_test_VM' -boot d -cdrom
 
 <!-- 
 https://www.youtube.com/watch?v=ISvdxtW-Cls
-<https://www.youtube.com/watch?v=VC9Kk7Ao944> -->
+<https://www.youtube.com/watch?v=VC9Kk7Ao944> 
+i12betro =>> https://www.youtube.com/watch?v=u_tsCfi7HMY
+
+-->
 
 ---
 
@@ -127,4 +130,10 @@ sudo make install
 
 ```
 
+### Setup a macOS VM in QEMU
+
+https://github.com/foxlet/macOS-Simple-KVM
+
 ### How to do GPU PassThrough?
+
+* https://www.reddit.com/r/linux_gaming/comments/qn20q0/gpu_passthrough/

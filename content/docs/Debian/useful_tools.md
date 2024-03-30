@@ -160,6 +160,8 @@ If you want to add a cron task for this, simply edit, as explained:
 @reboot cd RPi && git pull
 ```
 
+> [What happens](https://www.baeldung.com/linux/crontab-scheduled-jobs-computer-shutdown) with CronTab when PC Shutdown? 
+
 ### Create users
 
 ```sh
@@ -180,7 +182,10 @@ chmod -R go-rwx /home/user_name_2
 chmod -R go-rwx /home/user_name_3
 ```
 
-### Create your own mount points
+
+{{% details title=" How to Create your own mount points" closed="true" %}}
+
+
 
 Lets first check the storages connected to the machine and identify their current path:
 
@@ -255,6 +260,9 @@ Option 2: Another option would be to set a cron task with:
 @reboot mount /dev/sdb1 /mnt/data_mounted/ #example
 ```
 
+{{% /details %}}
+
+
 ### How to lower CPU consumption?
 
 
@@ -319,13 +327,26 @@ To lower CPU power consumption on an Ubuntu system, you can install and configur
 
 > Remember, while these tools and settings can help reduce power consumption, they might also impact the performance of your system under certain workloads.
 
+### Power Management with Linux
+
+* https://askubuntu.com/questions/83685/scheduling-startup-and-shutdown
+* https://www.baeldung.com/linux/auto-suspend-wake
+
+
+### How to Setup WakeOnLan (WoL)
+
+* https://www.reddit.com/r/CommercialAV/comments/xcfgyr/is_wakeonlan_still_your_goto_or_are_there_better/
+* https://www.reddit.com/r/sysadmin/comments/s3uv8y/wake_on_lan_wol_for_dummies/
+
 ### How to Test the network card?
 
 ```sh
 iperf3 -c 192.168.3.200
 ```
 
-### Create Custom Aliases
+
+{{% details title=" How to Create Custom Aliases" closed="true" %}}
+
 
 Lets edit this file:
 
@@ -355,7 +376,12 @@ source ~/.bashrc
 tbd
 ``` -->
 
-TMUX:
+{{% /details %}}
+
+
+* {{% details title=" How to Install & use TMUX" closed="true" %}}
+
+Install TMUX with:
 
 ```sh
 apt install tmux
@@ -363,6 +389,8 @@ apt install tmux
 ```
 
 https://tmuxcheatsheet.com/
+{{% /details %}}
+
 
 * Cleaning the System with UI: clean cache, monitor processes, snap packages installed, apt repositories...
 
@@ -395,7 +423,7 @@ sudo snap install sosumi
 #sudo snap remove sosumi
 ```
 
-Interested in [VMs? Check this out](https://jalcocert.github.io/Linux/docs/debian/virtualization/#how-to-virtualize).
+> Interested in [VMs? Check this out](https://jalcocert.github.io/Linux/docs/debian/virtualization/#how-to-virtualize).
 
 ### What's taking that much disk space?
 
@@ -432,7 +460,9 @@ Be carefull with the options you choose (source device, destination...)
 
 ### Screen Share with Linux
 
-* [RustDesk](https://github.com/rustdesk/rustdesk/releases)
+* {{% details title="With [RustDesk](https://github.com/rustdesk/rustdesk/releases)" closed="true" %}}
+
+Install RustDesk with [Flatpak](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#flatpak):
 
 ```sh
 sudo apt install flatpak
@@ -444,6 +474,6 @@ flatpak install rustdesk-1.2.3-x86_64.flatpak
 
 flatpak run com.rustdesk.RustDesk
 ```
-
+{{% /details %}}
 * Remmina, Vinagre, TigerVNC
 * Guacamole with Docker

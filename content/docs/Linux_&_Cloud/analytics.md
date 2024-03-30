@@ -135,6 +135,9 @@ TimeScale
 
 Airtable alternatives:
 https://github.com/nocodb/nocodb
+https://noted.lol/nocodb-contact-form-gmail-smtp/
+
+
 https://github.com/bram2w/baserow
  -->
 
