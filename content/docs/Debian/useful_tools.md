@@ -407,7 +407,7 @@ sudo apt-get install stacer
 
 ### Must know CLI's
 
-#### {{% details title="What's taking that much disk space?" closed="true" %}}
+{{% details title="What's taking that much disk space?" closed="true" %}}
 
 ```sh
 du -h --max-depth=1 ~/ | sort -rh
@@ -421,7 +421,7 @@ du -h --max-depth=1 ~/ | sort -rh
 
 * For Power Management:
 
-#### {{% details title="How to turn off" closed="true" %}}
+{{% details title="How to turn off" closed="true" %}}
 
 ```sh
 systemctl suspend
@@ -432,7 +432,7 @@ systemctl suspend
 
 * For Networking:
 
-#### {{% details title="How to know my local IP?" closed="true" %}}
+{{% details title="How to know my local IP?" closed="true" %}}
 
 ```sh
 hostname -I
@@ -442,7 +442,7 @@ hostname -I
 
 
 
-#### {{% details title="What if I need to add my IPv6 address too?" closed="true" %}}
+{{% details title="What if I need to add my IPv6 address too?" closed="true" %}}
 
 You can check your raspberry IPV6 with:
 
@@ -453,7 +453,7 @@ ifconfig
 
 
 
-#### {{% details title="How to get UID and GUI" closed="true" %}}
+{{% details title="How to get UID and GUI" closed="true" %}}
 
 ```sh
 id pi #id <your username>
@@ -462,7 +462,9 @@ id pi #id <your username>
 {{% /details %}}
 
 
-### {{% details title="How to use Mac in Linux" closed="true" %}}
+### How to use mac in Linux
+
+{{% details title="Install Sosumi" closed="true" %}}
 
 
 ```sh
