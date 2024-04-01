@@ -30,6 +30,8 @@ Steam, one of the largest gaming platforms, has a feature called Proton, which a
 
 **[Proton](https://github.com/ValveSoftware/Proton) is a compatibility layer** based on wine that includes Wine and various enhancements to make many Windows games work seamlessly on Linux. It's worth noting that not all Windows games are compatible, but the [list of supported games](https://www.protondb.com/explore) is continually growing.
 
+> ProtonDB is a community-driven website and database that provides compatibility information for running Windows games on Linux using Valve’s Proton compatibility layer.
+
 ### Lutris
 
 [Lutris](https://lutris.net/) is an **open-source gaming platform** that simplifies the installation and management of games on Linux. It supports a [wide range of games](https://lutris.net/games) from various sources, including Steam, GOG, and more. Lutris also allows you to configure different game emulators and wine versions for maximum compatibility.

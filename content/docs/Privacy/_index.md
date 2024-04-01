@@ -22,6 +22,8 @@ You can try with [PiHole](https://fossengineer.com/selfhosting-PiHole-docker/)
   * <https://github.com/JamesTurland/JimsGarage/tree/main/Unbound>
 * Or try [Bind9](https://hub.docker.com/r/ubuntu/bind9#!)
 
+* [PortMaster](https://github.com/Safing/portmaster) also helps to change and visualize the network queries.
+
 Whats my current DNS?
 
 ```sh
@@ -41,7 +43,7 @@ And the DNS performance with: GRC's DNS Benchmark, Knot DNS Resolver , DNSPerf o
 
 ### Monitoring OutGoing Connections
 
-* {{% details title="[OpenSnitch](https://github.com/evilsocket/opensnitch)" closed="true" %}}
+{{% details title="[OpenSnitch](https://github.com/evilsocket/opensnitch)" closed="true" %}}
 
 ```sh
 wget https://github.com/evilsocket/opensnitch/releases/download/v1.6.5.1/python3-opensnitch-ui_1.6.5.1-1_all.deb #https://github.com/evilsocket/opensnitch/releases
@@ -53,7 +55,7 @@ sudo apt install ./opensnitch*.deb ./python3-opensnitch-ui*.deb
 
 * Douane
 * gufw (GUI for Uncomplicated Firewall)
-<!-- * another one -->
+* PortMaster 
 
 ## Changing Bad Habits
 
@@ -138,6 +140,65 @@ sudo apt install -f
 
 ## FAQ
 
+### {{% details title="How to Install Douane" closed="true" %}}
+
+```sh
+flatpak install flathub org.electrum.electrum #BTC
+
+flatpak install flathub org.featherwallet.Feather #Monero
+#flatpak install flathub org.getmonero.Monero
+```
+
+Use them wisely and be responsibly.
+
+{{% /details %}}
+
+#### {{% details title="How to Install Portmaster" closed="true" %}}
+
+[PortMaster](https://safing.io/) is a great [F/OSS Project](https://github.com/Safing/portmaster) that allow us to set Global & per‑App Settings.
+
+[Install PortMaster](https://wiki.safing.io/en/Portmaster/Install/Linux) with:
+
+```sh
+
+sudo apt update
+wget https://updates.safing.io/latest/linux_amd64/packages/portmaster-installer.deb
+
+sudo dpkg -i portmaster-installer.deb
+portmaster --version
+
+#sudo apt install -f
+
+
+#sudo systemctl status portmaster
+# sudo systemctl daemon-reload
+# sudo systemctl enable --now portmaster
+
+# This will stop the portmaster until you reboot.
+#sudo systemctl stop portmaster
+
+# This will disable automatically starting the Portmaster on boot.
+#sudo systemctl disable portmaster
+```
+
+Or if you want, build and install:
+
+```sh
+wget https://github.com/safing/portmaster/archive/refs/tags/v1.6.5.tar.gz
+tar -zxvf v1.6.5.tar.gz #extract the contents
+
+
+cd portmaster-1.6.5
+
+make
+sudo make install
+
+portmaster --version
+
+```
+
+{{% /details %}}
+
 Definitely check: 
 
 * <https://github.com/pluja/awesome-privacy>
@@ -155,11 +216,15 @@ https://libreselfhosted.com/ -->
 * https://github.com/Ragnt/AngryOxide
 * https://www.youtube.com/watch?v=fc2oNY_W0YY
 
-### TOR 🧅
+---
+
+### TOR vs I2P vs LokiNet
+
+#### 🧅
 
 The Onion Router -  Tor is a well-established network that operates as a decentralized network of nodes (volunteer-run servers, without financial incentives) that route and encrypt traffic through multiple layers (called onion routing) to conceal the origin and destination of data. 
 
-### I2P
+#### I2P
 
 I2P is primarily designed for anonymous communication and services within the I2P network itself. It's optimized for hidden services, like websites (eepsites), email, and file sharing, that are accessible only within I2P.
 
@@ -167,14 +232,14 @@ I2P is primarily designed for anonymous communication and services within the I2
 
 * Peer Selection: In I2P, peers are selected based on continuous performance profiling, which can lead to faster performance for the user since the network optimizes over time based on usage.
 
-### LokiNet
-
+#### LokiNet
 
 [Lokinet](https://lokinet.org/) also utilizes onion routing to route and encrypt traffic, but it employs a mixnet architecture, which means that each packet of data is routed through multiple nodes in the network, similar to Tor.
 
-https://github.com/oxen-io/lokinet/releases
 
 {{% details title="How to Install [Latest LokiNet](https://github.com/oxen-io/lokinet/releases)" closed="true" %}}
+
+Check the [latest release here](https://github.com/oxen-io/lokinet/releases) and:
 
 ```sh
 wget https://github.com/oxen-io/lokinet/releases/download/v0.9.11/lokinet-v0.9.11.tar.xz
@@ -191,6 +256,8 @@ SNApps, or Session Network Applications, are DApps built on top of the Session n
 
 * Oxen Blockchain Explorer - https://lokiblocks.com/
 * [Oxen Name System](https://docs.oxen.io/oxen-docs/using-the-oxen-blockchain/using-oxen-name-system)
+
+---
 
 ### Crypto? 
 

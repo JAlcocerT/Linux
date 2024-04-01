@@ -171,6 +171,33 @@ Now you can start feel at home with [Portainer](https://fossengineer.com/selfhos
 * [Try Nix](https://jalcocert.github.io/Linux/docs/nix/) Package Manager - Learn this once and use it on any Linux and even on Macs!
 
 
+### {{% details title="How to Install Games in Garuda Linux" closed="true" %}}
+
+
+* With Steam Platform (Thanks to [Proton](https://jalcocert.github.io/Linux/docs/debian/gaming/#steam-play--proton)):
+
+```sh
+sudo nano /etc/pacman.conf
+#[multilib]
+#Include=/etc/pacman.d/mirrorlist
+sudo pacman -Sy
+
+sudo pacman -S steam
+yay -S protonup-qt
+```
+
+> Dont Forget to enable Steam Play as per [this guide](https://linuxiac.com/how-to-play-games-on-arch-linux-using-steam/)
+
+* You also can with Lutris:
+
+```sh
+sudo pacman -S lutris
+
+#example #https://lutris.net/games/ea-app/
+```
+
+{{% /details %}}
+
 ### Rolling vs Fix Releases?
 
 Garuda Linux, being a rolling-release distribution, continually delivers the latest software to users, providing the cutting-edge experience (which can cut us sometimes).

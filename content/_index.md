@@ -69,7 +69,7 @@ Linux is an **open-source operating system** that is used in a variety of device
     subtitle="LLMs with Linux - Linux nature is Open Source - Same like these LLMs that you can use with your Laptop (no GPU required)."
     class="aspect-auto md:aspect-[1.1/1] max-lg:min-h-[340px]"
     style="background: radial-gradient(ellipse at 50% 80%,rgba(221,210,59,0.15),hsla(0,0%,100%,0));"
-    link="https://jalcocert.github.io/Linux/docs/linux__cloud.md/llms/"
+    link="https://jalcocert.github.io/Linux/docs/linux__cloud/llms/"
   >}}
 
   {{< hextra/feature-card
