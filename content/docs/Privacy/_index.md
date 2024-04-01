@@ -18,7 +18,7 @@ You already [have a secure OS](https://jalcocert.github.io/Linux/docs/debian/sec
 
 You can try with [PiHole](https://fossengineer.com/selfhosting-PiHole-docker/)
 
-* <https://jalcocert.github.io/RPi/posts/selfh-internet-better/#unbound-dns>
+* With [Unbound](https://jalcocert.github.io/RPi/posts/selfh-internet-better/#unbound-dns)
   * <https://github.com/JamesTurland/JimsGarage/tree/main/Unbound>
 * Or try [Bind9](https://hub.docker.com/r/ubuntu/bind9#!)
 
@@ -32,8 +32,7 @@ sudo systemctl status resolvconf.service
 ```
 
 {{< callout type="info" >}}
-Check your DNS with: WireShark
-And the DNS performance with: GRC's DNS Benchmark, Knot DNS Resolver , DNSPerf or dnsmasq
+Check your DNS with: WireShark and the DNS performance with: GRC's DNS Benchmark, Knot DNS Resolver, DNSPerf or dnsmasq
 {{< /callout >}}
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xAo61IaXun8" frameborder="0" allowfullscreen></iframe>
@@ -43,7 +42,7 @@ And the DNS performance with: GRC's DNS Benchmark, Knot DNS Resolver , DNSPerf o
 
 ### Monitoring OutGoing Connections
 
-{{% details title="[OpenSnitch](https://github.com/evilsocket/opensnitch)" closed="true" %}}
+{{% details title="With [OpenSnitch](https://github.com/evilsocket/opensnitch) 👇" closed="true" %}}
 
 ```sh
 wget https://github.com/evilsocket/opensnitch/releases/download/v1.6.5.1/python3-opensnitch-ui_1.6.5.1-1_all.deb #https://github.com/evilsocket/opensnitch/releases
@@ -53,9 +52,9 @@ sudo apt install ./opensnitch*.deb ./python3-opensnitch-ui*.deb
 {{% /details %}}
 
 
-* Douane
+* [Douane](https://jalcocert.github.io/Linux/docs/privacy/#faq)
 * gufw (GUI for Uncomplicated Firewall)
-* PortMaster 
+* [PortMaster](https://jalcocert.github.io/Linux/docs/privacy/#faq) 
 
 ## Changing Bad Habits
 
@@ -63,7 +62,7 @@ Use different tools to search:
 
 
 * [Whoogle!](https://fossengineer.com/selfhosting-whoogle-docker/)
-* <https://jalcocert.github.io/RPi/posts/selfh-internet-better/#searxng>
+* [SearXNG](https://jalcocert.github.io/RPi/posts/selfh-internet-better/#searxng)
 * Youtube Alternatives:
   * NewPipe / Youtube-DL https://jalcocert.github.io/RPi/posts/youtube-video-download/
   * https://github.com/tubearchivist/tubearchivist
@@ -97,7 +96,7 @@ You can [SelfHost your own Matrix Server](https://fossengineer.com/selfhosting-m
 
 #### Signal
 
-{{% details title="How to Install Signal" closed="true" %}}
+{{% details title="How to Install Signal 👇" closed="true" %}}
 
 You need to add the repository to your packages list, then install it:
 
@@ -117,7 +116,7 @@ sudo apt install signal-desktop
 
 Built on top of Oxen.
 
-{{% details title="How to Install [Session](https://getsession.org/)" closed="true" %}}
+{{% details title="How to Install [Session](https://getsession.org/) 👇" closed="true" %}}
 
 
 Check the [latest release](https://github.com/oxen-io/session-desktop/tags)
@@ -140,20 +139,15 @@ sudo apt install -f
 
 ## FAQ
 
-### {{% details title="How to Install Douane" closed="true" %}}
+{{% details title="How to Install Douane 👇" closed="true" %}}
 
-```sh
-flatpak install flathub org.electrum.electrum #BTC
+[Douane](https://douaneapp.com/) is a personal firewall that us to control which applications can connect to the internet.
 
-flatpak install flathub org.featherwallet.Feather #Monero
-#flatpak install flathub org.getmonero.Monero
-```
-
-Use them wisely and be responsibly.
+You can see [Douane Source Code](https://gitlab.com/douaneapp/Douane) and install as per the [instructions](https://gitlab.com/douaneapp/douane-installer)
 
 {{% /details %}}
 
-#### {{% details title="How to Install Portmaster" closed="true" %}}
+{{% details title="How to Install Portmaster 👇" closed="true" %}}
 
 [PortMaster](https://safing.io/) is a great [F/OSS Project](https://github.com/Safing/portmaster) that allow us to set Global & per‑App Settings.
 
@@ -237,7 +231,7 @@ I2P is primarily designed for anonymous communication and services within the I2
 [Lokinet](https://lokinet.org/) also utilizes onion routing to route and encrypt traffic, but it employs a mixnet architecture, which means that each packet of data is routed through multiple nodes in the network, similar to Tor.
 
 
-{{% details title="How to Install [Latest LokiNet](https://github.com/oxen-io/lokinet/releases)" closed="true" %}}
+{{% details title="How to Install [Latest LokiNet](https://github.com/oxen-io/lokinet/releases) 👇" closed="true" %}}
 
 Check the [latest release here](https://github.com/oxen-io/lokinet/releases) and:
 
@@ -263,7 +257,7 @@ SNApps, or Session Network Applications, are DApps built on top of the Session n
 
 This is not in the right place to learn big about Crypto - but [WhyCryptoCurrencies](https://whycryptocurrencies.com/) it is (and Free).
 
-{{% details title="A couple of wallets that you can use in Linux" closed="true" %}}
+{{% details title="A couple of wallets that you can use in Linux 👇" closed="true" %}}
 
 ```sh
 flatpak install flathub org.electrum.electrum #BTC

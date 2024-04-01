@@ -283,7 +283,7 @@ For instance, Fedora uses COPR (Cool Other Package Repo), Arch Linux has the [Ar
 
 These are similar in concept to Ubuntu's PPAs in that they allow users to access software that's not in the main repositories, but they work differently and are specific to their respective distributions.
 
-### How to use PPA's?
+#### How to use PPA's?
 
 We just need 3 very simples steps:
 
@@ -317,7 +317,7 @@ Remember, **it's important to trust the PPAs you add**, as they can potentially 
 
 ### Other Ways to Install Apps in Debian
 
-### Deb Packages
+#### Deb Packages
 
 We can install through the UI and double click, thanks to **.deb packages**.
 
@@ -325,7 +325,33 @@ We can install through the UI and double click, thanks to **.deb packages**.
 
 * PPAs, on the other hand, are like online repositories that can contain multiple .deb packages. 
 
-### AppImages
+{{% details title="You can also install .Deb's with the terminal" closed="true" %}}
+
+```sh
+wget https://updates.safing.io/latest/linux_amd64/packages/portmaster-installer.deb
+sudo dpkg -i portmaster-installer.deb
+
+#sudo apt install -f #installs any missing dependencies automatically.
+
+```
+{{% /details %}} 
+
+#### Tar GZ
+
+A .tar.gz file is an archive format commonly used in Linux and Unix-like operating systems. It's a combination of two compression methods: tar (tape archive) and gzip (GNU zip).
+
+```sh
+tar -czvf archive.tar.gz /path/to/directory #wget https://github.com/safing/portmaster/archive/refs/tags/v1.6.5.tar.gz
+tar -xzvf archive.tar.gz #tar -zxvf v1.6.5.tar.gz #extract
+
+# cd portmaster-1.6.5
+
+# make
+# sudo make install
+
+```
+
+#### AppImages
 
 You can also try with the portable **.Appimage** - For devs the idea is simple - One package, run everywhere.
 
@@ -376,4 +402,4 @@ dpkg --list
 
 Ansible is an Automation tool that we can use to install apps / spin docker containers and virtually any tasks.
 
-You can use Ansible to [install Apps like a pro dev-ops as shown here](https://jalcocert.github.io/Linux/docs/linux__cloud.md/ansible/#using-ansible)
+You can use Ansible to [install Apps like a pro dev-ops as shown here](https://jalcocert.github.io/Linux/docs/linux__cloud/ansible/#using-ansible)

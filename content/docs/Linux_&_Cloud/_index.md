@@ -46,7 +46,7 @@ With the use of linux as a stable and secure operative system, the voluntary col
 As any decision, this has **trade-offs** to be considered: 
 
 
- {{% details title=" Check the Trade-Offs?" closed="true" %}}
+ {{% details title=" Check the Trade-Offs ✋ " closed="true" %}}
 
 * Scalability: Cloud deployment enables applications to scale quickly and easily to meet changing user demands.
 
@@ -65,7 +65,7 @@ As any decision, this has **trade-offs** to be considered:
 
 **at a cost...**
 
-{{% details title=" Check Which Costs" closed="true" %}}
+{{% details title=" Check Which Costs 👈" closed="true" %}}
 
 * Security: Cloud deployment can pose potential security risks, especially if sensitive data is stored on the cloud.
 
