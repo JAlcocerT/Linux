@@ -136,10 +136,10 @@ sudo systemctl stop a_conflicting_service #for now
 
 Yes, if you have [PiHole](https://fossengineer.com/selfhosting-PiHole-docker/) at home, you can access it from anywhere when using Tailscale: <https://tailscale.com/kb/1114/pi-hole>
 
-{{< gist jalcocert 302f787db6f6d75e978674e0e18d1185
+<!-- {{< gist jalcocert 302f787db6f6d75e978674e0e18d1185
 "Docker-Security-Pihole.yml">}}
 
-{{< gist "JAlcocerT/197667ec5ec0da53e78eb58c4253a73f/Docker-Security-Pihole.yml" >}}
+{{< gist "JAlcocerT/197667ec5ec0da53e78eb58c4253a73f/Docker-Security-Pihole.yml" >}} -->
 
 
 ### And also code from an Ipad?

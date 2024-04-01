@@ -47,11 +47,14 @@ While Arch Linux demands a deeper understanding of Linux and requires users to c
 
 If you are used to deploy your favourite Apps with [Docker](https://jalcocert.github.io/Linux/docs/debian/docker/) (or [Podman](https://jalcocert.github.io/Linux/docs/debian/podman/)), congratulations, you can use them seamlessly with Arch as you do with Debian, mac or Windows.
 
-For example:
+{{% details title="Some examples" closed="true" %}}
 
 * [Analytic Tools](https://jalcocert.github.io/Linux/docs/linux__cloud/analytics/)
 * Local Gen AI - [LLMs](https://jalcocert.github.io/Linux/docs/linux__cloud/llms/)
 * [SelfHosting](https://jalcocert.github.io/Linux/docs/linux__cloud/selfhosting/)
+
+{{% /details %}}
+
 
 ### Benchmark with Arch
 

@@ -28,6 +28,8 @@ Additionally, Garuda Linux also provides a graphical package manager called "Pam
     * The Arch Linux Package Search:  <https://archlinux.org/packages/>
 
 
+{{% details title="Its as simple as this" closed="true" %}}
+
 Update repos with:
 
 ```sh
@@ -41,6 +43,9 @@ And install packages with:
 sudo pacman -S firefox
 ```
 
+{{% /details %}}
+
+
 > More examples [here](https://gist.github.com/JAlcocerT/9865a045b2b86adb41fad71e4beddc06).
 
 ### Useful Repositories
@@ -53,9 +58,15 @@ But the beauty is that anyone can contribute and publish their Apps at:
 The AUR is a **community-driven repository** that contains a wide range of software packages not available in the official Arch Linux repositories. And we, as Garuda Linux users can also benefit from the AUR.
 
 
+{{% details title="More about AUR" closed="true" %}}
+
 When you visit these websites, you can use the search functionality to look for packages by name. 
 
 The AUR website is particularly useful for finding user-contributed packages that may not be in the official repositories. Once you find a package you want to install, you can note its name and use it with the pacman or yay command in the terminal, or search for it in the Pamac graphical package manager.
+
+{{% /details %}}
+
+
 
 Remember that when installing packages from the AUR, you should follow the AUR guidelines and consider using an **AUR helper like yay** for better package management and dependency handling.
 
@@ -73,10 +84,38 @@ pamac-manager
 
 ### Gaming on Arch
 
+
+{{% details title="How to Install Games in Garuda Linux" closed="true" %}}
+
+
+* With Steam Platform (Thanks to [Proton](https://jalcocert.github.io/Linux/docs/debian/gaming/#steam-play--proton)):
+
+```sh
+sudo nano /etc/pacman.conf
+#[multilib]
+#Include=/etc/pacman.d/mirrorlist
+sudo pacman -Sy
+
+sudo pacman -S steam
+yay -S protonup-qt
+```
+
+> Dont Forget to enable Steam Play as per [this guide](https://linuxiac.com/how-to-play-games-on-arch-linux-using-steam/)
+
+* You also can with Lutris:
+
+```sh
+sudo pacman -S lutris
+
+#example #https://lutris.net/games/ea-app/
+```
+
+{{% /details %}}
+<!-- 
 ```sh
 sudo pacman -Sy
 sudo pacman -S steam
-```
+``` -->
 
 ---
 
@@ -170,33 +209,6 @@ Now you can start feel at home with [Portainer](https://fossengineer.com/selfhos
 
 * [Try Nix](https://jalcocert.github.io/Linux/docs/nix/) Package Manager - Learn this once and use it on any Linux and even on Macs!
 
-
-### {{% details title="How to Install Games in Garuda Linux" closed="true" %}}
-
-
-* With Steam Platform (Thanks to [Proton](https://jalcocert.github.io/Linux/docs/debian/gaming/#steam-play--proton)):
-
-```sh
-sudo nano /etc/pacman.conf
-#[multilib]
-#Include=/etc/pacman.d/mirrorlist
-sudo pacman -Sy
-
-sudo pacman -S steam
-yay -S protonup-qt
-```
-
-> Dont Forget to enable Steam Play as per [this guide](https://linuxiac.com/how-to-play-games-on-arch-linux-using-steam/)
-
-* You also can with Lutris:
-
-```sh
-sudo pacman -S lutris
-
-#example #https://lutris.net/games/ea-app/
-```
-
-{{% /details %}}
 
 ### Rolling vs Fix Releases?
 
