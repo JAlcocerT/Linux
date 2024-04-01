@@ -405,13 +405,65 @@ sudo apt-get install stacer
 
 ## FAQ
 
-### Must know CLI
+### Must know CLI's
+
+#### {{% details title="What's taking that much disk space?" closed="true" %}}
+
+```sh
+du -h --max-depth=1 ~/ | sort -rh
+
+#sudo apt-get install ncdu
+#ncdu /
+```
+
+{{% /details %}}
+
+
+* For Power Management:
+
+#### {{% details title="How to turn off" closed="true" %}}
 
 ```sh
 systemctl suspend
 ```
 
-### Mac in Linux?
+{{% /details %}}
+
+
+* For Networking:
+
+#### {{% details title="How to know my local IP?" closed="true" %}}
+
+```sh
+hostname -I
+```
+
+{{% /details %}}
+
+
+
+#### {{% details title="What if I need to add my IPv6 address too?" closed="true" %}}
+
+You can check your raspberry IPV6 with:
+
+```sh
+ifconfig
+```
+{{% /details %}}
+
+
+
+#### {{% details title="How to get UID and GUI" closed="true" %}}
+
+```sh
+id pi #id <your username>
+```
+
+{{% /details %}}
+
+
+### {{% details title="How to use Mac in Linux" closed="true" %}}
+
 
 ```sh
 #https://snapcraft.io/install/sosumi/ubuntu
@@ -425,14 +477,9 @@ sudo snap install sosumi
 
 > Interested in [VMs? Check this out](https://jalcocert.github.io/Linux/docs/debian/virtualization/#how-to-virtualize).
 
-### What's taking that much disk space?
 
-```sh
-du -h --max-depth=1 ~/ | sort -rh
+{{% /details %}}
 
-#sudo apt-get install ncdu
-#ncdu /
-```
 
 ### How to Clone a SSD?
 
