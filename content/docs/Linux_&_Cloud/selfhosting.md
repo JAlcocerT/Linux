@@ -170,11 +170,43 @@ Quick seedbox: Torrents + Mullvad -> Syncthing/Filebrowser
 
 Metube + JDownloader + Navidrome
 
-## How to Back Up my Server?
+### How to Back Up my Server?
 
 Duplicati to other location (HD / Mega, One drive, s3...)
 
+## Windows inside Docker
 
+Thanks to the [Dockur Project](https://github.com/dockur/windows) and by using the [Image](https://hub.docker.com/r/dockurr/windows#!)
+
+{{% details title=" With this Docker-Compose 👈" closed="true" %}}
+
+```yml
+version: '3.3'
+
+services:
+  windows:
+    image: dockurr/windows
+    container_name: windows
+    devices:
+      - /dev/kvm
+    cap_add:
+      - NET_ADMIN
+    ports:
+      - "8006:8006" #UI
+      - "3389:3389/tcp"
+      - "3389:3389/udp"
+    stop_grace_period: 2m
+    restart: on-failure
+    volumes:
+      - ./data:/storage
+    environment:
+      RAM_SIZE: 8GB
+      CPU_CORES: 3
+      DISK_SIZE: 75GB
+      VERSION: "win10"
+```
+
+{{% /details %}}
 
 ---
 
