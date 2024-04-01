@@ -28,6 +28,8 @@ Some game developers now release their titles with native Linux support. These g
 
 Steam, one of the largest gaming platforms, has a feature called Proton, which allows you to play Windows games on Linux.
 
+> Database of everything on Steam - ttps://steamdb.info/
+
 **[Proton](https://github.com/ValveSoftware/Proton) is a compatibility layer** based on wine that includes Wine and various enhancements to make many Windows games work seamlessly on Linux. It's worth noting that not all Windows games are compatible, but the [list of supported games](https://www.protondb.com/explore) is continually growing.
 
 > ProtonDB is a community-driven website and database that provides compatibility information for running Windows games on Linux using Valve’s Proton compatibility layer.

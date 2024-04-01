@@ -66,6 +66,7 @@ The AUR website is particularly useful for finding user-contributed packages tha
 
 {{% /details %}}
 
+<!-- https://itsfoss.com/rua-aur-tool/ -->
 
 
 Remember that when installing packages from the AUR, you should follow the AUR guidelines and consider using an **AUR helper like yay** for better package management and dependency handling.
