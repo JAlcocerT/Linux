@@ -120,37 +120,44 @@ resolvectl status #see which one you want to change, ex: enp2s0
 
 ### Crontab Tasks
 
-Open crontab:
+Make sure to install and Open crontab:
 
 
 ```sh
+# apt install cron
+# systemctl start cron 
+# systemctl status cron
+
 crontab -e
 ```
 Update it every midnight and every restart:
 
 
 ```sh
-0 0 * * * sudo apt update && sudo apt upgrade
-@reboot sudo apt update && sudo apt upgrade
+0 0 * * * #sudo apt update && sudo apt upgrade
+@reboot #sudo apt update && sudo apt upgrade
 ```
 
 If your script isn’t executing, check the system log for cron events: grep cron /var/log/syslog
 
-If you’d wish to view your scheduled tasks without editing you can use the command:
-
+If you’d wish to **view your scheduled tasks** without editing you can use:
 
 ```sh
-crontab -l 
+crontab -l
+#crontab -u particularusername -l
 ```
 
-### Example - Install GIT and sync your repositories
+> [What happens](https://www.baeldung.com/linux/crontab-scheduled-jobs-computer-shutdown) with CronTab when PC Shutdown? 
+
+{{% details title="Example - Install GIT and sync a Github Repository" closed="true" %}}
+
 
 ```sh
 sudo apt install git &&
- git clone https://github.com/jalcocert/RPi.git &&
- cd RPi &&
- git pull #to make sure its up to date (a cron task could be scheduled)
- ```
+git clone https://github.com/jalcocert/RPi.git &&
+cd RPi &&
+git pull #to make sure its up to date (a cron task could be scheduled)
+```
 
 If you want to add a cron task for this, simply edit, as explained:
 
@@ -160,7 +167,53 @@ If you want to add a cron task for this, simply edit, as explained:
 @reboot cd RPi && git pull
 ```
 
-> [What happens](https://www.baeldung.com/linux/crontab-scheduled-jobs-computer-shutdown) with CronTab when PC Shutdown? 
+{{% /details %}}
+
+{{% details title="Example - Sync all your [Gitea Repositories](https://fossengineer.com/selfhosting-Gitea-docker/) when PC Turn on" closed="true" %}}
+
+Now your imagination is the limit.
+
+Let's create a script that when your PC is booting, it will sync a given list of repositories from your Gitea instance.
+
+```sh
+nano git_sync.sh
+```
+
+If you want to add a cron task for this, simply edit, as explained:
+
+Make it executable:
+
+```sh
+chmod +x /home/jalcocert/Desktop/GIT_SYNC/git_sync.sh
+```
+
+```sh
+#@reboot /home/jalcocert/Desktop/GIT_SYNC/git_sync.sh >> /home/jalcocert/Desktop/GIT_SYNC/git_sync.log 2>&1
+@reboot /home/jalcocert/Desktop/GIT_SYNC/git_sync_v2.sh http://192.168.3.200:3033/fossengineer/FOSSENGINEER FOSSENGINEER http://192.168.3.200:3033/fossengineer/Py_Stocks Py_Stocks >> /home/jalcocert/Desktop/GIT_SYNC/git_sync_v2.log 2>&1
+
+#crontab -l #verify its added
+```
+
+{{% /details %}}
+
+{{% details title="How to Manage Cron Tasks with UI" closed="true" %}}
+
+With Zeit - Let's add the PPA and install it in Ubuntu:
+
+```sh
+sudo add-apt-repository ppa:blaze/main
+sudo apt update
+sudo apt install zeit
+#zeit #UI is ready!
+```
+
+You can also manage Cron tasks with UI's thanks to projects like: [cronicle](https://cronicle.net/), [nodered](https://jalcocert.github.io/RPi/posts/rpi-mqtt/#node-red), n8n...
+
+{{% /details %}}
+
+
+
+
 
 ### Create users
 
@@ -379,7 +432,7 @@ tbd
 {{% /details %}}
 
 
-* {{% details title=" How to Install & use TMUX" closed="true" %}}
+{{% details title=" How to Install & use TMUX" closed="true" %}}
 
 Install TMUX with:
 
@@ -509,7 +562,7 @@ Be carefull with the options you choose (source device, destination...)
 
 ### Screen Share with Linux
 
-* {{% details title="With [RustDesk](https://github.com/rustdesk/rustdesk/releases)" closed="true" %}}
+{{% details title="With [RustDesk](https://github.com/rustdesk/rustdesk/releases)" closed="true" %}}
 
 Install RustDesk with [Flatpak](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#flatpak):
 
@@ -524,5 +577,6 @@ flatpak install rustdesk-1.2.3-x86_64.flatpak
 flatpak run com.rustdesk.RustDesk
 ```
 {{% /details %}}
+
 * Remmina, Vinagre, TigerVNC
 * Guacamole with Docker

@@ -86,6 +86,6 @@ As any decision, this has **trade-offs** to be considered:
 
 ### Clouds ( & GPU Clouds)
 
-* RunPod, Linode, Paper Space, Lambda Cloud
+* RunPod, Linode, DigitalOcean, Paper Space, Lambda Cloud
 * vast.ai, 
-* GOogle Colab TPU...
+* Google Colab TPU...
