@@ -173,7 +173,7 @@ If you want to add a cron task for this, simply edit, as explained:
 
 Now your imagination is the limit.
 
-Let's create a script that when your PC is booting, it will sync a given list of repositories from your Gitea instance.
+Let's [create a script](https://github.com/JAlcocerT/Linux/blob/main/Z_Linux_Installations_101/Cron_Examples/) that when your PC is booting, it will sync a given list of repositories from your Gitea instance.
 
 ```sh
 nano git_sync.sh
@@ -211,7 +211,17 @@ You can also manage Cron tasks with UI's thanks to projects like: [cronicle](htt
 
 {{% /details %}}
 
+{{% details title="CronTasks Status with [UptimeKuma](https://fossengineer.com/selfhosting-uptime-Kuma-docker/)" closed="true" %}}
 
+With the Passive Monitor - Push:
+
+Together with this python script and the crontab:
+
+```sh
+@reboot /home/jalcocert/Desktop/GIT_SYNC/git_sync_uptimekuma.py
+```
+
+{{% /details %}}
 
 
 
