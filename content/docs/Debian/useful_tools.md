@@ -130,6 +130,7 @@ Make sure to install and Open crontab:
 
 crontab -e
 ```
+
 Update it every midnight and every restart:
 
 
@@ -137,6 +138,8 @@ Update it every midnight and every restart:
 0 0 * * * #sudo apt update && sudo apt upgrade
 @reboot #sudo apt update && sudo apt upgrade
 ```
+
+> You can create different [schedule expressions](https://crontab.guru/#0_22_*_*_1-5)
 
 If your script isn’t executing, check the system log for cron events: grep cron /var/log/syslog
 
@@ -215,7 +218,7 @@ You can also manage Cron tasks with UI's thanks to projects like: [cronicle](htt
 
 With the Passive Monitor - Push:
 
-Together with this python script and the crontab:
+Together with [this python script](https://github.com/JAlcocerT/Linux/blob/main/Z_Linux_Installations_101/Cron_Examples/git_sync_uptimekuma.py) and the crontab:
 
 ```sh
 @reboot /home/jalcocert/Desktop/GIT_SYNC/git_sync_uptimekuma.py

@@ -118,6 +118,12 @@ sudo pacman -Sy
 sudo pacman -S steam
 ``` -->
 
+{{% details title="How to use SteamOS with Docker in Garuda Linux" closed="true" %}}
+
+Thanks to the project: <https://docs.linuxserver.io/images/docker-steamos/>
+
+{{% /details %}}
+
 ---
 
 ## FAQ
