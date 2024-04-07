@@ -243,3 +243,10 @@ Like Debian-based distributions:
 Fixed releases prioritize stability and ease of maintenance but might not have the latest features as soon as they're released.
 
 {{% /details %}}
+
+
+### How to Customize Garuda
+
+Garuda is an impressive looking distro out of the box
+
+* You can get their Art-Work from [this gitlab repo](https://gitlab.com/garuda-linux/themes-and-settings/artwork/garuda-wallpapers/-/blob/master/src/garuda-wallpapers/Dr460nized%20Honeycomb.png?ref_type=heads)

@@ -572,6 +572,15 @@ Be carefull with the options you choose (source device, destination...)
 * MemTest
 * prime95
 
+{{% details title="SSD Benchmark With [KDiskMark](https://github.com/JonMagon/KDiskMark)" closed="true" %}}
+
+Install it with [FlatPak](https://flathub.org/apps/io.github.jonmagon.kdiskmark):
+
+![KDiskMark Benchmark Example](/images/benchmarks/ssd-nvme-pcie.png)
+
+
+{{% /details %}}
+
 
 ### Screen Share with Linux
 
