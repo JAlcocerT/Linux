@@ -411,38 +411,6 @@ iperf3 -c 192.168.3.200
 ```
 
 
-{{% details title=" How to Create Custom Aliases" closed="true" %}}
-
-
-Lets edit this file:
-
-
-```sh
-nano ~/.bash_aliases
-```
-
-Add this line to know your public ip address by typing myip on the terminal:
-
-
-```sh
-alias myip='curl ipinfo.io/ip' #public ip address
-```
-
-Use this command to be able to use the new alias already in the current session
-
-
-```sh
-source ~/.bashrc
-```
-
-<!-- Personally, I have a file saved with all my alias ready right here, which i simply have to download and my favourite alias will be set in any server with this simple command:
-
-
-```
-tbd
-``` -->
-
-{{% /details %}}
 
 
 {{% details title="How to Install & use TMUX" closed="true" %}}
@@ -608,3 +576,34 @@ flatpak run com.rustdesk.RustDesk
 
 * Remmina, Vinagre, TigerVNC
 * Guacamole with Docker
+
+
+
+{{% details title=" How to Create Custom Aliases" closed="true" %}}
+
+
+Lets edit this file:
+
+
+```sh
+nano ~/.bash_aliases
+```
+
+Add this line to know your public ip address by typing myip on the terminal:
+
+
+```sh
+alias myip='curl ipinfo.io/ip' #public ip address
+```
+
+Use this command to be able to use the new alias already in the current session
+
+
+```sh
+source ~/.bashrc
+```
+
+<!-- Personally, I have a file saved with all my alias ready right here, which i simply have to download and my favourite alias will be set in any server with this simple command:
+-->
+
+{{% /details %}}
