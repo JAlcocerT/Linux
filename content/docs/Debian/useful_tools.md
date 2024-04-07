@@ -445,7 +445,7 @@ tbd
 {{% /details %}}
 
 
-{{% details title=" How to Install & use TMUX" closed="true" %}}
+{{% details title="How to Install & use TMUX" closed="true" %}}
 
 Install TMUX with:
 
@@ -455,10 +455,11 @@ apt install tmux
 ```
 
 https://tmuxcheatsheet.com/
+
 {{% /details %}}
 
 
-* Cleaning the System with UI: clean cache, monitor processes, snap packages installed, apt repositories...
+{{% details title="Cleaning the System with UI: clean cache, monitor processes, snap packages installed, apt repositories.." closed="true" %}}
 
 ```sh
 sudo add-apt-repository ppa:oguzhaninan/stacer
@@ -466,6 +467,11 @@ sudo apt-get update
 sudo apt-get install stacer
 #stacer
 ```
+https://tmuxcheatsheet.com/
+
+{{% /details %}}
+
+
 
 ---
 

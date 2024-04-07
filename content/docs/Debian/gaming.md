@@ -80,3 +80,11 @@ If you want to play modern or graphically demanding games, you will need to use 
 If you have only one GPU, it's still possible to play games with QEMU, but you'll need to use a technique called **nested virtualization**. This involves running a separate hypervisor inside the virtual machine, such as KVM. The nested hypervisor will then take control of the GPU and pass it on to the virtual machine.
 
 Nested virtualization is a more complex setup than GPU passthrough, but it can be a good option if you only have one GPU and you need to play modern games.
+
+---
+
+## FAQ
+
+### How to Benchmark Gaming Performance
+
+* https://github.com/flightlessmango/MangoHud
