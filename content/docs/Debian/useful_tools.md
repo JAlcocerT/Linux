@@ -68,53 +68,8 @@ sudo apt-get install htop
 #htop
 ```
 
-### Network Monitor
+---
 
-#### Net Tools
-
-```sh
-sudo apt install net-tools -y
-```
-
-Get your public ip:
-
-```sh
-curl ifconfig.me
-```
-
-Get your local ip:
-
-```sh
-ip address
-#ip a
-```
-
-#### Testing DNS
-
-```sh
-sudo apt install dnsutils
-
-#example
-#nslookup google.com
-#ping google.com
-```
-
-Worth to have a look: https://weberblog.net/benchmarking-dns-namebench-dnseval/
-
-
-```sh
-cat /etc/resolv.conf
-```
-
-You can see the DNS of each Network in your PC with:
-
-```sh
-resolvectl status #see which one you want to change, ex: enp2s0
-#resolvectl dns enp2s0 9.9.9.9 149.112.112.112
-#resolvectl status enp2s0
-```
-
-> [Quad9](https://quad9.net/service/service-addresses-and-features/) is a good start point
 
 ## General Ubuntu
 
@@ -328,6 +283,9 @@ Option 2: Another option would be to set a cron task with:
 
 {{% /details %}}
 
+---
+
+## Power Management
 
 ### How to lower CPU consumption?
 
@@ -404,13 +362,90 @@ To lower CPU power consumption on an Ubuntu system, you can install and configur
 * https://www.reddit.com/r/CommercialAV/comments/xcfgyr/is_wakeonlan_still_your_goto_or_are_there_better/
 * https://www.reddit.com/r/sysadmin/comments/s3uv8y/wake_on_lan_wol_for_dummies/
 
+---
+
+## Networking
+
+### Network Monitor
+
+#### Net Tools
+
+```sh
+sudo apt install net-tools -y
+```
+
+Get your public ip:
+
+```sh
+curl ifconfig.me
+```
+
+Get your local ip:
+
+```sh
+ip address
+#ip a
+```
+
+#### Testing DNS
+
+* What it is my DNS on Linux?
+
+```sh
+resolvectl status
+```
+
+* What it is the DNS of a particular Network Interface:
+
+```sh
+ifconfig
+resolvectl dns wlp0s20f3
+
+#change it with
+#resolvectl dns wlp0s20f3 9.9.9.9 149.112.112.112
+```
+
+* And now, lets test a DNS:
+
+```sh
+sudo apt install dnsutils
+
+#example
+#nslookup google.com
+#ping google.com
+```
+
+Worth to have a look: https://weberblog.net/benchmarking-dns-namebench-dnseval/
+
+
+```sh
+cat /etc/resolv.conf
+```
+
+You can see the DNS of each Network in your PC with:
+
+```sh
+resolvectl status #see which one you want to change, ex: enp2s0
+#resolvectl dns enp2s0 9.9.9.9 149.112.112.112
+#resolvectl status enp2s0
+```
+
+> [Quad9](https://quad9.net/service/service-addresses-and-features/) is a good start point
+
+
+* DNS Benchmark with namebench:
+
+```sh
+sudo snap install namebench-snap
+```
+
+
+
 ### How to Test the network card?
 
 ```sh
 iperf3 -c 192.168.3.200
 ```
-
-
 
 
 {{% details title="How to Install & use TMUX" closed="true" %}}
