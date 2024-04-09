@@ -97,6 +97,8 @@ sudo apt install dnsutils
 #example
 #nslookup google.com
 #ping google.com
+#dig google.com
+#host google.com
 ```
 
 Worth to have a look: https://weberblog.net/benchmarking-dns-namebench-dnseval/
@@ -115,6 +117,12 @@ resolvectl status #see which one you want to change, ex: enp2s0
 ```
 
 > [Quad9](https://quad9.net/service/service-addresses-and-features/) is a good start point
+
+
+{{% details title="How to choose a DNS for a specific App/Domain" closed="true" %}}
+* https://www.baeldung.com/linux/specific-dns-for-specific-domain
+
+{{% /details %}}
 
 ## General Ubuntu
 
