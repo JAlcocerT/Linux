@@ -28,7 +28,11 @@ Some game developers now release their titles with native Linux support. These g
 
 Steam, one of the largest gaming platforms, has a feature called Proton, which allows you to play Windows games on Linux.
 
+> Database of everything on Steam - ttps://steamdb.info/
+
 **[Proton](https://github.com/ValveSoftware/Proton) is a compatibility layer** based on wine that includes Wine and various enhancements to make many Windows games work seamlessly on Linux. It's worth noting that not all Windows games are compatible, but the [list of supported games](https://www.protondb.com/explore) is continually growing.
+
+> ProtonDB is a community-driven website and database that provides compatibility information for running Windows games on Linux using Valve’s Proton compatibility layer.
 
 ### Lutris
 
@@ -76,3 +80,11 @@ If you want to play modern or graphically demanding games, you will need to use 
 If you have only one GPU, it's still possible to play games with QEMU, but you'll need to use a technique called **nested virtualization**. This involves running a separate hypervisor inside the virtual machine, such as KVM. The nested hypervisor will then take control of the GPU and pass it on to the virtual machine.
 
 Nested virtualization is a more complex setup than GPU passthrough, but it can be a good option if you only have one GPU and you need to play modern games.
+
+---
+
+## FAQ
+
+### How to Benchmark Gaming Performance
+
+* https://github.com/flightlessmango/MangoHud

@@ -95,7 +95,7 @@ Be mindful about this change, if you lost connectivity to internet. No valid DNS
 
 #### Checking DNS Leaks
 
-<https://mullvad.net/en/check>
+You can use: <https://mullvad.net/en/check>
 
 
 > You might also be interested in **HeadScale**: https://www.youtube.com/watch?v=OECp6Pj2ihg, or [Zrok](https://zrok.io/) or [telebit](https://www.youtube.com/watch?v=-QGbfTY5ExE)
@@ -116,6 +116,7 @@ You can also make your containerized [qbittorrent to have as network only your V
 
 * [Unbound](https://jalcocert.github.io/RPi/posts/selfh-internet-better/#unbound-dns)
 * [CoreDNS](https://github.com/coredns/coredns)
+* Bind9
 
 #### Check Port 67 is Free
 
@@ -134,6 +135,12 @@ sudo systemctl stop a_conflicting_service #for now
 ### So I can block Adds On the go now?
 
 Yes, if you have [PiHole](https://fossengineer.com/selfhosting-PiHole-docker/) at home, you can access it from anywhere when using Tailscale: <https://tailscale.com/kb/1114/pi-hole>
+
+<!-- {{< gist jalcocert 302f787db6f6d75e978674e0e18d1185
+"Docker-Security-Pihole.yml">}}
+
+{{< gist "JAlcocerT/197667ec5ec0da53e78eb58c4253a73f/Docker-Security-Pihole.yml" >}} -->
+
 
 ### And also code from an Ipad?
 

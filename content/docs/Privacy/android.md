@@ -158,19 +158,29 @@ https://dev.to/dotnetdreamer/using-android-phone-as-a-development-machine-3f39
 
 ### Better Android OS
 
+* Android alternatives: <https://www.privacytools.io/android-alternatives>
+  * Ubuntu Touch
+  
+{{% details title="Private Android with LineageOS" closed="true" %}}
 
-* <https://www.privacytools.io/android-alternatives>
-  * <https://wiki.lineageos.org/devices/>
-  * Pixels Only - https://grapheneos.org/releases
+> SUpported devices list: <https://wiki.lineageos.org/devices/>
 
-> How to do it - https://www.linuxfordevices.com/tutorials/openandroidinstaller-android-rom
+{{% /details %}} 
 
-### Private Android with GrapheneOS
+{{% details title="Private Android with GrapheneOS" closed="true" %}}
+
+> Google Pixels Only - https://grapheneos.org/releases
+
+{{% /details %}}
+
+{{% details title="How to Change Android ROMs" closed="true" %}}
+
+* How to do it - https://www.linuxfordevices.com/tutorials/openandroidinstaller-android-rom
+* Other custom ROMs: https://www.xda-developers.com/tag/custom-rom/
+
+{{% /details %}}
+
 <!-- 
 https://www.youtube.com/watch?v=qxAnWYUvDxg
 https://www.youtube.com/watch?v=KBWlB9f_SAo
-
-
  -->
-
- * Other custom ROMs: https://www.xda-developers.com/tag/custom-rom/

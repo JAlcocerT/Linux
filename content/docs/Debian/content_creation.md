@@ -18,6 +18,10 @@ flatpak run com.obsproject.Studio
 #nix-shell -p obs-studio
 ```
 
+### Snapshots
+
+* [Spectacle](https://github.com/KDE/spectacle) 
+
 
 ### Editing Videos in Linux
 

@@ -28,6 +28,8 @@ Additionally, Garuda Linux also provides a graphical package manager called "Pam
     * The Arch Linux Package Search:  <https://archlinux.org/packages/>
 
 
+{{% details title="Its as simple as this" closed="true" %}}
+
 Update repos with:
 
 ```sh
@@ -41,6 +43,9 @@ And install packages with:
 sudo pacman -S firefox
 ```
 
+{{% /details %}}
+
+
 > More examples [here](https://gist.github.com/JAlcocerT/9865a045b2b86adb41fad71e4beddc06).
 
 ### Useful Repositories
@@ -53,9 +58,16 @@ But the beauty is that anyone can contribute and publish their Apps at:
 The AUR is a **community-driven repository** that contains a wide range of software packages not available in the official Arch Linux repositories. And we, as Garuda Linux users can also benefit from the AUR.
 
 
+{{% details title="More about AUR" closed="true" %}}
+
 When you visit these websites, you can use the search functionality to look for packages by name. 
 
 The AUR website is particularly useful for finding user-contributed packages that may not be in the official repositories. Once you find a package you want to install, you can note its name and use it with the pacman or yay command in the terminal, or search for it in the Pamac graphical package manager.
+
+{{% /details %}}
+
+<!-- https://itsfoss.com/rua-aur-tool/ -->
+
 
 Remember that when installing packages from the AUR, you should follow the AUR guidelines and consider using an **AUR helper like yay** for better package management and dependency handling.
 
@@ -73,10 +85,44 @@ pamac-manager
 
 ### Gaming on Arch
 
+
+{{% details title="How to Install Games in Garuda Linux" closed="true" %}}
+
+
+* With Steam Platform (Thanks to [Proton](https://jalcocert.github.io/Linux/docs/debian/gaming/#steam-play--proton)):
+
+```sh
+sudo nano /etc/pacman.conf
+#[multilib]
+#Include=/etc/pacman.d/mirrorlist
+sudo pacman -Sy
+
+sudo pacman -S steam
+yay -S protonup-qt
+```
+
+> Dont Forget to enable Steam Play as per [this guide](https://linuxiac.com/how-to-play-games-on-arch-linux-using-steam/)
+
+* You also can with Lutris:
+
+```sh
+sudo pacman -S lutris
+
+#example #https://lutris.net/games/ea-app/
+```
+
+{{% /details %}}
+<!-- 
 ```sh
 sudo pacman -Sy
 sudo pacman -S steam
-```
+``` -->
+
+{{% details title="How to use SteamOS with Docker in Garuda Linux" closed="true" %}}
+
+Thanks to the project: <https://docs.linuxserver.io/images/docker-steamos/>
+
+{{% /details %}}
 
 ---
 
@@ -197,3 +243,10 @@ Like Debian-based distributions:
 Fixed releases prioritize stability and ease of maintenance but might not have the latest features as soon as they're released.
 
 {{% /details %}}
+
+
+### How to Customize Garuda
+
+Garuda is an impressive looking distro out of the box
+
+* You can get their Art-Work from [this gitlab repo](https://gitlab.com/garuda-linux/themes-and-settings/artwork/garuda-wallpapers/-/blob/master/src/garuda-wallpapers/Dr460nized%20Honeycomb.png?ref_type=heads)

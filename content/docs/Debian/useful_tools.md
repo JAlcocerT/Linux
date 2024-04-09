@@ -68,6 +68,8 @@ sudo apt-get install htop
 #htop
 ```
 
+---
+
 ### Network Monitor
 
 #### Net Tools
@@ -128,37 +130,47 @@ resolvectl status #see which one you want to change, ex: enp2s0
 
 ### Crontab Tasks
 
-Open crontab:
+Make sure to install and Open crontab:
 
 
 ```sh
+# apt install cron
+# systemctl start cron 
+# systemctl status cron
+
 crontab -e
 ```
+
 Update it every midnight and every restart:
 
 
 ```sh
-0 0 * * * sudo apt update && sudo apt upgrade
-@reboot sudo apt update && sudo apt upgrade
+0 0 * * * #sudo apt update && sudo apt upgrade
+@reboot #sudo apt update && sudo apt upgrade
 ```
+
+> You can create different [schedule expressions](https://crontab.guru/#0_22_*_*_1-5)
 
 If your script isn’t executing, check the system log for cron events: grep cron /var/log/syslog
 
-If you’d wish to view your scheduled tasks without editing you can use the command:
-
+If you’d wish to **view your scheduled tasks** without editing you can use:
 
 ```sh
-crontab -l 
+crontab -l
+#crontab -u particularusername -l
 ```
 
-### Example - Install GIT and sync your repositories
+> [What happens](https://www.baeldung.com/linux/crontab-scheduled-jobs-computer-shutdown) with CronTab when PC Shutdown? 
+
+{{% details title="Example - Install GIT and sync a Github Repository" closed="true" %}}
+
 
 ```sh
 sudo apt install git &&
- git clone https://github.com/jalcocert/RPi.git &&
- cd RPi &&
- git pull #to make sure its up to date (a cron task could be scheduled)
- ```
+git clone https://github.com/jalcocert/RPi.git &&
+cd RPi &&
+git pull #to make sure its up to date (a cron task could be scheduled)
+```
 
 If you want to add a cron task for this, simply edit, as explained:
 
@@ -168,7 +180,63 @@ If you want to add a cron task for this, simply edit, as explained:
 @reboot cd RPi && git pull
 ```
 
-> [What happens](https://www.baeldung.com/linux/crontab-scheduled-jobs-computer-shutdown) with CronTab when PC Shutdown? 
+{{% /details %}}
+
+{{% details title="Example - Sync all your [Gitea Repositories](https://fossengineer.com/selfhosting-Gitea-docker/) when PC Turn on" closed="true" %}}
+
+Now your imagination is the limit.
+
+Let's [create a script](https://github.com/JAlcocerT/Linux/blob/main/Z_Linux_Installations_101/Cron_Examples/) that when your PC is booting, it will sync a given list of repositories from your Gitea instance.
+
+```sh
+nano git_sync.sh
+```
+
+If you want to add a cron task for this, simply edit, as explained:
+
+Make it executable:
+
+```sh
+chmod +x /home/jalcocert/Desktop/GIT_SYNC/git_sync.sh
+```
+
+```sh
+#@reboot /home/jalcocert/Desktop/GIT_SYNC/git_sync.sh >> /home/jalcocert/Desktop/GIT_SYNC/git_sync.log 2>&1
+@reboot /home/jalcocert/Desktop/GIT_SYNC/git_sync_v2.sh http://192.168.3.200:3033/fossengineer/FOSSENGINEER FOSSENGINEER http://192.168.3.200:3033/fossengineer/Py_Stocks Py_Stocks >> /home/jalcocert/Desktop/GIT_SYNC/git_sync_v2.log 2>&1
+
+#crontab -l #verify its added
+```
+
+{{% /details %}}
+
+{{% details title="How to Manage Cron Tasks with UI" closed="true" %}}
+
+With Zeit - Let's add the PPA and install it in Ubuntu:
+
+```sh
+sudo add-apt-repository ppa:blaze/main
+sudo apt update
+sudo apt install zeit
+#zeit #UI is ready!
+```
+
+You can also manage Cron tasks with UI's thanks to projects like: [cronicle](https://cronicle.net/), [nodered](https://jalcocert.github.io/RPi/posts/rpi-mqtt/#node-red), n8n...
+
+{{% /details %}}
+
+{{% details title="CronTasks Status with [UptimeKuma](https://fossengineer.com/selfhosting-uptime-Kuma-docker/)" closed="true" %}}
+
+With the Passive Monitor - Push:
+
+Together with [this python script](https://github.com/JAlcocerT/Linux/blob/main/Z_Linux_Installations_101/Cron_Examples/git_sync_uptimekuma.py) and the crontab:
+
+```sh
+@reboot /home/jalcocert/Desktop/GIT_SYNC/git_sync_uptimekuma.py
+```
+
+{{% /details %}}
+
+
 
 ### Create users
 
@@ -270,6 +338,9 @@ Option 2: Another option would be to set a cron task with:
 
 {{% /details %}}
 
+---
+
+## Power Management
 
 ### How to lower CPU consumption?
 
@@ -346,11 +417,256 @@ To lower CPU power consumption on an Ubuntu system, you can install and configur
 * https://www.reddit.com/r/CommercialAV/comments/xcfgyr/is_wakeonlan_still_your_goto_or_are_there_better/
 * https://www.reddit.com/r/sysadmin/comments/s3uv8y/wake_on_lan_wol_for_dummies/
 
+---
+
+## Networking
+
+### Network Monitor
+
+#### Net Tools
+
+```sh
+sudo apt install net-tools -y
+```
+
+Get your public ip:
+
+```sh
+curl ifconfig.me
+```
+
+Get your local ip:
+
+```sh
+ip address
+#ip a
+```
+
+#### Testing DNS
+
+* What it is my DNS on Linux?
+
+```sh
+resolvectl status
+```
+
+* What it is the DNS of a particular Network Interface:
+
+```sh
+ifconfig
+resolvectl dns wlp0s20f3
+
+#change it with
+#resolvectl dns wlp0s20f3 9.9.9.9 149.112.112.112
+```
+
+* And now, lets test a DNS:
+
+```sh
+sudo apt install dnsutils
+
+#example
+#nslookup google.com
+#ping google.com
+```
+
+Worth to have a look: https://weberblog.net/benchmarking-dns-namebench-dnseval/
+
+
+```sh
+cat /etc/resolv.conf
+```
+
+You can see the DNS of each Network in your PC with:
+
+```sh
+resolvectl status #see which one you want to change, ex: enp2s0
+#resolvectl dns enp2s0 9.9.9.9 149.112.112.112
+#resolvectl status enp2s0
+```
+
+> [Quad9](https://quad9.net/service/service-addresses-and-features/) is a good start point
+
+
+* DNS Benchmark with namebench:
+
+```sh
+sudo snap install namebench-snap
+```
+
+
+
 ### How to Test the network card?
 
 ```sh
 iperf3 -c 192.168.3.200
 ```
+
+
+{{% details title="How to Install & use TMUX" closed="true" %}}
+
+Install TMUX with:
+
+```sh
+apt install tmux
+#tmux #CTRL+B CTRL+D to detacht and CTRL+A to attach again
+```
+
+https://tmuxcheatsheet.com/
+
+{{% /details %}}
+
+
+{{% details title="Cleaning the System with UI: clean cache, monitor processes, snap packages installed, apt repositories.." closed="true" %}}
+
+```sh
+sudo add-apt-repository ppa:oguzhaninan/stacer
+sudo apt-get update
+sudo apt-get install stacer
+#stacer
+```
+https://tmuxcheatsheet.com/
+
+{{% /details %}}
+
+
+
+---
+
+## FAQ
+
+### Must know CLI's
+
+{{% details title="What's taking that much disk space?" closed="true" %}}
+
+```sh
+du -h --max-depth=1 ~/ | sort -rh
+
+#sudo apt-get install ncdu
+#ncdu /
+```
+
+{{% /details %}}
+
+
+* For Power Management:
+
+{{% details title="How to turn off" closed="true" %}}
+
+```sh
+systemctl suspend
+```
+
+{{% /details %}}
+
+
+* For Networking:
+
+{{% details title="How to know my local IP?" closed="true" %}}
+
+```sh
+hostname -I
+```
+
+{{% /details %}}
+
+
+
+{{% details title="What if I need to add my IPv6 address too?" closed="true" %}}
+
+You can check your raspberry IPV6 with:
+
+```sh
+ifconfig
+```
+{{% /details %}}
+
+
+
+{{% details title="How to get UID and GUI" closed="true" %}}
+
+```sh
+id pi #id <your username>
+```
+
+{{% /details %}}
+
+
+### How to use mac in Linux
+
+{{% details title="Install Sosumi" closed="true" %}}
+
+
+```sh
+#https://snapcraft.io/install/sosumi/ubuntu
+sudo snap install sosumi
+
+#CTRL+ALT+G #to get out of the VM
+
+
+#sudo snap remove sosumi
+```
+
+> Interested in [VMs? Check this out](https://jalcocert.github.io/Linux/docs/debian/virtualization/#how-to-virtualize).
+
+
+{{% /details %}}
+
+
+### How to Clone a SSD?
+
+{{% details title="Clone your drives with Clonezilla" closed="true" %}}
+
+Save and restores only used blocks in a hard drive [with Clonezilla](https://github.com/stevenshiau/clonezilla) 
+
+```sh
+apt update
+apt install clonezilla
+```
+
+You can also download the ISO, boot clonezilla from usb and select: [device to device](https://www.youtube.com/watch?v=34MT6frNp5w) 
+
+Be carefull with the options you choose (source device, destination...)
+
+{{% /details %}}
+
+### How to Benchmark Linux
+
+* Phoronix Test Suite
+* MemTest
+* prime95
+
+{{% details title="SSD Benchmark With [KDiskMark](https://github.com/JonMagon/KDiskMark)" closed="true" %}}
+
+Install it with [FlatPak](https://flathub.org/apps/io.github.jonmagon.kdiskmark):
+
+![KDiskMark Benchmark Example](/images/benchmarks/ssd-nvme-pcie.png)
+
+
+{{% /details %}}
+
+
+### Screen Share with Linux
+
+{{% details title="With [RustDesk](https://github.com/rustdesk/rustdesk/releases)" closed="true" %}}
+
+Install RustDesk with [Flatpak](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#flatpak):
+
+```sh
+sudo apt install flatpak
+flatpak --version
+#flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
+wget https://github.com/rustdesk/rustdesk/releases/download/1.2.3-1/rustdesk-1.2.3-x86_64.flatpak
+flatpak install rustdesk-1.2.3-x86_64.flatpak
+
+flatpak run com.rustdesk.RustDesk
+```
+{{% /details %}}
+
+* Remmina, Vinagre, TigerVNC
+* Guacamole with Docker
+
 
 
 {{% details title=" How to Create Custom Aliases" closed="true" %}}
@@ -378,110 +694,6 @@ source ~/.bashrc
 ```
 
 <!-- Personally, I have a file saved with all my alias ready right here, which i simply have to download and my favourite alias will be set in any server with this simple command:
-
-
-```
-tbd
-``` -->
+-->
 
 {{% /details %}}
-
-
-* {{% details title=" How to Install & use TMUX" closed="true" %}}
-
-Install TMUX with:
-
-```sh
-apt install tmux
-#tmux #CTRL+B CTRL+D to detacht and CTRL+A to attach again
-```
-
-https://tmuxcheatsheet.com/
-{{% /details %}}
-
-
-* Cleaning the System with UI: clean cache, monitor processes, snap packages installed, apt repositories...
-
-```sh
-sudo add-apt-repository ppa:oguzhaninan/stacer
-sudo apt-get update
-sudo apt-get install stacer
-#stacer
-```
-
----
-
-## FAQ
-
-### Must know CLI
-
-```sh
-systemctl suspend
-```
-
-### Mac in Linux?
-
-```sh
-#https://snapcraft.io/install/sosumi/ubuntu
-sudo snap install sosumi
-
-#CTRL+ALT+G #to get out of the VM
-
-
-#sudo snap remove sosumi
-```
-
-> Interested in [VMs? Check this out](https://jalcocert.github.io/Linux/docs/debian/virtualization/#how-to-virtualize).
-
-### What's taking that much disk space?
-
-```sh
-du -h --max-depth=1 ~/ | sort -rh
-
-#sudo apt-get install ncdu
-#ncdu /
-```
-
-### How to Clone a SSD?
-
-{{% details title="Clone your drives with Clonezilla" closed="true" %}}
-
-Save and restores only used blocks in a hard drive [with Clonezilla](https://github.com/stevenshiau/clonezilla) 
-
-```sh
-apt update
-apt install clonezilla
-```
-
-You can also download the ISO, boot clonezilla from usb and select: [device to device](https://www.youtube.com/watch?v=34MT6frNp5w) 
-
-Be carefull with the options you choose (source device, destination...)
-
-{{% /details %}}
-
-### How to Benchmark Linux
-
-* Phoronix Test Suite
-* MemTest
-* prime95
-
-
-### Screen Share with Linux
-
-* {{% details title="With [RustDesk](https://github.com/rustdesk/rustdesk/releases)" closed="true" %}}
-
-Install RustDesk with [Flatpak](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#flatpak):
-
-```sh
-sudo apt install flatpak
-flatpak --version
-#flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
-
-wget https://github.com/rustdesk/rustdesk/releases/download/1.2.3-1/rustdesk-1.2.3-x86_64.flatpak
-flatpak install rustdesk-1.2.3-x86_64.flatpak
-
-flatpak run com.rustdesk.RustDesk
-```
-{{% /details %}}
-* Remmina, Vinagre, TigerVNC
-* Guacamole with Docker

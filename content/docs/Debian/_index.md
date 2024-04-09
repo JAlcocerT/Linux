@@ -9,11 +9,22 @@ sidebar:
 
 Debian is a widely respected, stable Linux distribution known for its reliability, **extensive software repository**, and strong commitment to free and open-source software principles.
 
-Debian provides users with a robust and well-maintained ecosystem of software packages, covering a wide range of applications and utilities. It offers multiple release branches, including the stable, testing, and unstable branches, allowing users to choose the level of stability and software freshness that suits their needs.
-
 Debian's **package management system, [APT](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#apt)** (Advanced Package Tool), simplifies software installation, upgrades, and maintenance. The distribution **emphasizes system stability** and security, making it a popular choice for servers and mission-critical environments.
 
-While Debian doesn't have the same "do-it-yourself" philosophy as [Arch Linux](https://jalcocert.github.io/Linux/docs/arch/), it provides a solid foundation for various use cases, including desktop computing, server hosting, and embedded systems. It's well-regarded for its community-driven development process and commitment to free software, making it a trusted choice for users who prioritize open-source principles and long-term support.
+> Here you have a [GIST with examples](https://gist.github.com/JAlcocerT/197667ec5ec0da53e78eb58c4253a73f) ♻️
+
+{{% details title="Get to Know! 🚀" closed="true" %}}
+
+* Debian provides users with a robust and well-maintained ecosystem of software packages, covering a wide range of applications and utilities. It offers multiple release branches, including the stable, testing, and unstable branches, allowing users to choose the level of stability and software freshness that suits their needs.
+
+* While Debian doesn't have the same "do-it-yourself" philosophy as [Arch Linux](https://jalcocert.github.io/Linux/docs/arch/), it provides a solid foundation for various use cases, including desktop computing, server hosting, and embedded systems. 
+
+
+{{% /details %}}
+
+
+
+> It's well-regarded for its community-driven development process and commitment to free software, making it a trusted choice for users who **prioritize open-source principles and long-term support**.
 
   <!-- {{< hextra/feature-card
     title="Get Ubuntu"
@@ -45,7 +56,6 @@ While Debian doesn't have the same "do-it-yourself" philosophy as [Arch Linux](h
 
 
 
-
 ## Managing Packages in Debian
 
 You might be wondering, where do I start to install my favourite Apps in Debian (most likely, in Ubuntu)?
@@ -54,7 +64,7 @@ You might be wondering, where do I start to install my favourite Apps in Debian 
 
 You can search for available Packages at: <https://tracker.debian.org/>  - (For example: <https://tracker.debian.org/pkg/7zip>)
 
-{{% details title="Check HOW" closed="true" %}}
+{{% details title="Check HOW 🔥" closed="true" %}}
 
 APT (Advanced Package Tool) is a package management system used in Debian-based Linux distributions, including Debian itself, Ubuntu, and many others. It simplifies the process of installing, updating, and managing software packages on your system. Here are some common APT commands and tasks:
 
@@ -112,15 +122,16 @@ These are some of the basic APT commands you can use to manage software packages
 
 ### Other Ways to Manage Packages with Debian
 
+* With .deb files
+* With tar files
 * [Snap](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#snap)
 * [Flatpak](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#flatpak)
-
 * [Nix](https://jalcocert.github.io/Linux/docs/nix/)
 
 * The already mentioned - [APT](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#apt)
    * Or use it with [NALA](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#nala)
 
-> A [Gist](https://gist.github.com/JAlcocerT/197667ec5ec0da53e78eb58c4253a73f) with useful installations for Debian
+> A [Gist](https://gist.github.com/JAlcocerT/197667ec5ec0da53e78eb58c4253a73f) with useful installations for Debian ♻️
 
 ### How to Install HomeBrew in Linux
 
