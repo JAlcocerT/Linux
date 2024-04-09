@@ -4,6 +4,9 @@ type: docs
 prev: docs/Debian/
 ---
 
+
+## How to Customize Ubuntu GNOME
+
 We all want to make our Desktop look nice and confortable for our use.
 
 Lets see how to customize your Ubuntu Desktop with [Conky](https://github.com/brndnmtthws/conky).
@@ -100,3 +103,8 @@ sudo apt install conky p7zip imagemagick rsync
 ## add Graffias to ~/.conky 
 #modify the city in /.config/conky/Graffias/scripts/weather.sh
 ```
+
+### How to tweak KDE Plasma
+
+* Install Kvantum Manager
+* Download KDE Themes from: https://store.kde.org/browse?cat=123&ord=latest

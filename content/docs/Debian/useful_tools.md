@@ -107,7 +107,8 @@ Worth to have a look: https://weberblog.net/benchmarking-dns-namebench-dnseval/
 
 
 ```sh
-cat /etc/resolv.conf
+#cat /etc/resolv.conf
+systemd-resolve --status | grep "DNS Servers"
 ```
 
 You can see the DNS of each Network in your PC with:
