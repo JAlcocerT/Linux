@@ -108,3 +108,12 @@ sudo apt install conky p7zip imagemagick rsync
 
 * Install Kvantum Manager
 * Download KDE Themes from: https://store.kde.org/browse?cat=123&ord=latest
+
+* Inspiration:
+  * https://www.youtube.com/watch?v=NkmFS3u4sBA
+  * https://www.youtube.com/watch?v=sTAE76k8x3g
+
+
+#### GTK Themes
+
+GTK themes are a way to customize the appearance of applications that use the GTK toolkit. GTK (GIMP Toolkit) is a widely used open-source toolkit for creating graphical user interfaces. It's especially popular in the Linux world, where it's used by many desktop environments and applications, such as GNOME, XFCE, and others.
