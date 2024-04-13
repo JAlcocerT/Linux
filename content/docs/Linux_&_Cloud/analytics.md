@@ -151,7 +151,7 @@ https://github.com/bram2w/baserow
 * IDE's:
     * Zed - https://zed.dev/download
     * Rivet - https://github.com/Ironclad/rivet/releases - Integrate it with Ollama/Claude/GPT4...
-
+    * cursor.sh - use it with your own OpenAI/Anthropic/Azure keys
 
 
 ```sh
