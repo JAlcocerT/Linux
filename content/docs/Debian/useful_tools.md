@@ -699,3 +699,43 @@ source ~/.bashrc
 -->
 
 {{% /details %}}
+
+
+
+
+{{% details title=" How to recognize and mount usb ex-fat" closed="true" %}}
+
+
+
+```sh
+#sudo apt-get install exfat-fuse exfat-utils
+sudo apt install exfatprogs
+
+sudo mkdir /mnt/usb
+sudo mount /dev/sda1 /mnt/usb #lsblk will tell you which name it has sda1/2....
+```
+
+{{% /details %}}
+
+
+{{% details title=" A better Linux Terminal - Fish vs Tabby" closed="true" %}}
+
+Have a look to [Fish Shell](https://github.com/fish-shell/fish-shell):
+
+```sh
+sudo apt install fish
+#fish -v
+
+fish #use it
+#chsh -s $(which fish) #make it default
+```
+
+Or [Tabby](https://github.com/Eugeny/tabby):
+
+```sh
+wget https://github.com/Eugeny/tabby/releases/download/v1.0.205/tabby-1.0.205-linux-x64.deb
+sudo dpkg -i tabby-1.0.205-linux-x64.deb
+sudo apt-get install -f
+```
+
+{{% /details %}}
