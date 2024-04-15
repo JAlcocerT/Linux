@@ -167,6 +167,8 @@ https://dev.to/dotnetdreamer/using-android-phone-as-a-development-machine-3f39
 
 {{% /details %}} 
 
+You can also have a look to [CalyxOS](https://calyxos.org/install/)
+
 {{% details title="Private Android with GrapheneOS" closed="true" %}}
 
 > Google Pixels Only - https://grapheneos.org/releases

@@ -62,10 +62,14 @@ flatpak install flathub io.missioncenter.MissionCenter
 
 #### System Monitor
 
+With [htop](https://github.com/htop-dev/htop) or [btop](https://github.com/aristocratos/btop):
+
 ```sh
 sudo apt-get install htop
-
 #htop
+
+sudo snap install btop
+#btop
 ```
 
 ---
@@ -308,6 +312,8 @@ Check what is mounted and where with:
 
 ```sh
 df -h
+#sudo snap install dust #to see what takes most space
+
 ```
 
 lets add the automount entry in:
@@ -382,11 +388,11 @@ To lower CPU power consumption on an Ubuntu system, you can install and configur
 3. **Powertop**: Powertop is a tool developed by Intel that shows you the power consumption of your device and suggests optimizations to reduce power usage.
 
    - Install Powertop with:
-     ```
+     ```sh
      sudo apt install powertop
      ```
    - To see the current power usage and suggestions, run:
-     ```
+     ```sh
      sudo powertop
      ```
    - Powertop can also automatically apply its optimization suggestions at startup by creating a service or script that runs `powertop --auto-tune`.
