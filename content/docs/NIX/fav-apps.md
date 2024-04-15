@@ -189,7 +189,7 @@ nix-env -iA nixpkgs.organicmaps
 nix-env -iA nixpkgs.rpi-imager
 ```
 
-* Use Ventoy to have MultiBoot USB Drive Tool:
+* Use [Ventoy](https://github.com/ventoy/Ventoy) to have MultiBoot USB Drive Tool:
 
 ```sh
 wget https://github.com/ventoy/Ventoy/releases/download/v1.0.97/ventoy-1.0.97-linux.tar.gz
@@ -202,7 +202,7 @@ sudo sh VentoyWeb.sh
 
 > Access Ventoy at: `localhost:24680`
 
-* Create a Windows ISO:
+* Create a Windows ISO with [WoeUSB](https://github.com/WoeUSB/WoeUSB)
 
 ```sh
 sudo apt install git p7zip-full python3-pip python3-wxgtk4.0 grub2-common grub-pc-bin
