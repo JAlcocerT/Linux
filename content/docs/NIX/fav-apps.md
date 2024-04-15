@@ -170,7 +170,7 @@ This will install a client for Matrix. You can have own server, checkout the [**
 {{< /callout >}}
 
 
-{{% details title="Others" closed="true" %}}
+{{% details title="Offline Maps" closed="true" %}}
 
 * For offline explorers:
 
@@ -178,10 +178,35 @@ This will install a client for Matrix. You can have own server, checkout the [**
 nix-env -iA nixpkgs.organicmaps
 ```
 
-* For tinkerers:
+
+{{% /details %}}
+
+{{% details title="How to create bootable USB's" closed="true" %}}
+
+* Create a bootable usb with your favourite Linux:
 
 ```sh
 nix-env -iA nixpkgs.rpi-imager
+```
+
+* Use Ventoy to have MultiBoot USB Drive Tool:
+
+```sh
+wget https://github.com/ventoy/Ventoy/releases/download/v1.0.97/ventoy-1.0.97-linux.tar.gz
+
+tar xvf ventoy-1.0.97-linux.tar.gz
+cd ventoy
+
+sudo sh VentoyWeb.sh
+```
+
+> Access Ventoy at: `localhost:24680`
+
+* Create a Windows ISO:
+
+```sh
+sudo apt install git p7zip-full python3-pip python3-wxgtk4.0 grub2-common grub-pc-bin
+sudo pip3 install WoeUSB-ng
 ```
 
 {{% /details %}}
