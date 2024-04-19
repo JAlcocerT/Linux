@@ -51,7 +51,7 @@ install_docker() {
 }
 
 
-# Ask user if they want to install Docker
+# Ask user if they want to install Docker - https://jalcocert.github.io/RPi/posts/selfhosting-with-docker/#install-docker
 echo "Do you want to install Docker on your system? (yes/no)"
 read install_docker_answer
 case $install_docker_answer in
@@ -69,12 +69,15 @@ esac
 
 ######
 
-# Function to install Tailscale VPN
+# Function to install Tailscale VPN - https://jalcocert.github.io/Linux/docs/debian/linux_vpn_setup/#tailscale
 install_tailscale() {
     echo "Installing Tailscale VPN..."
     curl -fsSL https://tailscale.com/install.sh | sh
     sudo tailscale up
     echo "Tailscale VPN installed and activated."
+
+    ip_address=$(tailscale ip -4)
+    echo "The IP address assigned by Tailscale is: $ip_address"
 }
 
 

@@ -12,12 +12,13 @@ Lets install it with:
 
 
 ```sh
-sudo apt-get install apt-transport-https &&
-curl -fsSL https://pkgs.tailscale.com/stable/raspbian/buster.gpg | sudo apt-key add - &&
-curl -fsSL https://pkgs.tailscale.com/stable/raspbian/buster.list | sudo tee /etc/apt/sources.list.d/tailscale.list &&
-sudo apt-get update &&
-sudo apt-get install tailscale &&
-sudo tailscale up &&
+curl -fsSL https://tailscale.com/install.sh | sh
+# sudo apt-get install apt-transport-https &&
+# curl -fsSL https://pkgs.tailscale.com/stable/raspbian/buster.gpg | sudo apt-key add - &&
+# curl -fsSL https://pkgs.tailscale.com/stable/raspbian/buster.list | sudo tee /etc/apt/sources.list.d/tailscale.list &&
+# sudo apt-get update &&
+# sudo apt-get install tailscale &&
+sudo tailscale up
 tailscale ip -4 #get the ip 
 
 #sudo tailscale logout
@@ -47,10 +48,10 @@ As third Party VPN provider, Mullvad worked great for me.
 
 ### Mullvad ❤️ Tailscale 
 
-<https://tailscale.com/mullvad>
+* <https://tailscale.com/mullvad>
 
-<https://tailscale.com/kb/1258/mullvad-exit-nodes>
-<https://mullvad.net/en/blog/2023/9/7/tailscale-has-partnered-with-mullvad>
+* <https://tailscale.com/kb/1258/mullvad-exit-nodes>
+* <https://mullvad.net/en/blog/2023/9/7/tailscale-has-partnered-with-mullvad>
 
 ### DNS What?
 

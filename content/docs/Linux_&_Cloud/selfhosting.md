@@ -15,7 +15,7 @@ But you can even do it in the very same computer you are reading this.
 2. Get the Docker-Compose ready
 3. Deploy!
 
-{{% details title="Follow this CLI's! 🚀" closed="true" %}}
+{{% details title="Follow these CLI's! 🚀" closed="true" %}}
 
 ```sh
 sudo apt update
@@ -43,7 +43,15 @@ And the ports used:
 sudo lsof -i -P -n
 ```
 
-Follow the steps of this [SelfHosting-101 script](https://github.com/JAlcocerT/Linux/blob/main/Z_Linux_Installations_101/Selfhosting_1-1.sh).
+Follow the steps of this [SelfHosting-101 script](https://github.com/JAlcocerT/Linux/blob/main/Z_Linux_Installations_101/Selfhosting_101.sh):
+
+```sh
+curl -O https://raw.githubusercontent.com/JAlcocerT/Linux/main/Z_Linux_Installations_101/Selfhosting_101.sh
+#nano Selfhosting_101.sh #MAKE SURE YOU UNDERSTAND WHAT YOU WILL BE RUNNING
+
+chmod +x Selfhosting_101.sh
+sudo ./Selfhosting_101.sh
+```
 
 {{% /details %}}
 
