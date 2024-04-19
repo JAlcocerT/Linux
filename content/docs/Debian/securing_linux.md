@@ -98,11 +98,13 @@ You can get regular internet speed tests with the help of [OpenSpeedTest Tracker
 
 ### How to expose services safely to the Internet
 
-A great starting point is to [get Cloudflare tunnels running in Docker](https://fossengineer.com/selfhosting-cloudflared-tunnel-docker/).
+* A great starting point is to [get Cloudflare tunnels running in Docker](https://fossengineer.com/selfhosting-cloudflared-tunnel-docker/).
 
 Then, you can connect any other Docker container to Cloudflare Tunnel Network and expose it to the internet, without your home Address being discovered.
 
-You might also want to try another approach. Setup [NGINX with Docker](https://fossengineer.com/selfhosting-nginx-proxy-manager-docker/) and just expose the Home Router / Cloud Provider ports for NGINX. For this approach to work at home, you will need to Port Forward. And the IP of the home/cloud would be expose.
+* You might also want to try another approach.
+
+Setup [NGINX with Docker](https://fossengineer.com/selfhosting-nginx-proxy-manager-docker/) and just expose the Home Router / Cloud Provider ports for NGINX. For this approach to work at home, you will need to Port Forward. And the IP of the home/cloud would be expose.
 
 ### How to have HTTPs with Local Services
 

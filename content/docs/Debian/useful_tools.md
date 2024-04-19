@@ -62,10 +62,14 @@ flatpak install flathub io.missioncenter.MissionCenter
 
 #### System Monitor
 
+With [htop](https://github.com/htop-dev/htop) or [btop](https://github.com/aristocratos/btop):
+
 ```sh
 sudo apt-get install htop
-
 #htop
+
+sudo snap install btop
+#btop
 ```
 
 ---
@@ -308,6 +312,8 @@ Check what is mounted and where with:
 
 ```sh
 df -h
+#sudo snap install dust #to see what takes most space
+
 ```
 
 lets add the automount entry in:
@@ -382,11 +388,11 @@ To lower CPU power consumption on an Ubuntu system, you can install and configur
 3. **Powertop**: Powertop is a tool developed by Intel that shows you the power consumption of your device and suggests optimizations to reduce power usage.
 
    - Install Powertop with:
-     ```
+     ```sh
      sudo apt install powertop
      ```
    - To see the current power usage and suggestions, run:
-     ```
+     ```sh
      sudo powertop
      ```
    - Powertop can also automatically apply its optimization suggestions at startup by creating a service or script that runs `powertop --auto-tune`.
@@ -697,5 +703,45 @@ source ~/.bashrc
 
 <!-- Personally, I have a file saved with all my alias ready right here, which i simply have to download and my favourite alias will be set in any server with this simple command:
 -->
+
+{{% /details %}}
+
+
+
+
+{{% details title=" How to recognize and mount usb ex-fat" closed="true" %}}
+
+
+
+```sh
+#sudo apt-get install exfat-fuse exfat-utils
+sudo apt install exfatprogs
+
+sudo mkdir /mnt/usb
+sudo mount /dev/sda1 /mnt/usb #lsblk will tell you which name it has sda1/2....
+```
+
+{{% /details %}}
+
+
+{{% details title=" A better Linux Terminal - Fish vs Tabby" closed="true" %}}
+
+Have a look to [Fish Shell](https://github.com/fish-shell/fish-shell):
+
+```sh
+sudo apt install fish
+#fish -v
+
+fish #use it
+#chsh -s $(which fish) #make it default
+```
+
+Or [Tabby](https://github.com/Eugeny/tabby):
+
+```sh
+wget https://github.com/Eugeny/tabby/releases/download/v1.0.205/tabby-1.0.205-linux-x64.deb
+sudo dpkg -i tabby-1.0.205-linux-x64.deb
+sudo apt-get install -f
+```
 
 {{% /details %}}

@@ -247,6 +247,7 @@ Fixed releases prioritize stability and ease of maintenance but might not have t
 
 ### How to Customize Garuda
 
-Garuda is an impressive looking distro out of the box
+Garuda is an impressive looking distro out of the box:
 
-* You can get their Art-Work from [this gitlab repo](https://gitlab.com/garuda-linux/themes-and-settings/artwork/garuda-wallpapers/-/blob/master/src/garuda-wallpapers/Dr460nized%20Honeycomb.png?ref_type=heads)
+* You can get their Art-Work of Garuda Dragonized from [this Gitlab repo](https://gitlab.com/garuda-linux/themes-and-settings/artwork/garuda-wallpapers/-/blob/master/src/garuda-wallpapers/Dr460nized%20Honeycomb.png?ref_type=heads)
+* And the base KDE Plasma Theme used is: Sweet KDE - https://store.kde.org/p/1294174 

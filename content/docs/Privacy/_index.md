@@ -23,6 +23,13 @@ You can try with [PiHole](https://fossengineer.com/selfhosting-PiHole-docker/)
 * Or try [Bind9](https://hub.docker.com/r/ubuntu/bind9#!)
 
 * [PortMaster](https://github.com/Safing/portmaster) also helps to change and visualize the network queries.
+* [Stacer](https://github.com/oguzhaninan/Stacer) - Optimize processes, check apt repositories, startup apps...
+
+```sh
+sudo add-apt-repository ppa:oguzhaninan/stacer -y
+sudo apt-get update
+sudo apt-get install stacer -y
+```
 
 Whats my current DNS?
 

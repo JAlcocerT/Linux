@@ -107,13 +107,34 @@ sudo apt install conky p7zip imagemagick rsync
 ### How to tweak KDE Plasma
 
 * Install Kvantum Manager
+
+```sh
+sudo apt install qt5-style-kvantum
+```
+
 * Download KDE Themes from: https://store.kde.org/browse?cat=123&ord=latest
 
 * Inspiration:
   * https://www.youtube.com/watch?v=NkmFS3u4sBA
   * https://www.youtube.com/watch?v=sTAE76k8x3g
+    * For example with: https://store.kde.org/p/1904859
 
+* If you want something similar to Garuda Linux, you can try with:
+  * [Sweet KDE](https://store.kde.org/p/1294174) Theme
+  * Latte-Dock
+
+```sh
+sudo apt install latte-dock
+```
 
 #### GTK Themes
 
 GTK themes are a way to customize the appearance of applications that use the GTK toolkit. GTK (GIMP Toolkit) is a widely used open-source toolkit for creating graphical user interfaces. It's especially popular in the Linux world, where it's used by many desktop environments and applications, such as GNOME, XFCE, and others.
+
+
+### Other Cool Desktop Environments
+
+Not everything is Gnome or KDE, you can also have a look to:
+
+* Deeping
+* Phanteon
