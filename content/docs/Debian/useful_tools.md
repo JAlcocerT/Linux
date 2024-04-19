@@ -70,6 +70,9 @@ sudo apt-get install htop
 
 sudo snap install btop
 #btop
+
+sudo snap install bashtop #https://github.com/aristocratos/bashtop
+#bashtop
 ```
 
 ---
