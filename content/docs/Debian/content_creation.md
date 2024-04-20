@@ -50,6 +50,12 @@ flatpak run org.kde.kdenlive
 #sudo snap install shotcut --classic
 ```
 
+Watch your videos with VLC:
+
+```sh
+flatpak install flathub org.videolan.VLC
+```
+
 <!-- {{% details title="Private Android with LineageOS" closed="true" %}}
 
 > SUpported devices list: <https://wiki.lineageos.org/devices/>
