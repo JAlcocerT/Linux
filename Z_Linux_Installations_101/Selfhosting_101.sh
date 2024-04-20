@@ -6,11 +6,19 @@ if [ "$(id -u)" != "0" ]; then
    exit 1
 fi
 
+
+echo "Adding automatic updates..."
+sudo apt install unattended-upgrades -y
+sudo dpkg-reconfigure -plow unattended-upgrades
+
+
+### BETTER DNS ###
+
 ### Changes the DNS for the active interface and shows the status before and after ###
 
 # Display initial DNS status
 echo "Initial DNS settings for the active interface:"
-interface=$(resolvectl status | grep -A 1 'Link 2' | awk -F '[()]' '/Link 2/{print $2}') ##enp2s0
+interface=$(resolvectl status | grep -A 1 'Link 2' | awk -F '[()]' '/Link 2/{print $2}') ##enp2s0 // ##wlx984827ec3e41
 resolvectl status $interface
 
 # Change DNS servers to Quad9
@@ -21,10 +29,11 @@ resolvectl dns $interface 9.9.9.9 149.112.112.112 ##https://www.quad9.net/
 echo "Updated DNS settings for interface $interface:"
 resolvectl status $interface
 
+echo "Confirming the Updated DNS settings for: $interface:"
+resolvectl status | grep 'DNS Servers'
 
 
-
-######
+### DOCKER SETUP ###
 
 
 
@@ -67,7 +76,7 @@ case $install_docker_answer in
         ;;
 esac
 
-######
+### TAILSCALE VPN ###
 
 # Function to install Tailscale VPN - https://jalcocert.github.io/Linux/docs/debian/linux_vpn_setup/#tailscale
 install_tailscale() {

@@ -124,6 +124,7 @@ sudo apt install qt5-style-kvantum
     * Add: Desktop Effects -> Wobbly Windows
     * COnfigure the windows bar - right click on it -> enter edit mode -> more options -> Visibility autohide
     * Go to desktop effects -> blur -> and make it lighter
+    * Right click on a task, like firefox -> More -> Configure icons only task manager -> behaviour -> Do not group
 
 * If you want something similar to Garuda Linux, you can try with:
   * [Sweet KDE](https://store.kde.org/p/1294174) Theme

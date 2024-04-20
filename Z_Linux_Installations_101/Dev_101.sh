@@ -26,8 +26,13 @@ if prompt_yes_no; then
     # User agreed, proceed with installations
     #flatpak install flathub com.vscodium.codium
     sudo snap install codium --classic
+    echo "Installing some vscodium extensions"
+    codium --install-extension unifiedjs.vscode-mdx
+    codium --install-extension astro-build.astro-vscode
+    codium --install-extension ms-python.python
 
-    flatpak install flathub org.spyder_ide.spyder
+
+    #flatpak install flathub org.spyder_ide.spyder
 
     flatpak install flathub io.gitlab.librewolf-community
     flatpak install flathub com.brave.Browser
