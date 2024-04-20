@@ -30,7 +30,8 @@ Probably the simplest will be KDEnlive. But here you have few options.
 https://www.youtube.com/watch?v=EHnAV6fObGI -->
 
 ```sh
-#sudo snap install blender --classic && snap install freecad && snap install openscad && snap install cura-slicer 
+sudo snap install blender --classic #https://github.com/blender/blender/archive/refs/tags/v4.1.1.tar.gz
+#snap install freecad && snap install openscad && snap install cura-slicer 
 
 sudo snap install shotcut -- classic && snap install photoscape  && snap install inkscape
 
@@ -39,6 +40,9 @@ sudo snap install shotcut -- classic && snap install photoscape  && snap install
 
 #Flameshot
 #kdenlive video editor
+flatpak install flathub org.kde.kdenlive
+flatpak run org.kde.kdenlive
+
 #openshot
 #sudo snap install shotcut --classic
 ```

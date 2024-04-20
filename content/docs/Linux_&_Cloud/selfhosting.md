@@ -12,7 +12,48 @@ You can do it with a Raspberry Pi, with and old laptop, in the cloud...
 But you can even do it in the very same computer you are reading this.
 
 1. Get Docker/Podman installed
-2. Get the Docker-COmpose ready
+2. Get the Docker-Compose ready
+3. Deploy!
+
+{{% details title="Follow these CLI's! 🚀" closed="true" %}}
+
+```sh
+sudo apt update
+sudo apt install openssh-server
+#systemctl status ssh
+
+sudo ufw allow ssh
+
+#ssh username@<local_minipc_server_ip>
+```
+
+Check processes with:
+
+```sh
+#systemctl status
+htop
+
+#systemctl list-units --type=service
+systemctl list-units --type=service --state=running
+```
+
+And the ports used:
+
+```sh
+sudo lsof -i -P -n
+```
+
+Follow the steps of this [SelfHosting-101 script](https://github.com/JAlcocerT/Linux/blob/main/Z_Linux_Installations_101/Selfhosting_101.sh):
+
+```sh
+curl -O https://raw.githubusercontent.com/JAlcocerT/Linux/main/Z_Linux_Installations_101/Selfhosting_101.sh
+#nano Selfhosting_101.sh #MAKE SURE YOU UNDERSTAND WHAT YOU WILL BE RUNNING
+
+chmod +x Selfhosting_101.sh
+sudo ./Selfhosting_101.sh
+```
+
+{{% /details %}}
 
 
 
@@ -146,6 +187,8 @@ Thanks to to [Tech-Practice](https://www.youtube.com/watch?v=HPO7fu7Vyw4&t=445s)
 
 * Only Office Server
 
+---
+
 ## Communication
 
 * Matrix Server: https://fossengineer.com/selfhosting-matrix-synapse-docker/
@@ -153,6 +196,8 @@ Thanks to to [Tech-Practice](https://www.youtube.com/watch?v=HPO7fu7Vyw4&t=445s)
 You can connect to Matrix with Thunderbird as well.
 
 * [Cabal](https://github.com/cabal-club/cabal-desktop)
+
+---
 
 ## Media
 
