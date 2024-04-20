@@ -35,6 +35,9 @@ sudo snap install blender --classic #https://github.com/blender/blender/archive/
 
 sudo snap install shotcut -- classic && snap install photoscape  && snap install inkscape
 
+#curl -o docker-compose.yaml https://raw.githubusercontent.com/penpot/penpot/main/docker/images/docker-compose.yaml
+#docker compose -p penpot -f docker-compose.yaml up -d
+#docker exec -ti penpot-penpot-backend-1 python3 ./manage.py create-profile
 #sudo snap install penpot-desktop
 
 

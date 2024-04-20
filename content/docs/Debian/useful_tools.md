@@ -277,6 +277,7 @@ Lets first check the storages connected to the machine and identify their curren
 
 ```sh
 sudo fdisk -l
+#lsblk
 ```
 
 With this information we can create an automount entry in fstab:

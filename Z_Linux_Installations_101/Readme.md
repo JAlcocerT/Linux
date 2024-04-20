@@ -2,9 +2,17 @@
 
 Trying Linux for the first time? This guide will get you and your system started with your favourite Apps.
 
-* Using sh Scripts: <https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/>
+---
 
-* Using Ansible: <https://jalcocert.github.io/Linux/docs/linux__cloud.md/ansible/>
+## Using sh Scripts:
+
+* <https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/>
+
+---
+
+## Using Ansible:
+
+* <https://jalcocert.github.io/Linux/docs/linux__cloud.md/ansible/>
 
 ```sh
 apt install ansible
