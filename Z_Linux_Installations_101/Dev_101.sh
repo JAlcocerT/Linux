@@ -53,4 +53,5 @@ fi
 
 
 
-
+echo "Other Utilities:"
+#flatpak install flathub io.missioncenter.MissionCenter
