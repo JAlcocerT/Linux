@@ -43,7 +43,11 @@ sudo snap install shotcut -- classic && snap install photoscape  && snap install
 #sudo snap install shotcut --classic
 ```
 
-<!-- 
+<!-- {{% details title="Private Android with LineageOS" closed="true" %}}
+
+> SUpported devices list: <https://wiki.lineageos.org/devices/>
+
+{{% /details %}} 
 https://gist.githubusercontent.com/JAlcocerT/197667ec5ec0da53e78eb58c4253a73f/raw/d1fe2b51e68fe35b4301c50979e10c1ac18fae9c/Z_design.sh -->
 
 
@@ -90,3 +94,15 @@ And shortly we will get the Plugin OpenVino ready in Linux which will bring AI t
 ```sh
 flatpak install flathub org.mixxx.Mixxx
 ```
+
+
+---
+
+## FAQ
+
+{{% details title="How to check for duplicate images - dupeGuru" closed="true" %}}
+
+```sh
+```
+
+{{% /details %}} 

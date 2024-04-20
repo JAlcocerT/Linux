@@ -32,7 +32,11 @@ apt install cpu-checker
 kvm-ok
 ```
 
-You might need to enable it in the BIOS.
+You might need to enable it in the BIOS. Enter to it with:
+
+```sh
+systemctl reboot --firmware-setup
+```
 
 ### Installing QEMU-KVM
 
