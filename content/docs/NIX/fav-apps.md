@@ -41,6 +41,8 @@ nix-shell -p thunderbird #flatpak install flathub org.mozilla.Thunderbird
 
 ```sh
 nix-shell -p librewolf #flatpak install flathub org.mozilla.firefox
+#flatpak install flathub io.gitlab.librewolf-community
+
 #https://flathub.org/apps/org.chromium.Chromium 
 #nix-shell -p mullvad-browser
 ```

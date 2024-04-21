@@ -109,6 +109,8 @@ sudo apt install conky p7zip imagemagick rsync
 * Install Kvantum Manager
 
 ```sh
+wget "https://gitlab.com/garuda-linux/themes-and-settings/artwork/garuda-wallpapers/-/raw/master/src/garuda-wallpapers/Dr460nized%20Honeycomb.png?ref_type=heads&inline=false" -O Dr460nized_Honeycomb.png #download garuda wallpaperd
+
 sudo apt install qt5-style-kvantum
 ```
 
@@ -117,7 +119,12 @@ sudo apt install qt5-style-kvantum
 * Inspiration:
   * https://www.youtube.com/watch?v=NkmFS3u4sBA
   * https://www.youtube.com/watch?v=sTAE76k8x3g
-    * For example with: https://store.kde.org/p/1904859
+    * For example with Utterly Nord 5 Theme: https://store.kde.org/p/1904859
+    * Remember to 
+    * Add: Desktop Effects -> Wobbly Windows
+    * COnfigure the windows bar - right click on it -> enter edit mode -> more options -> Visibility autohide
+    * Go to desktop effects -> blur -> and make it lighter
+    * Right click on a task, like firefox -> More -> Configure icons only task manager -> behaviour -> Do not group
 
 * If you want something similar to Garuda Linux, you can try with:
   * [Sweet KDE](https://store.kde.org/p/1294174) Theme

@@ -59,6 +59,9 @@ graph TD;
   ```sh
   sudo snap install firefox
   flatpak install flathub org.mozilla.firefox
+
+  #flatpak list
+  #flatpak uninstall org.mozilla.firefox
   ```
 
   Sounds reasonable, right? Well, this can be further leverage (if you want, check next tabs).

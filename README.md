@@ -48,7 +48,7 @@ Available programs to install from:
 * Browsers:
     * Brave :heavy_check_mark:
     * Librewolf :heavy_check_mark:
-    * Chrome
+    * Chromium 
     
 * Design
     * Blender :heavy_check_mark:
@@ -64,7 +64,6 @@ Available programs to install from:
     
 * Programming:
    * Octave :heavy_check_mark:
-   * VSCode
    * VSCodium :heavy_check_mark:
    * Flutter
    * Android Studio
@@ -84,8 +83,6 @@ Available programs to install from:
    * Syncthing  :heavy_check_mark:
    * Celeste :heavy_check_mark:
    * Timeshift :heavy_check_mark:
-   * Dropbox
-   * MegaSync
    * Synkron
    * Grsync
    
@@ -136,6 +133,22 @@ Yes, Android it is built on the Linux kernel - Many people use Linux and dont ev
 * The fantastic community on the internet from where I learn the foundations to put together all of this content.
 * [HUGO](https://github.com/gohugoio/hugo) the SSG that allowed me to generate this web
   * [HEXTRA](https://github.com/imfing/hextra)
+
+<details>
+  <summary>Clone me and Run me 👇</summary>
+  &nbsp;
+
+```sh
+git clone https://github.com/JAlcocerT/linux
+
+sudo snap install hugo
+#hugo version
+hugo server
+
+```
+
+</details>
+
 
 ## :loudspeaker: Ways to Contribute 
 

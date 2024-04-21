@@ -88,3 +88,12 @@ Nested virtualization is a more complex setup than GPU passthrough, but it can b
 ### How to Benchmark Gaming Performance
 
 * https://github.com/flightlessmango/MangoHud
+
+
+### Emulators on Linux
+
+```sh
+flatpak install flathub org.ryujinx.Ryujinx
+flatpak install flathub org.duckstation.DuckStation
+flatpak install flathub app.xemu.xemu
+```

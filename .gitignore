@@ -1,1 +1,5 @@
+# if you develope on windows and dont want to upload this one
 hugo.exe
+
+# no need to upload as github actions will generate it
+public/ 
