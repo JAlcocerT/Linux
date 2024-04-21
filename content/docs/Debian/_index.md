@@ -26,6 +26,14 @@ Debian's **package management system, [APT](https://jalcocert.github.io/Linux/do
 
 > It's well-regarded for its community-driven development process and commitment to free software, making it a trusted choice for users who **prioritize open-source principles and long-term support**.
 
+### My Favourite Debian *flavours*
+
+* K/Ubuntu - KDE or GNOME Desktop Environment
+* ZorinOS - KDE
+* Raspbian - if you are into Raspberries!
+
+---
+
   <!-- {{< hextra/feature-card
     title="Get Ubuntu"
     subtitle="The most popular OS to start your Linux Journey."
@@ -120,16 +128,17 @@ These are some of the basic APT commands you can use to manage software packages
 
 {{% /details %}}
 
-### Other Ways to Manage Packages with Debian
+### Ways to Manage Packages with Debian
 
-* With .deb files
-* With tar files
-* [Snap](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#snap)
-* [Flatpak](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#flatpak)
-* [Nix](https://jalcocert.github.io/Linux/docs/nix/)
+1. With .deb files
+2. With tar files
+3. [Snap](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#snap)
+4. [Flatpak](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#flatpak)
+5. [Nix](https://jalcocert.github.io/Linux/docs/nix/)
 
-* The already mentioned - [APT](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#apt)
-   * Or use it with [NALA](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#nala)
+6. The already mentioned - [APT](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#apt)
+7. Or use APT with [NALA](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#nala)
+8. AppImages
 
 > A [Gist](https://gist.github.com/JAlcocerT/197667ec5ec0da53e78eb58c4253a73f) with useful installations for Debian ♻️
 

@@ -182,6 +182,24 @@ You can also have a look to [CalyxOS](https://calyxos.org/install/)
 
 {{% /details %}}
 
+{{% details title="How to remove undesired Android Apps - Hail Project" closed="true" %}}
+
+https://github.com/aistra0528/Hail
+
+> Disable / Hide / Suspend / Uninstall Android apps without root.
+
+{{% /details %}}
+
+
+{{% details title="How to get Android Updates Directly from the source with Obtanium" closed="true" %}}
+
+
+https://github.com/ImranR98/Obtainium
+
+{{% /details %}}
+
+
+
 <!-- 
 https://www.youtube.com/watch?v=qxAnWYUvDxg
 https://www.youtube.com/watch?v=KBWlB9f_SAo

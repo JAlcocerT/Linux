@@ -4,6 +4,20 @@ type: docs
 prev: docs/Debian/
 ---
 
+First things first - Remember to have your system packages & Kernel updated.
+
+```sh
+sudo apt update && apt upgrade
+hostnamectl
+```
+
+{{% details title="How to get latest ZorinOS Version" closed="true" %}}
+
+```sh
+sudo apt install zorin-os-updater
+```
+
+{{% /details %}}
 
 ### Setup fail2ban
 
