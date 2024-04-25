@@ -53,6 +53,14 @@ chmod +x Selfhosting_101.sh
 sudo ./Selfhosting_101.sh
 ```
 
+> Remember to go to your Portainer instance and setup the user/pass: `localhost:9000`
+
+If you forget, you will need to restart Portainer:
+
+```sh
+docker restart portainer
+```
+
 {{% /details %}}
 
 
