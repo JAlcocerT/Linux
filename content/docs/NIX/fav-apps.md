@@ -236,7 +236,7 @@ Or try with Fdisk:
 
 {{% /details %}}
 
-{{% details title="Persistent Mounting" closed="true" %}}
+{{% details title="Persistent Mounting - Mount USB on Boot" closed="true" %}}
 
 To mount always at the same place when reboot:
 
@@ -250,6 +250,8 @@ sudo blkid /dev/nvme0n1p1 #provides uuid
 sudo nano /etc/fstab #add the line below
 UUID=YOUR-UUID-HERE /media/jalcocert/BackUp exfat defaults,uid=1000,gid=1000,fmask=0022,dmask=0022 0 0
 
+# sudo mkdir -p /media/jalcocert/BackUp
+# sudo chmod 777 /media/jalcocert/BackUp
 
 ```
 {{% /details %}}
