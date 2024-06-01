@@ -253,6 +253,10 @@ UUID=YOUR-UUID-HERE /media/jalcocert/BackUp exfat defaults,uid=1000,gid=1000,fma
 # sudo mkdir -p /media/jalcocert/BackUp
 # sudo chmod 777 /media/jalcocert/BackUp
 
+#sudo apt install exfat-fuse
+#sudo apt install fuse
+#sudo mount.exfat-fuse /dev/sda1 /media/sda1_BackUp
+
 ```
 {{% /details %}}
 
