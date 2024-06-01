@@ -213,6 +213,29 @@ sudo pip3 install WoeUSB-ng
 
 {{% /details %}}
 
+{{% details title="What If I need to Format a Drive in Linux?" closed="true" %}}
+
+Use GParted:
+
+```sh
+apt install gparted
+```
+
+Or try with Fdisk:
+
+    Open a terminal.
+    Run the command sudo fdisk -l to list all available hard drives and partitions. Identify the device name of the hard drive you want to format (e.g., /dev/sdb).
+    Run the command sudo fdisk /dev/sdX (replace X with the appropriate letter for your hard drive).
+    Use the m command to display the help menu and view available options.
+    Use the d command to delete existing partitions (if any).
+    Use the n command to create a new partition.
+    Use the t command to set the partition type.
+    Use the w command to write changes to the disk and exit.
+
+{{% /details %}}
+
+---
+
 
 ## FAQ
 
