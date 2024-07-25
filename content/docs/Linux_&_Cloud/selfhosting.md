@@ -63,6 +63,13 @@ docker restart portainer
 
 {{% /details %}}
 
+```mermaid
+graph LR
+    A[Connect via SSH] -- Open f/w if needed --> 
+    C(Install Docker/Podman)
+    C --> D(Sping your fav Services)
+```
+
 
 
 ## Analytical Tools

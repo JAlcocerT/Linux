@@ -89,7 +89,7 @@ params:
       dark: images/logo.svg
       width: 40
       height: 20
-      link: /
+      link: /Linux #base for github pages
     width: wide    
 
   footer:

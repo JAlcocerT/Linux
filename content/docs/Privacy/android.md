@@ -204,3 +204,17 @@ https://github.com/ImranR98/Obtainium
 https://www.youtube.com/watch?v=qxAnWYUvDxg
 https://www.youtube.com/watch?v=KBWlB9f_SAo
  -->
+
+
+### My Fav Android Apps
+
+* Syncthyng
+* SatStat
+* Sensor Server
+* PhyPhox
+* RacheChrono
+* Tello FPV
+* Immich
+* F-Droid
+Audio recorder, ultrasonic, readdrops, fluffy chat, organic maps, nophonespam
+2fas auth, bitwarden, signal, rvnc viewer, element, tailscale, mullvad vpn
