@@ -213,6 +213,56 @@ sudo pip3 install WoeUSB-ng
 
 {{% /details %}}
 
+{{% details title="What If I need to Format a Drive in Linux?" closed="true" %}}
+
+Use GParted:
+
+```sh
+apt install gparted
+```
+
+Or try with Fdisk:
+
+    Open a terminal.
+    Run the command `sudo fdisk -l` to list all available hard drives and partitions. Identify the device name of the hard drive you want to format (e.g., /dev/sdb) or try: lsblk -d -o NAME,SIZE,MODEL
+    lsblk /dev/sdb
+    See what mounted with mount | grep sdb
+    Run the command sudo fdisk /dev/sdX (replace X with the appropriate letter for your hard drive).
+    Use the m command to display the help menu and view available options.
+    Use the d command to delete existing partitions (if any).
+    Use the n command to create a new partition.
+    Use the t command to set the partition type.
+    Use the w command to write changes to the disk and exit.
+
+{{% /details %}}
+
+{{% details title="Persistent Mounting - Mount USB on Boot" closed="true" %}}
+
+To mount always at the same place when reboot:
+
+```sh
+lsblk -d -o NAME,SIZE,MODEL
+lsblk /dev/nvme0n1
+mount | grep nvme0n1p1
+
+sudo blkid /dev/nvme0n1p1 #provides uuid
+
+sudo nano /etc/fstab #add the line below
+UUID=YOUR-UUID-HERE /media/jalcocert/BackUp exfat defaults,uid=1000,gid=1000,fmask=0022,dmask=0022 0 0
+
+# sudo mkdir -p /media/jalcocert/BackUp
+# sudo chmod 777 /media/jalcocert/BackUp
+
+#sudo apt install exfat-fuse
+#sudo apt install fuse
+#sudo mount.exfat-fuse /dev/sda1 /media/sda1_BackUp
+
+```
+{{% /details %}}
+
+
+---
+
 
 ## FAQ
 
