@@ -19,7 +19,7 @@ az vm create \
 
 ##### Configure NGINX
 
-```
+```SH
 az vm extension set \
   --resource-group [sandbox resource group name] \
   --vm-name my-vm \
@@ -33,7 +33,7 @@ az vm extension set \
   
   ##### Access the web server
   
-  ```
+  ```SH
   IPADDRESS="$(az vm list-ip-addresses \
   --resource-group [sandbox resource group name] \
   --name my-vm \
@@ -49,7 +49,7 @@ echo $IPADDRESS
 
 
 ##### List the current Network security group
-```
+```SH
 az network nsg list \
   --resource-group [sandbox resource group name] \
   --query '[].name' \
@@ -59,7 +59,7 @@ az network nsg list \
   #Every VM on Azure is associated with at least one network security group
   
  #####  to list the rules associated with the NSG named my-vmNSG
- ``` 
+ ``` SH
   az network nsg rule list \
   --resource-group [sandbox resource group name] \
   --nsg-name my-vmNSG

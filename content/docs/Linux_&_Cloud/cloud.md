@@ -1,5 +1,5 @@
 ---
-title: GCP
+title: Cloud
 type: docs
 prev: /docs/
 next: docs/folder/
