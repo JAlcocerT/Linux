@@ -67,10 +67,8 @@ docker restart portainer
 graph LR
     A[Connect via SSH] -- Open f/w if needed --> 
     C(Install Docker/Podman)
-    C --> D(Sping your fav Services)
+    C --> D(Spin your ❤️ Services)
 ```
-
-
 
 ## Analytical Tools
 
@@ -377,3 +375,20 @@ docker run --rm --runtime=io.containerd.wasmedge.v1 --platform=wasi/wasm seconds
 
 {{% /details %}}
 
+### Interesting Services
+
+#### PostHog
+
+The F/OSS Amplitude Alternative.
+
+
+#### Active Pieces
+
+Automate like a pro - https://www.activepieces.com/
+
+* [FlowiseAI](https://fossengineer.com/selfhosting-flowise-ai)
+
+
+#### n8n
+
+https://www.youtube.com/watch?v=SMnE_3-il9A

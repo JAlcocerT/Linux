@@ -8,10 +8,8 @@ next: /docs/linux__cloud/llms/
 <!-- 
 https://www.youtube.com/watch?v=-DSTOUOhlc0 -->
 
-https://jalcocert.github.io/RPi/posts/minipc-vs-pi/
-
-
-https://jalcocert.github.io/RPi/posts/pi-vs-orange/
+* https://jalcocert.github.io/RPi/posts/minipc-vs-pi/
+* https://jalcocert.github.io/RPi/posts/pi-vs-orange/
 
 * Rpi 4 2GB - 4 threads 113k total number of events
 * Orange Pi 5 8GB - 4 cores 100k total number of events & 8 cores 134.k

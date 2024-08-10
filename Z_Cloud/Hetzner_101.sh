@@ -3,6 +3,9 @@ sudo apt update
 sudo apt upgrade
 
 sudo apt install unattended-upgrades -y
+sudo apt install fail2ban
+sudo systemctl status fail2ban
+sudo systemctl enable fail2ban
 
 apt install docker.io
 docker version
