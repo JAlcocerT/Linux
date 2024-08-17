@@ -41,9 +41,9 @@ menu:
       weight: 4
       params:
         type: search
-    - name: Collaborations ↗
-      weight: 5
-      url: "https://jalcocertech.xyz"
+    # - name: Collaborations ↗
+    #   weight: 5
+    #   url: "https://jalcocertech.xyz"
       # params:
       #   icon: github
     # - name: Docker

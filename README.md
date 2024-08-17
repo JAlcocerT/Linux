@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![CI/CD to Github Pages](https://github.com/JAlcocerT/linux/actions/workflows/pages.yml/badge.svg)](https://github.com/JAlcocerT/linux/blob/main/.github/workflows/pages.yml)
+[![CI/CD to Github Pages](https://github.com/JAlcocerT/linux/actions/workflows/pages.yml/badge.svg)](https://github.com/JAlcocerT/linux/blob/main/.github/workflows/pages.yaml)
 ![Hugo](https://img.shields.io/badge/Hugo-black.svg?style=for-the-badge&logo=Hugo)
 
  <a href="https://github.com/JAlcocerT/linux/blob/main/LICENSE">

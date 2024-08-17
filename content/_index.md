@@ -42,15 +42,15 @@ Linux is an **open-source operating system** that is used in a variety of device
 {{< /callout >}}
 
 
-## Explore
+### Explore Linux
 
 {{< cards >}}
   {{< card link="docs" title="Docs" icon="book-open" >}}
-  {{< card link="about" title="About" icon="user" >}}
+  {{< card link="https://jalcocertech.xyz" title="Collaborations ↗" icon="user" >}}
 {{< /cards >}}
 
 {{< cards >}}
-  {{< card link="Linux/docs/debian/linux_installing_apps/" title="Just Setup Linux!" subtitle="I am a regular user / Want to Setup my uncle's machine without breaking the sweat" >}}
+  <!-- {{< card link="Linux/docs/debian/linux_installing_apps/" title="Just Setup Linux!" subtitle="I am a regular user / Want to Setup my uncle's machine without breaking the sweat" >}} -->
   {{< card link="https://jalcocert.github.io/RPi/" title="IoT with Raspberry Pi" image="https://jalcocert.github.io/RPi/img/RPi-Projects.png" subtitle="Linux will onboard you to the IoT and Embedding World. Are you ready to take the first step?" >}}
 {{< /cards >}}
 
@@ -71,6 +71,13 @@ Linux is an **open-source operating system** that is used in a variety of device
     subtitle="Feeling constantly bombarded by big Tech targeted advertising? It's not too late to say Hi to Linux."
     style="background: radial-gradient(ellipse at 50% 80%,rgba(142,53,74,0.15),hsla(0,0%,50%,0));"
     link="https://jalcocert.github.io/Linux/docs/privacy/"
+  >}}
+
+    {{< hextra/feature-card
+    title="Just Setup Linux!"
+    subtitle="I am a regular user / Want to Setup my uncle's machine without breaking the sweat"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(142,53,74,0.15),hsla(0,0%,50%,0));"
+    link="Linux/docs/debian/linux_installing_apps/"
   >}}
 
 {{< /hextra/feature-grid >}}
@@ -117,7 +124,7 @@ A note regarding costs: **think of money just as signals**.
 
 We can think of Linux as an OS built in a Decentralized way.
 
-And yes, **crypto like Bitcoin**, is basically a decentralized information system. Nobody is in control, there are **simple rules and agents interacting** according to them.
+And yes, **[crypto](https://jalcocert.github.io/web3/) like Bitcoin**, is basically a decentralized information system. Nobody is in control, there are **simple rules and agents interacting** according to them.
 
-But we should remember that **Science's nature is also Decentralized**. Anyone can propose, question or test the Current status Quo.
+We should remember that **Science's nature is also Decentralized**. Anyone can propose, question or test the Current status Quo - Leading ultimately to progress.
 {{% /details %}}
