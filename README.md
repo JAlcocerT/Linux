@@ -1,6 +1,19 @@
 # Linux 101
 
-[Linux Made Easy](https://jalcocert.github.io/Linux/) - Start using Linux with a smoother learning curve.
+<div align="center">
+
+[![CI/CD to Github Pages](https://github.com/JAlcocerT/linux/actions/workflows/pages.yml/badge.svg)](https://github.com/JAlcocerT/linux/blob/main/.github/workflows/pages.yml)
+![Hugo](https://img.shields.io/badge/Hugo-black.svg?style=for-the-badge&logo=Hugo)
+
+ <a href="https://github.com/JAlcocerT/linux/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/JAlcocerT/linux"></img></a>
+  <a href="https://github.com/JAlcocerT/linux/commits/main">
+    <img src="https://img.shields.io:/github/last-commit/JAlcocerT/linux"></img></a>
+</div>
+
+
+> [Linux Made Easy](https://jalcocert.github.io/Linux/) - Start using Linux with a smoother learning curve
+---
 
 ## Repository Structure
 
@@ -43,12 +56,10 @@ Available programs to install from:
 * Media:
     * VLC :heavy_check_mark:
     * Supersonic :heavy_check_mark:
-    * Spotify
     
 * Browsers:
     * Brave :heavy_check_mark:
     * Librewolf :heavy_check_mark:
-    * Chromium 
     
 * Design
     * Blender :heavy_check_mark:
@@ -57,26 +68,17 @@ Available programs to install from:
     * GIMP :heavy_check_mark:
     * Photoscape :heavy_check_mark:
     * Kazam :heavy_check_mark:
-    * Cura
-    * Inkscapee
-    * KiCad
-    * Audacity
     
 * Programming:
    * Octave :heavy_check_mark:
    * VSCodium :heavy_check_mark:
-   * Flutter
-   * Android Studio
    * RStudio :heavy_check_mark:
    * GH Desktop :heavy_check_mark:
-   * Slack
    
 * Gaming:
     * WINE :heavy_check_mark:
     * Lutris :heavy_check_mark:
-    * Steam
-    * Epic Games
-    * Origin
+    * Steam :heavy_check_mark:
     
 * BackUps:
    * NextCloud :heavy_check_mark:
@@ -93,7 +95,6 @@ Available programs to install from:
    * GUFW :heavy_check_mark:
    * VPN 
      * Tailscale :heavy_check_mark:
-     * Wireguard Client
    * UnetBootin :heavy_check_mark:
 
 </details>
@@ -115,7 +116,6 @@ Ways to install your favourite programs across any distribution.
 #### With Docker
 
 * Check my [Docker Repo](https://github.com/JAlcocerT/Docker)
-* If you need further assistance, you can find full guides on [my Tech blog](https://fossengineer.com/tags/self-hosting/)
 
 #### With Nix
 
@@ -140,11 +140,11 @@ Yes, Android it is built on the Linux kernel - Many people use Linux and dont ev
 
 ```sh
 git clone https://github.com/JAlcocerT/linux
+cd linux
 
 sudo snap install hugo
 #hugo version
 hugo server
-
 ```
 
 </details>

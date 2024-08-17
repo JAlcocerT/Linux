@@ -1,5 +1,5 @@
 ---
-title: VMs
+title: VMs in Linux
 type: docs
 prev: docs/Debian/
 draft: false

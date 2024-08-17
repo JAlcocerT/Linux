@@ -1,5 +1,5 @@
 ---
-title: LLMs
+title: LLMs on Linux
 type: docs
 prev: /docs/gcp/
 next: docs/ansible/

@@ -1,5 +1,5 @@
 ---
-title: Conky
+title: Conky - Customizing Ubuntu
 type: docs
 prev: docs/Debian/
 ---

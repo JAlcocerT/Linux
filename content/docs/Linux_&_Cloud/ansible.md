@@ -1,8 +1,8 @@
 ---
 title: Ansible
 type: docs
-prev: /
-next: docs/folder/
+prev: /docs/linux__cloud/cloud/
+next: docs/linux__cloud/selfhosting/
 ---
 
 **Ansible** is an **automation tool** that simplifies the management and configuration of servers, applications, and infrastructure. 
