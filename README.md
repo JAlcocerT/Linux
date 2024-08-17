@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![CI/CD to Github Pages](https://github.com/JAlcocerT/Linux/actions/workflows/pages.yml/badge.svg)](https://github.com/JAlcocerT/Linux/blob/main/.github/workflows/pages.yaml)
+[![CI/CD to Github Pages](https://github.com/JAlcocerT/Linux/actions/workflows/pages.yaml/badge.svg)](https://github.com/JAlcocerT/Linux/blob/main/.github/workflows/pages.yaml)
 ![Hugo](https://img.shields.io/badge/Hugo-black.svg?style=for-the-badge&logo=Hugo)
 
  <a href="https://github.com/JAlcocerT/linux/blob/main/LICENSE">
@@ -13,7 +13,14 @@
 
 
 > [Linux Made Easy](https://jalcocert.github.io/Linux/) - Start using Linux with a smoother learning curve
+
 ---
+
+
+## Quick Installs
+
+Install Apps and get confortable with your PC, while using Linux.
+
 
 <details>
   <summary>Repository Structure 👇</summary>
@@ -32,10 +39,6 @@ my-repository/
 ```
 
 </details>
-
-## Quick Installs
-
-Install Apps and get confortable with your PC, while using Linux.
 
 ### Debian Based Linux
 

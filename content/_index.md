@@ -38,7 +38,7 @@ Whatever fight you might have heard with Google Services, commercial battles etc
 Linux is an **open-source operating system** that is used in a variety of devices, from embedded systems to cloud computing. It is highly secure, reliable, and efficient, making it an ideal choice for a range of applications.
 
 {{< callout emoji="🌐" >}}
-  It’s not a corporate product but **a reflection of the spirit of sharing**, where everyone can use, take, modify, and contribute, creating a digital tapestry made of countless ideas.
+  It’s not a corporate product but **a reflection of the spirit of sharing**, where everyone can use, modify, and contribute, creating a digital tapestry with countless ideas.
 {{< /callout >}}
 
 
@@ -48,12 +48,6 @@ Linux is an **open-source operating system** that is used in a variety of device
   {{< card link="docs" title="Docs" icon="book-open" >}}
   {{< card link="https://jalcocertech.xyz" title="Collaborations ↗" icon="user" >}}
 {{< /cards >}}
-
-<!-- {{< cards >}} -->
-  <!-- {{< card link="Linux/docs/debian/linux_installing_apps/" title="Just Setup Linux!" subtitle="I am a regular user / Want to Setup my uncle's machine without breaking the sweat" >}} -->
-  <!-- {{< card link="https://jalcocert.github.io/RPi/" title="IoT with Raspberry Pi" image="https://jalcocert.github.io/RPi/img/RPi-Projects.png" subtitle="Linux will onboard you to the IoT and Embedding World. Are you ready to take the first step?" >}}
-{{< /cards >}} -->
-
 
 
 
@@ -76,7 +70,7 @@ Linux is an **open-source operating system** that is used in a variety of device
     {{< hextra/feature-card
     title="Just Setup Linux!"
     subtitle="I am a regular user / Want to Setup my uncle's machine without breaking the sweat"
-    style="background: radial-gradient(ellipse at 50% 80%,rgba(142,53,74,0.15),hsla(0,0%,50%,0));"
+    style="background: radial-gradient(ellipse at 50% 80%,rgba(221,210,59,0.15),hsla(0,0%,100%,0));"
     link="Linux/docs/debian/linux_installing_apps/"
   >}}
 
