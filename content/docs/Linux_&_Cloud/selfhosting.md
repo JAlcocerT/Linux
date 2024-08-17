@@ -70,6 +70,8 @@ graph LR
     C --> D(Spin your ❤️ Services)
 ```
 
+{{< card link="https://jalcocert.github.io/RPi/" title="IoT with Raspberry Pi" image="https://jalcocert.github.io/RPi/img/RPi-Projects.png" subtitle="Linux will onboard you to the IoT and Embedding World. Are you ready to take the first step?" >}}
+
 ## Analytical Tools
 
 * https://github.com/knime/knime-core

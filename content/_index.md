@@ -49,10 +49,10 @@ Linux is an **open-source operating system** that is used in a variety of device
   {{< card link="https://jalcocertech.xyz" title="Collaborations ↗" icon="user" >}}
 {{< /cards >}}
 
-{{< cards >}}
+<!-- {{< cards >}} -->
   <!-- {{< card link="Linux/docs/debian/linux_installing_apps/" title="Just Setup Linux!" subtitle="I am a regular user / Want to Setup my uncle's machine without breaking the sweat" >}} -->
-  {{< card link="https://jalcocert.github.io/RPi/" title="IoT with Raspberry Pi" image="https://jalcocert.github.io/RPi/img/RPi-Projects.png" subtitle="Linux will onboard you to the IoT and Embedding World. Are you ready to take the first step?" >}}
-{{< /cards >}}
+  <!-- {{< card link="https://jalcocert.github.io/RPi/" title="IoT with Raspberry Pi" image="https://jalcocert.github.io/RPi/img/RPi-Projects.png" subtitle="Linux will onboard you to the IoT and Embedding World. Are you ready to take the first step?" >}}
+{{< /cards >}} -->
 
 
 

@@ -2,7 +2,7 @@
 
 <div align="center">
 
-[![CI/CD to Github Pages](https://github.com/JAlcocerT/linux/actions/workflows/pages.yml/badge.svg)](https://github.com/JAlcocerT/linux/blob/main/.github/workflows/pages.yaml)
+[![CI/CD to Github Pages](https://github.com/JAlcocerT/Linux/actions/workflows/pages.yml/badge.svg)](https://github.com/JAlcocerT/Linux/blob/main/.github/workflows/pages.yaml)
 ![Hugo](https://img.shields.io/badge/Hugo-black.svg?style=for-the-badge&logo=Hugo)
 
  <a href="https://github.com/JAlcocerT/linux/blob/main/LICENSE">
@@ -15,7 +15,9 @@
 > [Linux Made Easy](https://jalcocert.github.io/Linux/) - Start using Linux with a smoother learning curve
 ---
 
-## Repository Structure
+<details>
+  <summary>Repository Structure 👇</summary>
+  &nbsp;
 
 ```
 my-repository/
@@ -25,9 +27,11 @@ my-repository/
 ├── themes/
 │ ├── Hextra HUGO Theme files/
 │ └── Cupper HUGO Theme files (ex theme)/
-├── Z_*/ 
+├── Z_*/ scripts that made my life easier at some point
 └── LICENSE
 ```
+
+</details>
 
 ## Quick Installs
 
