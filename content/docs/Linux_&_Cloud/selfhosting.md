@@ -72,10 +72,7 @@ graph LR
 
 {{< card link="https://jalcocert.github.io/RPi/" title="IoT with Raspberry Pi" image="https://jalcocert.github.io/RPi/img/RPi-Projects.png" subtitle="Linux will onboard you to the IoT and Embedding World. Are you ready to take the first step?" >}}
 
-## Analytical Tools
 
-* https://github.com/knime/knime-core
-* https://hub.docker.com/r/apache/superset
 
 
 ## GenAI
@@ -173,10 +170,7 @@ https://flathub.org/apps/com.cassidyjames.butler #HA visualizer
 
 > This repo contains interesting projects (𝗟𝗟𝗠𝘀, 𝗟𝗟𝗠𝗢𝗽𝘀, and 𝘃𝗲𝗰𝘁𝗼𝗿 𝗗𝗕𝘀) to have a look: https://github.com/iusztinpaul/hands-on-llms
 
-### Text-to-Image
 
-* Automatic111
-* Fooocus
 
 ### Voice to Text
 
@@ -191,32 +185,33 @@ https://flathub.org/apps/com.cassidyjames.butler #HA visualizer
 Thanks to to [Tech-Practice](https://www.youtube.com/watch?v=HPO7fu7Vyw4&t=445s) for inspiration.
 
 
-
-## Productivity
-
-* [Cal](https://github.com/calcom/cal.com)
-  * Together with a caldav / [Stripe](https://cal.com/docs/how-to-guides/how-to-set-up-an-event-type-to-receive-payments) / Signal / Matrix / Web Analytics / ...
-  * It admits [webhooks](https://cal.com/docs/core-features/webhooks)
-* [Chatwoot](https://fossengineer.com/selfhosting-chatwoot)
-  * Also allows webhooks
-
-* Only Office Server
-
 ---
 
-## Communication
+## FAQ
 
-* Matrix Server: https://fossengineer.com/selfhosting-matrix-synapse-docker/
+{{< dropdown title="Where to Learn More about SelfHosting?" closed="true" >}}
 
-You can connect to Matrix with Thunderbird as well.
+* <https://awweso.me/>
+* https://awsmfoss.com/
+* https://selfh.st/apps/
+* <https://github.com/pluja/awesome-privacy>
+* <https://jalcocert.github.io/RPi/about/#where-can-i-learn-more-about-rpi>
+* <https://fossengineer.com/tags/self-hosting/>
+* <https://github.com/anderspitman/awesome-tunneling>
+* <https://github.com/awesome-selfhosted/awesome-selfhosted>
+    * <https://awesome-selfhosted.net/>
 
-* [Cabal](https://github.com/cabal-club/cabal-desktop)
+{{% /details %}}
 
----
+{{< dropdown title="How to Secure my Services?" closed="true" >}}
 
-## Media
+* [NGINX](https://fossengineer.com/selfhosting-nginx-proxy-manager-docker/)
+* [Cloudflare](https://fossengineer.com/selfhosting-cloudflared-tunnel-docker/)
+  * It allows
+* Authelia / Zitadel / Authentik
 
-Quick seedbox: Torrents + Mullvad -> Syncthing/Filebrowser
+{{% /details %}}
+
 
 ### Decentralized Storage
 
@@ -228,7 +223,6 @@ Quick seedbox: Torrents + Mullvad -> Syncthing/Filebrowser
 
 > Great intro video from [Naomi on Decentralized Storage](https://www.youtube.com/watch?v=rOtMGJVp2MU)
 
-Metube + JDownloader + Navidrome
 
 ### How to Back Up my Server?
 
@@ -267,130 +261,3 @@ services:
 ```
 
 {{% /details %}}
-
----
-
-## FAQ
-
-### Where to Learn More about SelfHosting?
-
-* <https://awweso.me/>
-* <https://github.com/pluja/awesome-privacy>
-* <https://jalcocert.github.io/RPi/about/#where-can-i-learn-more-about-rpi>
-* <https://fossengineer.com/tags/self-hosting/>
-* <https://github.com/anderspitman/awesome-tunneling>
-* <https://github.com/awesome-selfhosted/awesome-selfhosted>
-    * <https://awesome-selfhosted.net/>
-
-### How to Secure my Services?
-
-* [NGINX](https://fossengineer.com/selfhosting-nginx-proxy-manager-docker/)
-* [Cloudflare](https://fossengineer.com/selfhosting-cloudflared-tunnel-docker/)
-* Authelia / Zitadel / Authentik
-
-### What about Web Assembly?
-
-With WASM we can run Apps coded in other language (other than web language like js) in our browsers.
-
-WASM allow us to compiled code and run it in various environments (for example browsers) - Regardless of OS and even architecture ARM/X86/RISC-V...
-
-With Docker we have (generally) bigger Images than WASM. Wasm follows both OCI and w3c standards.
-
-* You can get more ideas at [awesome-WASM](https://github.com/mbasso/awesome-wasm)
-
-```mermaid
-graph TD;
-    WASM_Module_1(".WASM Module 1,2,3...") -->|WA| WASM_Runtime("WASM Runtime (wasmtime, wamr, wagi)");
-    WASM_Runtime -->|WASI - Web Assembly Interface| Host_OS("Host OS");
-```
-
-> Thanks to [DevOps Toolkit](https://www.youtube.com/watch?v=uZ8xI26sno8)
-
-{{% details title="Get Started with WASM 🐰" closed="true" %}}
-
-Install emcc: 
-
-```sh
-git clone https://github.com/emscripten-core/emsdk.git
-cd emsdk
-./emsdk install latest
-
-./emsdk activate latest
-source ./emsdk_env.sh
-```
-
-This compiles the C to ---> html, js, wasm (this is our WASM Module)
-```sh
-#emcc helloworld.c -o helloworld.html
-emcc -o hello.html hello.c
-```
-
-See what was created:
-
-```sh
-python3 -m http.server 8080 #choose any port
-```
-
-To run wasm inside docker: you need to enable it as Beta feature at this time of writing
-
-```sh
-sudo apt-get install ./docker-desktop-4.27.2-amd64.deb
-#settings -> features in development -> Enable WASM
-```
-
-Now instead of compiling the html or js app, we will just compile the .wasm module:
-
-```sh
-emcc -o hello.wasm hello.c
-
-#ll hello.wasm
-#file hello.wasm
-```
-
-Create your DockerfileWasm
-
-```Dockerfile
-FROM scratch
-
-COPY helloworld.wasm /helloworld.wasm
-ENTRYPOINT [ "/helloworld.wasm" ]
-```
-
-Build your WASM Image
-```sh
-docker buildx build --platform wasi/wasm -t fossengineer/helloworld-wasm -f DockerfileWasm .
-#docker image ls | head
-```
-
-Run WASM with Docker:
-
-```sh
-docker run --platform wasi/wasm --runtime io.containerd.wasmedge.v1 fossengineer/helloworld-wasm
-```
-
-Run an already created [WASM (as standalone)](https://wasmedge.org/docs/start/getting-started/quick_start_docker/#run-a-standalone-wasm-app) with docker:
-
-```sh
-docker run --rm --runtime=io.containerd.wasmedge.v1 --platform=wasi/wasm secondstate/rust-example-hello:latest
-```
-
-
-{{% /details %}}
-
-### Interesting Services
-
-#### PostHog
-
-The F/OSS Amplitude Alternative.
-
-
-#### Active Pieces
-
-Automate like a pro - https://www.activepieces.com/
-
-* [FlowiseAI](https://fossengineer.com/selfhosting-flowise-ai)
-
-
-#### n8n
-
-https://www.youtube.com/watch?v=SMnE_3-il9A
