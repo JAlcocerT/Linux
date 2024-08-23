@@ -82,17 +82,18 @@ Yes, there are many ways to replace Github Copilot for Free:
 
 ### Choosing the Right Model
 
-{{< dropdown title="LLM Quantization" closed="true" >}}
+
+{{% details title="LLM Quantization" closed="true" %}}
 * GPTQ quantization, a state-of-the-art method featured in research papers, offers minimal performance loss compared to previous techniques. It's most efficient on NVIDIA GPUs when the model fits entirely in VRAM.
 * GGML, a machine learning library by Georgi Gerganov (who also developed llama.cpp for running local LLMs on Mac), performs best on Apple or Intel hardware.
 
 Thanks: https://aituts.com/local-llms/#Which_Quantization
 
-{{< /dropdown >}}
+{{< /details >}}
 
 #### Which LLMs are Trending?
 
-{{< dropdown title="You can always check the LLM's Leaderboards" closed="true" >}}
+{{% details title="You can always check the LLM's Leaderboards" closed="true" %}}
 
 * <https://huggingface.co/spaces/HuggingFaceH4/open_llm_leaderboard>
 * With **ELO** Rating: <https://huggingface.co/spaces/lmsys/chatbot-arena-leaderboard>
@@ -104,7 +105,7 @@ Thanks: https://aituts.com/local-llms/#Which_Quantization
     * And [this one](https://www.mosaicml.com/mpt) you can train it and use commercially: https://www.mosaicml.com/training
 
 > You can also check this repository: https://github.com/sindresorhus/awesome-chatgpt and https://github.com/f/awesome-chatgpt-prompts
-{{< /dropdown >}}
+{{< /details >}}
 
 
 ### Where to host in the Cloud?
@@ -143,7 +144,8 @@ If you need big GPU power, you can always try https://www.runpod.io/gpu-instance
 
 **Mixed of Experts** is an approach in machine learning where a model consists of numerous sub-models (referred to as "experts"). Each expert specializes in handling different types of data or tasks. The main idea is to route different inputs to the most relevant experts to handle **specific tasks more efficiently** and effectively.
 
-{{< dropdown title="More about MoE LLMs" closed="true" >}}
+{{% details title="More about MoE LLMs" closed="true" %}}
+
 
 For example, some experts might be better at understanding technical jargon, while others might excel at creative writing or conversational language.
 
@@ -160,12 +162,12 @@ ollama run solar:10.7b #https://ollama.ai/library/solar/tags
 ```
 
 You can also run it in Google Colab: https://www.youtube.com/watch?v=ZyFlySElG1U
-{{< /dropdown >}}
+{{< /details >}}
 
-{{< dropdown title="What it is a RAG?" closed="true" >}}
+{{% details title="What it is a RAG" closed="true" %}}
 
 RAG, which stands for "Retrieval-Augmented Generation" is a methodology used in the development of advanced natural language processing (NLP) systems, particularly in the context of large language models (LLMs)
 
 RAG is particularly useful for tasks that require a blend of understanding context, generating coherent responses, and incorporating up-to-date or specific factual information, such as in question-answering systems or chatbots.
 
-{{< /dropdown >}}
+{{< /details >}}

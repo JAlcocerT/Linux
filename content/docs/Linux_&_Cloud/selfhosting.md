@@ -189,7 +189,7 @@ Thanks to to [Tech-Practice](https://www.youtube.com/watch?v=HPO7fu7Vyw4&t=445s)
 
 ## FAQ
 
-{{< dropdown title="Where to Learn More about SelfHosting?" closed="true" >}}
+{{% details title="Where to Learn More about SelfHosting" closed="true" %}}
 
 * <https://awweso.me/>
 * https://awsmfoss.com/
@@ -203,7 +203,7 @@ Thanks to to [Tech-Practice](https://www.youtube.com/watch?v=HPO7fu7Vyw4&t=445s)
 
 {{% /details %}}
 
-{{< dropdown title="How to Secure my Services?" closed="true" >}}
+{{% details title="How to Secure my Services?" closed="true" %}}
 
 * [NGINX](https://fossengineer.com/selfhosting-nginx-proxy-manager-docker/)
 * [Cloudflare](https://fossengineer.com/selfhosting-cloudflared-tunnel-docker/)

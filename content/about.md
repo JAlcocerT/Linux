@@ -19,7 +19,8 @@ Hope that these guides will make the **Start of your Linux Journey** a better ex
   If you found any of the content useful, you are free to [support this project](https://ko-fi.com/jalcocertech).
 {{< /callout >}}
 
-{{< dropdown title="📜 License - MIT" closed="true" >}}
+
+{{% details title="📜 License - MIT" closed="true" %}}
 
 I've chosen to utilize the **MIT License** (also known as the Expat License) for the content of this repository.
 
@@ -29,4 +30,4 @@ The MIT License is a straightforward and permissive **open-source license** that
 
 As the author, I'm pleased to offer this content of *Linux Made Easy* and the related repository <https://github.com/JAlcocerT/Linux> under the MIT License, inviting you to engage with it, incorporate it into your projects, and explore the possibilities it presents.
 
-{{< /dropdown >}}
+{{< /details >}}
