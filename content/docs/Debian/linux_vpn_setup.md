@@ -23,8 +23,9 @@ tailscale ip -4 #get the ip
 
 #sudo tailscale logout
 #sudo tailscale down
-#To force all the traffic to go through the device, Port forwarding is needed:
 ```
+
+**To route all the traffic to go through the device**, Port forwarding is needed:
 
 ```sh
 echo 'net.ipv4.ip_forward = 1' | sudo tee -a /etc/sysctl.conf &&
@@ -33,18 +34,20 @@ sudo sysctl -p /etc/sysctl.conf &&
 sudo tailscale down
 ```
 
-With this final command, the PC/RPi will be an exit node:
+With this final command, the PC/RPi **will be an exit node**:
 
 
 ```sh
 sudo tailscale up --advertise-exit-node
 ```
 
-**Remember** to allow as admin in the tailscale network this machine as exit node as well. In review **route settings -> use as exit node**.
+**Remember** to allow as admin in the tailscale network this machine as exit node as well.
+
+In review **route settings -> use as exit node**.
 
 ## Mullvad
 
-As third Party VPN provider, Mullvad worked great for me.
+As third Party VPN provider, **Mullvad worked great for me** so far.
 
 ### Mullvad ❤️ Tailscale 
 
