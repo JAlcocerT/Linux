@@ -1,4 +1,14 @@
-# Linux 101
+<div align="center">
+  <h1>Linux 101</h1>
+</div>
+
+<div align="center">
+  <h3>Linux Made Easy</h3>
+</div>
+
+<div align="center">
+  <h4>Start using Linux with a smoother learning curve. </h4>
+</div>
 
 <div align="center">
 
@@ -11,8 +21,10 @@
     <img src="https://img.shields.io:/github/last-commit/JAlcocerT/linux"></img></a>
 </div>
 
+Created with HUGO and **Github Pages + GH Actions**:
+<https://jalcocert.github.io/Linux/>
 
-> [Linux Made Easy](https://jalcocert.github.io/Linux/) - Start using Linux with a smoother learning curve
+> I Write posts using this knowledge [here](https://jalcocert.github.io/JAlcocerT/asrock-x300-home-server/)
 
 ---
 
@@ -164,4 +176,8 @@ hugo server
 
 * Support extra tinkering sessions with a ☕
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Z8Z1QPGUM)
+<p align="center">
+  <a href="https://ko-fi.com/Z8Z1QPGUM">
+    <img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="ko-fi">
+  </a>
+</p>

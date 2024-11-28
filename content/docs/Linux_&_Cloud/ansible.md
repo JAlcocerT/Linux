@@ -7,6 +7,10 @@ next: docs/linux__cloud/selfhosting/
 
 **Ansible** is an **automation tool** that simplifies the management and configuration of servers, applications, and infrastructure. 
 
+{{< callout type="info" >}}
+I have used [Ansible with a RPI](https://jalcocert.github.io/RPi/posts/rpi-ansible/) together with this [IoT Project](https://jalcocert.github.io/RPi/posts/rpi-iot-dht1122-mongo/)
+{{< /callout >}}
+
 # Why Ansible?
 
 It allows you to define tasks in plain text, automate repetitive operations, and ensure consistent system configurations across your network.
@@ -161,7 +165,7 @@ Access Navidrome server from Android with the **Substreamer App**
 
 
 {{< cards >}}
-  {{< card link="https://jalcocert.github.io/RPi/posts/rpi-ansible/" title="Image Card" image="https://jalcocert.github.io/RPi/img/RPi-Projects.png" subtitle="Raspberry Pi" >}}
+  {{< card link="https://jalcocert.github.io/RPi/posts/rpi-ansible/" title="Ansible Tricks" image="https://jalcocert.github.io/RPi/img/RPi-Projects.png" subtitle="With a Raspberry Pi" >}}
 {{< /cards >}}
 
 

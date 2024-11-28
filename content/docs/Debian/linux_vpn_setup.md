@@ -93,7 +93,7 @@ Be mindful about this change, if you lost connectivity to internet. No valid DNS
 
 * Cloudflare DNS: Cloudflare offers public DNS servers at the IP addresses 1.1.1.1 and 1.0.0.1. They focus on privacy and speed and claim to be one of the fastest DNS services available.
 
-* Quad9: Quad9 provides a free DNS service at the IP addresses 9.9.9.9 and 149.112.112.112. They emphasize security and block access to known malicious websites.
+* **Quad9**: Quad9 provides a free DNS service at the IP addresses 9.9.9.9 and 149.112.112.112. They emphasize security and block access to known malicious websites.
 
 
 

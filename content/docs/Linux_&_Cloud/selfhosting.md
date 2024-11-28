@@ -15,7 +15,7 @@ But you can even do it in the very same computer you are reading this.
 2. Get the Docker-Compose ready
 3. Deploy!
 
-{{% details title="Follow these CLI's! 🚀" closed="true" %}}
+{{% details title="Follow these CLI's to SelfHost! 🚀" closed="true" %}}
 
 ```sh
 sudo apt update

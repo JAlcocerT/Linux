@@ -5,12 +5,13 @@ prev: /docs/
 next: docs/folder/
 ---
 
-## AWS
+There is live in the Cloud Space apart from AWS,GCP and Azure.
 
-### AWS BEDROCK
+## MainStream Clouds
 
+### AWS
 
-{{% details title="Setting up Hetzner Server" closed="true" %}}
+{{% details title="Checking AWS BedRock" closed="true" %}}
 
 Let's connect to our server:
 
@@ -22,19 +23,50 @@ ssh root@yourserverip #you can also do it with ssh keys
 
 
 
-## GCP
+### GCP
 
-## Azure
+{{% details title="Checking VertexAI" closed="true" %}}
 
-## Other Clouds
+Let's connect to our server:
 
-### Hetzner
+```sh
+ssh root@yourserverip #you can also do it with ssh keys
+```
 
-* https://www.hetzner.com/cloud/
-    1. Using the cheapest x2 shared vCPU intel `(2x Skylake @2ghz)`
-    2. Using the next tier x4 shared vCPU Intel `Intel Xeon Processor (Skylake)`
-    * [Hetzner_101.sh]
-    * [Selfhosting_101](https://raw.githubusercontent.com/JAlcocerT/Linux/main/Z_Linux_Installations_101/Selfhosting_101.sh)
+{{% /details %}}
+
+### Azure
+
+### Other Clouds
+
+* Digital Ocean - https://www.digitalocean.com/pricing
+* https://lowendbox.com/
+* https://www.netcup.de/
+
+
+#### Hetzner
+
+1. Register at - https://www.hetzner.com/cloud/
+2. Using the cheapest x2 shared vCPU intel `(2x Skylake @2ghz)`
+3. Using the next tier x4 shared vCPU Intel `Intel Xeon Processor (Skylake)`
+
+{{< callout type="info" >}}
+Use the [Hetzner Setup Script](https://github.com/JAlcocerT/Linux/blob/main/Z_Cloud/Hetzner_101.sh) or the [SelfHosting script](https://raw.githubusercontent.com/JAlcocerT/Linux/main/Z_Linux_Installations_101/Selfhosting_101.sh)
+{{< /callout >}}
+
+```sh
+curl -O https://raw.githubusercontent.com/JAlcocerT/Linux/main/Z_Cloud/Hetzner_101.sh
+# curl -O https://raw.githubusercontent.com/JAlcocerT/Linux/main/Z_Linux_Installations_101/Selfhosting_101.sh
+
+#MAKE SURE YOU UNDERSTAND WHAT YOU WILL BE RUNNING with nano!
+
+# chmod +x Selfhosting_101.sh
+# sudo ./Selfhosting_101.sh
+
+chmod +x Hetzner_101.sh
+sudo ./Hetzner_101.sh
+```
+
 
 {{% details title="Setting up Hetzner Server" closed="true" %}}
 
@@ -86,7 +118,9 @@ sudo ./Selfhosting_101.sh
 
 #### Hetzner Value for Money
 
-Comparing server costs to [SelfHosting with a mini PC or SBC](https://jalcocert.github.io/RPi/posts/minipc-vs-pi/)
+Comparing server costs to [SelfHosting with a mini PC or SBC](https://jalcocert.github.io/RPi/posts/minipc-vs-pi/).
+
+
 
 ```sh
 docker pull python:3.8
@@ -96,14 +130,11 @@ cd Py_Trip_Planner
 time docker build -t pytripplanner .
 ```
 
-This took ~77s for the 2 cores vCPU and 48s for the x4 one
+> This took ~77s for the 2 cores vCPU and 48s for the x4 one
 
-<!-- 
-### Digital Ocean
-https://www.digitalocean.com/pricing
-https://lowendbox.com/
-https://www.netcup.de/
- -->
+Which are similar results to the [BMAX B4, which costs you ~14$/year](https://jalcocert.github.io/JAlcocerT/cloud-vs-single-board-computers/#power-consumption-and-temps), plus its upfront cost.
+
+Now its **your time to decide** what's better for you!
 
 ---
 
@@ -122,8 +153,8 @@ https://www.netcup.de/
 <!-- 
 https://www.youtube.com/watch?v=-DSTOUOhlc0 -->
 
-* https://jalcocert.github.io/RPi/posts/minipc-vs-pi/
-* https://jalcocert.github.io/RPi/posts/pi-vs-orange/
+* [BmaxB4](https://jalcocert.github.io/RPi/posts/minipc-vs-pi/)
+* [OrangePi5](https://jalcocert.github.io/RPi/posts/pi-vs-orange/)
 
 * Rpi 4 2GB - 4 threads 113k total number of events
 * Orange Pi 5 8GB - 4 cores 100k total number of events & 8 cores 134.k
@@ -135,23 +166,22 @@ sysbench cpu --threads=4 run
 ```
 
 
-Intel Core i5-1135G7 ~ 41.14s & 91.1k total events 4 cores / 
+* Intel Core i5-1135G7 ~ 41.14s & 91.1k total events 4 cores / 
 
 <!-- 
 https://openbenchmarking.org/result/2403222-NE-INTELI54190 -->
 
 
-AMD 4600G
-
-AMD 5600G
+* AMD 4600G
+* AMD 5600G
 
 * Phoronix: ~11.6s
 * sysbench: 4 threads total number of events 194.4k / 1 thread 48.5 / all (6x2) cores 334.3k
 
 
-## FFMPEG Benchmark in Linux
+### FFMPEG Benchmark in Linux
 
-Benchmarking with FFmpeg on Linux can help you assess the performance of your system in handling video and audio processing tasks. Here's a guide on how to perform a benchmark using FFmpeg:
+Benchmarking with FFmpeg on Linux can help you assess the performance of your system in handling video and audio processing tasks.
 
 1. **Install FFmpeg**: If you haven't already installed FFmpeg on your Linux system, you can do so by using the package manager of your distribution. For example, on Ubuntu or Debian-based systems, you can install FFmpeg with the command:
 ```sh

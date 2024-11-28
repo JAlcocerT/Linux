@@ -12,7 +12,7 @@ You can **Get LLMs Running** in your personal computer or in big servers just fo
 
 > To get the most popular commercial trends: https://theresanaiforthat.com/most-saved/
 
-## Interfaces
+## Interfaces for LLMs
 
 {{< tabs items="Ollama,PrivateGPT,TextGeneration Web UI" >}}
 
@@ -112,11 +112,7 @@ Thanks: https://aituts.com/local-llms/#Which_Quantization
 
 If you need big GPU power, you can always try https://www.runpod.io/gpu-instance/pricing and similar services.
 
-### Using HuggingFace for LLMs
 
-* https://huggingface.co/spaces
-* https://www.youtube.com/watch?v=_Ua6065p-Cw
-* https://www.youtube.com/watch?v=_Ua6065p-Cw
 
 ### You might be Wondering
 
