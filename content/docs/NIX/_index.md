@@ -11,7 +11,9 @@ You might know NIX as the Linux OS. What we will see, is that we can actually us
 
 ## Nix Package Manager
 
-**Nix package manager** is a powerful and flexible **package manager for** Linux and other **Unix-like operating systems**. It is known for its declarative approach to package management, which allows users to specify the desired state of their system and have the package manager handle the installation and management of dependencies.
+**Nix package manager** is a powerful and flexible **package manager for** Linux and other **Unix-like operating systems**.
+
+It is known for its declarative approach to package management, which allows users to specify the desired state of their system and have the package manager handle the installation and management of dependencies.
 
 
 ## Installing NIX

@@ -31,7 +31,7 @@ sudo apt-get update
 sudo apt-get install stacer -y
 ```
 
-Whats my current DNS?
+Whats my **current DNS**?
 
 ```sh
 sudo apt install resolvconf
@@ -77,6 +77,7 @@ Use different tools to search:
   * https://github.com/TeamPiped/Piped
 
 * Use a Password Manager: Bitwarden, KeePass...
+* Together with 2FA authenticator: 2FAs Auth, Aegis Authenticator,...
 
 ### VPNs
 
@@ -283,8 +284,7 @@ Use them wisely and be responsibly.
 * Create your own Crypto Analytics Dashboard with [Dune](https://github.com/duneanalytics/docs)
   * Also, you can see [what others have created and whats trending](https://dune.com/browse/dashboards?tags=DeFi)
 
-{{< callout type="info" >}}
-How this also resonates with Linux? 
+**How this also resonates with Linux?**
 
 Well, nature of crypto is F/OSS (if it is not you better run):
 
@@ -293,6 +293,10 @@ Well, nature of crypto is F/OSS (if it is not you better run):
 * Smart Contracts are F/OSS
   * And [dApps](https://dappradar.com/) sense is also F/OSS
 * And you can have a look to full history of transactions: [ETH](https://etherscan.io/txs), [BTC](https://bitcoinexplorer.org/)...
+
+
+{{< callout type="info" >}}
+I was trying Astro with Github Pages and wrote more [about Web3+Crypto here](https://github.com/JAlcocerT/web3)
 {{< /callout >}}
 
 

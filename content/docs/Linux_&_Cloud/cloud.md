@@ -7,7 +7,18 @@ next: docs/folder/
 
 There is live in the Cloud Space apart from AWS,GCP and Azure.
 
+{{< callout type="info" >}}
+You can use any of these to deploy services: like [your own **VPN with Wireguard**](https://jalcocert.github.io/JAlcocerT/asrock-x300-home-server/#desktop-with-vps-as-vpn-with-wireguard)
+{{< /callout >}}
+
+
 ## MainStream Clouds
+
+For just compute resources, other providers normally provide better value for money.
+
+And generally a shared server (where you get virtual CPU cores) will be cheaper than a pure bare metal.  
+
+But these ones are interesting for the fully managed services.
 
 ### AWS
 
@@ -39,16 +50,79 @@ ssh root@yourserverip #you can also do it with ssh keys
 
 ### Other Clouds
 
-* Digital Ocean - https://www.digitalocean.com/pricing
-* https://lowendbox.com/
-* https://www.netcup.de/
+At the time of writing, Hetzner appears to provide a very interesting value for money (and newer CPU architecture)
 
+While Vultr is the more affordable VPS I found.
+
+{{< callout type="info" >}}
+I was writing a comparison between Cloud (Hetzner), SBCs and MiniPCs in [this post](https://jalcocert.github.io/JAlcocerT/cloud-vs-single-board-computers)
+{{< /callout >}}
+
+I have applied the **sysbench test** on these VPS.
+
+For reference them with a RPi4 4GB which provides: Cortex-A72 ~ BCM2835 Broadcom SoC family
+* Using 4 cores 27.9k
+* Using 1 core 6.9k
+
+#### Digital Ocean - DO
+
+* Digital Ocean - https://www.digitalocean.com/pricing - VPS are called **Droplets**
+* 4$/m for x1CPU 512mb RAM, 10GB SSD and 500GB Transfer
+    * CPU seems to be ~ Intel Xeon Broadwell processors, such as Intel Xeon E5-2600 v4
+    * RAM is 138/458mb  | Total events 3k
+    * ISP appear as `DigitalOcean`
+
+{{< callout type="info" >}}
+With [Docker+Portainer+**WGEasy**](https://jalcocert.github.io/JAlcocerT/asrock-x300-home-server/#desktop-with-vps-as-vpn-with-wireguard) - you need **just ~256mb of RAM**
+{{< /callout >}}
+
+
+```sh
+ssh root@dropletip #you will choose the password when creating it
+apt update && apt upgrade -y
+
+sudo apt install sysbench -y
+sysbench --test=cpu --cpu-max-prime=20000 --num-threads=1 run
+
+curl -sS http://ip-api.com/json/ #provides info about country, ISP, ...
+npm install --global fast-cli && fast
+```
+
+#### OVH Cloud
+
+* https://www.ovh.com/manager/
+*  1 vCore / 2 GB / 40 GB SSD NVMe / 250 Mbps ~6$/m
+    * 190/1.88GB initially / Seems to be Intel Xeon E5 v3 series (Haswell) ~ 2014, DDR3
+    * total number of events ~2500
+    * Fast ~236 mbps, ISP appears as `OVH SAS`, but **I had problems to get wgeasy working**
+
+> It will take a while (~15min) between you making the payment and getting the server IP and root user on your mail - You will reset the password after that during the first login
+
+```sh
+ssh ubuntu@ovhserverip #change the pass on first login
+
+#nano Selfhosting_101.sh #MAKE SURE YOU UNDERSTAND WHAT YOU WILL BE RUNNING
+curl -O https://raw.githubusercontent.com/JAlcocerT/Linux/main/Z_Linux_Installations_101/Selfhosting_101.sh
+chmod +x Selfhosting_101.sh
+sudo ./Selfhosting_101.sh
+
+#ifconfig ens3 | grep "inet " | awk '{ print $2 }' #go to this IP port 9000 for portainer
+```
+
+#### Vultr
+
+* https://www.vultr.com/pricing/
+    * With Interesting Servers in Europe: Madrid, **Amsterdam, Warsaw**, Stockholm...
 
 #### Hetzner
 
 1. Register at - https://www.hetzner.com/cloud/
-2. Using the cheapest x2 shared vCPU intel `(2x Skylake @2ghz)`
-3. Using the next tier x4 shared vCPU Intel `Intel Xeon Processor (Skylake)`
+2. Choose the VPS features
+* Using the cheapest x2 shared vCPU intel `(2x Skylake @2ghz)` - Very **Interesting value for money** (at least at the time of writing)
+* Or...Using the next tier x4 shared vCPU Intel `Intel Xeon Processor (Skylake)`
+3. Check the system after receiving credentials via mail
+* ISP will appear as: `Cloud FSN` or `Hetzner Online GmbH` when checked with whatismyipaddress.com
+* The sysbench for Hetzner is ~3400 for x1 vCPU and ~6.6k for x2 vCPU
 
 {{< callout type="info" >}}
 Use the [Hetzner Setup Script](https://github.com/JAlcocerT/Linux/blob/main/Z_Cloud/Hetzner_101.sh) or the [SelfHosting script](https://raw.githubusercontent.com/JAlcocerT/Linux/main/Z_Linux_Installations_101/Selfhosting_101.sh)

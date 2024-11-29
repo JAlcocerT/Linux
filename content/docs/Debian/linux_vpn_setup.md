@@ -4,6 +4,12 @@ type: docs
 prev: docs/Debian/
 ---
 
+I started to learn about Linux because of Networking and **VPNs**.
+
+In general you can go to the **DIY options** with OpenVPN or [Wireguard](https://jalcocert.github.io/JAlcocerT/asrock-x300-home-server/#desktop-with-vps-as-vpn-with-wireguard) + a [VPS Server](https://jalcocert.github.io/Linux/docs/linux__cloud/cloud/) or Raspberry Pi.
+
+Or you can go with: [Tailscale](#tailscale) or a 3rd party VPN like [Mullvad](#mullvad)
+
 ## Tailscale
 
 To install **a home working VPN**, the easiest way is to use [Tailscale](https://tailscale.com/kb/installation) and pair our devices.

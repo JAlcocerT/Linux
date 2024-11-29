@@ -216,5 +216,5 @@ https://www.youtube.com/watch?v=KBWlB9f_SAo
 * Tello FPV
 * Immich
 * F-Droid
-Audio recorder, ultrasonic, readdrops, fluffy chat, organic maps, nophonespam
-2fas auth, bitwarden, signal, rvnc viewer, element, tailscale, mullvad vpn
+* More apps: Audio recorder, ultrasonic, readdrops, fluffy chat, organic maps, nophonespam
+**2fas auth, bitwarden**, signal, rvnc viewer, element, tailscale, mullvad vpn
