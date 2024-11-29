@@ -9,6 +9,9 @@ Consolidating my **Notes about Linux** in a public simple site the content and g
 
 Hope that these guides will make the **Start of your Linux Journey** a better experience.
 
+{{< callout type="info" >}}
+I write about my **Tech learning journey** (also public source), [here](https://jalcocert.github.io/JAlcocerT/)
+{{< /callout >}}
 
 ## Powered Thanks To ❤️ 
 

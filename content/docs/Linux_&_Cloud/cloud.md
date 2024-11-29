@@ -14,7 +14,7 @@ You can use any of these to deploy services: like [your own **VPN with Wireguard
 
 ## MainStream Clouds
 
-For just compute resources, other providers normally provide better value for money.
+For just compute resources, other providers normally provide better value for money (and more predictable billing)
 
 And generally a shared server (where you get virtual CPU cores) will be cheaper than a pure bare metal.  
 
@@ -53,6 +53,8 @@ ssh root@yourserverip #you can also do it with ssh keys
 At the time of writing, Hetzner appears to provide a very interesting value for money (and newer CPU architecture)
 
 While Vultr is the more affordable VPS I found.
+
+Very interesting [VPS price comparison gist](https://gist.github.com/justjanne/205cc548148829078d4bf2fd394f50ae)
 
 {{< callout type="info" >}}
 I was writing a comparison between Cloud (Hetzner), SBCs and MiniPCs in [this post](https://jalcocert.github.io/JAlcocerT/cloud-vs-single-board-computers)

@@ -61,7 +61,7 @@ Available programs to install from:
 
 
 <details>
-  <summary>Click to expand/close Available Apps 👇</summary>
+  <summary>Expand/Close Available Apps 👇</summary>
   &nbsp;
 
 **FOSS ->** :heavy_check_mark:  

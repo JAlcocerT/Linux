@@ -13,27 +13,37 @@ Linux, Docker, open source, and the cloud are all technologies that have transfo
 
 ## Linux
 
-Linux is an open source operating system that has been a cornerstone of software development for decades. Linux is known for its stability, security, and flexibility, which makes it a popular choice for developers and system administrators alike.
+Linux is an **open source operating system** that has been a cornerstone of software development for decades. Linux is known for its stability, security, and flexibility, which makes it a popular choice for developers and system administrators alike.
 
-Many cloud platforms and services, such as Amazon Web Services and Google Cloud Platform, are built on top of Linux.
+Many [cloud platforms and services](https://jalcocert.github.io/Linux/docs/linux__cloud/cloud/), such as Amazon Web Services and Google Cloud Platform, are built on top of Linux.
 
-## Docker
+{{% details title="Docker" closed="true" %}}
 
 Docker is a platform that allows developers to create, deploy, and run applications in containers. Docker containers are lightweight and self-contained, which makes them easy to manage and deploy across different environments. 
 
 Docker has revolutionized the way applications are developed and deployed by making it easier to manage dependencies and **ensure consistency across different environments**.
 
-## Open Source
+{{% /details %}}
 
-Open source software refers to software that is developed and distributed under an open license that allows users to access and modify the source code. Linux and Docker are both examples of open source software that have been widely adopted in the industry.
+
+{{% details title="Open Source - OSS 👈" closed="true" %}}
+
+Open source software refers to software that is developed and distributed under an open license that allows users to access and modify the source code.
+
+Linux and Docker are both examples of open source software that have been widely adopted in the industry.
 
 The open source model has enabled developers to **collaborate and innovate more freely**, which has led to the creation of many powerful tools and technologies.
 
-## The Cloud
+{{% /details %}}
 
-The cloud refers to a network of remote servers that are used to store, manage, and process data. Cloud computing has transformed the way businesses operate by providing on-demand access to scalable computing resources.
+{{% details title="The Cloud" closed="true" %}}
+
+The cloud refers to a network of remote servers that are used to store, manage, and process data.
+
+[Cloud computing](https://jalcocert.github.io/Linux/docs/linux__cloud/cloud/) has transformed the way businesses operate by providing on-demand access to scalable computing resources.
 
 Linux, Docker, and open source software have all played a significant role in the development and adoption of cloud computing technologies.
+{{% /details %}}
 
 > Typical cloud providers list: <https://awesome-devops.xyz/list/#cloud-platforms>
 
@@ -41,7 +51,9 @@ Linux, Docker, and open source software have all played a significant role in th
 
 With the use of linux as a stable and secure operative system, the voluntary collaboration of anyone in the world that want to contribute to a project or start a new one and share it with everyone, plus the possibility to containerize an application *so that it works in your computer the same way that in mine*...
 
-...you can conclude that the cloud is one logical step of this points. Simplifying it: why not using other person/group computing power to power your apps?
+...you can conclude that the cloud is one logical step of this points.
+
+Simplifying it: why not using other person/group computing power to power your apps?
 
 As any decision, this has **trade-offs** to be considered: 
 
@@ -61,11 +73,9 @@ As any decision, this has **trade-offs** to be considered:
 
 {{% /details %}}
 
-
-
 **at a cost...**
 
-{{% details title=" Check Which Costs 👈" closed="true" %}}
+{{% details title="Check Which Costs 👈" closed="true" %}}
 
 * Security: Cloud deployment can pose potential security risks, especially if sensitive data is stored on the cloud.
 
@@ -79,13 +89,3 @@ As any decision, this has **trade-offs** to be considered:
 
 
 {{% /details %}}
-
----
-
-## FAQ
-
-### Clouds ( & GPU Clouds)
-
-* RunPod, Linode, DigitalOcean, Paper Space, Lambda Cloud, [Hetzner](https://jalcocert.github.io/Linux/docs/linux__cloud/cloud/#hetzner)...
-* vast.ai, 
-* Google Colab TPU...
