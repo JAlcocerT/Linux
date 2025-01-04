@@ -55,14 +55,18 @@ But the beauty is that anyone can contribute and publish their Apps at:
 * Arch User Repository (AUR)
     * AUR Website: <https://aur.archlinux.org/>
 
-The AUR is a **community-driven repository** that contains a wide range of software packages not available in the official Arch Linux repositories. And we, as Garuda Linux users can also benefit from the AUR.
+The AUR is a **community-driven repository** that contains a wide range of software packages not available in the official Arch Linux repositories.
+
+And we, as Garuda Linux users can also benefit from the AUR.
 
 
 {{% details title="More about AUR" closed="true" %}}
 
 When you visit these websites, you can use the search functionality to look for packages by name. 
 
-The AUR website is particularly useful for finding user-contributed packages that may not be in the official repositories. Once you find a package you want to install, you can note its name and use it with the pacman or yay command in the terminal, or search for it in the Pamac graphical package manager.
+The AUR website is particularly useful for finding user-contributed packages that may not be in the official repositories. 
+
+Once you find a package you want to install, you can note its name and use it with the pacman or yay command in the terminal, or search for it in the Pamac graphical package manager.
 
 {{% /details %}}
 

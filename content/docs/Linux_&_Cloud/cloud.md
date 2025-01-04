@@ -11,42 +11,9 @@ There is live in the Cloud Space apart from AWS,GCP and Azure.
 You can use any of these to deploy services: like [your own **VPN with Wireguard**](https://jalcocert.github.io/JAlcocerT/asrock-x300-home-server/#desktop-with-vps-as-vpn-with-wireguard)
 {{< /callout >}}
 
+There are many VPS providers out there.
 
-## MainStream Clouds
-
-For just compute resources, other providers normally provide better value for money (and more predictable billing)
-
-And generally a shared server (where you get virtual CPU cores) will be cheaper than a pure bare metal.  
-
-But these ones are interesting for the fully managed services.
-
-### AWS
-
-{{% details title="Checking AWS BedRock" closed="true" %}}
-
-Let's connect to our server:
-
-```sh
-ssh root@yourserverip #you can also do it with ssh keys
-```
-
-{{% /details %}}
-
-
-
-### GCP
-
-{{% details title="Checking VertexAI" closed="true" %}}
-
-Let's connect to our server:
-
-```sh
-ssh root@yourserverip #you can also do it with ssh keys
-```
-
-{{% /details %}}
-
-### Azure
+I have been exploring [few of them: DO, Vultr, Hetzner, OVH,...](#other-clouds)
 
 ### Other Clouds
 
@@ -223,6 +190,44 @@ Now its **your time to decide** what's better for you!
 | RPi 4 2GB |  [~3600s](https://jalcocert.github.io/RPi/posts/pi-vs-orange/#benchmarking-the-docker-build-process) |
 | Hetzner Shared vCPU (2x Skylake @2ghz) 4GB | ~77s |
 | Hetzner Shared vCPU (4x Skylake @2ghz) 8GB | ~45s |
+
+
+
+### MainStream Clouds
+
+For just compute resources, other providers normally provide better value for money (and more predictable billing)
+
+And generally a shared server (where you get virtual CPU cores) will be cheaper than a pure bare metal.  
+
+But these ones are interesting for the fully managed services.
+
+#### AWS
+
+{{% details title="Checking AWS BedRock" closed="true" %}}
+
+Let's connect to our server:
+
+```sh
+ssh root@yourserverip #you can also do it with ssh keys
+```
+
+{{% /details %}}
+
+
+
+#### GCP
+
+{{% details title="Checking VertexAI" closed="true" %}}
+
+Let's connect to our server:
+
+```sh
+ssh root@yourserverip #you can also do it with ssh keys
+```
+
+{{% /details %}}
+
+#### Azure
 
 ### Other Benchmarks
 

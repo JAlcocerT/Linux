@@ -71,7 +71,11 @@ You can **Get LLMs Running** in your personal computer or in big servers just fo
 {{% /details %}}
 
 
-**Mixed of Experts** is an approach in machine learning where a model consists of numerous sub-models (referred to as "experts"). Each expert specializes in handling different types of data or tasks. The main idea is to route different inputs to the most relevant experts to handle **specific tasks more efficiently** and effectively.
+**Mixed of Experts** is an approach in machine learning where a model consists of numerous sub-models (referred to as "experts").
+
+Each expert specializes in handling different types of data or tasks.
+
+The main idea is to route different inputs to the most relevant experts to handle **specific tasks more efficiently** and effectively.
 
 {{% details title="More about MoE LLMs" closed="true" %}}
 

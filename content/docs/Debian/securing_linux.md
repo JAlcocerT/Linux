@@ -4,7 +4,9 @@ type: docs
 prev: docs/Debian/
 ---
 
-First things first - Remember to have your system packages & Kernel updated.
+First things first - Remember to have your system **packages & Kernel updated**.
+
+This is a very first step. For servers or your daily driver.
 
 ```sh
 sudo apt update && apt upgrade

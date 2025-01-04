@@ -6,21 +6,24 @@ prev: docs/Debian/
 
 ## Docker
 
-Docker is a platform that allows developers to create, deploy, and run applications in containers. These containers are lightweight and self-contained, which makes them easy to manage and deploy across different environments.
+Docker is a platform that allows developers to create, deploy, and run applications in containers.
 
-Consider it as a powerful tool that can help developers **streamline the application development and deployment process**, while also providing a range of benefits in terms of **portability, consistency, efficiency, and isolation**. For you, this means that when a service/app runs in one computer, it will behave in the same way in any other device.
+These containers are lightweight and self-contained, which makes them easy to manage and deploy across different environments.
 
-To install docker, docker compose and portainer, simply copy the following code chunks:
+Consider it as a powerful tool that can help developers **streamline the application development and deployment process**, while also providing a range of benefits in terms of **portability, consistency, efficiency, and isolation**.
+
+For you, this means that when a service/app runs in one computer, it will behave in the same way in any other device.
+
+To install docker, docker compose and portainer, simply **copy the following code chunks**:
 
 ```sh
 sudo apt-get update && sudo apt-get upgrade && curl -fsSL https://get.docker.com -o get-docker.sh
-sudo sh get-docker.sh && sudo docker --version
-sudo apt install docker-compose -y
+sudo sh get-docker.sh && sudo apt install docker-compose -y
 ```
 
 This might not be the [latest version of docker-compose](https://jalcocert.github.io/Linux/docs/debian/docker/#how-to-install-the-latest-version-of-docker-compose), but it will work.
 
-Testing that Docker works with:
+Testing that **Docker works** with:
 
 ```sh
 sudo systemctl status docker
@@ -65,15 +68,17 @@ docker compose up -d
 # docker-compose up -d #change version to 2.2 if error
 ```
 
-And that's it, Dockge is waiting for us on: localhost:5001
+And that's it, Dockge is waiting for us on: `localhost:5001`
 
 ![Docke-GUI](/images/dockge-gui.png)
 
+---
+
 ## Podman - A Docker Alternative
 
-## Podman
+Podman is a **container management tool** that is similar to Docker but has some differences in its approach.
 
-Podman is a **container management tool** that is similar to Docker but has some differences in its approach. It allows you to run and manage containers on your system, just like Docker, but it offers some advantages, such as being daemonless (no central server) and providing **compatibility with Docker commands and images**. 
+It allows you to run and manage containers on your system, just like Docker, but it offers some advantages, such as being daemonless (no central server) and providing **compatibility with Docker commands and images**. 
 
 
 ```sh
@@ -87,14 +92,25 @@ Both Podman and Docker are open-source projects, and they are released under dif
 
 {{% details title="Licensing stuff 😴" closed="true" %}}
 
-**Docker** uses a combination of open-source licenses for its various components. Docker Engine, the core container runtime, was historically under the Apache License 2.0. However, as of Docker CE 19.03 and later, it is released under the "Community Edition License Agreement" (formerly the Docker Software End User License Agreement). This license allows **free use of Docker for non-commercial purposes** but may have some restrictions for commercial use. Be sure to review the license agreement for specific terms and conditions.
+**Docker** uses a combination of open-source licenses for its various components. Docker Engine, the core container runtime, was historically under the Apache License 2.0. However, as of Docker CE 19.03 and later, it is released under the "Community Edition License Agreement" (formerly the Docker Software End User License Agreement).
 
-Docker also incorporates various open-source components and libraries, each with its own licensing terms. For example, Docker Compose, which is often used with Docker, is typically licensed under the MIT License.
+This license allows **free use of Docker for non-commercial purposes** but may have some restrictions for commercial use.
 
-**Podman** is released under the terms of the **Apache License 2.0**, which is an open-source license that is generally considered **permissive and business-friendly**. It allows you to use, modify, and distribute the software freely, including for commercial purposes, with relatively few restrictions.
+Be sure to review the license agreement for specific terms and conditions.
 
-It's worth noting that the choice of open-source license can impact how the software can be used, modified, and redistributed. The Apache License 2.0 used by Podman is considered more permissive and less restrictive than some other open-source licenses, providing greater flexibility for users and developers.
+Docker also incorporates various open-source components and libraries, each with its own licensing terms.
+
+For example, Docker Compose, which is often used with Docker, is typically licensed under the MIT License.
+
+**Podman** is released under the terms of the **Apache License 2.0**, which is an open-source license that is generally considered **permissive and business-friendly**. 
+
+It allows you to use, modify, and distribute the software freely, including for commercial purposes, with relatively few restrictions.
+
+It's worth noting that the choice of open-source license can impact how the software can be used, modified, and redistributed.
+
 {{% /details %}}
+
+The **Apache License 2.0 used by Podman is considered more permissive** and less restrictive than some other open-source licenses, providing greater flexibility for users and developers.
 
 
 {{% details title="How to use Podman?" closed="true" %}}

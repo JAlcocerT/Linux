@@ -11,6 +11,8 @@ next: docs/linux__cloud/selfhosting/
 I have used [Ansible with a RPI](https://jalcocert.github.io/RPi/posts/rpi-ansible/) together with this [IoT Project](https://jalcocert.github.io/RPi/posts/rpi-iot-dht1122-mongo/)
 {{< /callout >}}
 
+> Also commented more about [Ansible on this post](https://jalcocert.github.io/JAlcocerT/ansible-with-raspberry-pi/)
+
 # Why Ansible?
 
 It allows you to define tasks in plain text, automate repetitive operations, and ensure consistent system configurations across your network.

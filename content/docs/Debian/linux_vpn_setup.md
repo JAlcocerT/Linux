@@ -10,6 +10,10 @@ In general you can go to the **DIY options** with OpenVPN or [Wireguard](https:/
 
 Or you can go with: [Tailscale](#tailscale) or a 3rd party VPN like [Mullvad](#mullvad)
 
+{{< callout type="info" >}}
+You can use Tailscale and Mullvad with a [Travel Router](https://jalcocert.github.io/JAlcocerT/travel-router-gl-mt3000-review/)
+{{< /callout >}}
+
 ## Tailscale
 
 To install **a home working VPN**, the easiest way is to use [Tailscale](https://tailscale.com/kb/installation) and pair our devices.

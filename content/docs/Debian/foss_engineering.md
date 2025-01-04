@@ -4,7 +4,7 @@ type: docs
 prev: docs/Debian/
 ---
 
-A list of F/OSS Apps that we can use with Debian to create Awsome Projects.
+A list of F/OSS Apps that we can use with Debian to create **Awsome Projects**.
 
 ## OpenFOAM
 

@@ -130,8 +130,6 @@ cmake .. -DCMAKE_C_COMPILER=/usr/bin/clang-11 -DCMAKE_CXX_COMPILER=/usr/bin/clan
 make
 
 sudo make install
-
-
 ```
 
 ### Setup a macOS VM in QEMU

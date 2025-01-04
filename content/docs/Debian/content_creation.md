@@ -9,7 +9,7 @@ prev: docs/Debian/
 
 ### Screen Recording in Linux
 
-Just use OBS Studio:
+Just use **OBS Studio**:
 
 ```sh
 flatpak install flathub com.obsproject.Studio
@@ -25,7 +25,12 @@ flatpak run com.obsproject.Studio
 
 ### Editing Videos in Linux
 
-Probably the simplest will be KDEnlive. But here you have few options.
+Probably the simplest will be **KDEnlive**.
+
+> Ive been using KDenLive and describe it on [this post](https://jalcocert.github.io/JAlcocerT/dji-oa5pro-firmware-updates/)
+
+But here you have few options.
+
 <!-- 
 https://www.youtube.com/watch?v=EHnAV6fObGI -->
 

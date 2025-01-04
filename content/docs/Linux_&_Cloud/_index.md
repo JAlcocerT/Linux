@@ -9,7 +9,9 @@ sidebar:
 
 **A Mind Map for: Linux, Docker, Open Source, and the Cloud.**
 
-Linux, Docker, open source, and the cloud are all technologies that have transformed the world of software development and deployment in recent years. Let's explore the relationships between these technologies and how they work together to power modern applications.
+Linux, Docker, open source, and the cloud are all technologies that have transformed the world of software development and deployment in recent years.
+
+Let's explore the relationships between these technologies and how they work together to power modern applications.
 
 ## Linux
 

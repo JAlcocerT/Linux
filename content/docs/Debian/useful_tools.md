@@ -280,8 +280,7 @@ sudo fdisk -l
 #lsblk
 ```
 
-With this information we can create an automount entry in fstab:
-
+With this information we can create an **automount entry in fstab**:
 
 ```sh
 sudo mkdir /mnt/data_mounted \

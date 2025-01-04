@@ -7,7 +7,9 @@ sidebar:
   open: false
 ---
 
-You might know NIX as the Linux OS. What we will see, is that we can actually use the [NIX Package Manager](https://github.com/NixOS/nix) for any other Linux (and even mac).
+You might know **NIX as the Linux OS**.
+
+What we will see, is that we can actually use the [NIX Package Manager](https://github.com/NixOS/nix) for any other Linux (and even mac).
 
 ## Nix Package Manager
 
@@ -18,7 +20,9 @@ It is known for its declarative approach to package management, which allows use
 
 ## Installing NIX
 
-Manage your system dependencies in a more declarative and efficient way. Let's get started with Nix installation **on Debian**, you can follow these steps:
+Manage your system dependencies in a more declarative and efficient way.
+
+Let's get started with Nix installation **on Debian**, you can follow these steps:
 
 
 ### Debian Based
@@ -80,7 +84,9 @@ You can start by looking at <https://search.nixos.org/packages>
 
 * Locally
 
-You can use the nix-env command to search for packages on your local system. For example, to search for packages related to the python programming language, you can run:
+You can use the nix-env command to search for packages on your local system.
+
+For example, to search for packages related to the python programming language, you can run:
 
 ```sh
 nix-env -qa python

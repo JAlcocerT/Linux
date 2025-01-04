@@ -7,7 +7,7 @@ draft: false
 ---
 
 
-You can do it with a Raspberry Pi, with and old laptop, in the cloud...
+You can **do SelfHosting** with a Raspberry Pi, with and old laptop, in the cloud...
 
 But you can even do it in the very same computer you are reading this.
 
@@ -73,14 +73,16 @@ graph LR
 {{< card link="https://jalcocert.github.io/RPi/" title="IoT with Raspberry Pi" image="https://jalcocert.github.io/RPi/img/RPi-Projects.png" subtitle="Linux will onboard you to the IoT and Embedding World. Are you ready to take the first step?" >}}
 
 
-
-
 ## GenAI
+
+To try new Gen AI Projects within Linux, you can setup a Docker Python environment with these 3 artifacts:
 
 {{< tabs items="Dockerfile,requirements,Config" defaultIndex="2" >}}
 
   {{< tab >}}**Dockerfile**: 
-  
+
+This will help you encapsulate the project dependencies:
+
 ```Dockerfile
 FROM python:3.11-slim
 
@@ -116,7 +118,7 @@ Make sure to build the image first with:
 docker build -t fooocus .
 #docker-compose up -d
 ```
-Then, use this to spin up the container:
+Then, use this **compose file** to spin up the container:
 
 ```yml
 version: '3'
