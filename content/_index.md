@@ -46,7 +46,7 @@ Linux is an **open-source operating system** that is used in a variety of device
 
 {{< cards >}}
   {{< card link="docs" title="Docs" icon="book-open" >}}
-  {{< card link="https://jalcocertech.xyz" title="Collaborations ↗" icon="user" >}}
+  {{< card link="https://jalcocertech.com" title="Collaborations ↗" icon="user" >}}
 {{< /cards >}}
 
 
