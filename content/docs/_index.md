@@ -79,7 +79,7 @@ Quite user friendly. And you can [Download for free here](https://ubuntu.com/dow
 
 ### Try Ubuntu in a VM
 
-Whatever happens to the Virtual Machine, it does not matter and wont affect your main OS.
+Whatever happens to [the Virtual Machine](https://jalcocert.github.io/Linux/docs/debian/virtualization/#installing-qemu-kvm), it does not matter and wont affect your main OS.
 
 So try things, install your favourite Apps!
 
@@ -372,7 +372,7 @@ It is an alternative Google App Store, full of Open Source [Android](https://jal
 {{% /details %}}
 
 
-{{% details title="These distributions come with different **desktop environments**, which are UI flavors of the same operating system" closed="true" %}}
+{{% details title="Different desktop environments, which are UI flavors of the same operating system" closed="true" %}}
 
 * Xfce: Xfce is a lightweight desktop environment known for its resource efficiency and customization options. It provides a traditional desktop layout with a panel, menu, and desktop icons.
 

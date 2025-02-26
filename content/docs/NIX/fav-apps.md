@@ -37,6 +37,8 @@ nix-shell -p thunderbird #flatpak install flathub org.mozilla.Thunderbird
 
 ## Daily Driver
 
+Installing with NIX the typical applications for most users:
+
 * Browser
 
 ```sh

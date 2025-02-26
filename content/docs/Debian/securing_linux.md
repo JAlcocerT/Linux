@@ -120,7 +120,9 @@ Then, you can connect any other Docker container to Cloudflare Tunnel Network an
 
 * You might also want to try another approach.
 
-Setup [NGINX with Docker](https://fossengineer.com/selfhosting-nginx-proxy-manager-docker/) and just expose the Home Router / Cloud Provider ports for NGINX. For this approach to work at home, you will need to Port Forward. And the IP of the home/cloud would be expose.
+Setup [NGINX with Docker](https://fossengineer.com/selfhosting-nginx-proxy-manager-docker/) and just expose the Home Router / Cloud Provider ports for NGINX. 
+
+For this approach to work at home, you will need to Port Forward. And the IP of the home/cloud would be expose.
 
 ### How to have HTTPs with Local Services
 

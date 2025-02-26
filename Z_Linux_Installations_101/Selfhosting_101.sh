@@ -59,13 +59,21 @@ install_docker() {
 
 }
 
+install_podman() {
+    echo "Installing Podman OCI..."
+    apt install podman
+    podman --version
+}
+
+
 
 # Ask user if they want to install Docker - https://jalcocert.github.io/RPi/posts/selfhosting-with-docker/#install-docker
-echo "Do you want to install Docker on your system? (yes/no)"
+echo "Do you want to install Containers on your system? (yes/no)"
 read install_docker_answer
 case $install_docker_answer in
     [yY] | [yY][eE][sS])
-        install_docker
+        install_docker #Docker Containers
+        install_podman #Podman Containers
         ;;
     [nN] | [nN][oO])
         echo "Docker installation skipped."

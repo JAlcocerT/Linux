@@ -20,6 +20,8 @@ flatpak run com.obsproject.Studio
 
 ### Snapshots
 
+Whatever you do...a printscreen snapshot is always handy:
+
 * [Spectacle](https://github.com/KDE/spectacle) 
 
 
@@ -27,9 +29,11 @@ flatpak run com.obsproject.Studio
 
 Probably the simplest will be **KDEnlive**.
 
-> Ive been using KDenLive and describe it on [this post](https://jalcocert.github.io/JAlcocerT/dji-oa5pro-firmware-updates/)
+> Ive been using KDenLive and describe it on [this post](https://jalcocert.github.io/JAlcocerT/dji-oa5pro-firmware-updates/), looking for a better [video flow](https://jalcocert.github.io/JAlcocerT/my-action-cam-video-workflow/)!
 
-But here you have few options.
+You can also try with shotcut!
+
+Here you have few options:
 
 <!-- 
 https://www.youtube.com/watch?v=EHnAV6fObGI -->
@@ -40,12 +44,6 @@ sudo snap install blender --classic #https://github.com/blender/blender/archive/
 
 sudo snap install shotcut -- classic && snap install photoscape  && snap install inkscape
 
-#curl -o docker-compose.yaml https://raw.githubusercontent.com/penpot/penpot/main/docker/images/docker-compose.yaml
-#docker compose -p penpot -f docker-compose.yaml up -d
-#docker exec -ti penpot-penpot-backend-1 python3 ./manage.py create-profile
-#sudo snap install penpot-desktop
-
-
 #Flameshot
 #kdenlive video editor
 flatpak install flathub org.kde.kdenlive
@@ -55,7 +53,7 @@ flatpak run org.kde.kdenlive
 #sudo snap install shotcut --classic
 ```
 
-Watch your videos with VLC:
+Watch your videos with **VLC**:
 
 ```sh
 flatpak install flathub org.videolan.VLC
@@ -79,7 +77,11 @@ sudo snap install gimp
 
 * Resize Images without loosing quality - **Upscayl**
 
-A great project that provides us with 3 different ways to install (For Debian any of these will do): [snap](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#snap) / [flatpak](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#flatpak) / [AppImage](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#ui)
+A great project that provides us with 3 different ways to install (For Debian any of these will do): 
+
+1. [snap](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#snap)
+2. [flatpak](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#flatpak) 
+3. [AppImage](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#ui)
 
 ```sh
 #sudo snap install upscayl
@@ -96,9 +98,18 @@ flatpak install flathub org.upscayl.Upscayl
 flatpak install flathub org.kde.krita
 ```
 
+* Penpot:
+
+```sh
+#curl -o docker-compose.yaml https://raw.githubusercontent.com/penpot/penpot/main/docker/images/docker-compose.yaml
+docker compose -p penpot -f docker-compose.yaml up -d
+#docker exec -ti penpot-penpot-backend-1 python3 ./manage.py create-profile
+#sudo snap install penpot-desktop
+```
+
 ## Audio Editing in Linux
 
-* Audacity
+1. Audacity
 
 ```sh
 wget https://github.com/audacity/audacity/releases/download/Audacity-3.4.2/audacity-linux-3.4.2-x64.AppImage
@@ -107,20 +118,8 @@ wget https://github.com/audacity/audacity/releases/download/Audacity-3.4.2/audac
 
 And shortly we will get the Plugin OpenVino ready in Linux which will bring AI to Audacity: https://github.com/intel/openvino-plugins-ai-audacity/releases
 
-* [Mixxx](https://flathub.org/apps/org.mixxx.Mixxx)
+2. [Mixxx](https://flathub.org/apps/org.mixxx.Mixxx)
 
 ```sh
 flatpak install flathub org.mixxx.Mixxx
 ```
-
-
----
-
-## FAQ
-
-{{% details title="How to check for duplicate images - dupeGuru" closed="true" %}}
-
-```sh
-```
-
-{{% /details %}} 

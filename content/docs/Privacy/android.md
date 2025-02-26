@@ -8,7 +8,9 @@ draft: false
 
 ## For Android Users
 
-Android is based on Linux, but there are many great projects outside Google Store.
+**Android is based on Linux**.
+
+As you can imagine, there are many great projects outside Google Store.
 
 This is were **F-Droid** enters - you can [get F/OSS Apps](https://f-droid.org/en/packages/)
 

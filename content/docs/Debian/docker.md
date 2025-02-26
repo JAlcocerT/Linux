@@ -120,28 +120,28 @@ Here's a brief introduction to Podman and how to use it like Docker:
 1. **Installation**:
    You can [install Podman](https://podman.io/docs/installation) on a Linux system by using the package manager specific to your distribution. For example, on Ubuntu, you can install it with:
 
-   ```bash
-   sudo apt install podman
-   #flatpak install flathub io.podman_desktop.PodmanDesktop
+```bash
+sudo apt install podman
+#flatpak install flathub io.podman_desktop.PodmanDesktop
 
-   #nix-shell -p podman
-   ```
+#nix-shell -p podman
+```
 
 2. **Running Containers**:
    To run a container with Podman, you can use the `podman run` command. It works similarly to Docker's `docker run` command. For example:
 
-   ```bash
-   podman run -it --rm ubuntu:latest /bin/bash
-   ```
+```bash
+podman run -it --rm ubuntu:latest /bin/bash
+```
 
    This command runs an Ubuntu container and opens an interactive shell inside it. The `--rm` flag removes the container when it exits.
 
 3. **Pulling Images**:
    You can pull container images from container registries using the `podman pull` command. For example:
 
-   ```bash
-   podman pull nginx
-   ```
+```bash
+podman pull nginx
+```
 
    This command pulls the official Nginx image from the default container registry (Docker Hub).
 

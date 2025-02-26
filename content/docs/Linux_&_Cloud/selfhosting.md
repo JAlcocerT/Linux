@@ -6,6 +6,7 @@ next: docs/ansible/
 draft: false
 ---
 
+## SelfHosting 101
 
 You can **do SelfHosting** with a Raspberry Pi, with and old laptop, in the cloud...
 
@@ -75,7 +76,7 @@ graph LR
 
 ## GenAI
 
-To try new Gen AI Projects within Linux, you can setup a Docker Python environment with these 3 artifacts:
+To try new **Gen AI Projects** within Linux, you can setup a **Docker [Container Python environment](https://jalcocert.github.io/JAlcocerT/why-i-love-containers/)** with these 3 artifacts:
 
 {{< tabs items="Dockerfile,requirements,Config" defaultIndex="2" >}}
 
@@ -141,7 +142,7 @@ volumes:
 
 {{< /tabs >}}
 
-You can also try with
+You can also try with [Python Venvs or Conda](https://jalcocert.github.io/JAlcocerT/useful-python-stuff/):
 
 ```sh
 python -m venv your-env #(create a virtual environment)
