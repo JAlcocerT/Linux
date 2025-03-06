@@ -7,6 +7,10 @@ prev: docs/Debian/
 
 ## Video
 
+{{< callout type="info" >}}
+For Quickly joining **video with FFMPEG**, [see this](https://jalcocert.github.io/JAlcocerT/my-action-cam-video-workflow/#quick-videos---ffmpeg-cli).
+{{< /callout >}}
+
 ### Screen Recording in Linux
 
 Just use **OBS Studio**:
@@ -69,13 +73,13 @@ https://gist.githubusercontent.com/JAlcocerT/197667ec5ec0da53e78eb58c4253a73f/ra
 
 ## Photo Editing in Linux
 
-* The one and only - **GIMP**:
+1. The one and only - **GIMP**:
 
 ```sh
 sudo snap install gimp
 ```
 
-* Resize Images without loosing quality - **Upscayl**
+2. Resize Images without loosing quality - **Upscayl**
 
 A great project that provides us with 3 different ways to install (For Debian any of these will do): 
 

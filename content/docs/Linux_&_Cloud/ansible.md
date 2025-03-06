@@ -15,11 +15,11 @@ I have used [Ansible with a RPI](https://jalcocert.github.io/RPi/posts/rpi-ansib
 
 # Why Ansible?
 
-It allows you to define tasks in plain text, automate repetitive operations, and ensure consistent system configurations across your network.
+It allows you to **define tasks in plain text**, automate repetitive operations, and ensure consistent system configurations across your network.
 
 **An Automation tool?**
 
-> You simply describe what you want, and this assistant takes care of the rest, ensuring your systems are always in tip-top shape. That's the power of automation, and Ansible is our digital assistant.
+> You simply **describe what you want**, and this assistant takes care of the rest, ensuring your systems are always in tip-top shape. That's the power of automation, and Ansible is our digital assistant.
 
 ## Installing Ansible ♻️
 
@@ -151,26 +151,3 @@ Access Navidrome server from Android with the **Substreamer App**
 {{< /callout >}}
 
 > You can try also with [Youtube-DL](https://jalcocert.github.io/RPi/posts/youtube-video-download/#youtube-dl-material)
-
-
----
-
-## FAQ
-
-{{< tabs items="Ansible+IoT,Ansible+MediaServer,TOML" >}}
-
-  {{< tab >}}**Ansible+IoT**: An IoT Project with [Ansible, a Raspberry Pi and some Sensors](https://jalcocert.github.io/RPi/posts/rpi-ansible/){{< /tab >}}
-  {{< tab >}}**Ansible+MediaServer**: Your local Media Server. Setup with literally 2 commands.{{< /tab >}}
-  {{< tab >}}**TOML**: TOML aims to be a minimal configuration file format that's easy to read due to obvious semantics.{{< /tab >}}
-
-{{< /tabs >}}
-
-
-{{< cards >}}
-  {{< card link="https://jalcocert.github.io/RPi/posts/rpi-ansible/" title="Ansible Tricks" image="https://jalcocert.github.io/RPi/img/RPi-Projects.png" subtitle="With a Raspberry Pi" >}}
-{{< /cards >}}
-
-
-<!-- {{< cards >}}
-  {{< card link="https://jalcocert.github.io/RPi/posts/rpi-ansible/" title="Image Card" image="https://source.unsplash.com/featured/800x600?landscape" subtitle="Raspberry Pi" >}}
-{{< /cards >}} -->

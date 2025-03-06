@@ -21,17 +21,14 @@ sudo apt-get install openfoam8
 
 **ANSYS**, which you might know, on the other hand, is a commercial CFD software known for its user-friendly interface and comprehensive support, but it comes with licensing costs.
 
-
-* Great content on OpenFOAM/Ansys: <https://www.youtube.com/@CFD/videos>
-
+> Great content on OpenFOAM/Ansys: <https://www.youtube.com/@CFD/videos>
 
 ## Blender
 
-https://blendermarket.com/
+* https://blendermarket.com/
 
-https://www.blender.org/
-
-<https://github.com/blender/blender>
+* https://www.blender.org/
+    * https://github.com/blender/blender
 
 * <https://github.com/gd3kr/BlenderGPT>
 

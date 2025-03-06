@@ -5,9 +5,9 @@ toc: false
 
 If you are reading it, you are not like others.
 
-You like not only to think different, but act different - That brought you here.
+You like not only to think different, but *act different*.
 
-
+That brought you here.
 
 ## Why Linux?
 

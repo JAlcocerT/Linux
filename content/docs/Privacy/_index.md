@@ -81,13 +81,17 @@ Use different tools to search:
 
 ### VPNs
 
-* <https://jalcocert.github.io/Linux/docs/debian/linux_vpn_setup/>
+1. [VPN Setup](https://jalcocert.github.io/Linux/docs/debian/linux_vpn_setup/)
 
-DNS =>> https://github.com/mullvad/dns-blocklists/tree/main
-https://quad9.net/service/service-addresses-and-features/
-https://www.youtube.com/watch?v=xAo61IaXun8&t=1s
+2. DNS
 
-DNS over TLS (DoT) is an enhancement over the traditional DNS that adds encryption to DNS queries and responses. It uses the Transport Layer Security (TLS) protocol to secure the communication between the DNS client and the DNS server, preventing eavesdropping and tampering by third parties.
+* https://github.com/mullvad/dns-blocklists/tree/main
+* https://quad9.net/service/service-addresses-and-features/
+* https://www.youtube.com/watch?v=xAo61IaXun8&t=1s
+
+DNS over TLS (DoT) is an enhancement over the traditional DNS that adds encryption to DNS queries and responses.
+
+It uses the Transport Layer Security (TLS) protocol to secure the communication between the DNS client and the DNS server, preventing eavesdropping and tampering by third parties.
 
 > P2P safely with [VPN and QBittorrent](https://fossengineer.com/selfhosting-qBittorrent-with-docker-and-VPN/) or with [Transmission](https://fossengineer.com/torrent-with-transmission-and-VPN/)
 
@@ -96,7 +100,7 @@ DNS over TLS (DoT) is an enhancement over the traditional DNS that adds encrypti
 #### Matrix
 
 * Thunderbird allows you not only to use email, but to connect to Matrix Servers
-* Rocket.chat
+* See also: Rocket.chat
 
 {{< callout type="info" >}}
 You can [SelfHost your own Matrix Server](https://fossengineer.com/selfhosting-matrix-synapse-docker/) and Federate it with other servers if you wish.
@@ -157,12 +161,11 @@ You can see [Douane Source Code](https://gitlab.com/douaneapp/Douane) and instal
 
 {{% details title="How to Install Portmaster 👇" closed="true" %}}
 
-[PortMaster](https://safing.io/) is a great [F/OSS Project](https://github.com/Safing/portmaster) that allow us to set Global & per‑App Settings.
+[PortMaster](https://safing.io/) is a great [F/OSS Project](https://github.com/Safing/portmaster) that allow us to **set Global & per‑App Settings**.
 
-[Install PortMaster](https://wiki.safing.io/en/Portmaster/Install/Linux) with:
+[**Install PortMaster**](https://wiki.safing.io/en/Portmaster/Install/Linux) with:
 
 ```sh
-
 sudo apt update
 wget https://updates.safing.io/latest/linux_amd64/packages/portmaster-installer.deb
 
@@ -170,7 +173,6 @@ sudo dpkg -i portmaster-installer.deb
 portmaster --version
 
 #sudo apt install -f
-
 
 #sudo systemctl status portmaster
 # sudo systemctl daemon-reload
@@ -189,19 +191,17 @@ Or if you want, build and install:
 wget https://github.com/safing/portmaster/archive/refs/tags/v1.6.5.tar.gz
 tar -zxvf v1.6.5.tar.gz #extract the contents
 
-
 cd portmaster-1.6.5
 
 make
 sudo make install
 
 portmaster --version
-
 ```
 
 {{% /details %}}
 
-Definitely check: 
+Definitely check these resources:
 
 * <https://github.com/pluja/awesome-privacy>
 * <https://github.com/awesome-selfhosted/awesome-selfhosted>
@@ -210,8 +210,7 @@ Definitely check:
 
 * <https://www.techlore.tech/>
 
-<!-- 
-https://libreselfhosted.com/ -->
+
 
 ### Is my WIFI secure enough?
 
@@ -228,7 +227,9 @@ The Onion Router -  Tor is a well-established network that operates as a decentr
 
 #### I2P
 
-I2P is primarily designed for anonymous communication and services within the I2P network itself. It's optimized for hidden services, like websites (eepsites), email, and file sharing, that are accessible only within I2P.
+I2P is primarily designed for anonymous communication and services within the I2P network itself.
+
+It's optimized for hidden services, like websites (eepsites), email, and file sharing, that are accessible only within I2P.
 
 * Garlic Routing: I2P uses garlic routing, an extension of onion routing. It bundles messages together, providing an additional layer of anonymity. This method is designed to make traffic analysis more difficult.
 

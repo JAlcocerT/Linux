@@ -109,9 +109,10 @@ RUN pip install -r requirements_versions.txt
   {{< tab >}}**requirements**:
   
 ```txt
-#Not needed here, provicded by repo.
+#Not needed here, provided by repo.
 ```
   {{< /tab >}}
+
   {{< tab >}}**Config**:
 Make sure to build the image first with:
 
@@ -142,23 +143,11 @@ volumes:
 
 {{< /tabs >}}
 
-You can also try with [Python Venvs or Conda](https://jalcocert.github.io/JAlcocerT/useful-python-stuff/):
 
-```sh
-python -m venv your-env #(create a virtual environment)
-source your-env/bin/activate #(or on Windows your-env\Scripts\activate) (activatea the venv)
-#deactivate
-```
-
-```sh
-conda create -n yourcondaenvironment python=3.11
-conda activate yourcondaenvironment
-conda deactivate
-```
 
 ### LLMs
 
-* Ollama
+* [Ollama](https://fossengineer.com/selfhosting-llms-ollama/)
 
 {{< callout type="info" >}}
 The [ML Compilation for LLMs](https://github.com/mlc-ai/mlc-llm) project aims to spread the development and deployment of AI Models.
@@ -174,12 +163,6 @@ https://flathub.org/apps/com.cassidyjames.butler #HA visualizer
 > This repo contains interesting projects (𝗟𝗟𝗠𝘀, 𝗟𝗟𝗠𝗢𝗽𝘀, and 𝘃𝗲𝗰𝘁𝗼𝗿 𝗗𝗕𝘀) to have a look: https://github.com/iusztinpaul/hands-on-llms
 
 
-
-### Voice to Text
-
-* [Piper](https://github.com/rhasspy/piper) - Also works [Text to Voice](https://www.youtube.com/watch?v=SzRF50UwzYk)
-  * [Voices at HF](https://huggingface.co/rhasspy/piper-voices/tree/main)
-
 ### Affordable Local Gen AI with iGPU's
 
 
@@ -192,7 +175,7 @@ Thanks to to [Tech-Practice](https://www.youtube.com/watch?v=HPO7fu7Vyw4&t=445s)
 
 ## FAQ
 
-{{% details title="Where to Learn More about SelfHosting" closed="true" %}}
+{{% details title="Where to Learn More about SelfHosting?" closed="true" %}}
 
 * <https://awweso.me/>
 * https://awsmfoss.com/
@@ -203,33 +186,20 @@ Thanks to to [Tech-Practice](https://www.youtube.com/watch?v=HPO7fu7Vyw4&t=445s)
 * <https://github.com/anderspitman/awesome-tunneling>
 * <https://github.com/awesome-selfhosted/awesome-selfhosted>
     * <https://awesome-selfhosted.net/>
-
-{{% /details %}}
-
-{{% details title="How to Secure my Services?" closed="true" %}}
-
-* [NGINX](https://fossengineer.com/selfhosting-nginx-proxy-manager-docker/)
-* [Cloudflare](https://fossengineer.com/selfhosting-cloudflared-tunnel-docker/)
-  * It allows
-* Authelia / Zitadel / Authentik
+* https://libreselfhosted.com/
 
 {{% /details %}}
 
 
 ### Decentralized Storage
 
-* Centralization -> Simplicity and Single Point of Failure
+* Centralization: Simplicity and Single Point of Failure
 
 * Some alternatives:
   * [IPFS](https://ipfs.tech/) -  an open system to manage data without a central server
   * [Filecoin](https://filecoin.io/) - an open-source cloud storage marketplace, protocol, and incentive layer.
 
 > Great intro video from [Naomi on Decentralized Storage](https://www.youtube.com/watch?v=rOtMGJVp2MU)
-
-
-### How to Back Up my Server?
-
-Duplicati to other location (HD / Mega, One drive, s3...)
 
 ## Windows inside Docker
 

@@ -227,8 +227,6 @@ ssh root@yourserverip #you can also do it with ssh keys
 
 {{% /details %}}
 
-#### Azure
-
 ### Other Benchmarks
 
 <!-- 
@@ -262,9 +260,10 @@ https://openbenchmarking.org/result/2403222-NE-INTELI54190 -->
 
 ### FFMPEG Benchmark in Linux
 
-Benchmarking with FFmpeg on Linux can help you assess the performance of your system in handling video and audio processing tasks.
+**Benchmarking with FFmpeg on Linux** can help you assess the performance of your system in handling video and audio processing tasks.
 
-1. **Install FFmpeg**: If you haven't already installed FFmpeg on your Linux system, you can do so by using the package manager of your distribution. For example, on Ubuntu or Debian-based systems, you can install FFmpeg with the command:
+1. **Install FFmpeg**: If you haven't already installed FFmpeg on your Linux system, you can do so by using the package manager of your distribution. 
+
 ```sh
 sudo apt-get update && sudo apt-get install ffmpeg
 ```
@@ -283,13 +282,14 @@ Replace `input.mp4` with your video file. The `-f null -` part tells FFmpeg not 
 ```sh
 ffmpeg -i input.mp4 -f null -
 ```
-     This command decodes the video and discards the output, focusing the test on the decoding process.
+> This command decodes the video and discards the output, focusing the test on the decoding process.
 
 - **Filtering Performance**: To benchmark the performance of specific filters, you can use a command like this:
 
 ```sh
 ffmpeg -i input.mp4 -vf "filtername=parameter" -f null -
 ```
+
 Replace `filtername=parameter` with the filter you wish to test. This measures how quickly FFmpeg can process the video with the specified filter.
 
 4. **Interpreting Results**: FFmpeg will display the processing time and frame rate at the end of the benchmark. A higher frame rate and lower processing time indicate better performance.
@@ -300,8 +300,13 @@ Replace `filtername=parameter` with the filter you wish to test. This measures h
 
 ### GCP Free Tier Deploy - CLI
 
-* Google Free Tier (*as of now*): <https://cloud.google.com/free/docs/free-cloud-features#compute>
-    * e2-micro and us-east1 is important!
+* Google Free Tier, *as of now*: <https://cloud.google.com/free/docs/free-cloud-features#compute>
+    * Select the one which applies for you, like: `e2-micro` and `us-east1`
+
+
+
+{{% details title="GCP configuration with CLI" closed="true" %}}
+
 
 ```sh
 gcloud compute instances create instance-2 \
@@ -323,3 +328,6 @@ gcloud compute instances create instance-2 \
     --labels=goog-ec-src=vm_add-gcloud \
     --reservation-affinity=any
 ```
+
+{{% /details %}}
+

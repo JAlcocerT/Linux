@@ -14,7 +14,9 @@ It follows a "do-it-yourself" philosophy, allowing users to build their Linux en
 * Arch's **package manager, Pacman**, provides easy access to a vast repository of software packages
 * And the **Arch User Repository (AUR)** offers even more community-contributed packages.(not officially maintained by Arch Linux developers).
 
-While Arch Linux demands a deeper understanding of Linux and requires users to configure many aspects of their system manually, it rewards users with a highly personalized and efficient computing experience. It's a favorite among Linux enthusiasts and experienced users seeking a lightweight and highly customizable operating system.
+While Arch Linux demands a deeper understanding of Linux and requires users to configure many aspects of their system manually, it rewards users with a highly personalized and efficient computing experience. 
+
+It's a favorite among Linux enthusiasts and experienced users seeking a **lightweight and highly customizable operating system.**
 
 ## WHY a rolling release?
 

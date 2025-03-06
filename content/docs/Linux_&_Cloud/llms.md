@@ -10,7 +10,6 @@ draft: false
 
 You can **Get LLMs Running** in your personal computer or in big servers just for you or whoever you want to give access.
 
-> To get the most popular commercial trends: https://theresanaiforthat.com/most-saved/
 
 ## Interfaces for LLMs
 
@@ -41,10 +40,6 @@ You can **Get LLMs Running** in your personal computer or in big servers just fo
 
 {{< /tabs >}}
 
-* **Others:** [LibreChat](https://www.youtube.com/watch?v=0BRnK5BGZHU), Autogen + AutogenStudio https://microsoft.github.io/autogen/blog/2023/12/01/AutoGenStudio/ or [Quivir](https://github.com/StanGirard/quivr) with great [docs](https://docs.quivr.app/home/intro) or [LocalGPT](https://github.com/PromtEngineer/localGPT).
-  * Bindings:
-    * https://github.com/abetlen/llama-cpp-python
-* https://github.com/khoj-ai/khoj
 
 
 ### You might be Wondering
