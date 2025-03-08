@@ -1,4 +1,5 @@
-###
+###Get-ChildItem -Filter "*.MP4" | ForEach-Object { "file '$($_.Name)'" } | Set-Content file_list.txt
+
 
 $camFolderPath = Join-Path -Path "C:\Users\j--e-\Desktop" -ChildPath "CAM"
 
@@ -12,7 +13,7 @@ if (Test-Path -Path $camFolderPath -PathType Container) {
   Write-Warning "CAM folder not found at: $($camFolderPath)"
 }
 
-###
+###ffmpeg -f concat -safe 0 -i file_list.txt -c copy output.mp4 #simple join
 
 # Set ffmpeg path (optional, if ffmpeg is not in system PATH)
 $ffmpeg = "ffmpeg"  # Change this to full path if necessary

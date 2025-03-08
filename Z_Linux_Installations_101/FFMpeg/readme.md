@@ -7,9 +7,9 @@ Have been playing around with video at:
 
 ## FFMPEG
 
+Once you got **ffmpeg installed...**
+
 ### FFMPEG and Linux
-
-
 
 ```sh
 ./Video_ffmpeg.sh
@@ -17,7 +17,7 @@ Have been playing around with video at:
 
 ### FFMPEG with Windows
 
-See `./Win`
+See `./Win` or this [gist](https://gist.github.com/JAlcocerT/76f22ddf886277ef2653f82898c634d8)
 
 ```sh
 # Install Chocolatey (Run as Administrator)

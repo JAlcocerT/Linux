@@ -2,7 +2,7 @@
 
 * How to query web content to local:
 
-```
+```sh
 curl https://raw.githubusercontent.com/reisikei/Linux/main/Ubuntu%20installations%20bash > install-apps.sh && chmod 775 install-apps.sh && sudo ./install-apps.sh
 
 curl https://raw.githubusercontent.com/reisikei/Linux/main/Ubuntu%20security > install-security.sh && chmod 775 install-security.sh && sudo ./install-security.sh
@@ -19,24 +19,24 @@ curl
 
 ### Useful Shell commands
 
-```
+```sh
 head -n 5 seasonal/winter.csv > top.csv
 tail -n 3 top.csv
 ```
 
-```
+```sh
 The pipe symbol tells the shell to use the output of the command on the left as the input to the command on the right:
 head -n 5 seasonal/summer.csv | tail -n 3
 ```
 
-```
+```sh
 cut -d , -f 2 seasonal/summer.csv | grep -v Tooth
 
 #change Cherno to Cherno City in the given file
 cat soccer_scores.csv | sed 's/Cherno/Cherno City/g' | sed 's/Arda/Arda United/g' > soccer_scores_edited.csv
 ```
 
-```
+```sh
 grep '[pc]' fruits.txt
 grep '[pc]' ^ fruits.txt #not contains p or c
 
@@ -47,8 +47,8 @@ cat two_cities.txt | egrep 'Sydney Carton|Charles Darnay' | wc -l #from the file
 The command wc (short for "word count") prints the number of characters, words, and lines in a file. 
 You can make it print only one of these using -c, -w, or -l respectively.
 
-```
-Check file system of a path:
+```sh
+#Check file system of a path:
 sudo file -s /dev/xvdb  
 Make the desired file system:
 sudo mkfs -t ext4 /dev/xvdb 
@@ -56,15 +56,18 @@ sudo mkfs -t ext4 /dev/xvdb
 
 
 ### Wildcards
-To make your life better, the shell allows you to use wildcards to specify a list of files with a single expression. The most common wildcard is *, which means "match zero or more characters". Using it, we can shorten the cut command above to this:
 
-```
+To make your life better, the shell allows you to use wildcards to specify a list of files with a single expression.
+
+The most common wildcard is *, which means "match zero or more characters". Using it, we can shorten the cut command above to this:
+
+```sh
 cut -d , -f 1 seasonal/*
 ```
 
 or:
 
-```
+```sh
 cut -d , -f 1 seasonal/*.csv
 
 head -n 3 seasonal/s*
@@ -80,14 +83,16 @@ The shell has other wildcards as well, though they are less commonly used:
 As its name suggests, sort puts data in order. By default it does this in ascending alphabetical order, but the flags -n and -r can be used to sort numerically and reverse the order of its output, while -b tells it to ignore leading blanks and -f tells it to fold case (i.e., be case-insensitive).
 Pipelines often use grep to get rid of unwanted records and then sort to put the remaining records in order.
 
-```
+```sh
 cut -d , -f 2 seasonal/summer.csv | grep -v Tooth | sort -r
 ```
 
 ### Uniq
+
 Another command that is often used with sort is uniq, whose job is to remove duplicated lines. More specifically, it removes adjacent duplicated lines
 
 ### Set
+
 How does the shell store information?
 Like other programs, the shell stores information in variables. Some of these, called environment variables, are available all the time. Environment variables' names are conventionally written in upper case
 
@@ -99,7 +104,7 @@ Use set | grep USER to get the line you need.
 
 To get the variable's value, you must put a dollar sign $ in front of it. Typing
 
-```
+```sh
 echo $USER
 ```
 
@@ -140,7 +145,7 @@ Ctrl + X: exit the editor.
 
 You have been using the shell interactively so far. But since the commands you type in are just text, you can store them in files for the shell to run over and over again. To start exploring this powerful capability, put the following command in a file called headers.sh:
 
-```
+```sh
 head -n 1 seasonal/*.csv
 ```
 
@@ -210,7 +215,7 @@ $# gives the number of ARGVs
 
 ### shell within a shell
 
-```
+```sh
 model1=87.65
 model2=89.20
 echo "total score is $(echo "$model1 + $model2" | bc)"
@@ -260,7 +265,7 @@ similar to python's dictionaries or R's lists
 available from bash 4
 bash --version
 
-```
+```sh
 declare -A city_details
 city_details=([city_name]="New York" [population]=14000000)
 echo $(city_details[city_name]}
@@ -293,7 +298,7 @@ echo ${region_temps[@]}
 
 ### Conditions checking
 
-```
+```sh
 if [ condition  ]; then
  #code
 else
@@ -340,13 +345,13 @@ fi
 
 ### Extract Accuracy from first ARGV element
 
-```
+```sh
 accuracy=$(grep Accuracy $1 | sed 's/.* //')
 ```
 
 ### Conditionally move into good_models folder
 
-```
+```sh
 if [ $accuracy -gt 90 ]; then
     mv $1 good_models/
 fi
@@ -365,7 +370,7 @@ sfile=$1
 
 ### Create an IF statement on sfile's contents
 
-```
+```sh
 if grep -q 'SRVM_' $sfile && grep -q 'vpt' $sfile ; then
 	# Move file if matched
 	mv $sfile good_logs/
@@ -374,28 +379,28 @@ fi
 
 ### for and while
 
-```
+```sh
 for x in 1 2 3
 do 
  echo $x
 done
 ```
 
-```
+```sh
 for x in {1..5..2}
 do 
  echo $x
 done
 ```
 
-```
+```sh
 for ((x=2;x<=4;x+=2))
 do 
  echo $x
 done
 ```
 
-```
+```sh
 for book in books/*
 do
  echo $book
@@ -405,14 +410,14 @@ done
 
 #print book in a directory with air in the file name
 
-```
+```sh
 for book in $(ls books/ | grep -i 'air')
 do
  echo $book
 done
 ```
 
-```
+```sh
 x=1
 while [ $x -le 3 ];
 do
@@ -424,7 +429,7 @@ done
 
 #Use a FOR loop on files in directory
 
-```
+```sh
 for file in inherited_folder/*.R
 do  
     # Echo out each file
@@ -434,7 +439,7 @@ done
 
 #Create a FOR statement on files in directory
 
-```
+```sh
 for file in robs_files/*.py
 do  
     # Create IF statement using grep
@@ -445,9 +450,9 @@ do
 done
 ```
 
-#Case 
+# Case 
 
-```
+```sh
 case $(cat $1) in
  *sydney*)
  mv $1 sydney/ ;;
@@ -458,7 +463,7 @@ case $(cat $1) in
 esac
 ```
 
-```
+```sh
 #Create a CASE statement matching the first ARGV element
 case $1 in
   #Match on all weekdays
@@ -476,7 +481,7 @@ esac
 
 #Use a FOR loop for each file in 'model_out/'
 
-```
+```sh
 for file in model_out/*
 do
     #Create a CASE statement for each file's contents
@@ -497,7 +502,7 @@ done
 
 ## Functions
 
-```
+```sh
 function_name () {
  #function_code
  return #something
@@ -536,7 +541,7 @@ upload_to_cloud
 
 #Create function
 
-```
+```sh
 what_day_is_it () {
 
   #Parse the results of date
@@ -554,7 +559,7 @@ what_day_is_it
 
 #PASSING ARGUMENTS
 
-```
+```sh
 $1 $2
 $@ $*
 $#
