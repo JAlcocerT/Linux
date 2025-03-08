@@ -3,3 +3,8 @@ hugo.exe
 
 # no need to upload as github actions will generate it
 public/ 
+
+#Ignoring the files from the benchmark
+*_test_*
+system_info_*
+trip_planner_docker_build_*

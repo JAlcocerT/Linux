@@ -8,7 +8,9 @@ sidebar:
   open: false
 ---
 
-I was also tired of being bombarded with targeted adds - Until I discovered these Apps in Linux.
+I was also tired of being bombarded with targeted adds.
+
+Until I discovered these Apps in Linux.
 
 ## Making Linux Private
 
@@ -103,7 +105,7 @@ It uses the Transport Layer Security (TLS) protocol to secure the communication 
 * See also: Rocket.chat
 
 {{< callout type="info" >}}
-You can [SelfHost your own Matrix Server](https://fossengineer.com/selfhosting-matrix-synapse-docker/) and Federate it with other servers if you wish.
+You can [SelfHost your own Matrix Server](https://fossengineer.com/selfhosting-matrix-synapse-docker/) and Federate it with other servers (if you wish).
 {{< /callout >}}
 
 #### Signal
@@ -237,7 +239,7 @@ It's optimized for hidden services, like websites (eepsites), email, and file sh
 
 #### LokiNet
 
-[Lokinet](https://lokinet.org/) also utilizes onion routing to route and encrypt traffic, but it employs a mixnet architecture, which means that each packet of data is routed through multiple nodes in the network, similar to Tor.
+[Lokinet](https://lokinet.org/) also utilizes **onion routing** to route and encrypt traffic, but it employs a mixnet architecture, which means that each packet of data is routed through multiple nodes in the network, **similar to Tor**.
 
 
 {{% details title="How to Install [Latest LokiNet](https://github.com/oxen-io/lokinet/releases) 👇" closed="true" %}}
@@ -255,7 +257,9 @@ However, [Lokinet](https://github.com/oxen-io/lokinet) nodes are incentivized by
 
 [Lokinet](https://loki.network/team/) also aims to provide a platform for decentralized applications (dApps) and services, such as secure messaging, decentralized websites (SNApps), and other privacy-focused applications.
 
-SNApps, or Session Network Applications, are DApps built on top of the Session network. Session is a privacy-focused messaging and communication platform that utilizes end-to-end encryption and onion routing to provide anonymous and censorship-resistant communication.
+SNApps, or Session Network Applications, are DApps built on top of the Session network.
+
+Session is a privacy-focused messaging and communication platform that utilizes end-to-end encryption and onion routing to provide anonymous and censorship-resistant communication.
 
 * Oxen Blockchain Explorer - https://lokiblocks.com/
 * [Oxen Name System](https://docs.oxen.io/oxen-docs/using-the-oxen-blockchain/using-oxen-name-system)
@@ -309,11 +313,15 @@ IPFS (InterPlanetary File System) is one of the foundational technologies that c
 PFS provides the infrastructure necessary for developing and hosting decentralized applications.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rOtMGJVp2MU" frameborder="0" allowfullscreen></iframe>
 
-{{% details title="Filecoin" closed="true" %}}
+{{% details title="Filecoin?" closed="true" %}}
 
-[FileCoin](https://docs.filecoin.io/) is a decentralized storage network designed to turn cloud storage into an algorithmic market. It runs on a blockchain with a native token, also called Filecoin (FIL), which is used as a payment system for storage and retrieval services. Here’s how Filecoin relates to IPFS:
+[FileCoin](https://docs.filecoin.io/) is a decentralized storage network designed to turn cloud storage into an algorithmic market.
 
-* Built on IPFS: Filecoin is essentially an incentive layer on top of IPFS. While IPFS allows for the decentralized storing and sharing of files, Filecoin incentivizes the storage of those files through financial rewards. Storage providers earn Filecoin tokens by hosting files, effectively turning data storage into a market where users pay to have their files stored.
+It **runs on a blockchain with a native token**, also called Filecoin (FIL), which is used as a payment system for storage and retrieval services. 
+
+Here’s how Filecoin relates to IPFS:
+
+* **Built on IPFS**: Filecoin is essentially an incentive layer on top of IPFS. While IPFS allows for the decentralized storing and sharing of files, Filecoin incentivizes the storage of those files through financial rewards. Storage providers earn Filecoin tokens by hosting files, effectively turning data storage into a market where users pay to have their files stored.
 
 * Decentralization and Redundancy: Like IPFS, Filecoin aims to make the web more decentralized and less reliant on centralized cloud storage providers. By distributing files across numerous nodes, it enhances data redundancy and reliability.
 
@@ -328,4 +336,6 @@ Filecoin introduces cryptographic proofs to ensure files are stored correctly an
 
 #### Web3
 
-Web 3.0, often referred to simply as Web3, represents the next phase of the internet's evolution, emphasizing decentralization, blockchain technologies, and token-based economics. It seeks to address issues related to privacy, data ownership, and centralization that have become prevalent in the era of Web 2.0, which is dominated by large tech companies. 
+Web 3.0, often referred to simply as Web3, represents the next phase of the internet's evolution, emphasizing decentralization, blockchain technologies, and token-based economics.
+
+It seeks to address issues related to privacy, data ownership, and centralization that have become prevalent in the era of Web 2.0, which is dominated by large tech companies. 

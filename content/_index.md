@@ -49,8 +49,6 @@ Linux is an **open-source operating system** that is used in a variety of device
   {{< card link="https://jalcocertech.com" title="Collaborations ↗" icon="user" >}}
 {{< /cards >}}
 
-
-
 {{< hextra/feature-grid >}}
  
   {{< hextra/feature-card
@@ -77,8 +75,9 @@ Linux is an **open-source operating system** that is used in a variety of device
 {{< /hextra/feature-grid >}}
 
 
+## QQ's
 
-## Wait I have some Questions
+Wait, I have some Questions!
 
 I Know, I know, you are not sure to get Started with Linux.
 
@@ -86,7 +85,9 @@ If these are some QQ that come to your mind right now, dont let that stop you to
 
 {{% details title="Do I have to do stuff with the terminal?" closed="true" %}}
 
-No, **you dont have to**. But you will love to.
+No, **you dont have to**.
+
+But you will love to.
 
 If you are in the beginning of the journey, I recommend to to start with Debian and [install your favourite apps with .deb packages](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#ui). **Just double click the downloaded file**.
 
@@ -106,11 +107,11 @@ Plus, in the information era, it is quite clear than a **decentralized network o
 
 {{< callout type="info" >}}
 A note regarding costs: **think of money just as signals**.
+{{< /callout >}}
 
 * Organizations need some kind of licensing / hook you into their Software as a Service to be able to continue providing their product/service.
 
 * Same applies for Linux and F/OSS in general - there are people behind all of this Software and thanks to **voluntary support**, aka donations, we can let know to this generous people that what they are doing, is valuable to us and that we are interested that they continue to do so.
-{{< /callout >}}
 
 {{% /details %}}
 

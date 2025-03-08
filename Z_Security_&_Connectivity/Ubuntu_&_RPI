@@ -73,7 +73,7 @@ sudo service fail2ban restart
 sudo nano /var/log/fail2ban.log
 
 
-###vnc
+###VNC
 #https://sites.google.com/site/installationubuntu/raspberry-pi/remote-control-the-raspberry-pi
 sudo apt-get install tightvncserver
 tightvncserver
@@ -87,8 +87,10 @@ sudo apt-get install remmina
 an easy to use client, that can also be used to log into a windows system or another linux box.
 
 
-###VPN:
-##tailscale
+###VPNs
+
+
+##Tailscale
 #https://geekland.eu/tailscale-conecta-equipos-a-una-red-privada-virtual-vpn-facilmente/
 sudo apt-get install apt-transport-https
 curl -fsSL https://pkgs.tailscale.com/stable/raspbian/buster.gpg | sudo apt-key add -
@@ -104,17 +106,10 @@ tailscale ip -4 #get the ip
 #https://geekland.eu/tailscale-conecta-equipos-a-una-red-privada-virtual-vpn-facilmente/
 
 
-
-
 ##zerotier
+
 #https://ugeek.github.io/blog/post/2020-04-09-zerotier-funcionamiento-e-instalacion-por-docker-o-repositorios.html
 #https://www.zerotier.com/download/#downloadLinux
 curl -s 'https://raw.githubusercontent.com/zerotier/ZeroTierOne/master/doc/contact%40zerotier.com.gpg' | gpg --import && \
 if z=$(curl -s 'https://install.zerotier.com/' | gpg); then echo "$z" | sudo bash; fi
 sudo zerotier-cli status
-
-#Guacamole:
-
-
-
-

@@ -12,11 +12,13 @@ You can **do SelfHosting** with a Raspberry Pi, with and old laptop, in the clou
 
 But you can even do it in the very same computer you are reading this.
 
-1. Get Docker/Podman installed
+1. Get Docker/Podman installed to manage the containerized apps
 2. Get the Docker-Compose ready
 3. Deploy!
 
-{{% details title="Follow these CLI's to SelfHost! 🚀" closed="true" %}}
+{{% details title="Follow these CLI's to SelfHost with Containers! 🐋 🚀" closed="true" %}}
+
+If you are using a server, make sure it has SSH and the firewall allowing the connection:
 
 ```sh
 sudo apt update
@@ -28,7 +30,7 @@ sudo ufw allow ssh
 #ssh username@<local_minipc_server_ip>
 ```
 
-Check processes with:
+Check running processes with:
 
 ```sh
 #systemctl status
@@ -44,19 +46,19 @@ And the ports used:
 sudo lsof -i -P -n
 ```
 
-Follow the steps of this [SelfHosting-101 script](https://github.com/JAlcocerT/Linux/blob/main/Z_Linux_Installations_101/Selfhosting_101.sh):
+Follow the steps of this [SelfHosting-101 **script**](https://github.com/JAlcocerT/Linux/blob/main/Z_Linux_Installations_101/Selfhosting_101.sh):
 
 ```sh
 curl -O https://raw.githubusercontent.com/JAlcocerT/Linux/main/Z_Linux_Installations_101/Selfhosting_101.sh
-#nano Selfhosting_101.sh #MAKE SURE YOU UNDERSTAND WHAT YOU WILL BE RUNNING
 
+#nano Selfhosting_101.sh #MAKE SURE YOU UNDERSTAND WHAT YOU WILL BE RUNNING
 chmod +x Selfhosting_101.sh
 sudo ./Selfhosting_101.sh
 ```
 
-> Remember to go to your Portainer instance and setup the user/pass: `localhost:9000`
+> Remember to go to your Portainer instance and **setup the user/pass quickly**: `localhost:9000`
 
-If you forget, you will need to restart Portainer:
+If you forget, you will need to restart Portainer, so that you are able to setu the password:
 
 ```sh
 docker restart portainer
@@ -71,10 +73,12 @@ graph LR
     C --> D(Spin your ❤️ Services)
 ```
 
-{{< card link="https://jalcocert.github.io/RPi/" title="IoT with Raspberry Pi" image="https://jalcocert.github.io/RPi/img/RPi-Projects.png" subtitle="Linux will onboard you to the IoT and Embedding World. Are you ready to take the first step?" >}}
+{{< card link="https://jalcocert.github.io/RPi/" title="SelfHosting with a Raspberry Pi" image="https://jalcocert.github.io/RPi/img/RPi-Projects.png" subtitle="Beyond SelfHosting - Linux can onboard you to the IoT and Embedding World. Are you ready?" >}}
 
 
-## GenAI
+## SelfHosting Cool Stuff
+
+### GenAI
 
 To try new **Gen AI Projects** within Linux, you can setup a **Docker [Container Python environment](https://jalcocert.github.io/JAlcocerT/why-i-love-containers/)** with these 3 artifacts:
 
@@ -145,7 +149,7 @@ volumes:
 
 
 
-### LLMs
+#### LLMs
 
 * [Ollama](https://fossengineer.com/selfhosting-llms-ollama/)
 
@@ -163,7 +167,7 @@ https://flathub.org/apps/com.cassidyjames.butler #HA visualizer
 > This repo contains interesting projects (𝗟𝗟𝗠𝘀, 𝗟𝗟𝗠𝗢𝗽𝘀, and 𝘃𝗲𝗰𝘁𝗼𝗿 𝗗𝗕𝘀) to have a look: https://github.com/iusztinpaul/hands-on-llms
 
 
-### Affordable Local Gen AI with iGPU's
+#### Affordable Local Gen AI with iGPU's
 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xsvTEzTirlQ" frameborder="0" allowfullscreen></iframe>
@@ -191,19 +195,9 @@ Thanks to to [Tech-Practice](https://www.youtube.com/watch?v=HPO7fu7Vyw4&t=445s)
 {{% /details %}}
 
 
-### Decentralized Storage
+### Windows inside Docker
 
-* Centralization: Simplicity and Single Point of Failure
-
-* Some alternatives:
-  * [IPFS](https://ipfs.tech/) -  an open system to manage data without a central server
-  * [Filecoin](https://filecoin.io/) - an open-source cloud storage marketplace, protocol, and incentive layer.
-
-> Great intro video from [Naomi on Decentralized Storage](https://www.youtube.com/watch?v=rOtMGJVp2MU)
-
-## Windows inside Docker
-
-Thanks to the [Dockur Project](https://github.com/dockur/windows) and by using the [Image](https://hub.docker.com/r/dockurr/windows#!)
+Thanks to the [**Dockur** Project](https://github.com/dockur/windows) and by using the [Image](https://hub.docker.com/r/dockurr/windows#!)
 
 {{% details title=" With this Docker-Compose 👈" closed="true" %}}
 

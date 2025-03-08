@@ -183,8 +183,6 @@ sudo apt -y install r-base #https://cran.rstudio.com/
 # sudo apt install ./GitHubDesktop-linux-*.deb
 
 
-
-
 ###########
 ### IoT ###
 ###########
