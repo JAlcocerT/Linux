@@ -1,6 +1,6 @@
 # Define source and destination paths
-$source = "C:\Users\j--e-\Desktop\CAM"
-$destination = "F:\DCIM\DJI_001"
+$source = "F:\DCIM\DJI_001"
+$destination = "C:\Users\j--e-\Desktop\CAM"
 
 # Ensure the destination folder exists
 if (!(Test-Path -Path $destination)) {

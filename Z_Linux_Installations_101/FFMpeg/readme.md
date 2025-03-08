@@ -9,11 +9,15 @@ Have been playing around with video at:
 
 ### FFMPEG and Linux
 
-```sh
 
+
+```sh
+./Video_ffmpeg.sh
 ```
 
 ### FFMPEG with Windows
+
+See `./Win`
 
 ```sh
 # Install Chocolatey (Run as Administrator)
@@ -28,8 +32,4 @@ choco install ffmpeg -y
 
 # Verify FFmpeg Installation
 ffmpeg -version #I got the version 7.1-essentials_build
-```
-
-```sh
-
 ```

@@ -24,7 +24,10 @@ sudo ./Selfhosting_101.sh
 3. **Quick Video Edition**: with ffmpeg, as covered [here](https://jalcocert.github.io/JAlcocerT/my-action-cam-video-workflow/#quick-videos---ffmpeg-cli)
 
 ```sh
+./FFMPEG/Video_ffmpeg.sh #Linux
 
+#.\video_copy.ps1
+#.\video_tricks.ps1
 ```
 
 ---
