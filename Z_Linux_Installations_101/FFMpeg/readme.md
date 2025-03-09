@@ -12,6 +12,13 @@ Once you got **ffmpeg installed...**
 ### FFMPEG and Linux
 
 ```sh
+sudo apt install ffmpeg
+#rsync -avP *.MP4 /home/jalcocert/Desktop/oa5pro/ #it creates the folder if its not there | no overwrite
+#rsync -avP *.MP4 /media/jalcocert/Backup2TB/DJI-OA5Pro #copy it to an external SSD
+rsync -avP --include='*.MP4' --exclude='*' /media/jalcocert/OsmoAction/DCIM/DJI_001/ ~/Desktop/CAM/
+
+#rm *.LRF #clean if needed LRF
+
 ./Video_ffmpeg.sh
 ```
 

@@ -326,22 +326,25 @@ We can install through the UI and double click, thanks to **.deb packages**.
 
 * .deb packages are **individual software packages** that can be installed directly on your computer, similar to installing software from a CD or a downloaded file.
 
-* PPAs, on the other hand, are like online repositories that can contain multiple .deb packages. 
+* PPAs, on the other hand, are like online repositories that can contain multiple `.deb` packages. 
 
-{{% details title="You can also install .Deb's with the terminal" closed="true" %}}
+{{% details title="You can also install .Deb's with the terminal - Portmaster" closed="true" %}}
 
 ```sh
+#https://wiki.safing.io/en/Portmaster/Install/Linux
 wget https://updates.safing.io/latest/linux_amd64/packages/portmaster-installer.deb
-sudo dpkg -i portmaster-installer.deb
+#sudo dpkg -i portmaster-installer.deb
 
-#sudo apt install -f #installs any missing dependencies automatically.
-
+sudo apt install -f #installs any missing dependencies automatically.
 ```
+
 {{% /details %}} 
 
 #### Tar GZ
 
-A .tar.gz file is an archive format commonly used in Linux and Unix-like operating systems. It's a combination of two compression methods: tar (tape archive) and gzip (GNU zip).
+A `.tar.gz` file is an archive format commonly used in Linux and Unix-like operating systems.
+
+It's a combination of two compression methods: tar (tape archive) and gzip (GNU zip).
 
 ```sh
 tar -czvf archive.tar.gz /path/to/directory #wget https://github.com/safing/portmaster/archive/refs/tags/v1.6.5.tar.gz
@@ -364,9 +367,13 @@ If you need to make it executable:
 chmod +x your-appimage-name.AppImage
 ```
 
-An AppImage is self-contained, it does not modify the host system. Its impact is limited to the user's home directory by default.
+An AppImage is self-contained, it does not modify the host system. 
 
-These are designed to be compatible with a wide range of Linux distributions. This includes non Debian distros, like [Arch Linux](https://jalcocert.github.io/Linux/docs/arch/), among others.
+Its impact is limited to the user's home directory by default.
+
+These are designed to be compatible with a wide range of Linux distributions.
+
+This includes non Debian distros, like [Arch Linux](https://jalcocert.github.io/Linux/docs/arch/), among others.
 
 > Some AppImages even come with update information embedded and can be updated with tools like AppImageUpdate.
 
@@ -382,7 +389,9 @@ These are designed to be compatible with a wide range of Linux distributions. Th
 
 #### Flatpak
 
-Flatpak is designed to be a **cross-distribution packaging format**. It aims to work on multiple Linux distributions, making it more distribution-agnostic compared to Snap packages.
+Flatpak is designed to be a **cross-distribution packaging format**.
+
+It aims to work on multiple Linux distributions, making it more distribution-agnostic compared to Snap packages.
 
 * Sandboxing: Like Snap, Flatpak uses sandboxing to isolate applications from the host system, improving security and reducing potential conflicts with system libraries.
 

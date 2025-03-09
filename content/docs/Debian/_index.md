@@ -28,8 +28,8 @@ Debian's **package management system, [APT](https://jalcocert.github.io/Linux/do
 
 ### My Favourite Debian *flavours*
 
-* K/Ubuntu - KDE or GNOME Desktop Environment
-* ZorinOS - KDE
+* K/**Ubuntu** - KDE or GNOME Desktop Environment
+* **ZorinOS** - KDE
 * Raspbian - if you are into Raspberries!
 
 ---
