@@ -33,7 +33,7 @@ echo "Confirming the Updated DNS settings for: $interface:"
 resolvectl status | grep 'DNS Servers'
 
 
-### DOCKER SETUP ###
+### CONTAINERS SETUP ###
 
 
 

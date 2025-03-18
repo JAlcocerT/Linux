@@ -452,7 +452,7 @@ sudo apt-get install aegis
 
 #Portfolio Performance
 flatpak install flathub info.portfolio_performance.PortfolioPerformance
-flatpak run info.portfolio_performance.PortfolioPerformance
+#flatpak run info.portfolio_performance.PortfolioPerformance
 
 sudo add-apt-repository ppa:mdoyen/homebank
 sudo apt-get update
