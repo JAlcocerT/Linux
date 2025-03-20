@@ -22,10 +22,14 @@ install_docker() {
     sh get-docker.sh
     echo "Docker installed successfully. Checking Docker version..."
     docker version
+
     echo "Testing Docker installation with 'hello-world' image..."
     docker run hello-world
     echo "Installing Docker Compose..."
-    apt install docker-compose -y
+    sudo apt install docker-compose-plugin #use with docker compose up -d
+    apt install docker-compose -y #use with docker-compose up -d
+    #sudo apt remove docker-compose
+
     echo "Docker Compose installed successfully. Checking version..."
     docker-compose --version
     echo "Checking status of Docker service..."
