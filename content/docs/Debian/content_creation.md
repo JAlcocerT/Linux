@@ -51,7 +51,7 @@ sudo snap install shotcut -- classic && snap install photoscape  && snap install
 #Flameshot
 #kdenlive video editor
 flatpak install flathub org.kde.kdenlive
-flatpak run org.kde.kdenlive
+#flatpak run org.kde.kdenlive
 
 #openshot
 #sudo snap install shotcut --classic

@@ -24,13 +24,15 @@ echo "Flatpak and snapcraft packages ready to be installed"
 # Prompt the user if they want to proceed
 if prompt_yes_no; then
     # User agreed, proceed with installations
+    sudo snap install code --classic
+
     #flatpak install flathub com.vscodium.codium
     sudo snap install codium --classic
+    
     echo "Installing some vscodium extensions"
     codium --install-extension unifiedjs.vscode-mdx
     codium --install-extension astro-build.astro-vscode
     codium --install-extension ms-python.python
-
 
     #flatpak install flathub org.spyder_ide.spyder
 
