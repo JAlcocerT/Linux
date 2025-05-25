@@ -16,6 +16,10 @@ But you can even do it in the very same computer you are reading this.
 2. Get the Docker-Compose ready
 3. Deploy!
 
+{{< cards cols="1" >}}
+  {{< card link="https://github.com/JAlcocerT/Docker/" title="Docker Configs 🐋✅ ↗" >}}
+{{< /cards >}}
+
 {{% details title="Follow these CLI's to SelfHost with Containers! 🐋 🚀" closed="true" %}}
 
 If you are using a server, make sure it has SSH and the firewall allowing the connection:

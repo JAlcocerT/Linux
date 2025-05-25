@@ -9,7 +9,9 @@ sidebar:
 
 Debian is a widely respected, stable Linux distribution known for its reliability, **extensive software repository**, and strong commitment to free and open-source software principles.
 
-Debian's **package management system, [APT](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#apt)** (Advanced Package Tool), simplifies software installation, upgrades, and maintenance. The distribution **emphasizes system stability** and security, making it a popular choice for servers and mission-critical environments.
+Debian's **package management system, [APT](https://jalcocert.github.io/Linux/docs/debian/linux_installing_apps/#apt)** (Advanced Package Tool), simplifies software installation, upgrades, and maintenance.
+
+The distribution **emphasizes system stability** and security, making it a popular choice for servers and mission-critical environments.
 
 > Here you have a [GIST with examples](https://gist.github.com/JAlcocerT/197667ec5ec0da53e78eb58c4253a73f) ♻️
 
